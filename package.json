@@ -1,0 +1,28 @@
+{
+  "name": "simpleweb",
+  "version": "1.0.0",
+  "description": "Simpleweb is the skeleton to start a new project",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amolc/simpleweb.git"
+  },
+  "keywords": [
+    "simpleweb",
+    "nodejs",
+    "structure"
+  ],
+  "author": "Amol C",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amolc/simpleweb/issues"
+  },
+  "homepage": "https://github.com/amolc/simpleweb#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
