@@ -26,6 +26,6 @@ app.use('/docs', express.static(__dirname + '/apidoc'));
 app.use('/assets', express.static(__dirname + '/assets'));
 
 global.appRoot = path.resolve(__dirname);
-app.listen(5000);
-console.log('server is started at port: 5000');
+app.listen(14000);
+console.log('server is started at port: 14000');
 //module.exports = app

@@ -27,6 +27,63 @@
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
 
+  <style>
+* {
+  box-sizing: border-box;
+}
+
+.columns {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+}
+
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
+</style>
   
 </head>
 
@@ -69,9 +126,9 @@
       </div>
 
       <div class="intro-info" style="color:#ffffff;">
-        <h2>Shop all you want from India, We will bring it to your door.</h2>
-		<p>Get your Indian Address now.</p>
-		<h5>We will ship your purchases how you want, when you want and wherever you want, Really!</h5>
+        <h2>Pricing and Services</h2>
+		<p>Not all shoppers are the same so we came up with fantastic choices for you!</p>
+		<h5>Shop from India without any worry about exorbitant shipping costs!</h5>
         <div>
           <a href="#about" class="btn-get-started scrollto">Log In</a>
           <a href="#services" class="btn-services scrollto">sign Up</a>
@@ -89,10 +146,7 @@
     <section id="about">
       <div class="container">
 
-        <header class="section-header">
-          <h3>How Forward Parcel Works</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </header>
+        
 
         <div class="row about-container">
 
@@ -103,56 +157,73 @@
 
             <div class="icon-box wow fadeInUp">
               <div class="icon"><i class="fa fa-user-plus"></i></div>
-              <h4 class="title"><a href="">Sign up</a></h4>
-              <p class="description">Choose membership & Signup for your own Indian address.</p>
-            </div>
-
-            <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
-              <div class="icon"><i class="fa fa-shopping-cart"></i></div>
-              <h4 class="title"><a href="">Shop</a></h4>
-              <p class="description">Shop any Indian e-store or use our Assisted Purchase service.</p>
-            </div>
-
-            <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
-              <div class="icon"><i class="fa fa-truck"></i></div>
-              <h4 class="title"><a href="">Ship</a></h4>
-              <p class="description">Ship purchases to your own Forward Parcel Indian address.</p>
-            </div>
-			
-			<div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
-              <div class="icon"><i class="fa fa-bookmark"></i></div>
-              <h4 class="title"><a href="">Save</a></h4>
-              <p class="description">Save 80% on shipping by consolidating parcels.</p>
-            </div>
-			
-			<div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
-              <div class="icon"><i class="fa fa-diamond"></i></div>
-              <h4 class="title"><a href="">Receive</a></h4>
-              <p class="description">Forward Parcel will bring parcels to your door within 5-7 days.</p>
+              <h4 class="title"><a href="">OCCASIONAL PURCHASES FROM INDIA?</a></h4>
+              <p class="description">Get our Standard Membership – Free to join and get your Indian address immediately. Pay as you use the other services. Free secure storage of your purchases upto 30 days.</p>
             </div>
 
           </div>
 
-          <div class="col-lg-6 background order-lg-2 order-1 wow fadeInUp">
-            <img src="img/worldmap.png" class="img-fluid" alt="">
+          <div class="col-lg-6 content order-lg-1 order-2">
+            <!-- <p> -->
+              <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. -->
+            <!-- </p> -->
+
+            <div class="icon-box wow fadeInUp">
+              <div class="icon"><i class="fa fa-user-plus"></i></div>
+              <h4 class="title"><a href="">LOVE INDIAN STUFF AND PLANNING TO GET MORE THAN A SINGLE PARCEL IN A YEAR?</a></h4>
+              <p class="description">Our Premium Membership is perfect for you, you only pay the carrier charge and everything else* is included in your membership. We will even up the free storage to upto 60 days for you!</p>
+            </div>
+
           </div>
         </div>
 
         <div class="row about-extra">
-          <div class="col-lg-6 wow fadeInUp">
-            <img src="img/parceldelivery.png" class="img-fluid" alt="">
+          <div class="col-lg-4 wow fadeInUp">
+            <h4 class="title">Choose Your Membership Plan</h4>
+              <p class="description">Whether you're an occassional shopper or a shopoholic, we've got you covered. Choose a membership plan that suits your needs and let's get shopping.</p>
+              <p style="font-size:10px;">(*Any carriage costs incurred by us to return the item to the vendor will be passed on to the customer.)</p>
+            </div>
+
+          <div class="col-lg-8 wow fadeInUp pt-5 pt-lg-0">
+            <div class="columns">
+              <ul class="price">
+                <li class="header">Basic</li>
+                <li class="grey">$ 9.99 / year</li>
+                <li>Your own Indian Address FREE</li>
+                <li>3 photos of each package FREE</li>
+                <li>Save up to 80% on shipping FREE</li>
+                <li>Storage up to 30 days FREE</li>
+                <li class="grey"><a href="#" class="button">Sign Up</a></li>
+              </ul>
+            </div>
+            
+            <div class="columns">
+              <ul class="price">
+                <li class="header" style="background-color:#4CAF50">Pro</li>
+                <li class="grey">$ 24.99 / year</li>
+                <li>Your own Indian Address FREE</li>
+                <li>3 photos of each package FREE</li>
+                <li>Save up to 80% on shipping FREE</li>
+                <li>Storage up to 30 days FREE</li>
+                <li class="grey"><a href="#" class="button">Sign Up</a></li>
+              </ul>
+            </div>
+            
+            <div class="columns">
+              <ul class="price">
+                <li class="header">Premium</li>
+                <li class="grey">$ 49.99 / year</li>
+                <li>Your own Indian Address FREE</li>
+                <li>3 photos of each package FREE</li>
+                <li>Save up to 80% on shipping FREE</li>
+                <li>Storage up to 30 days FREE</li>
+                <li class="grey"><a href="#" class="button">Sign Up</a></li>
+              </ul>
+            </div>
           </div>
-          <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0">
-            <h4>Checkout how cheap shipping from India
-can be with our price calculator
-C'mon....we know you want to!</h4>
-            <p>
-              Ipsum in aspernatur ut possimus sint. Quia omnis est occaecati possimus ea. Quas molestiae perspiciatis occaecati qui rerum. Deleniti quod porro sed quisquam saepe. Numquam mollitia recusandae non ad at et a.
-            </p>
-            <p>
-              Ad vitae recusandae odit possimus. Quaerat cum ipsum corrupti. Odit qui asperiores ea corporis deserunt veritatis quidem expedita perferendis. Qui rerum eligendi ex doloribus quia sit. Porro rerum eum eum.
-            </p>
-          </div>
+
+          
+
         </div>
 
         
@@ -168,8 +239,8 @@ C'mon....we know you want to!</h4>
     <section id="why-us" class="wow fadeIn">
       <div class="container">
         <header class="section-header">
-          <h3>You gotta signup now</h3>
-          <p>This is why !</p>
+          <h3>Additional Services</h3>
+          <!-- <p>This is why !</p> -->
         </header>
 
         <div class="row row-eq-height justify-content-center">
@@ -207,7 +278,7 @@ C'mon....we know you want to!</h4>
             </div>
           </div>
 		  
-		  <div class="col-lg-3 mb-3">
+		    <div class="col-lg-3 mb-3">
             <div class="card wow bounceInUp">
                 <i class="fa fa-filter"></i>
               <div class="card-body">
@@ -220,101 +291,9 @@ C'mon....we know you want to!</h4>
 
         </div>
 
-        <div class="row row-eq-height justify-content-center">
-
-          <div class="col-lg-3 mb-3">
-            <div class="card wow bounceInUp">
-                <i class="fa fa-car"></i>
-              <div class="card-body">
-                <h5 class="card-title">Delivery</h5>
-                <p class="card-text">We will pick up from Indian stores that don’t deliver.</p>
-                <!-- <a href="#" class="readmore">Read more </a> -->
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 mb-3">
-            <div class="card wow bounceInUp">
-                <i class="fa fa-shield"></i>
-              <div class="card-body">
-                <h5 class="card-title">Safety</h5>
-                <p class="card-text">Safe and secure warehouse for your purchases.</p>
-                <!-- <a href="#" class="readmore">Read more </a> -->
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 mb-3">
-            <div class="card wow bounceInUp">
-                <i class="fa fa-picture-o"></i>
-              <div class="card-body">
-                <h5 class="card-title">Checking</h5>
-                <p class="card-text">Photos of your purchases for complete peace of mind. </p>
-                <!-- <a href="#" class="readmore">Read more </a> -->
-              </div>
-            </div>
-          </div>
-		  
-		  <div class="col-lg-3 mb-3">
-            <div class="card wow bounceInUp">
-                <i class="fa fa-handshake-o"></i>
-              <div class="card-body">
-                <h5 class="card-title">Pooling</h5>
-                <p class="card-text">Parcel consolidation and secure repackaging.</p>
-                <!-- <a href="#" class="readmore">Read more </a> -->
-              </div>
-            </div>
-          </div>
-
-        </div>
+        
 		
-		<div class="row row-eq-height justify-content-center">
-
-          <div class="col-lg-3 mb-3">
-            <div class="card wow bounceInUp">
-                <i class="fa fa-street-view"></i>
-              <div class="card-body">
-                <h5 class="card-title">Tracking</h5>
-                <p class="card-text">Easy management & tracking of your parcels.</p>
-                <!-- <a href="#" class="readmore">Read more </a> -->
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 mb-3">
-            <div class="card wow bounceInUp">
-                <i class="fa fa-tags"></i>
-              <div class="card-body">
-                <h5 class="card-title">Offers</h5>
-                <p class="card-text">Super duper prices and great discounts.</p>
-                <!-- <a href="#" class="readmore">Read more </a> -->
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 mb-3">
-            <div class="card wow bounceInUp">
-                <i class="fa fa-users"></i>
-              <div class="card-body">
-                <h5 class="card-title">Subscriptions</h5>
-                <p class="card-text">Membership options to suit your shopping needs.</p>
-                <!-- <a href="#" class="readmore">Read more </a> -->
-              </div>
-            </div>
-          </div>
-		  
-		  <div class="col-lg-3 mb-3">
-            <div class="card wow bounceInUp">
-                <i class="fa fa-phone"></i>
-              <div class="card-body">
-                <h5 class="card-title">Assistance</h5>
-                <p class="card-text">Great customer support via phone, chat and email.</p>
-                <!-- <a href="#" class="readmore">Read more </a> -->
-              </div>
-            </div>
-          </div>
-
-        </div>
+		
 
       </div>
     </section>
@@ -322,74 +301,7 @@ C'mon....we know you want to!</h4>
     
     
 
-    <!--==========================
-      Clients Section
-    ============================-->
-    <section id="testimonials" class="section-bg">
-      <div class="container">
-
-        <header class="section-header">
-          <h3>Testimonials</h3>
-        </header>
-
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-
-            <div class="owl-carousel testimonials-carousel wow fadeInUp">
     
-              <div class="testimonial-item">
-                <img src="img/testimonial-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-                <p>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                </p>
-              </div>
-    
-              <div class="testimonial-item">
-                <img src="img/testimonial-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-                <p>
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                </p>
-              </div>
-    
-              <div class="testimonial-item">
-                <img src="img/testimonial-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-                <p>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                </p>
-              </div>
-    
-              <div class="testimonial-item">
-                <img src="img/testimonial-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-                <p>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                </p>
-              </div>
-    
-              <div class="testimonial-item">
-                <img src="img/testimonial-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-                <p>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                </p>
-              </div>
-
-            </div>
-
-          </div>
-        </div>
-
-
-      </div>
-    </section><!-- #testimonials -->
 
     
 
