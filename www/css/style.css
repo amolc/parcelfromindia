@@ -173,7 +173,7 @@ h6 {
 #intro {
   width: 100%;
   position: relative;
-  background: url("../img/intro-bg.png") center bottom no-repeat;
+  background: url("../img/header-bg4.png") center bottom no-repeat;
   background-size: cover;
   padding: 200px 0 120px 0;
 }
@@ -673,7 +673,7 @@ h6 {
 }
 
 #why-us .card h5 {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
 }
 
@@ -1192,7 +1192,7 @@ h6 {
 }
 
 #footer .footer-top {
-  background: #004a99;
+  background: #00bcf2;
   padding: 60px 0 30px 0;
 }
 
