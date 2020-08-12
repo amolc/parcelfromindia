@@ -1,0 +1,270 @@
+<div class="container">
+    <h1>Register</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+    <form [formGroup]="signUpForm">
+        <label for="firstname"><b>First Name</b></label>
+        <input type="text" placeholder="Enter First Name" name="fname" id="fname" required
+            formControlName="fname">
+
+        <div>
+            <ng-container *ngFor="let error of error_messages.fname">
+                <div class="error-message" *ngIf="signUpForm.get('fname').hasError(error.type) &&
+        (signUpForm.get('fname').dirty || signUpForm.get('fname').touched)">
+                    {{ error.message }}
+                </div>
+            </ng-container>
+        </div>
+
+
+        <label for="lastname"><b>Last Name</b></label>
+        <input type="text" placeholder="Enter Last Name" name="lname" id="lname" required
+            formControlName="lname">
+
+        <div>
+            <ng-container *ngFor="let error of error_messages.lname">
+                <div class="error-message" *ngIf="signUpForm.get('lname').hasError(error.type) &&
+        (signUpForm.get('lname').dirty || signUpForm.get('lname').touched)">
+                    {{ error.message }}
+                </div>
+            </ng-container>
+        </div>
+
+        <label for="phone"><b>Phone</b></label>
+        <input type="text" placeholder="Enter phone" name="phone" id="phone" required formControlName="phone">
+
+        <div>
+            <ng-container *ngFor="let error of error_messages.phone">
+                <div class="error-message" *ngIf="signUpForm.get('phone').hasError(error.type) &&
+        (signUpForm.get('phone').dirty || signUpForm.get('phone').touched)">
+                    {{ error.message }}
+                </div>
+            </ng-container>
+        </div> 
+
+        <label for="phone"><b>mobile</b></label>
+        <input type="text" placeholder="Enter mobile" name="mobile" id="mobile" required formControlName="mobile">
+
+        <div>
+            <ng-container *ngFor="let error of error_messages.mobile">
+                <div class="error-message" *ngIf="signUpForm.get('mobile').hasError(error.type) &&
+        (signUpForm.get('mobile').dirty || signUpForm.get('mobile').touched)">
+                    {{ error.message }}
+                </div>
+            </ng-container>
+        </div>
+
+        
+
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" id="email" required formControlName="email">
+
+        <div>
+            <ng-container *ngFor="let error of error_messages.email">
+                <div class="error-message" *ngIf="signUpForm.get('email').hasError(error.type) &&
+        (signUpForm.get('email').dirty || signUpForm.get('email').touched)">
+                    {{ error.message }}
+                </div>
+            </ng-container>
+        </div>
+
+        
+
+
+        <label for="password"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" id="psw" required formControlName="password">
+
+        <div>
+            <ng-container *ngFor="let error of error_messages.password">
+                <div class="error-message" *ngIf="signUpForm.get('password').hasError(error.type) &&
+        (signUpForm.get('password').dirty || signUpForm.get('password').touched)">
+                    {{ error.message }}
+                </div>
+            </ng-container>
+        </div>
+         
+        <label for="company_name"><b>company_name</b></label>
+        <input type="text" placeholder="Enter company_name" name="company_name" id="company_name" required formControlName="company_name">
+        
+        <div>
+            <ng-container *ngFor="let error of error_messages.company_name">
+                <div class="error-message" *ngIf="signUpForm.get('company_name').hasError(error.type) &&
+        (signUpForm.get('company_name').dirty || signUpForm.get('company_name').touched)">
+                    {{ error.message }}
+                </div>
+            </ng-container>
+        </div>
+
+        <label for="crn"><b>company registration number </b></label>
+        <input type="text" placeholder="Enter company registration number" name="crn " id="crn " required formControlName="crn">
+        
+        <div>
+            <ng-container *ngFor="let error of error_messages.crn">
+                <div class="error-message" *ngIf="signUpForm.get('crn').hasError(error.type) &&
+        (signUpForm.get('crn').dirty || signUpForm.get('crn').touched)">
+                    {{ error.message }}
+                </div>
+            </ng-container>
+        </div>
+        <label for="established"><b>Established</b></label>
+        <input type="text" placeholder="Enter Established" name="established" id="established" required formControlName="established">
+         
+        <div>
+            <ng-container *ngFor="let error of error_messages.established">
+                <div class="error-message" *ngIf="signUpForm.get('established').hasError(error.type) &&
+        (signUpForm.get('established').dirty || signUpForm.get('established').touched)">
+                    {{ error.message }}
+                </div>
+            </ng-container>
+        </div>
+        
+        <label for="distributor"><b>Distributor</b></label>
+        <input type="text" placeholder="Enter Distributor yes or no" name="distributor" id="distributor" required formControlName="distributor">
+         
+        <div>
+            <ng-container *ngFor="let error of error_messages.distributor">
+                <div class="error-message" *ngIf="signUpForm.get('distributor').hasError(error.type) &&
+        (signUpForm.get('distributor').dirty || signUpForm.get('distributor').touched)">
+                    {{ error.message }}
+                </div>
+            </ng-container>
+        </div>
+         
+        <div class="form-group m-form__group row topgap">
+            <div class="col-lg-12 col-md-10">
+               <label for="address"><b>
+                    address1 </b>
+               </label>
+              <textarea type="text" rows="4" class="form-control" placeholder="Please enter House/Flat Number, Building Name/ Apartment Name" name="address" id="address" formControlName="address" required ></textarea>
+                                                  
+            </div>
+         </div>
+         <div>
+            <ng-container *ngFor="let error of error_messages.address">
+                <div class="error-message" *ngIf="signUpForm.get('address').hasError(error.type) &&
+        (signUpForm.get('address').dirty || signUpForm.get('address').touched)">
+                    {{ error.message }}
+                </div>
+            </ng-container>
+        </div>
+          
+         <div class="form-group m-form__group row topgap">
+            <div class="col-lg-12 col-md-10">
+               <label for="address2"><b>
+              address2 </b>
+               </label>
+              <textarea type="text" rows="4" class="form-control" placeholder="Please enter Street Name, Locality" name="address2" id="address2" formControlName="address2" required ></textarea>
+                                                  
+            </div>
+        </div> 
+        <div>
+            <ng-container *ngFor="let error of error_messages.address2">
+                <div class="error-message" *ngIf="signUpForm.get('address2').hasError(error.type) &&
+        (signUpForm.get('address2').dirty || signUpForm.get('address2').touched)">
+                    {{ error.message }}
+                </div>
+            </ng-container>
+        </div>
+        
+        
+        <label for="city"><b>City</b></label>
+        <input type="text" placeholder="Enter City" name="city" id="city" required formControlName="city"> 
+        <div>
+            <ng-container *ngFor="let error of error_messages.city">
+                <div class="error-message" *ngIf="signUpForm.get('city').hasError(error.type) &&
+        (signUpForm.get('city').dirty || signUpForm.get('city').touched)">
+                    {{ error.message }}
+                </div>
+            </ng-container>
+        </div>
+        <label for="state"><b>State</b></label>
+        <input type="text" placeholder="Enter State" name="state" id="state" required formControlName="state"> 
+        <div>
+            <ng-container *ngFor="let error of error_messages.state">
+                <div class="error-message" *ngIf="signUpForm.get('state').hasError(error.type) &&
+        (signUpForm.get('state').dirty || signUpForm.get('state').touched)">
+                    {{ error.message }}
+                </div>
+            </ng-container>
+        </div>
+
+        <label for="country"><b>Country</b></label>
+        <input type="text" placeholder="Enter Country name" name="country" id="country" required formControlName="country"> 
+         
+        <div>
+            <ng-container *ngFor="let error of error_messages.country">
+                <div class="error-message" *ngIf="signUpForm.get('country').hasError(error.type) &&
+        (signUpForm.get('country').dirty || signUpForm.get('country').touched)">
+                    {{ error.message }}
+                </div>
+            </ng-container>
+        </div>
+        <label for="postal_code"><b>Poster_code</b></label>
+        <input type="text" placeholder="Enter postel_code" name="postal_code" id="postal_code" required formControlName="postal_code"> 
+        
+        <div>
+            <ng-container *ngFor="let error of error_messages.postal_code">
+                <div class="error-message" *ngIf="signUpForm.get('postal_code').hasError(error.type) &&
+        (signUpForm.get('postal_code').dirty || signUpForm.get('postal_code').touched)">
+                    {{ error.message }}
+                </div>
+            </ng-container>
+        </div>
+        <label for="buy"><b>buy</b></label>
+        <input type="text" placeholder="Enter buy" name="buy" id="buy" required formControlName="buy">         
+        
+        <div>
+            <ng-container *ngFor="let error of error_messages.buy">
+                <div class="error-message" *ngIf="signUpForm.get('buy').hasError(error.type) &&
+        (signUpForm.get('buy').dirty || signUpForm.get('buy').touched)">
+                    {{ error.message }}
+                </div>
+            </ng-container>
+        </div>
+        <label for="sell"><b>sell</b></label>
+        <input type="text" placeholder="Enter sell" name="sell" id="sell" required formControlName="sell"> 
+         
+        <div>
+            <ng-container *ngFor="let error of error_messages.sell">
+                <div class="error-message" *ngIf="signUpForm.get('sell').hasError(error.type) &&
+        (signUpForm.get('sell').dirty || signUpForm.get('sell').touched)">
+                    {{ error.message }}
+                </div>
+            </ng-container>
+        </div>
+        <label for="information"><b>information</b></label>
+        <input type="text" placeholder="Enter information" name="information" id="information" required formControlName="information">
+        
+        <div>
+            <ng-container *ngFor="let error of error_messages.information">
+                <div class="error-message" *ngIf="signUpForm.get('information').hasError(error.type) &&
+        (signUpForm.get('information').dirty || signUpForm.get('information').touched)">
+                    {{ error.message }}
+                </div>
+            </ng-container>
+        </div>
+        <label for="image"><b>image</b></label>
+        <input type="file" placeholder="Enter image" name="image" id="image" required formControlName="image"> 
+        <br>
+        <br>
+        <label for="date"><b>date</b></label>
+        <input type="text" placeholder="Enter date" name="date" id="date" required formControlName="date"> 
+        
+        <label for="accesslevel"><b>accesslevel</b></label>
+        <input type="text" placeholder="Enter accesslevel" name="accesslevel" id="accesslevel" required formControlName="accesslevel">
+        <br>
+        <label for="project_id"><b>project_id</b></label>
+        <input type="number" placeholder="Enter project_id" name="project_id" id="project_id" required formControlName="project_id">
+        <hr>
+        <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+        <button type="submit" class="registerbtn" (click)="doRegister()">Register</button>
+        </form>
+</div>
+
+<div class="container signin">
+
+    <p>Already have an account? <a (click)="signin()" style="color: red;">Sign in</a>.</p>
+
+</div>

@@ -9,7 +9,7 @@
     </div>
     <div class="container clearfix divcenter" style="max-width: 900px;">
        <div class=" nobottommargin">
-          <form class="m-form m-form--fit m-form--label-align-right m-form--group-seperator-dashed" autocomplete="off">
+          <form class="m-form m-form--fit m-form--label-align-right m-form--group-seperator-dashed" autocomplete="off"  [formGroup]="loginForm">
              <div class="m-portlet__body">
                  <p style="color:#f21515;font-size:12px;text-align:left;">(*) All fields are mandatory</p>
                 <div class="form-group m-form__group row">
@@ -19,13 +19,13 @@
                       <label>
                       First Name: * 
                       </label>
-                      <input type="text" class="form-control m-input" placeholder="Enter first name" name="first_name" id="first_name" required="required" >
+                      <input type="text" class="form-control m-input" placeholder="Enter first name" name="first_name" id="first_name" formControlName="firstname" required="required" >
                                                           </div>
                    <div class="col-lg-6 col-md-4 topgap">
                       <label class="">
                       Last Name: *
                       </label>
-                      <input type="text" class="form-control m-input" placeholder="Enter last name" name="last_name" id="last_name"  required="required" >
+                      <input type="text" class="form-control m-input" placeholder="Enter last name" name="last_name" id="last_name" formControlName="lastname" required="required" >
                        
                          
                    </div>
@@ -35,7 +35,7 @@
                       <label>
                           1st line of address *
                       </label>
-                     <textarea type="text" rows="4" class="form-control" placeholder="Please enter House/Flat Number, Building Name/ Apartment Name" name="billing_address" id="billing_address"  required="required" ></textarea>
+                     <textarea type="text" rows="4" class="form-control" placeholder="Please enter House/Flat Number, Building Name/ Apartment Name" name="billing_address" id="billing_address" formControlName="firstaddress" required="required" ></textarea>
                                                          
                    </div>
                 </div>
@@ -44,7 +44,7 @@
                       <label>
                      2nd line of address *
                       </label>
-                     <textarea type="text" rows="4" class="form-control" placeholder="Please enter Street Name, Locality" name="billing_address2" id="billing_address2"  required="required" ></textarea>
+                     <textarea type="text" rows="4" class="form-control" placeholder="Please enter Street Name, Locality" name="billing_address2" id="billing_address2" formControlName="secondaddress" required="required" ></textarea>
                                                          
                    </div>
                 </div>  
@@ -54,7 +54,7 @@
                       <label>
                       City *  
                       </label>
-                      <input type="text" class="form-control m-input" placeholder="Enter City" name="city" id="city"   required="required" >
+                      <input type="text" class="form-control m-input" placeholder="Enter City" name="city" id="city" formControlName="city"  required="required" >
                        <div class="clearfix"></div>
                          
 
@@ -64,7 +64,7 @@
                       <label class="">
                       State *
                       </label>
-                      <input type="text" class="form-control m-input" placeholder="Enter state name" name="state" id="state"  required="required" >
+                      <input type="text" class="form-control m-input" placeholder="Enter state name" name="state" id="state" formControlName="state" required="required" >
                        
                          
                    </div>
@@ -317,7 +317,7 @@
                       <label class="">
                       postcode *
                       </label>
-                      <input type="text" class="form-control m-input" placeholder="Enter postcode" name="postalcode" id="postal_code" required="required" >
+                      <input type="text" class="form-control m-input" placeholder="Enter postcode" name="postalcode" id="postal_code" formControlName="postcode" required="required" >
                        <div class="clearfix"></div>
                         
                    </div>
@@ -326,7 +326,7 @@
                    <div class="col-md-3">
            <div class="form-group">
                 <label>Code: *</label>
-             <input type="text" name="mobile_code" id="mobile_code" readonly=""  class="form-control">
+             <input type="text" name="mobile_code" id="mobile_code" readonly="" formControlName="code" class="form-control">
 
            </div>
          </div>
@@ -334,7 +334,7 @@
                       <label class="">
                       Mobile Number *
                       </label>
-                      <input type="text" class="form-control m-input" placeholder="Enter your mobile number" name="mobile" id="mobile"  required="required" >
+                      <input type="text" class="form-control m-input" placeholder="Enter your mobile number" name="mobile" id="mobile" formControlName="mobile"  required="required" >
                          
                    </div>
                 </div>
@@ -347,7 +347,7 @@
                       <span></span>
                       </label>
                        <label class="m-radio">
-                          <input type="radio" name="same" class="same" id="same">
+                          <input type="radio" name="same" class="same" id="same" formControlName="same">
                       Yes
                       <span></span>
                       </label>
@@ -367,13 +367,13 @@
                       <label>
                       First Name: *
                       </label>
-                      <input type="text" class="form-control m-input" placeholder="Enter first name" name="s_first_name" id="s_first_name"  required="required" >
+                      <input type="text" class="form-control m-input" placeholder="Enter first name" name="s_first_name" id="s_first_name"  required="required" formControlName="firstname" >
                                                           </div>
                    <div class="col-lg-6 col-md-4 topgap">
                       <label class="">
                       Last Name: *
                       </label>
-                      <input type="text" class="form-control m-input" placeholder="Enter last name" name="s_last_name" id="s_last_name"  required="required" >
+                      <input type="text" class="form-control m-input" placeholder="Enter last name" name="s_last_name" id="s_last_name" formControlName="lastname" required="required" >
                        
                          
                    </div>
@@ -383,7 +383,7 @@
                       <label>
                           1st line of address *
                       </label>
-                     <textarea type="text" rows="4" class="form-control" placeholder="Please enter House/Flat Number, Building Name/ Apartment Name" name="shipping_address" id="shipping_address" required="required" ></textarea>
+                     <textarea type="text" rows="4" class="form-control" placeholder="Please enter House/Flat Number, Building Name/ Apartment Name" name="shipping_address" id="shipping_address" formControlName="firstaddress" required="required" ></textarea>
                                                         
                    </div>
                 </div>
@@ -392,7 +392,7 @@
                       <label>
                      2nd line of address *
                       </label>
-                     <textarea type="text" rows="4" class="form-control" placeholder="Please enter Street Name, Locality" name="shipping_address2" id="shipping_address2" required="required" ></textarea>
+                     <textarea type="text" rows="4" class="form-control" placeholder="Please enter Street Name, Locality" name="shipping_address2" id="shipping_address2" formControlName="secondaddress" required="required" ></textarea>
                                                         
                    </div>
                 </div>
@@ -402,7 +402,7 @@
                       <label>
                       City *  
                       </label>
-                      <input type="text" class="form-control m-input" placeholder="Enter City" name="s_city" id="s_city"  required="required" >
+                      <input type="text" class="form-control m-input" placeholder="Enter City" name="s_city" id="s_city" formControlName="city" required="required" >
                        <div class="clearfix"></div>
                          
 
@@ -412,7 +412,7 @@
                       <label class="">
                       State *
                       </label>
-                      <input type="text" class="form-control m-input" placeholder="Enter state name" name="s_state" id="s_state"  required="required" >
+                      <input type="text" class="form-control m-input" placeholder="Enter state name" name="s_state" id="s_state" formControlName="state" required="required" >
                        
                          
                    </div>
@@ -665,7 +665,7 @@
                       <label class="">
                       postcode *
                       </label>
-                      <input type="text" class="form-control m-input" placeholder="Enter postcode " name="s_postalcode" id="s_postal_code"  required="required" >
+                      <input type="text" class="form-control m-input" placeholder="Enter postcode " name="s_postalcode" id="s_postal_code"  formControlName="postcode" required="required" >
                        <div class="clearfix"></div>
                         
                    </div>
@@ -676,7 +676,7 @@
                    <div class="col-md-3">
            <div class="form-group">
                 <label>Code: *</label>
-             <input type="text" name="s_mobcode" id="shipping_code" readonly=""  class="form-control">
+             <input type="text" name="s_mobcode" id="shipping_code" readonly="" formControlName="code"  class="form-control">
 
            </div>
          </div>
@@ -684,7 +684,7 @@
                       <label class="">
                       Mobile Number *
                       </label>
-                      <input type="text" class="form-control m-input" placeholder="Enter your mobile number" name="s_mobile" id="s_mobile" required="required" >
+                      <input type="text" class="form-control m-input" placeholder="Enter your mobile number" name="s_mobile" id="s_mobile" formControlName="mobile" required="required" >
                          
                    </div>
            
