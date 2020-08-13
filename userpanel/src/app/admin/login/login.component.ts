@@ -54,13 +54,13 @@ export class LoginComponent implements OnInit {
       "password": this.loginForm.value.password,
     }
     return new Promise((resolve, reject) => {
-      this.http.post("https://api.80startups.com/auth/loginUser/3", this.params).subscribe(result => {
+      this.http.post("https://api.80startups.com/auth/loginUser/1", this.params).subscribe(result => {
         console.log(result,"result");
         this.router.navigateByUrl('/AddAddress');
       },
         err => {
           console.log(err);
-          alert("please enter correct mobile number and password");
+          alert("please enter correct email and password");
         }
       );
     });

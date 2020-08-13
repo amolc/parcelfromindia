@@ -48,7 +48,9 @@ export class LogoutComponent implements OnInit {
         { type: "minlength", message: "minimun length should be 8 ." },
         { type: "maxlength", message: "maximum length should be 12 ." }
       ],
-      
+      project_id:[
+        { type: "required", message: "Password is Required." },
+      ]
       
       
      
@@ -95,7 +97,13 @@ export class LogoutComponent implements OnInit {
           ])
         ),
         
-        
+        project_id: new FormControl(
+          "",
+          Validators.compose([
+            Validators.required,
+            
+          ])
+        ),
         
         
         
@@ -123,7 +131,8 @@ export class LogoutComponent implements OnInit {
       
       "email": this.signUpForm.value.email,
       "password": this.signUpForm.value.password,
-      
+      "project_id": 1,
+
       
       
     }
@@ -134,7 +143,7 @@ export class LogoutComponent implements OnInit {
       },
         err => {
           console.log(err);
-          alert("please enter unique mobile number and password");
+          alert("please enter email and password");
           // reject(err);
         }
       );
