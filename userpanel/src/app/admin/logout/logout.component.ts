@@ -48,54 +48,10 @@ export class LogoutComponent implements OnInit {
         { type: "minlength", message: "minimun length should be 8 ." },
         { type: "maxlength", message: "maximum length should be 12 ." }
       ],
-      company_name: [
-        { type: "required", message: "company_name is Required." },
-        { type: "minlength", message: "minimun length should be 2 ." },
-        { type: "maxlength", message: "maximum length should be 500 ." }
-      ],
-      crn:[{ type: "required", message: "crn is Required." },
-      { type: "minlength", message: "minimun length should be 2 ." },
-      { type: "maxlength", message: "maximum length should be 500 ." }],
-      established:[
-        { type: "required", message: "established is Required." },
-      { type: "minlength", message: "minimun length should be 2 ." },
-      { type: "maxlength", message: "maximum length should be 500 ." }
-    ],
-      distributor:[
-        { type: "required", message: " distributor is Required." },
-      ],
       
-      address:[
-        { type: "required", message: " address is Required." },
-      ],
-      address2:[
-        { type: "required", message: " address2 is Required." },
-      ],
-      city:[
-        { type: "required", message: " city is Required." },
-      ],
-      state:[
-        { type: "required", message: " state is Required." },
-      ],
-      country:[
-        { type: "required", message: " country is Required." },
-      ],
-      postal_code:[
-        { type: "required", message: " postal_code is Required." },
-      ],
-      buy:[
-        { type: "required", message: " buy is Required." },
-      ],
-      sell:[
-        { type: "required", message: " sell is Required." },
-      ],
-      information:[
-        { type: "required", message: " information is Required." },
-      ],
-      image:[],
-      date:[],
-      accesslevel:[],
-      project_id:[],
+      
+      
+     
 
 
     };
@@ -113,14 +69,7 @@ export class LogoutComponent implements OnInit {
             Validators.required,
           ])
         ),
-        phone: new FormControl(
-          "",
-          Validators.compose([
-            Validators.required,
-            Validators.minLength(10),
-            Validators.maxLength(12)
-          ])
-        ),
+        
         mobile: new FormControl(
           "",
           Validators.compose([
@@ -145,109 +94,19 @@ export class LogoutComponent implements OnInit {
             Validators.maxLength(12)
           ])
         ),
-        company_name: new FormControl (
-          "",
-          Validators.compose([
-            Validators.required,
-          ])
-        ),
-        crn:new FormControl (
-          "",
-          Validators.compose([
-            Validators.required,
-          ])
-        ),
-        established:new FormControl (
-          "",
-          Validators.compose([
-            Validators.required,
-          ])
-        ),
-        distributor:new FormControl (
-          "",
-          Validators.compose([
-            Validators.required,
-          ])
-        ),
         
-        address:new FormControl (
-          "",
-          Validators.compose([
-            Validators.required,
-          ])
-        ),
-        address2:new FormControl (
-          "",
-          Validators.compose([
-            Validators.required,
-          ])
-        ),
-        city:new FormControl (
-          "",
-          Validators.compose([
-            Validators.required,
-          ])
-        ),
-        state:new FormControl (
-          "",
-          Validators.compose([
-            Validators.required,
-          ])
-        ),
-        country:new FormControl (
-          "",
-          Validators.compose([
-            Validators.required,
-          ])
-        ),
-        postal_code:new FormControl (
-          "",
-          Validators.compose([
-            Validators.required,
-          ])
-        ),
-        buy:new FormControl (
-          "",
-          Validators.compose([
-            Validators.required,
-          ])
-        ),
-        sell:new FormControl (
-          "",
-          Validators.compose([
-            Validators.required,
-          ])
-        ),
-        information:new FormControl (
-          "",
-          Validators.compose([
-            Validators.required,
-          ])
-        ),
-        image:new FormControl (
-          "",
-          Validators.compose([
-            Validators.required,
-          ])
-        ),
-        date:new FormControl (
-          "",
-          Validators.compose([
-            Validators.required,
-          ])
-        ),
-        accesslevel:new FormControl (
-          "",
-          Validators.compose([
-            Validators.required,
-          ])
-        ),
-        project_id:new FormControl (
-          "",
-          Validators.compose([
-            Validators.required,
-          ])
-        ),
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
   
       },
     );
@@ -261,27 +120,12 @@ export class LogoutComponent implements OnInit {
       "fname": this.signUpForm.value.fname,
       "lname": this.signUpForm.value.lname,
       "mobile": this.signUpForm.value.mobile,
-      "phone": this.signUpForm.value.phone,
+      
       "email": this.signUpForm.value.email,
       "password": this.signUpForm.value.password,
-      "company_name":this.signUpForm.value.company_name,
-      "crn":this.signUpForm.value.crn,
-      "established":this.signUpForm.value.established,
-      "distributor": this.signUpForm.value.distributor,
       
-      "address":this.signUpForm.value.address,
-      "address2":this.signUpForm.value.address2,
-      "city":this.signUpForm.value.city,
-      "state":this.signUpForm.value.state,
-      "country":this.signUpForm.value.country,
-      "postal_code":this.signUpForm.value.postal_code,
-      "buy":this.signUpForm.value.buy,
-      "sell":this.signUpForm.value.sell,
-      "information":this.signUpForm.value.information,
-      "image":this.signUpForm.value.image,
-      "date":this.signUpForm.value.date,
-      "accesslevel":this.signUpForm.value.accesslevel,
-      "project_id":this.signUpForm.value.project_id,
+      
+      
     }
     return new Promise((resolve, reject) => {
       this.http.post("https://api.80startups.com/user/createUser", this.params).subscribe(result => {
