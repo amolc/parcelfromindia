@@ -1,0 +1,190 @@
+
+<div class="container clearfix py-5">
+    <div class="m-portlet__head">
+        <div class="m-portlet__head-caption">
+           <div class="m-portlet__head-title">
+              <h3 class="m-portlet__head-text">
+                 Fill in the following details to place pickup request.
+              </h3>
+           </div>
+        </div>
+    </div>
+     
+    <div class="container clearfix divcenter" style="max-width: 900px;">
+       <div class=" nobottommargin">
+          <form class="m-form m-form--fit m-form--label-align-right m-form--group-seperator-dashed" autocomplete="off"  >
+             <div class="m-portlet__body">
+                <div class="form-group m-form__group row">
+                    <div class="m-radio-inline" style="margin-top: 15px;">
+                       <span class="m-badge m-badge--primary m-badge--wide m-badge--rounded" style="margin-left: 10px; font-size: 1.2rem;font-family: 'Montserrat'; width: 200px;padding: 12px; background-color:burlywood; ">
+                             Pickup Address
+                       </span><br>
+                        <div style="margin-top:25px; margin-left:15px;color:#db1a20;"><p>All fields are mandatory</p></div>
+                    </div>
+                 </div>
+                 
+                <div class="form-group m-form__group row">
+                    
+                   <div class="col-lg-6 col-md-4">
+                        
+                      <label>
+                      First Name: 
+                      </label>
+                      <input type="text" class="form-control m-input" placeholder="Enter first name" name="fname" id="fname"   required >
+                  </div>
+                  
+                   <div class="col-lg-6 col-md-4 topgap">
+                      <label class="">
+                      SurName: 
+                      </label>
+                      <input type="text" class="form-control m-input" placeholder="Enter last name" name="lname" id="lname"  required >
+                     </div>
+                     
+                </div>
+               <div class="form-group m-form__group row topgap">
+                   <div class="col-lg-12 col-md-10">
+                      <label>
+                        address 
+                      </label>
+                     <textarea type="text" rows="4" class="form-control" placeholder="Please enter House/Flat Number, Building Name/ Apartment Name" name="address" id="address"  required ></textarea>
+                                                         
+                   </div>
+                   
+                </div>
+               <div class="form-group m-form__group row topgap">
+                   <div class="col-lg-12 col-md-10">
+                      <label>
+                     2nd address 
+                      </label>
+                     <textarea type="text" rows="4" class="form-control" placeholder="Please enter Street Name, Locality" name="address2" id="address2" required ></textarea>
+                                                         
+                   </div>
+                   
+                </div>  
+                
+                   <div class="form-group m-form__group row topgap">
+                   <div class="col-lg-6 col-md-4">
+                      <label>
+                      City  
+                      </label>
+                      <input type="text" class="form-control m-input" placeholder="Enter City" name="city" id="city"   required >
+                      
+                      <div class="clearfix"></div>
+                         
+
+
+                   </div>
+                   <div class="col-lg-6 col-md-4 topgap">
+                      <label class="">
+                      State 
+                      </label>
+                      <input type="text" class="form-control m-input" placeholder="Enter state name" name="state" id="state"  required >
+                       
+                     </div>
+                     
+                </div>
+                <div class="form-group m-form__group row topgap">
+                   <div class="col-lg-6 col-md-4">
+                      <label>
+                       Country  
+                      </label>
+                      <input type="text" name="country" id="country" class="form-control" required   >
+                   </div>
+                   
+                   <div class="col-lg-6 col-md-4 topgap">
+                      <label class="">
+                      postcode 
+                      </label>
+                      <input type="text" class="form-control m-input" placeholder="Enter postcode" name="postal_code" id="postal_code"  required >
+                       <div class="clearfix"></div>    
+                   </div>
+                   
+               </div>
+               <div class="form-group m-form__group row topgap">
+                <div class="col-lg-6 col-md-4">
+                   <label>
+                    Mobile  
+                   </label>
+                   <input type="text" placeholder="Enter mobile number" name="mobile" id="mobile" class="form-control" required   >
+                </div>
+                
+                <div class="col-lg-6 col-md-4 topgap">
+                   <label class="">
+                   Email 
+                   </label>
+                   <input type="text" class="form-control m-input" placeholder="Enter Email Adddress" name="email" id="email"  required >
+                    <div class="clearfix"></div>    
+                </div>
+                
+            </div>
+            <br>
+            <br>
+            <div class="form-group m-form__group row">
+                <div class="m-radio-inline" style="margin-top: 15px;">
+                   <span class="m-badge m-badge--primary m-badge--wide m-badge--rounded" style="margin-left: 10px; font-size: 1.2rem;font-family: 'Montserrat'; width: 200px;padding: 12px; background-color:burlywood; ">
+                         Parcel Information
+                   </span>
+                </div>
+             </div>    
+                 <br>
+                 <br>
+                <div class="form-group m-form__group row">
+                 <div class="col-lg-6 col-md-4">
+                    <label>
+                        Weight of the parcel 
+                    </label>
+                    <input type="text" pattern="^\d*(\.\d{0,2})?$" title="required numeric value" class="form-control m-input" placeholder="Enter Weight in kg" name="weight" id="weight" value="">
+                  </div>
+                  <div class="col-lg-2 col-md-2 topgap">
+                    <label class="">
+                    Dimensions 
+                    </label>
+                    <input type="text" pattern="^\d*(\.\d{0,2})?$" title="required numeric value" class="form-control m-input" placeholder="Enter Length " name="length" id="length" value="">
+                  </div>
+                 <div class="col-lg-2 col-md-2 topgap">
+                    <label class="">
+                     Width in cm
+                    </label>
+                    <input type="text" pattern="^\d*(\.\d{0,2})?$" title="required numeric value" class="form-control m-input" placeholder="Enter Width " name="width" id="width" value="">
+                  </div>
+                 <div class="col-lg-2 col-md-2 topgap">
+                    <label class="">
+                    Height in cm
+                    </label>
+                    <input type="text" class="form-control m-input" placeholder="Enter Height " name="height" id="height" value="">
+                 </div>   
+                </div>
+                   <div class="form-group m-form__group row topgap">
+                   <div class="col-lg-12 col-md-10">
+                    <label>
+                        Contents of the parcel
+                    </label>
+                    <textarea class="form-control m-input" placeholder="Enter contents" name="package_items" id="package_items" rows="3"></textarea>  
+                   </div>
+                  </div>
+                 
+                 <div class="form-group m-form__group row topgap">
+                   <div class="col-lg-12 col-md-10">
+                    <label>
+                        Value of contents in <i class="fa fa-inr"></i>
+                    </label>
+                        <textarea class="form-control m-input" placeholder="Enter contents value" name="no_of_packages" id="no_of_packages" rows="3"></textarea>     
+                   </div>
+                </div>
+            
+                <div class="m-form__actions m-form__actions" style="text-align: center;">
+                    <button class="btn btn-warning m-btn m-btn--custom m-btn--icon" id="shedule_data" data-wizard-action="next">
+                    <span>
+                    <span>
+                    Fetch Price
+                    </span> &nbsp;&nbsp;
+                    <i class="la la-arrow-right"></i>
+                    </span>
+                    </button>
+                </div>
+             </div>
+          </form>
+       </div>
+       <!-- .postcontent end -->
+    </div>
+ </div>

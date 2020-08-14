@@ -5,6 +5,7 @@ import { DashboradComponent } from './dashboradPanel/dashborad/dashborad.compone
 import { LoginComponent } from './admin/login/login.component';
 import { LogoutComponent } from './admin/logout/logout.component';
 import { ForgotpasswordComponent } from './admin/forgotpassword/forgotpassword.component';
+import { PickupComponent } from './dashboradPanel/pickup/pickup.component';
 const routes: Routes = [
   {
     path: 'AddAddress', component: AddAddressComponent
@@ -17,6 +18,9 @@ const routes: Routes = [
   },
   {
     path: 'forgotpassword', component: ForgotpasswordComponent
+  },
+  {
+     path: 'pickup' ,component: PickupComponent
   },
   {
     path:'DashBorad', component : DashboradComponent

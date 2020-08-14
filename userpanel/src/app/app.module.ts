@@ -11,6 +11,7 @@ import { LogoutComponent } from './admin/logout/logout.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ForgotpasswordComponent } from './admin/forgotpassword/forgotpassword.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PickupComponent } from './dashboradPanel/pickup/pickup.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,6 +20,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     LoginComponent,
     LogoutComponent,
     ForgotpasswordComponent,
+    PickupComponent,
     
     //HttpClientModule,
     //HttpClient,
