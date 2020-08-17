@@ -1,38 +1,41 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-//import { HttpClient } from "@angular/common/http";
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { AddAddressComponent } from './admin/add-address/add-address.component';
-import { DashboradComponent } from './dashboradPanel/dashborad/dashborad.component';
-import { LoginComponent } from './admin/login/login.component';
-import { LogoutComponent } from './admin/logout/logout.component';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { ForgotpasswordComponent } from './admin/forgotpassword/forgotpassword.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { PickupComponent } from './dashboradPanel/pickup/pickup.component';
+import { NgModule } from '@angular/core';
+import { FormsModule ,ReactiveFormsModule} from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
+//import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+//import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
+import { AuthLayoutComponent } from './layouts/auth-layout/auth-layout.component';
+
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
+import { AppRoutingModule } from './app.routing';
+import { ComponentsModule } from './components/components.module';
+
+//import { ResetpasswordComponent } from './pages/resetpassword/resetpassword.component';
+//import { AddAddressComponent } from './pages/add-address/add-address.component';
+
+
 @NgModule({
+  imports: [
+    BrowserAnimationsModule,
+    FormsModule,
+    HttpClientModule,
+    ComponentsModule,
+    NgbModule,
+    RouterModule,
+    AppRoutingModule,
+    ReactiveFormsModule
+  ],
   declarations: [
     AppComponent,
-    AddAddressComponent,
-    DashboradComponent,
-    LoginComponent,
-    LogoutComponent,
-    ForgotpasswordComponent,
-    PickupComponent,
+    AdminLayoutComponent,
+    AuthLayoutComponent,
     
-    //HttpClientModule,
-    //HttpClient,
-    
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    ReactiveFormsModule,
-     HttpClientModule,
-     BrowserAnimationsModule
+    //ResetpasswordComponent,
+    //AddAddressComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

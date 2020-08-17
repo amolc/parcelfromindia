@@ -22,7 +22,7 @@ app.use(bodyParser.raw({limit: "50mb" }));
 
 
 app.use('/www', express.static(__dirname + '/www'));
-app.use('/', express.static(__dirname + '/userpanel/dist/userpanel'));
+app.use('/', express.static(__dirname + '/userpanel/dist'));
 app.use('/docs', express.static(__dirname + '/apidoc'));
 app.use('/assets', express.static(__dirname + '/assets'));
 
