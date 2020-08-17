@@ -174,11 +174,11 @@
                       <label>
                       First Name
                       </label>
-                      <input type="text" class="form-control m-input" placeholder="Enter first name" name="fnames" id="fnames" value="{{fname==null?null:fname}}"  required formControlName="fnames" >
+                      <input type="text" class="form-control m-input" placeholder="Enter first name" name="shipping_fname" id="shipping_fname" value="{{fname==null?null:fname}}"  required formControlName="shipping_fname"  required>
                    </div>
-                   <ng-container *ngFor="let error of error_messages.fnames">
-                     <div class="error-message" *ngIf="addresForm.get('fnames').hasError(error.type) &&
-                     (addresForm.get('fnames').dirty || addresForm.get('fnames').touched)">
+                   <ng-container *ngFor="let error of error_messages.shipping_fname">
+                     <div class="error-message" *ngIf="addresForm.get('shipping_fname').hasError(error.type) &&
+                     (addresForm.get('shipping_fname').dirty || addresForm.get('shipping_fname').touched)">
                          {{ error.message }}
                      </div>
                  </ng-container>
@@ -186,11 +186,11 @@
                       <label class="">
                       Last Name
                       </label>
-                      <input type="text" class="form-control m-input" placeholder="Enter last name" name="lnames" id="lnames" value="{{lname==null?null:lname}}" formControlName="lnames" required >     
+                      <input type="text" class="form-control m-input" placeholder="Enter last name" name="shipping_lname" id="shipping_lname" value="{{lname==null?null:lname}}" formControlName="shipping_lname" required >     
                    </div>
-                   <ng-container *ngFor="let error of error_messages.lnames">
-                     <div class="error-message" *ngIf="addresForm.get('lnames').hasError(error.type) &&
-                     (addresForm.get('lnames').dirty || addresForm.get('lnames').touched)">
+                   <ng-container *ngFor="let error of error_messages.shipping_lname">
+                     <div class="error-message" *ngIf="addresForm.get('shipping_lname').hasError(error.type) &&
+                     (addresForm.get('shipping_lname').dirty || addresForm.get('shipping_lname').touched)">
                          {{ error.message }}
                      </div>
                  </ng-container>
@@ -200,12 +200,12 @@
                       <label>
                         Shipping Address1
                       </label>
-                     <textarea type="text" rows="4" class="form-control" placeholder="Please enter House/Flat Number, Building Name/ Apartment Name" name="address1" id="address1" value="{{address==null?null:address}}" formControlName="address1" required ></textarea>
+                     <textarea type="text" rows="4" class="form-control" placeholder="Please enter House/Flat Number, Building Name/ Apartment Name" name="shipping_address" id="shipping_address" value="{{address==null?null:address}}" formControlName="shipping_address" required ></textarea>
                    </div>
                   </div>
-                  <ng-container *ngFor="let error of error_messages.address1">
-                     <div class="error-message" *ngIf="addresForm.get('address1').hasError(error.type) &&
-                     (addresForm.get('address1').dirty || addresForm.get('address1').touched)">
+                  <ng-container *ngFor="let error of error_messages.shipping_address">
+                     <div class="error-message" *ngIf="addresForm.get('shipping_address').hasError(error.type) &&
+                     (addresForm.get('shipping_address').dirty || addresForm.get('shipping_address').touched)">
                          {{ error.message }}
                      </div>
                  </ng-container>
@@ -214,12 +214,12 @@
                       <label>
                         Shipping Address2
                       </label>
-                     <textarea type="text" rows="4" class="form-control" placeholder="Please enter Street Name, Locality" name="addresss2" id="addresss2" value="{{address2==null?null:address2}}" formControlName="addresss2" required ></textarea>                                     
+                     <textarea type="text" rows="4" class="form-control" placeholder="Please enter Street Name, Locality" name="shipping_address2" id="shipping_address2" value="{{address2==null?null:address2}}" formControlName="shipping_address2" required ></textarea>                                     
                    </div>
                 </div>
-                <ng-container *ngFor="let error of error_messages.addresss2">
-                  <div class="error-message" *ngIf="addresForm.get('addresss2').hasError(error.type) &&
-                  (addresForm.get('addresss2').dirty || addresForm.get('addresss2').touched)">
+                <ng-container *ngFor="let error of error_messages.shipping_address2">
+                  <div class="error-message" *ngIf="addresForm.get('shipping_address2').hasError(error.type) &&
+                  (addresForm.get('shipping_address2').dirty || addresForm.get('shipping_address2').touched)">
                       {{ error.message }}
                   </div>
               </ng-container>
@@ -229,12 +229,12 @@
                       <label>
                       City   
                       </label>
-                      <input type="text" class="form-control m-input" placeholder="Enter City" name="city1" id="city1" value="{{city==null?null:city}}" formControlName="city1" required >
+                      <input type="text" class="form-control m-input" placeholder="Enter City" name="shipping_city" id="shipping_city" value="{{city==null?null:city}}" formControlName="shipping_city" required >
                        <div class="clearfix"></div>
                   </div>
-                  <ng-container *ngFor="let error of error_messages.city1">
-                     <div class="error-message" *ngIf="addresForm.get('city1').hasError(error.type) &&
-                     (addresForm.get('city1').dirty || addresForm.get('city1').touched)">
+                  <ng-container *ngFor="let error of error_messages.shipping_city">
+                     <div class="error-message" *ngIf="addresForm.get('shipping_city').hasError(error.type) &&
+                     (addresForm.get('shipping_city').dirty || addresForm.get('shipping_city').touched)">
                          {{ error.message }}
                      </div>
                  </ng-container>
@@ -242,11 +242,11 @@
                       <label class="">
                       State 
                       </label>
-                      <input type="text" class="form-control m-input" placeholder="Enter state name" name="state1" id="state1" value="{{state==null?null:state}}" formControlName="state1" required >
+                      <input type="text" class="form-control m-input" placeholder="Enter state name" name="shipping_state" id="shipping_state" value="{{state==null?null:state}}" formControlName="shipping_state" required >
                   </div>
-                  <ng-container *ngFor="let error of error_messages.state1">
-                     <div class="error-message" *ngIf="addresForm.get('state1').hasError(error.type) &&
-                     (addresForm.get('state1').dirty || addresForm.get('state1').touched)">
+                  <ng-container *ngFor="let error of error_messages.shipping_state">
+                     <div class="error-message" *ngIf="addresForm.get('shipping_state').hasError(error.type) &&
+                     (addresForm.get('shipping_state').dirty || addresForm.get('shipping_state').touched)">
                          {{ error.message }}
                      </div>
                  </ng-container>
@@ -256,11 +256,11 @@
                      <label>
                         Country   
                         </label>
-                    <input type="text" name="country1" id="country1" class="form-control" value="{{country==null?null:country}}"  formControlName="country1" required>
+                    <input type="text" name="shipping_country" id="shipping_country" class="form-control" value="{{country==null?null:country}}"  formControlName="shipping_country" required>
                   </div>
-                  <ng-container *ngFor="let error of error_messages.country1">
-                     <div class="error-message" *ngIf="addresForm.get('country1').hasError(error.type) &&
-                     (addresForm.get('country1').dirty || addresForm.get('country1').touched)">
+                  <ng-container *ngFor="let error of error_messages.shipping_country">
+                     <div class="error-message" *ngIf="addresForm.get('shipping_country').hasError(error.type) &&
+                     (addresForm.get('shipping_country').dirty || addresForm.get('shipping_country').touched)">
                          {{ error.message }}
                      </div>
                  </ng-container>
@@ -268,12 +268,12 @@
                       <label class="">
                       postcode 
                       </label>
-                      <input type="text" class="form-control m-input" placeholder="Enter postcode " name="postal_code1" id="postal_code1" value="{{postal_code==null?null:postal_code}}" formControlName="postal_code1" required >
+                      <input type="text" class="form-control m-input" placeholder="Enter postcode " name="shipping_postal_code" id="shipping_postal_code" value="{{postal_code==null?null:postal_code}}" formControlName="shipping_postal_code" required >
                        <div class="clearfix"></div>
                    </div>
-                   <ng-container *ngFor="let error of error_messages.postal_code1">
-                     <div class="error-message" *ngIf="addresForm.get('postal_code1').hasError(error.type) &&
-                     (addresForm.get('postal_code1').dirty || addresForm.get('postal_code1').touched)">
+                   <ng-container *ngFor="let error of error_messages.shipping_postal_code">
+                     <div class="error-message" *ngIf="addresForm.get('shipping_postal_code').hasError(error.type) &&
+                     (addresForm.get('shipping_postal_code').dirty || addresForm.get('shipping_postal_code').touched)">
                          {{ error.message }}
                      </div>
                  </ng-container>
@@ -284,12 +284,12 @@
                       <label class="">
                       Mobile Number 
                       </label>
-                      <input type="text" class="form-control m-input" placeholder="Enter your mobile number" name="mobile1" id="mobile1" value="{{mobile==null?null:mobile}}" formControlName="mobile1" required >
+                      <input type="text" class="form-control m-input" placeholder="Enter your mobile number" name="shipping_mobile" id="shipping_mobile" value="{{mobile==null?null:mobile}}" formControlName="shipping_mobile" required >
                   </div>
             </div>
-            <ng-container *ngFor="let error of error_messages.mobile1">
-               <div class="error-message" *ngIf="addresForm.get('mobile1').hasError(error.type) &&
-               (addresForm.get('mobile1').dirty || addresForm.get('mobile1').touched)">
+            <ng-container *ngFor="let error of error_messages.shipping_mobile">
+               <div class="error-message" *ngIf="addresForm.get('shipping_mobile').hasError(error.type) &&
+               (addresForm.get('shipping_mobile').dirty || addresForm.get('shipping_mobile').touched)">
                    {{ error.message }}
                </div>
            </ng-container>

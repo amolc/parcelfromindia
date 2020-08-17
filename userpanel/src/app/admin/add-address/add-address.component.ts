@@ -13,6 +13,7 @@ export class AddAddressComponent implements OnInit {
   addresForm: FormGroup;
   error_messages: any = {};
   params: any;
+  
   constructor(
     public formBuilder: FormBuilder,
     private http: HttpClient,
@@ -73,18 +74,18 @@ export class AddAddressComponent implements OnInit {
         { type: 'maxlength', message: 'maximum length should be 12 .' },
       ],
 
-      fnames: [{ type: 'required', message: 'First Name is Required' }],
-      lnames: [{ type: 'required', message: 'lname is Required' }],
+      shipping_fname: [{ type: 'required', message: 'First Name is Required' }],
+      shipping_lname: [{ type: 'required', message: 'lname is Required' }],
 
-      address1: [{ type: 'required', message: 'address  is required.' }],
-      addresss2: [{ type: 'required', message: 'address2  is required.' }],
-      city1: [{ type: 'required', message: 'city  is required.' }],
-      state1: [{ type: 'required', message: 'state  is required.' }],
-      country1: [{ type: 'required', message: 'country  is required.' }],
-      postal_code1: [
+      shipping_address: [{ type: 'required', message: 'address  is required.' }],
+      shipping_address2: [{ type: 'required', message: 'address2  is required.' }],
+      shipping_city: [{ type: 'required', message: 'city  is required.' }],
+      shipping_state: [{ type: 'required', message: 'state  is required.' }],
+      shipping_country: [{ type: 'required', message: 'country  is required.' }],
+      shipping_postal_code: [
         { type: 'required', message: 'postal code  is required.' },
       ],
-      mobile1: [
+      shipping_mobile: [
         { type: 'required', message: 'mobile Number  is required.' },
         { type: 'minlength', message: 'minimun length should be 10 .' },
         { type: 'maxlength', message: 'maximum length should be 12 .' },
@@ -111,19 +112,19 @@ export class AddAddressComponent implements OnInit {
           Validators.maxLength(12),
         ])
       ),
-      fnames: new FormControl('', Validators.compose([Validators.required])),
-      lnames: new FormControl('', Validators.compose([Validators.required])),
+      shipping_fname: new FormControl('', Validators.compose([Validators.required])),
+      shipping_lname: new FormControl('', Validators.compose([Validators.required])),
 
-      address1: new FormControl('', Validators.compose([Validators.required])),
-      addresss2: new FormControl('', Validators.compose([Validators.required])),
-      city1: new FormControl('', Validators.compose([Validators.required])),
-      state1: new FormControl('', Validators.compose([Validators.required])),
-      country1: new FormControl('', Validators.compose([Validators.required])),
-      postal_code1: new FormControl(
+      shipping_address: new FormControl('', Validators.compose([Validators.required])),
+      shipping_address2: new FormControl('', Validators.compose([Validators.required])),
+      shipping_city: new FormControl('', Validators.compose([Validators.required])),
+      shipping_state: new FormControl('', Validators.compose([Validators.required])),
+      shipping_country: new FormControl('', Validators.compose([Validators.required])),
+      shipping_postal_code: new FormControl(
         '',
         Validators.compose([Validators.required])
       ),
-      mobile1: new FormControl(
+      shipping_mobile: new FormControl(
         '',
         Validators.compose([
           Validators.required,
@@ -146,57 +147,57 @@ export class AddAddressComponent implements OnInit {
       state: this.addresForm.controls.state.value,
       country: this.addresForm.controls.country.value,
       postal_code: this.addresForm.controls.postal_code.value,
-
-      fnames:
-        this.addresForm.controls.fnames.value == ''
+    
+      shipping_fname:
+        this.addresForm.controls.shipping_fname.value == ''
           ? this.fname
-          : this.addresForm.controls.fnames.value,
+          : this.addresForm.controls.shipping_fname.value,
 
-      lnames:
-        this.addresForm.controls.lnames.value == ''
+      shipping_lname:
+        this.addresForm.controls.shipping_lname.value == ''
           ? this.lname
-          : this.addresForm.controls.lnames.value,
+          : this.addresForm.controls.shipping_lname.value,
 
-      address1:
-        this.addresForm.controls.address1.value == ''
+      shipping_address:
+        this.addresForm.controls.shipping_address.value == ''
           ? this.address
-          : this.addresForm.controls.address1.value,
+          : this.addresForm.controls.shipping_address.value,
 
-      addresss2:
-        this.addresForm.controls.addresss2.value == ''
+      shipping_address2:
+        this.addresForm.controls.shipping_address2.value == ''
           ? this.address2
-          : this.addresForm.controls.addresss2.value,
+          : this.addresForm.controls.shipping_address2.value,
 
-      mobile1:
-        this.addresForm.controls.mobile1.value == ''
+      shipping_mobile:
+        this.addresForm.controls.shipping_mobile.value == ''
           ? this.mobile
-          : this.addresForm.controls.mobile1.value,
+          : this.addresForm.controls.shipping_mobile.value,
 
-      city1:
-        this.addresForm.controls.city1.value == ''
+      shipping_city:
+        this.addresForm.controls.shipping_city.value == ''
           ? this.city
-          : this.addresForm.controls.city1.value,
+          : this.addresForm.controls.shipping_city.value,
 
-      state1:
-        this.addresForm.controls.state1.value == ''
+      shipping_state:
+        this.addresForm.controls.shipping_state.value == ''
           ? this.state
-          : this.addresForm.controls.state1.value,
+          : this.addresForm.controls.shipping_state.value,
 
-      country1:
-        this.addresForm.controls.country1.value == ''
+     shipping_country :
+        this.addresForm.controls.shipping_country.value == ''
           ? this.country
-          : this.addresForm.controls.country1.value,
+          : this.addresForm.controls.shipping_country.value,
 
-      postal_code1:
-        this.addresForm.controls.postal_code1.value == ''
+      shipping_postal_code:
+        this.addresForm.controls.shipping_postal_code.value == ''
           ? this.postal_code
-          : this.addresForm.controls.postal_code1.value,
+          : this.addresForm.controls.shipping_postal_code.value,
     };
     //console.log(this.params);
     return new Promise((resolve, reject) => {
-      this.http.post("https://api.80startups.com/user/createUser", this.params).subscribe(result => {
+      this.http.post("https://api.80startups.com/shipping/createShipping", this.params).subscribe(result => {
         console.log("result", result);
-        this.router.navigateByUrl('/DashBorad')
+        this.router.navigateByUrl('/pickup')
       },
         err => {
           console.log(err);
@@ -205,5 +206,7 @@ export class AddAddressComponent implements OnInit {
         }
       ); 
     }); 
+
+    
   }
 }
