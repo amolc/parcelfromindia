@@ -15,12 +15,12 @@ export class MapsComponent implements OnInit {
   constructor(public formBuilder: FormBuilder,
     private http: HttpClient,
     public router: Router) { 
-      this.pickupFormData();
+      //this.pickupFormData();
     }
 
   ngOnInit(): void {
   }
-  pickupFormData() {
+  /*pickupFormData() {
     this.error_messages = {
 
 
@@ -310,8 +310,8 @@ export class MapsComponent implements OnInit {
     );
   }
 
-
-  pickup() {
+*/
+ /* pickup() {
 
 
     this.params = {
@@ -363,5 +363,5 @@ export class MapsComponent implements OnInit {
     });
   }
 
-  
+  */
 }
