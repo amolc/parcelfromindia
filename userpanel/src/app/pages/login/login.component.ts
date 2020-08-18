@@ -55,6 +55,7 @@ export class LoginComponent implements OnInit{
     return new Promise((resolve, reject) => {
       this.http.post("https://api.80startups.com/auth/loginUser/1", this.params).subscribe(result => {
         console.log(result,"result");
+        localStorage.setItem('token',JSON.stringify(result['users'].tokens))
         this.router.navigateByUrl('/addaddress');
       },
         err => {

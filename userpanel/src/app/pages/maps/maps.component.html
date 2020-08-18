@@ -43,14 +43,14 @@
                     <label>
                     First Name: 
                     </label>
-                    <input type="text" class="form-control m-input" placeholder="Enter first name" name="fname" id="fname" formControlName="fname"  required >
+                    <input type="text" class="form-control m-input" placeholder="Enter first name" name="pickupfname" id="pickupfname" formControlName="pickupfname"  required >
                 </div>
                 
                  <div class="col-lg-6 col-md-4 topgap">
                     <label class="">
                     SurName: 
                     </label>
-                    <input type="text" class="form-control m-input" placeholder="Enter  surname" name="lname" id="lname" formControlName="lname"  required >
+                    <input type="text" class="form-control m-input" placeholder="Enter  surname" name="pickuplname" id="pickuplname" formControlName="pickuplname"  required >
                    </div>
                    
               </div>
@@ -59,7 +59,7 @@
                     <label>
                       address 
                     </label>
-                   <textarea type="text" rows="4" class="form-control" placeholder="Please enter House/Flat Number, Building Name/ Apartment Name" name="address" id="address" formControlName="address"  required ></textarea>
+                   <textarea type="text" rows="4" class="form-control" placeholder="Please enter House/Flat Number, Building Name/ Apartment Name" name="pickupaddress" id="pickupaddress" formControlName="pickupaddress"  required ></textarea>
                                                        
                  </div>
                  
@@ -69,7 +69,7 @@
                     <label>
                    2nd address 
                     </label>
-                   <textarea type="text" rows="4" class="form-control" placeholder="Please enter Street Name, Locality" name="address2" id="address2" formControlName="address2" required ></textarea>
+                   <textarea type="text" rows="4" class="form-control" placeholder="Please enter Street Name, Locality" name="pickupaddress2" id="pickupaddress2" formControlName="pickupaddress2" required ></textarea>
                                                        
                  </div>
                  
@@ -80,7 +80,7 @@
                     <label>
                     City  
                     </label>
-                    <input type="text" class="form-control m-input" placeholder="Enter City" name="city" id="city" formControlName="city"  required >
+                    <input type="text" class="form-control m-input" placeholder="Enter City" name="pickupcity" id="pickupcity" formControlName="pickupcity"  required >
                     
                     <div class="clearfix"></div>
                        
@@ -91,7 +91,7 @@
                     <label class="">
                     State 
                     </label>
-                    <input type="text" class="form-control m-input" placeholder="Enter state name" name="state" id="state" formControlName="state" required >
+                    <input type="text" class="form-control m-input" placeholder="Enter state name" name="pickupstate" id="pickupstate" formControlName="pickupstate" required >
                      
                    </div>
                    
@@ -101,14 +101,14 @@
                     <label>
                      Country  
                     </label>
-                    <input type="text" name="country" id="country" class="form-control" formControlName="country" required >
+                    <input type="text" name="pickupcountry" id="pickupcountry" class="form-control" formControlName="pickupcountry" required >
                  </div>
                  
                  <div class="col-lg-6 col-md-4 topgap">
                     <label class="">
                     postcode 
                     </label>
-                    <input type="text" class="form-control m-input" placeholder="Enter postcode" name="postal_code" id="postal_code" formControlName="postal_code"  required >
+                    <input type="text" class="form-control m-input" placeholder="Enter postcode" name="pickuppostal_code" id="pickuppostal_code" formControlName="pickuppostal_code"  required >
                      <div class="clearfix"></div>    
                  </div>
                  
@@ -118,18 +118,123 @@
                  <label>
                   Mobile  
                  </label>
-                 <input type="text" placeholder="Enter mobile number" name="mobile" id="mobile" class="form-control" formControlName="mobile" required   >
+                 <input type="text" placeholder="Enter mobile number" name="pickupmobile" id="pickupmobile" class="form-control" formControlName="pickupmobile" required   >
               </div>
               
               <div class="col-lg-6 col-md-4 topgap">
                  <label class="">
                  Email 
                  </label>
-                 <input type="text" class="form-control m-input" placeholder="Enter Email Adddress" name="email" id="email" formControlName="email"  required >
+                 <input type="text" class="form-control m-input" placeholder="Enter Email Adddress" name="pickupemail" id="pickupemail" formControlName="pickupemail"  required >
                   <div class="clearfix"></div>    
               </div>
               
           </div>
+          <br>
+          <br>
+          <div class="form-group m-form__group row">
+            <div class="m-radio-inline" style="margin-top: 15px;">
+               <span class="m-badge m-badge--primary m-badge--wide m-badge--rounded" style="margin-left: 10px; font-size: 1.2rem;font-family: 'Montserrat'; width: 200px;padding: 12px; background-color:burlywood; ">
+                     WareHouse Information
+               </span>
+            </div>
+         </div> 
+         <br>
+         <br>
+         <div class="form-group m-form__group row">
+                  
+            <div class="col-lg-6 col-md-4">
+                 
+               <label>
+               First Name: 
+               </label>
+               <input type="text" class="form-control m-input" placeholder="Enter first name" name="WareHousefname" id="WareHousefname" formControlName="WareHousefname"  required >
+           </div>
+           
+            <div class="col-lg-6 col-md-4 topgap">
+               <label class="">
+               SurName: 
+               </label>
+               <input type="text" class="form-control m-input" placeholder="Enter  surname" name="WareHouselname" id="WareHouselname" formControlName="WareHouselname"  required >
+              </div>
+              
+         </div>
+        <div class="form-group m-form__group row topgap">
+            <div class="col-lg-12 col-md-10">
+               <label>
+                 address 
+               </label>
+              <textarea type="text" rows="4" class="form-control" placeholder="Please enter House/Flat Number, Building Name/ Apartment Name" name="WareHouseaddress" id="WareHouseaddress" formControlName="WareHouseaddress"  required ></textarea>
+                                                  
+            </div>
+            
+         </div>
+        <div class="form-group m-form__group row topgap">
+            <div class="col-lg-12 col-md-10">
+               <label>
+              2nd address 
+               </label>
+              <textarea type="text" rows="4" class="form-control" placeholder="Please enter Street Name, Locality" name="WareHouseaddress2" id="WareHouseaddress2" formControlName="WareHouseaddress2" required ></textarea>
+                                                  
+            </div>
+            
+         </div>  
+         
+            <div class="form-group m-form__group row topgap">
+            <div class="col-lg-6 col-md-4">
+               <label>
+               City  
+               </label>
+               <input type="text" class="form-control m-input" placeholder="Enter City" name="WareHousecity" id="WareHousecity" formControlName="WareHousecity"  required >
+               
+               <div class="clearfix"></div>
+                  
+
+
+            </div>
+            <div class="col-lg-6 col-md-4 topgap">
+               <label class="">
+               State 
+               </label>
+               <input type="text" class="form-control m-input" placeholder="Enter state name" name="WareHousestate" id="WareHousestate" formControlName="WareHousestate" required >
+                
+              </div>
+              
+         </div>
+         <div class="form-group m-form__group row topgap">
+            <div class="col-lg-6 col-md-4">
+               <label>
+                Country  
+               </label>
+               <input type="text" name="WareHousecountry" id="WareHousecountry" class="form-control" formControlName="WareHousecountry" required >
+            </div>
+            
+            <div class="col-lg-6 col-md-4 topgap">
+               <label class="">
+               postcode 
+               </label>
+               <input type="text" class="form-control m-input" placeholder="Enter postcode" name="WareHousepostal_code" id="WareHousepostal_code" formControlName="WareHousepostal_code"  required >
+                <div class="clearfix"></div>    
+            </div>
+            
+        </div>
+        <div class="form-group m-form__group row topgap">
+         <div class="col-lg-6 col-md-4">
+            <label>
+             Mobile  
+            </label>
+            <input type="text" placeholder="Enter mobile number" name="WareHousemobile" id="WareHousemobile" class="form-control" formControlName="WareHousemobile" required   >
+         </div>
+         
+         <div class="col-lg-6 col-md-4 topgap">
+            <label class="">
+            Email 
+            </label>
+            <input type="text" class="form-control m-input" placeholder="Enter Email Adddress" name="WareHouseemail" id="WareHouseemail" formControlName="WareHouseemail"  required >
+             <div class="clearfix"></div>    
+         </div>
+         
+     </div>
           <br>
           <br>
           <div class="form-group m-form__group row">

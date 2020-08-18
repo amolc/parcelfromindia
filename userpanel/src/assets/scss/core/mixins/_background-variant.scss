@@ -15,7 +15,7 @@
     #{$parent} {
         background: linear-gradient(87deg, $color 0, adjust-hue($color, 25%) 100%) !important;
     }
-}
+} 
 
 @mixin bg-translucent-variant($parent, $color) {
     #{$parent} {

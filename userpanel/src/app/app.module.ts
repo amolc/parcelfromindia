@@ -13,6 +13,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app.routing';
 import { ComponentsModule } from './components/components.module';
+import { LogoutComponent } from './pages/logout/logout.component';
 
 //import { ResetpasswordComponent } from './pages/resetpassword/resetpassword.component';
 //import { AddAddressComponent } from './pages/add-address/add-address.component';
@@ -33,6 +34,7 @@ import { ComponentsModule } from './components/components.module';
     AppComponent,
     AdminLayoutComponent,
     AuthLayoutComponent,
+    LogoutComponent,
     
     //ResetpasswordComponent,
     //AddAddressComponent

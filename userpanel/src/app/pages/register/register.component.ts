@@ -98,13 +98,7 @@ export class RegisterComponent implements OnInit {
           ])
         ),
         
-        project_id: new FormControl(
-          "",
-          Validators.compose([
-            Validators.required,
-            
-          ])
-        ),
+       
         
         
         
@@ -126,12 +120,12 @@ export class RegisterComponent implements OnInit {
 
 
     this.params = {
-      "fname": this.signUpForm.value.fname,
-      "lname": this.signUpForm.value.lname,
-      "mobile": this.signUpForm.value.mobile,
+      "fname": this.signUpForm.controls.fname.value,
+      "lname": this.signUpForm.controls.lname.value,
+      "mobile": this.signUpForm.controls.mobile.value,
       
-      "email": this.signUpForm.value.email,
-      "password": this.signUpForm.value.password,
+      "email": this.signUpForm.controls.email.value,
+      "password": this.signUpForm.controls.password.value,
       "project_id": 1,
 
       
