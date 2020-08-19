@@ -15,6 +15,7 @@ import { MySuiteComponent } from '../../pages/my-suite/my-suite.component';
 import { AssistedPurchaseComponent } from '../../pages/assisted-purchase/assisted-purchase.component';
 import { ShippingCalculatorComponent } from '../../pages/shipping-calculator/shipping-calculator.component';
 import { ProhibitedItemsComponent } from '../../pages/prohibited-items/prohibited-items.component';
+import { PickupComponent } from '../../pages/pickup/pickup.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 // import { ToastrModule } from 'ngx-toastr';
 
@@ -37,6 +38,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     AssistedPurchaseComponent,
     ShippingCalculatorComponent,
     ProhibitedItemsComponent,
+    PickupComponent 
 
   ]
 })
