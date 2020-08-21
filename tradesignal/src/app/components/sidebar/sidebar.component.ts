@@ -8,6 +8,7 @@ declare interface RouteInfo {
     class: string;
 }
 export const ROUTES: RouteInfo[] = [
+    { path: '/signalprovider', title: 'AMOL C',  icon:'ni-single-02 text-yellow', class: '' },
     { path: '/dashboard', title: 'Dashboard',  icon: 'ni-tv-2 text-primary', class: '' },
     //{ path: '/mysuite', title: 'My Suite',  icon: 'ni-tv-2 text-primary', class: '' },
    // { path: '/purchase', title: 'Assisted Purchase',  icon: 'ni-tv-2 text-primary', class: '' },
