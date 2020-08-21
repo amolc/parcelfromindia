@@ -1,0 +1,380 @@
+<div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
+  <div class="container-fluid">
+    <div class="header-body">
+      <!-- Card stats -->
+      
+    </div>
+  </div>
+</div>
+<!-- Page content -->
+<!-- <div class="container-fluid mt--7">
+  <div class="row">
+    <div class="col">
+      <div class="card shadow border-0">
+        
+<div class="container clearfix py-5">
+  <div class="m-portlet__head">
+      <div class="m-portlet__head-caption">
+         <div class="m-portlet__head-title">
+            <h3 class="m-portlet__head-text">
+               Fill in the following details to place pickup request.
+            </h3>
+         </div>
+      </div>
+  </div>
+   
+  <div class="container clearfix divcenter" style="max-width: 900px;">
+     <div class=" nobottommargin">
+        <form class="m-form m-form--fit m-form--label-align-right m-form--group-seperator-dashed" autocomplete="off" [formGroup]="pickupForm" >
+           <div class="m-portlet__body">
+              <div class="form-group m-form__group row">
+                  <div class="m-radio-inline" style="margin-top: 15px;">
+                     <span class="m-badge m-badge--primary m-badge--wide m-badge--rounded" style="margin-left: 10px; font-size: 1.2rem;font-family: 'Montserrat'; width: 200px;padding: 12px; background-color:burlywood; ">
+                           Pickup Address
+                     </span><br>
+                      <div style="margin-top:25px; margin-left:15px;color:#db1a20;"><p>All fields are mandatory</p></div>
+                  </div>
+               </div>
+               
+              <div class="form-group m-form__group row">
+                  
+                 <div class="col-lg-6 col-md-4">
+                      
+                    <label>
+                    First Name: 
+                    </label>
+                    <input type="text" class="form-control m-input" placeholder="Enter first name" name="pickupfname" id="pickupfname" formControlName="pickupfname"  required >
+                </div>
+                
+                 <div class="col-lg-6 col-md-4 topgap">
+                    <label class="">
+                    SurName: 
+                    </label>
+                    <input type="text" class="form-control m-input" placeholder="Enter  surname" name="pickuplname" id="pickuplname" formControlName="pickuplname"  required >
+                   </div>
+                   
+              </div>
+             <div class="form-group m-form__group row topgap">
+                 <div class="col-lg-12 col-md-10">
+                    <label>
+                      address 
+                    </label>
+                   <textarea type="text" rows="4" class="form-control" placeholder="Please enter House/Flat Number, Building Name/ Apartment Name" name="pickupaddress" id="pickupaddress" formControlName="pickupaddress"  required ></textarea>
+                                                       
+                 </div>
+                 
+              </div>
+             <div class="form-group m-form__group row topgap">
+                 <div class="col-lg-12 col-md-10">
+                    <label>
+                   2nd address 
+                    </label>
+                   <textarea type="text" rows="4" class="form-control" placeholder="Please enter Street Name, Locality" name="pickupaddress2" id="pickupaddress2" formControlName="pickupaddress2" required ></textarea>
+                                                       
+                 </div>
+                 
+              </div>  
+              
+                 <div class="form-group m-form__group row topgap">
+                 <div class="col-lg-6 col-md-4">
+                    <label>
+                    City  
+                    </label>
+                    <input type="text" class="form-control m-input" placeholder="Enter City" name="pickupcity" id="pickupcity" formControlName="pickupcity"  required >
+                    
+                    <div class="clearfix"></div>
+                       
+
+
+                 </div>
+                 <div class="col-lg-6 col-md-4 topgap">
+                    <label class="">
+                    State 
+                    </label>
+                    <input type="text" class="form-control m-input" placeholder="Enter state name" name="pickupstate" id="pickupstate" formControlName="pickupstate" required >
+                     
+                   </div>
+                   
+              </div>
+              <div class="form-group m-form__group row topgap">
+                 <div class="col-lg-6 col-md-4">
+                    <label>
+                     Country  
+                    </label>
+                    <input type="text" name="pickupcountry" id="pickupcountry" class="form-control" formControlName="pickupcountry" required >
+                 </div>
+                 
+                 <div class="col-lg-6 col-md-4 topgap">
+                    <label class="">
+                    postcode 
+                    </label>
+                    <input type="text" class="form-control m-input" placeholder="Enter postcode" name="pickuppostal_code" id="pickuppostal_code" formControlName="pickuppostal_code"  required >
+                     <div class="clearfix"></div>    
+                 </div>
+                 
+             </div>
+             <div class="form-group m-form__group row topgap">
+              <div class="col-lg-6 col-md-4">
+                 <label>
+                  Mobile  
+                 </label>
+                 <input type="text" placeholder="Enter mobile number" name="pickupmobile" id="pickupmobile" class="form-control" formControlName="pickupmobile" required   >
+              </div>
+              
+              <div class="col-lg-6 col-md-4 topgap">
+                 <label class="">
+                 Email 
+                 </label>
+                 <input type="text" class="form-control m-input" placeholder="Enter Email Adddress" name="pickupemail" id="pickupemail" formControlName="pickupemail"  required >
+                  <div class="clearfix"></div>    
+              </div>
+              
+          </div>
+          <br>
+          <br>
+          <div class="form-group m-form__group row">
+            <div class="m-radio-inline" style="margin-top: 15px;">
+               <span class="m-badge m-badge--primary m-badge--wide m-badge--rounded" style="margin-left: 10px; font-size: 1.2rem;font-family: 'Montserrat'; width: 200px;padding: 12px; background-color:burlywood; ">
+                     WareHouse Information
+               </span>
+            </div>
+         </div> 
+         <br>
+         <br>
+         <div class="form-group m-form__group row">
+                  
+            <div class="col-lg-6 col-md-4">
+                 
+               <label>
+               First Name: 
+               </label>
+               <input type="text" class="form-control m-input" placeholder="Enter first name" name="WareHousefname" id="WareHousefname" formControlName="WareHousefname"  required >
+           </div>
+           
+            <div class="col-lg-6 col-md-4 topgap">
+               <label class="">
+               SurName: 
+               </label>
+               <input type="text" class="form-control m-input" placeholder="Enter  surname" name="WareHouselname" id="WareHouselname" formControlName="WareHouselname"  required >
+              </div>
+              
+         </div>
+        <div class="form-group m-form__group row topgap">
+            <div class="col-lg-12 col-md-10">
+               <label>
+                 address 
+               </label>
+              <textarea type="text" rows="4" class="form-control" placeholder="Please enter House/Flat Number, Building Name/ Apartment Name" name="WareHouseaddress" id="WareHouseaddress" formControlName="WareHouseaddress"  required ></textarea>
+                                                  
+            </div>
+            
+         </div>
+        <div class="form-group m-form__group row topgap">
+            <div class="col-lg-12 col-md-10">
+               <label>
+              2nd address 
+               </label>
+              <textarea type="text" rows="4" class="form-control" placeholder="Please enter Street Name, Locality" name="WareHouseaddress2" id="WareHouseaddress2" formControlName="WareHouseaddress2" required ></textarea>
+                                                  
+            </div>
+            
+         </div>  
+         
+            <div class="form-group m-form__group row topgap">
+            <div class="col-lg-6 col-md-4">
+               <label>
+               City  
+               </label>
+               <input type="text" class="form-control m-input" placeholder="Enter City" name="WareHousecity" id="WareHousecity" formControlName="WareHousecity"  required >
+               
+               <div class="clearfix"></div>
+                  
+
+
+            </div>
+            <div class="col-lg-6 col-md-4 topgap">
+               <label class="">
+               State 
+               </label>
+               <input type="text" class="form-control m-input" placeholder="Enter state name" name="WareHousestate" id="WareHousestate" formControlName="WareHousestate" required >
+                
+              </div>
+              
+         </div>
+         <div class="form-group m-form__group row topgap">
+            <div class="col-lg-6 col-md-4">
+               <label>
+                Country  
+               </label>
+               <input type="text" name="WareHousecountry" id="WareHousecountry" class="form-control" formControlName="WareHousecountry" required >
+            </div>
+            
+            <div class="col-lg-6 col-md-4 topgap">
+               <label class="">
+               postcode 
+               </label>
+               <input type="text" class="form-control m-input" placeholder="Enter postcode" name="WareHousepostal_code" id="WareHousepostal_code" formControlName="WareHousepostal_code"  required >
+                <div class="clearfix"></div>    
+            </div>
+            
+        </div>
+        <div class="form-group m-form__group row topgap">
+         <div class="col-lg-6 col-md-4">
+            <label>
+             Mobile  
+            </label>
+            <input type="text" placeholder="Enter mobile number" name="WareHousemobile" id="WareHousemobile" class="form-control" formControlName="WareHousemobile" required   >
+         </div>
+         
+         <div class="col-lg-6 col-md-4 topgap">
+            <label class="">
+            Email 
+            </label>
+            <input type="text" class="form-control m-input" placeholder="Enter Email Adddress" name="WareHouseemail" id="WareHouseemail" formControlName="WareHouseemail"  required >
+             <div class="clearfix"></div>    
+         </div>
+         
+     </div>
+          <br>
+          <br>
+          <div class="form-group m-form__group row">
+              <div class="m-radio-inline" style="margin-top: 15px;">
+                 <span class="m-badge m-badge--primary m-badge--wide m-badge--rounded" style="margin-left: 10px; font-size: 1.2rem;font-family: 'Montserrat'; width: 200px;padding: 12px; background-color:burlywood; ">
+                       Parcel Information
+                 </span>
+              </div>
+           </div>    
+               <br>
+               <br>
+              <div class="form-group m-form__group row">
+               <div class="col-lg-6 col-md-4">
+                  <label>
+                      Weight of the parcel 
+                  </label>
+                  <input type="text" pattern="^\d*(\.\d{0,2})?$" title="required numeric value" class="form-control m-input" placeholder="Enter Weight in kg" name="weight" id="weight" formControlName="weight">
+                </div>
+                <div class="col-lg-2 col-md-2 topgap">
+                  <label class="">
+                  Dimensions 
+                  </label>
+                  <input type="text" pattern="^\d*(\.\d{0,2})?$" title="required numeric value" class="form-control m-input" placeholder="Enter Length " name="length" id="length" formControlName="length">
+                </div>
+               <div class="col-lg-2 col-md-2 topgap">
+                  <label class="">
+                   Width in cm
+                  </label>
+                  <input type="text" pattern="^\d*(\.\d{0,2})?$" title="required numeric value" class="form-control m-input" placeholder="Enter Width " name="width" id="width" formControlName="width">
+                </div>
+               <div class="col-lg-2 col-md-2 topgap">
+                  <label class="">
+                  Height in cm
+                  </label>
+                  <input type="text" class="form-control m-input" placeholder="Enter Height " name="height" id="height" formControlName="height">
+               </div>   
+              </div>
+                 <div class="form-group m-form__group row topgap">
+                 <div class="col-lg-12 col-md-10">
+                  <label>
+                      Contents of the parcel
+                  </label>
+                  <textarea class="form-control m-input" placeholder="Enter contents" name="package_items" id="package_items" rows="3" formControlName="package_items"></textarea>  
+                 </div>
+                </div>
+               
+               <div class="form-group m-form__group row topgap">
+                 <div class="col-lg-12 col-md-10">
+                  <label>
+                      Value of contents in <i class="fa fa-inr"></i>
+                  </label>
+                      <textarea class="form-control m-input" placeholder="Enter contents value" name="no_of_packages" id="no_of_packages" rows="3" formControlName="no_of_packages"></textarea>     
+                 </div>
+              </div>
+          
+              <div class="m-form__actions m-form__actions" style="text-align: center;">
+                  <button class="btn btn-warning m-btn m-btn--custom m-btn--icon" id="shedule_data" data-wizard-action="next" (click)="pickup()">
+                  <span>
+                  <span>
+                  Submit
+                  </span> &nbsp;&nbsp;
+                  <i class="la la-arrow-right"></i>
+                  </span>
+                  </button>
+              </div>
+           </div>
+        </form>
+     </div>
+      .postcontent end 
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<div class="container-fluid mt--7" style="margin-top:50px!important;">
+  
+
+      <div _ngcontent-c5="" class="row mt-5">
+        <div _ngcontent-c5="" class="col-xl-12 mb-5 mb-xl-0">
+          <div _ngcontent-c5="" class="card shadow">
+            <div _ngcontent-c5="" class="card-header border-0">
+              <div _ngcontent-c5="" class="row align-items-center">
+                <div _ngcontent-c5="" class="col">
+                  <h3 _ngcontent-c5="" class="mb-0">Manage Shipment</h3>
+                </div>
+                <!-- <div _ngcontent-c5="" class="col text-right"><a _ngcontent-c5="" class="btn btn-sm btn-primary" href="#!">See all</a>
+                </div> -->
+              </div>
+            </div>
+            <div _ngcontent-c5="" class="table-responsive">
+              <table _ngcontent-c5="" class="table align-items-center table-flush">
+                <thead _ngcontent-c5="" class="thead-light">
+                  <tr _ngcontent-c5="">
+                    <th _ngcontent-c5="" scope="col"><input type="checkbox" class="form-check-input" value=""></th>
+                    <th _ngcontent-c5="" scope="col">TRACKING NO.</th>
+                    <th _ngcontent-c5="" scope="col">RECEIVER</th>
+                    <th _ngcontent-c5="" scope="col">DESTINATION</th>
+                    <th _ngcontent-c5="" scope="col">BOOKING DATE</th>
+                    <th _ngcontent-c5="" scope="col">CHARGES</th>
+                    <th _ngcontent-c5="" scope="col">STATUS</th>
+                  </tr>
+                </thead>
+                <tbody _ngcontent-c5="">
+                  <tr _ngcontent-c5="">
+                    <th _ngcontent-c5="" scope="row"><input type="checkbox" class="form-check-input" value=""></th>
+                    <td _ngcontent-c5="">111111</td>
+                    <td _ngcontent-c5=""><i _ngcontent-c5="" class="fas fa-box text-success mr-3"></i>Amol C</td>
+                    <td _ngcontent-c5="">Pune</td>
+                    <td _ngcontent-c5="">15-08-2020</td>
+                    <td _ngcontent-c5=""><button  type="button" class="btn btn-secondary" style="padding:5px;border-radius:5px;border:green 1px solid;">Paid</button> 200SG</td>
+                    <td _ngcontent-c5=""><button  type="button" class="btn btn-secondary">Delivered<span style="font-size:10px;">2 days ago</span></button></td>
+                    <!-- <td _ngcontent-c5=""><i _ngcontent-c5="" class="fas fa-arrow-up text-success mr-3"></i> 46,53%</td> -->
+                  </tr>
+                  <tr _ngcontent-c5="">
+                    <th _ngcontent-c5="" scope="row"><input type="checkbox" class="form-check-input" value=""></th>
+                    <td _ngcontent-c5="">222222</td>
+                    <td _ngcontent-c5=""><i _ngcontent-c5="" class="fas fa-box text-success mr-3"></i>Amol C</td>
+                    <td _ngcontent-c5="">Pune</td>
+                    <td _ngcontent-c5="">15-08-2020</td>
+                    <td _ngcontent-c5=""><button  type="button" class="btn btn-secondary" style="padding:5px;border-radius:5px;border:green 1px solid;">Paid</button> 200SG</td>
+                    <td _ngcontent-c5=""><button  type="button" class="btn btn-secondary">Delay<span style="font-size:10px;">2 days ago</span></button></td>
+                  </tr>
+                  <tr _ngcontent-c5="">
+                    <th _ngcontent-c5="" scope="row"><input type="checkbox" class="form-check-input" value=""></th>
+                    <td _ngcontent-c5="">333333</td>
+                    <td _ngcontent-c5=""><i _ngcontent-c5="" class="fas fa-box text-success mr-3"></i>Amol C</td>
+                    <td _ngcontent-c5="">Pune</td>
+                    <td _ngcontent-c5="">15-08-2020</td>
+                    <td _ngcontent-c5=""><button  type="button" class="btn btn-secondary" style="padding:5px;border-radius:5px;border:red 1px solid;">Unpaid</button> 200SG</td>
+                    <td _ngcontent-c5=""><button  type="button" class="btn btn-secondary">Over Load<span style="font-size:10px;">2 days ago</span></button></td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    
+    </div>
