@@ -1,6 +1,6 @@
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
-import { FormsModule ,ReactiveFormsModule} from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 //import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -14,6 +14,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app.routing';
 import { ComponentsModule } from './components/components.module';
 import { LogoutComponent } from './pages/logout/logout.component';
+
+
+
 
 //import { ResetpasswordComponent } from './pages/resetpassword/resetpassword.component';
 //import { AddAddressComponent } from './pages/add-address/add-address.component';
@@ -35,7 +38,10 @@ import { LogoutComponent } from './pages/logout/logout.component';
     AdminLayoutComponent,
     AuthLayoutComponent,
     LogoutComponent,
-    
+
+
+
+
     //ResetpasswordComponent,
     //AddAddressComponent
   ],

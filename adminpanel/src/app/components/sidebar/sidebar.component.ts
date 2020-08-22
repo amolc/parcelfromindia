@@ -2,24 +2,24 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 declare interface RouteInfo {
-    path: string;
-    title: string;
-    icon: string;
-    class: string;
+  path: string;
+  title: string;
+  icon: string;
+  class: string;
 }
 export const ROUTES: RouteInfo[] = [
-    { path: '/dashboard', title: 'Dashboard',  icon: 'ni-tv-2 text-primary', class: '' },
-    //{ path: '/mysuite', title: 'My Suite',  icon: 'ni-tv-2 text-primary', class: '' },
-   // { path: '/purchase', title: 'Assisted Purchase',  icon: 'ni-tv-2 text-primary', class: '' },
-    
-   // { path: '/icons', title: 'Icons',  icon:'ni-planet text-blue', class: '' },
-    { path: '/pickup', title: 'Schedule Pickup',  icon:'ni-pin-3 text-orange', class: '' },
-   // { path: '/ProhibitedItems', title: 'Prohibit items',  icon: 'ni-tv-2 text-primary', class: '' },
-   // { path: '/ShippingCalculator', title: 'Shipping Calcultor',  icon: 'ni-tv-2 text-primary', class: '' },
-   // { path: '/user-profile', title: 'User profile',  icon:'ni-single-02 text-yellow', class: '' },
-   // { path: '/tables', title: 'Tables',  icon:'ni-bullet-list-67 text-red', class: '' },
-   // { path: '/login', title: 'Login',  icon:'ni-key-25 text-info', class: '' },
-   // { path: '/register', title: 'Register',  icon:'ni-circle-08 text-pink', class: '' }
+  { path: '/dashboard', title: 'Dashboard', icon: 'ni-tv-2 text-primary', class: '' },
+  //{ path: '/mysuite', title: 'My Suite',  icon: 'ni-tv-2 text-primary', class: '' },
+  { path: '/category', title: 'Category', icon: 'ni-tv-2 text-primary', class: '' },
+  { path: '/user', title: 'User', icon: 'ni-circle-08 text-pink', class: '' },
+  { path: '/editprofile', title: 'EditProfile', icon: 'ni-planet text-blue', class: '' },
+  { path: '/pickup', title: 'Schedule Pickup', icon: 'ni-pin-3 text-orange', class: '' },
+  { path: '/item', title: ' Item', icon: 'ni-tv-2 text-primary', class: '' },
+  // { path: '/ShippingCalculator', title: 'Shipping Calcultor',  icon: 'ni-tv-2 text-primary', class: '' },
+  // { path: '/user-profile', title: 'User profile',  icon:'ni-single-02 text-yellow', class: '' },
+  { path: '/subcategory', title: 'Subcategory', icon: 'ni-bullet-list-67 text-red', class: '' },
+  // { path: '/login', title: 'Login',  icon:'ni-key-25 text-info', class: '' },
+  // { path: '/register', title: 'Register',  icon:'ni-circle-08 text-pink', class: '' }
 ];
 
 @Component({
@@ -38,6 +38,6 @@ export class SidebarComponent implements OnInit {
     this.menuItems = ROUTES.filter(menuItem => menuItem);
     this.router.events.subscribe((event) => {
       this.isCollapsed = true;
-   });
+    });
   }
 }

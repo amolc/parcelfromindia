@@ -7,13 +7,13 @@ import { Router } from '@angular/router';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
-export class LoginComponent implements OnInit{
+export class LoginComponent implements OnInit {
   loginForm: FormGroup;
   error_messages: any = {};
   params: any;
-  constructor(public router: Router,public formBuilder: FormBuilder, private http: HttpClient) {
+  constructor(public router: Router, public formBuilder: FormBuilder, private http: HttpClient) {
     this.setupLoginFormData();
-   }
+  }
 
   ngOnInit(): void {
   }
@@ -51,12 +51,13 @@ export class LoginComponent implements OnInit{
     this.params = {
       "email": this.loginForm.value.email,
       "password": this.loginForm.value.password,
+      "project_id": 2
     }
     return new Promise((resolve, reject) => {
-      this.http.post("https://api.80startups.com/auth/loginUser/1", this.params).subscribe(result => {
-        console.log(result,"result");
-        localStorage.setItem('token',JSON.stringify(result['users'].tokens))
-        this.router.navigateByUrl('/addaddress');
+      this.http.post("https://api.80startups.com/auth/loginUser/" + this.params.project_id, this.params).subscribe(result => {
+        console.log(result, "result");
+        localStorage.setItem('token', JSON.stringify(result['users'].tokens))
+        this.router.navigateByUrl('/dashboard');
       },
         err => {
           console.log(err);

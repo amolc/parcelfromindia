@@ -11,11 +11,11 @@ export class RegisterComponent implements OnInit {
 
   signUpForm: FormGroup;
   error_messages: any = {};
-  params:any;
+  params: any;
   constructor(public router: Router,
-    public formBuilder: FormBuilder, private http: HttpClient) { 
-      this.setupLoginFormData();
-    }
+    public formBuilder: FormBuilder, private http: HttpClient) {
+    this.setupLoginFormData();
+  }
 
   ngOnInit(): void {
   }
@@ -43,18 +43,18 @@ export class RegisterComponent implements OnInit {
         { type: "required", message: 'Email is Required' },
         { type: "pattern", message: 'Please Enter valid Email' }
       ],
-      
+
       password: [
-         { type: "required", message: "Password is Required." },
+        { type: "required", message: "Password is Required." },
         { type: "minlength", message: "minimun length should be 8 ." },
         { type: "maxlength", message: "maximum length should be 12 ." }
       ],
-      project_id:[
+      project_id: [
         { type: "required", message: "Password is Required." },
       ]
-      
-      
-     
+
+
+
 
 
     };
@@ -72,7 +72,7 @@ export class RegisterComponent implements OnInit {
             Validators.required,
           ])
         ),
-        
+
         mobile: new FormControl(
           "",
           Validators.compose([
@@ -88,7 +88,7 @@ export class RegisterComponent implements OnInit {
             Validators.pattern('^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$'),
           ])
         ),
-        
+
         password: new FormControl(
           "",
           Validators.compose([
@@ -97,20 +97,20 @@ export class RegisterComponent implements OnInit {
             Validators.maxLength(12)
           ])
         ),
-        
-       
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       },
     );
   }
@@ -123,13 +123,13 @@ export class RegisterComponent implements OnInit {
       "fname": this.signUpForm.controls.fname.value,
       "lname": this.signUpForm.controls.lname.value,
       "mobile": this.signUpForm.controls.mobile.value,
-      
+
       "email": this.signUpForm.controls.email.value,
       "password": this.signUpForm.controls.password.value,
-      "project_id": 1,
+      "project_id": 2,
 
-      
-      
+
+
     }
     return new Promise((resolve, reject) => {
       this.http.post("https://api.80startups.com/user/createUser", this.params).subscribe(result => {
@@ -145,7 +145,7 @@ export class RegisterComponent implements OnInit {
     });
   }
 
-  signin(){
+  signin() {
     this.router.navigateByUrl('/login');
   }
 }

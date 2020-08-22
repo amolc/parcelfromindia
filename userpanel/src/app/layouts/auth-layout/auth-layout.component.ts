@@ -19,7 +19,7 @@ export class AuthLayoutComponent implements OnInit, OnDestroy {
     body.classList.add("bg-default");
     this.router.events.subscribe((event) => {
       this.isCollapsed = true;
-   });
+    });
 
   }
   ngOnDestroy() {
@@ -28,5 +28,13 @@ export class AuthLayoutComponent implements OnInit, OnDestroy {
     var body = document.getElementsByTagName("body")[0];
     body.classList.remove("bg-default");
   }
-  
+  dologout() {
+
+    localStorage.removeItem("token");
+    this.router.navigateByUrl('/login')
+    // setTimeout(() => {
+    //   console.log("Hello");
+    // }, 3000);
+
+  }
 }

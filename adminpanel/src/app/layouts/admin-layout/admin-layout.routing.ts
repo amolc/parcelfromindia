@@ -9,13 +9,22 @@ import { MySuiteComponent } from '../../pages/my-suite/my-suite.component';
 import { AssistedPurchaseComponent } from '../../pages/assisted-purchase/assisted-purchase.component';
 import { ShippingCalculatorComponent } from '../../pages/shipping-calculator/shipping-calculator.component';
 import { ProhibitedItemsComponent } from '../../pages/prohibited-items/prohibited-items.component';
+import { CategoryComponent } from '../../pages/category/category.component';
+import { EditprofileComponent } from '../../pages/editprofile/editprofile.component';
+import { ItemComponent } from '../../pages/item/item.component';
+import { UserComponent } from '../../pages/user/user.component';
+import { SubcategoryComponent } from '../../pages/subcategory/subcategory.component';
 export const AdminLayoutRoutes: Routes = [
-    { path: 'dashboard',      component: DashboardComponent },
-    { path: 'user-profile',   component: UserProfileComponent },
-    
-    { path: 'pickup',           component: MapsComponent },
-    { path: 'mysuite',           component: MySuiteComponent },
-    { path: 'purchase',           component: AssistedPurchaseComponent },
-    { path: 'ShippingCalculator',  component: ShippingCalculatorComponent },
-    { path: 'ProhibitedItems',           component: ProhibitedItemsComponent }
+    { path: 'dashboard', component: DashboardComponent },
+    { path: 'user-profile', component: UserProfileComponent },
+    { path: 'subcategory', component: SubcategoryComponent },
+    { path: 'user', component: UserComponent },
+    { path: 'pickup', component: MapsComponent },
+    { path: 'mysuite', component: MySuiteComponent },
+    { path: 'purchase', component: AssistedPurchaseComponent },
+    { path: 'ShippingCalculator', component: ShippingCalculatorComponent },
+    { path: 'ProhibitedItems', component: ProhibitedItemsComponent },
+    { path: 'category', component: CategoryComponent },
+    { path: 'editprofile', component: EditprofileComponent },
+    { path: 'item', component: ItemComponent }
 ];

@@ -1,0 +1,70 @@
+<div class="left-btn">
+  <button class="btn">
+    <h3>Item Details</h3>
+  </button>
+</div>
+<div class="right-btn">
+  <button class="btn" class="btn btn-info" [routerLink]="[ '/editprofile' ]" routerLinkActive="active"><i
+      class="mdi mdi-upload"></i>Add</button>
+</div>
+
+<div class="table-responsive">
+
+  <!-- <span class="border border-primary"></span> -->
+
+  <table class="table border border-primary">
+
+
+    <thead>
+
+      <tr class="bg-primary text-white">
+        <!-- <th scope="col">id</th> -->
+
+
+        <th scope="col">Id</th>
+        <th scope="col">ProjectId</th>
+        <th scope="col">Name</th>
+        <!-- <th scope="col">lastName</th> -->
+        <th scope="col">Phonenumber</th>
+        <!-- <th scope="col">Email</th> -->
+        <!-- <th scope="col">password</th> -->
+        <!-- <th scope="col">Address1</th> -->
+        <!-- <th scope="col">address2</th> -->
+        <th scope="col">City</th>
+        <th scope="col">Country</th>
+        <!-- <th scope="col">pinCode</th>
+          <th scope="col">joinDate</th>  -->
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr *ngFor="let data of blogs">
+
+
+        <!-- <td><button type="button" (click) = "editprofile()" class="btn btn-success btn-rounded btn-fw"  [routerLink]="[ '/editprofile' ]" routerLinkActive="active">Edit</button></td> -->
+        <td>{{data.id}}</td>
+        <td>{{data.projectId}}</td>
+        <td>{{data.firstname}}</td>
+        <!-- <td>{{data.lastName}}</td> -->
+        <td>{{data.phonenumber}}</td>
+        <!-- <td>{{data.email}}</td> -->
+        <!-- <td>{{data.password}}</td> -->
+        <!-- <td>{{data.address1}}</td> -->
+        <!-- <td>{{data.address2}}</td> -->
+        <td>{{data.city}}</td>
+        <td>{{data.country}}</td>
+        <!-- <td>{{data.pinCode}}</td>
+          <td>{{data.joinDate}}</td>
+       -->
+        <td>
+          <div class="btn-toolbar">
+
+            <button type="button" class="btn btn-success mr-2 mb-2" [routerLink]="[ '/editprofile' ]"
+              routerLinkActive="active">Edit</button>
+            <button type="button" class="btn btn-danger mr-2 mb-2" [routerLink]="[ '/editprofile' ]"
+              routerLinkActive="active">Delete</button></div>
+        </td>
+    </tbody>
+  </table>
+</div>

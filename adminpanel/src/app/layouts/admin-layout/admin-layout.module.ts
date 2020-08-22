@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http'; import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
@@ -15,6 +15,11 @@ import { MySuiteComponent } from '../../pages/my-suite/my-suite.component';
 import { AssistedPurchaseComponent } from '../../pages/assisted-purchase/assisted-purchase.component';
 import { ShippingCalculatorComponent } from '../../pages/shipping-calculator/shipping-calculator.component';
 import { ProhibitedItemsComponent } from '../../pages/prohibited-items/prohibited-items.component';
+import { CategoryComponent } from '../../pages/category/category.component';
+import { EditprofileComponent } from '../../pages/editprofile/editprofile.component';
+import { ItemComponent } from '../../pages/item/item.component';
+import { UserComponent } from '../../pages/user/user.component';
+import { SubcategoryComponent } from '../../pages/subcategory/subcategory.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 // import { ToastrModule } from 'ngx-toastr';
 
@@ -31,14 +36,18 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   declarations: [
     DashboardComponent,
     UserProfileComponent,
-    
+    CategoryComponent,
+    EditprofileComponent,
+    ItemComponent,
     MapsComponent,
     MySuiteComponent,
     AssistedPurchaseComponent,
     ShippingCalculatorComponent,
     ProhibitedItemsComponent,
+    UserComponent,
+    SubcategoryComponent,
 
   ]
 })
 
-export class AdminLayoutModule {}
+export class AdminLayoutModule { }
