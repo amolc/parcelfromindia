@@ -1,0 +1,339 @@
+<div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
+    <div class="container-fluid">
+      <div class="header-body">
+        <!-- Card stats -->
+        
+      </div>
+    </div>
+  </div>
+  <!-- Page content -->
+  <div class="container-fluid mt--7">
+    <div class="row">
+      <div class="col">
+        <div class="card shadow border-0">
+          
+  <div class="container clearfix py-5">
+    <div class="m-portlet__head">
+        <div class="m-portlet__head-caption">
+           <div class="m-portlet__head-title">
+              <h3 class="m-portlet__head-text">
+                One Step Away From Getting Your Loved Stuff!
+              </h3>
+           </div>
+        </div>
+    </div>
+     
+    <div class="container clearfix divcenter" style="max-width: 900px;">
+       <div class=" nobottommargin">
+        <form class="m-form m-form--fit m-form--label-align-right m-form--group-seperator-dashed" autocomplete="off"  [formGroup]="addresForm">
+            <div class="m-portlet__body">
+                <div class="form-group m-form__group row">
+                    <div class="m-radio-inline" style="margin-top: 15px;">
+                       <span class="m-badge m-badge--primary m-badge--wide m-badge--rounded" style="margin-left: 10px; font-size: 1.2rem;font-family: 'Montserrat'; width: 200px;padding: 12px; background-color:burlywood; ">
+                             BILLING ADDRESS
+                       </span><br>
+                        <div style="margin-top:25px; margin-left:15px;color:#db1a20;"><p>All fields are mandatory</p></div>
+                    </div>
+                 </div>
+               <div class="form-group m-form__group row">
+                   
+                  <div class="col-lg-6 col-md-4">
+                       
+                     <label>
+                     First Name: 
+                     </label>
+                     <input type="text" class="form-control m-input" placeholder="Enter first name" name="fname" id="fname"  formControlName="fname" required >
+                 </div>
+                 <ng-container *ngFor="let error of error_messages.fname">
+                    <div class="error-message" *ngIf="addresForm.get('fname').hasError(error.type) &&
+                    (addresForm.get('fname').dirty || addresForm.get('fname').touched)">
+                        {{ error.message }}
+                    </div>
+                </ng-container>
+                  <div class="col-lg-6 col-md-4 topgap">
+                     <label class="">
+                     Last Name: 
+                     </label>
+                     <input type="text" class="form-control m-input" placeholder="Enter last name" name="lname" id="lname" formControlName="lname" required >
+                    </div>
+                    <ng-container *ngFor="let error of error_messages.lname">
+                       <div class="error-message" *ngIf="addresForm.get('lname').hasError(error.type) &&
+                       (addresForm.get('lname').dirty || addresForm.get('lname').touched)">
+                           {{ error.message }}
+                       </div>
+                   </ng-container>
+               </div>
+              <div class="form-group m-form__group row topgap">
+                  <div class="col-lg-12 col-md-10">
+                     <label>
+                       address 
+                     </label>
+                    <textarea type="text" rows="4" class="form-control" placeholder="Please enter House/Flat Number, Building Name/ Apartment Name" name="address" id="address" formControlName="address" required ></textarea>
+                                                        
+                  </div>
+                  <ng-container *ngFor="let error of error_messages.address">
+                    <div class="error-message" *ngIf="addresForm.get('address').hasError(error.type) &&
+                    (addresForm.get('address').dirty || addresForm.get('address').touched)">
+                        {{ error.message }}
+                    </div>
+                </ng-container>
+               </div>
+              <div class="form-group m-form__group row topgap">
+                  <div class="col-lg-12 col-md-10">
+                     <label>
+                    2nd address 
+                     </label>
+                    <textarea type="text" rows="4" class="form-control" placeholder="Please enter Street Name, Locality" name="address2" id="address2" formControlName="address2" required ></textarea>
+                                                        
+                  </div>
+                  <ng-container *ngFor="let error of error_messages.address2">
+                    <div class="error-message" *ngIf="addresForm.get('address2').hasError(error.type) &&
+                    (addresForm.get('address2').dirty || addresForm.get('address2').touched)">
+                        {{ error.message }}
+                    </div>
+                </ng-container>
+               </div>  
+               
+                  <div class="form-group m-form__group row topgap">
+                  <div class="col-lg-6 col-md-4">
+                     <label>
+                     City  
+                     </label>
+                     <input type="text" class="form-control m-input" placeholder="Enter City" name="city" id="city" formControlName="city"  required >
+                     <ng-container *ngFor="let error of error_messages.city">
+                       <div class="error-message" *ngIf="addresForm.get('city').hasError(error.type) &&
+                       (addresForm.get('city').dirty || addresForm.get('city').touched)">
+                           {{ error.message }}
+                       </div>
+                   </ng-container>
+                     <div class="clearfix"></div>
+                        
+
+
+                  </div>
+                  <div class="col-lg-6 col-md-4 topgap">
+                     <label class="">
+                     State 
+                     </label>
+                     <input type="text" class="form-control m-input" placeholder="Enter state name" name="state" id="state" formControlName="state" required >
+                      
+                    </div>
+                    <ng-container *ngFor="let error of error_messages.state">
+                       <div class="error-message" *ngIf="addresForm.get('state').hasError(error.type) &&
+                       (addresForm.get('state').dirty || addresForm.get('state').touched)">
+                           {{ error.message }}
+                       </div>
+                   </ng-container>
+               </div>
+               <div class="form-group m-form__group row topgap">
+                  <div class="col-lg-6 col-md-4">
+                     <label>
+                      Country  
+                     </label>
+                     <input type="text" name="country" id="country" class="form-control" required formControlName="country"  >
+                  </div>
+                  <ng-container *ngFor="let error of error_messages.country">
+                    <div class="error-message" *ngIf="addresForm.get('country').hasError(error.type) &&
+                    (addresForm.get('country').dirty || addresForm.get('country').touched)">
+                        {{ error.message }}
+                    </div>
+                </ng-container>
+                  <div class="col-lg-6 col-md-4 topgap">
+                     <label class="">
+                     postcode 
+                     </label>
+                     <input type="text" class="form-control m-input" placeholder="Enter postcode" name="postal_code" id="postal_code" formControlName="postal_code" required >
+                      <div class="clearfix"></div>    
+                  </div>
+                  <ng-container *ngFor="let error of error_messages.postal_code">
+                    <div class="error-message" *ngIf="addresForm.get('postal_code').hasError(error.type) &&
+                    (addresForm.get('postal_code').dirty || addresForm.get('postal_code').touched)">
+                        {{ error.message }}
+                    </div>
+                </ng-container>
+              </div>
+               <div class="form-group m-form__group row topgap">
+                  
+                  <div class="col-lg-6 col-md-4 topgap">
+                     <label class="">
+                     Mobile Number 
+                     </label>
+                     <input type="text" class="form-control m-input" placeholder="Enter your mobile number" name="mobile" id="mobile" formControlName="mobile"  required >
+                  </div>
+               </div>
+               <ng-container *ngFor="let error of error_messages.mobile">
+                 <div class="error-message" *ngIf="addresForm.get('mobile').hasError(error.type) &&
+                 (addresForm.get('mobile').dirty || addresForm.get('mobile').touched)">
+                     {{ error.message }}
+                 </div>
+             </ng-container>
+                
+               <div class="form-group m-form__group row">
+                  <div class="m-radio-inline" style="margin-top: 20px;">
+                     
+                     <label>
+                     Is Shipping Address Same As Billing Address? 
+                     <span></span>
+                     </label>
+                      <label class="m-radio">
+                         <input type="radio" name="same" class="same" id="same" value="yes"  (click)="checkvalue($event)">
+                     Yes
+                     <span></span>
+                     </label>
+                     <label class="m-radio">
+                         <input type="radio" name="same" class="same" id="same" value="no"  (click)="checkvalue($event)">
+                         
+                     No
+                     <span></span>
+                     </label>
+                  </div>
+               </div>
+                
+               <div class="form-group m-form__group row">
+                <div class="m-radio-inline" style="margin-top: 15px;">
+                   <span class="m-badge m-badge--primary m-badge--wide m-badge--rounded" style="margin-left: 10px; font-size: 1.2rem;font-family: 'Montserrat'; width: 200px;padding: 12px; background-color:burlywood; ">
+                         SHIPPING ADDRESS
+                   </span>
+                </div>
+             </div>
+               <div class="form-group m-form__group row">
+                  <div class="col-lg-6 col-md-4">
+                     <label>
+                     First Name
+                     </label>
+                     <input type="text" class="form-control m-input" placeholder="Enter first name" name="shipping_fname" id="shipping_fname" value="{{fname==null?null:fname}}"  required formControlName="shipping_fname"  required>
+                  </div>
+                  <ng-container *ngFor="let error of error_messages.shipping_fname">
+                    <div class="error-message" *ngIf="addresForm.get('shipping_fname').hasError(error.type) &&
+                    (addresForm.get('shipping_fname').dirty || addresForm.get('shipping_fname').touched)">
+                        {{ error.message }}
+                    </div>
+                </ng-container>
+                  <div class="col-lg-6 col-md-4 topgap">
+                     <label class="">
+                     Last Name
+                     </label>
+                     <input type="text" class="form-control m-input" placeholder="Enter last name" name="shipping_lname" id="shipping_lname" value="{{lname==null?null:lname}}" formControlName="shipping_lname" required >     
+                  </div>
+                  <ng-container *ngFor="let error of error_messages.shipping_lname">
+                    <div class="error-message" *ngIf="addresForm.get('shipping_lname').hasError(error.type) &&
+                    (addresForm.get('shipping_lname').dirty || addresForm.get('shipping_lname').touched)">
+                        {{ error.message }}
+                    </div>
+                </ng-container>
+               </div>
+                  <div class="form-group m-form__group row topgap">
+                  <div class="col-lg-12 col-md-10">
+                     <label>
+                       Shipping Address1
+                     </label>
+                    <textarea type="text" rows="4" class="form-control" placeholder="Please enter House/Flat Number, Building Name/ Apartment Name" name="shipping_address" id="shipping_address" value="{{address==null?null:address}}" formControlName="shipping_address" required ></textarea>
+                  </div>
+                 </div>
+                 <ng-container *ngFor="let error of error_messages.shipping_address">
+                    <div class="error-message" *ngIf="addresForm.get('shipping_address').hasError(error.type) &&
+                    (addresForm.get('shipping_address').dirty || addresForm.get('shipping_address').touched)">
+                        {{ error.message }}
+                    </div>
+                </ng-container>
+                <div class="form-group m-form__group row topgap">
+                  <div class="col-lg-12 col-md-10">
+                     <label>
+                       Shipping Address2
+                     </label>
+                    <textarea type="text" rows="4" class="form-control" placeholder="Please enter Street Name, Locality" name="shipping_address2" id="shipping_address2" value="{{address2==null?null:address2}}" formControlName="shipping_address2" required ></textarea>                                     
+                  </div>
+               </div>
+               <ng-container *ngFor="let error of error_messages.shipping_address2">
+                 <div class="error-message" *ngIf="addresForm.get('shipping_address2').hasError(error.type) &&
+                 (addresForm.get('shipping_address2').dirty || addresForm.get('shipping_address2').touched)">
+                     {{ error.message }}
+                 </div>
+             </ng-container>
+               
+                  <div class="form-group m-form__group row topgap">
+                  <div class="col-lg-6 col-md-4">
+                     <label>
+                     City   
+                     </label>
+                     <input type="text" class="form-control m-input" placeholder="Enter City" name="shipping_city" id="shipping_city" value="{{city==null?null:city}}" formControlName="shipping_city" required >
+                      <div class="clearfix"></div>
+                 </div>
+                 <ng-container *ngFor="let error of error_messages.shipping_city">
+                    <div class="error-message" *ngIf="addresForm.get('shipping_city').hasError(error.type) &&
+                    (addresForm.get('shipping_city').dirty || addresForm.get('shipping_city').touched)">
+                        {{ error.message }}
+                    </div>
+                </ng-container>
+                  <div class="col-lg-6 col-md-4 topgap">
+                     <label class="">
+                     State 
+                     </label>
+                     <input type="text" class="form-control m-input" placeholder="Enter state name" name="shipping_state" id="shipping_state" value="{{state==null?null:state}}" formControlName="shipping_state" required >
+                 </div>
+                 <ng-container *ngFor="let error of error_messages.shipping_state">
+                    <div class="error-message" *ngIf="addresForm.get('shipping_state').hasError(error.type) &&
+                    (addresForm.get('shipping_state').dirty || addresForm.get('shipping_state').touched)">
+                        {{ error.message }}
+                    </div>
+                </ng-container>
+               </div>
+               <div class="form-group m-form__group row topgap">
+                  <div class="col-lg-6 col-md-4">
+                    <label>
+                       Country   
+                       </label>
+                   <input type="text" name="shipping_country" id="shipping_country" class="form-control" value="{{country==null?null:country}}"  formControlName="shipping_country" required>
+                 </div>
+                 <ng-container *ngFor="let error of error_messages.shipping_country">
+                    <div class="error-message" *ngIf="addresForm.get('shipping_country').hasError(error.type) &&
+                    (addresForm.get('shipping_country').dirty || addresForm.get('shipping_country').touched)">
+                        {{ error.message }}
+                    </div>
+                </ng-container>
+                  <div class="col-lg-6 col-md-4 topgap">
+                     <label class="">
+                     postcode 
+                     </label>
+                     <input type="text" class="form-control m-input" placeholder="Enter postcode " name="shipping_postal_code" id="shipping_postal_code" value="{{postal_code==null?null:postal_code}}" formControlName="shipping_postal_code" required >
+                      <div class="clearfix"></div>
+                  </div>
+                  <ng-container *ngFor="let error of error_messages.shipping_postal_code">
+                    <div class="error-message" *ngIf="addresForm.get('shipping_postal_code').hasError(error.type) &&
+                    (addresForm.get('shipping_postal_code').dirty || addresForm.get('shipping_postal_code').touched)">
+                        {{ error.message }}
+                    </div>
+                </ng-container>
+               </div>
+               
+          <div class="form-group m-form__group row topgap"> 
+                  <div class="col-lg-6 col-md-4 topgap">
+                     <label class="">
+                     Mobile Number 
+                     </label>
+                     <input type="text" class="form-control m-input" placeholder="Enter your mobile number" name="shipping_mobile" id="shipping_mobile" value="{{mobile==null?null:mobile}}" formControlName="shipping_mobile" required >
+                 </div>
+           </div>
+           <ng-container *ngFor="let error of error_messages.shipping_mobile">
+              <div class="error-message" *ngIf="addresForm.get('shipping_mobile').hasError(error.type) &&
+              (addresForm.get('shipping_mobile').dirty || addresForm.get('shipping_mobile').touched)">
+                  {{ error.message }}
+              </div>
+          </ng-container>
+               
+               <div class="m-form__actions m-form__actions" style="text-align: center;">
+                   <button  type="submit" class="btn btn-primary" (click)="addres()" >
+                  Save
+                  </button>
+               </div>
+            </div>
+         </form>
+       </div>
+       <!-- .postcontent end -->
+    </div>
+  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
