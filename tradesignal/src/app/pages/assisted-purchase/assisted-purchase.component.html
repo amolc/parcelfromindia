@@ -1,1 +1,135 @@
-<p>assisted-purchase works!</p>
+<div class="col-lg-8 col-md-12" data-aos="fade-up" data-aos-delay="300">
+  <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+    <div class="form-group">
+      <div class="form-group">
+        <label for="exampleFormControlSelect1"></label>
+        <select class="form-control" id="exampleFormControlSelect1">
+          <option>India</option>
+          <option>Global</option>
+
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">StockType</label>
+        <select class="form-control" id="exampleFormControlSelect1">
+          <option>Stocks</option>
+          <option>Currency</option>
+          <option>Index</option>
+          <option>Commodiity</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <input type="text" name="name" class="form-control" id="name" placeholder="STOCK NAME" data-rule="minlen:1"
+        data-msg="Please enter at least 4 chars" />
+      <div class="validate"></div>
+    </div>
+    <div class="form-group">
+      <input type="text" name="STOCKSYMBOL" class="form-control" id="STOCKSYMBOL" placeholder="STOCK SYMBOL"
+        data-rule="minlen:1" data-msg="Please enter at least 4 chars" />
+      <div class="validate"></div>
+    </div>
+    <div class="form-group">
+      <div class="form-group">
+        <div class="form-group">
+
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>Intraday</option>
+            <option>Short Term</option>
+            <option>Long Term</option>
+
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <input type="text" name="PRICE" class="form-control" id="PRICE" placeholder="PRICE" data-rule="minlen:1"
+        data-msg="Please enter at least 4 chars" />
+      <div class="validate"></div>
+    </div>
+    <div class="form-group">
+      <input type="text" name="TARGETPRICE" class="form-control" id="TARGETPRICE" placeholder="TARGETPRICE"
+        data-rule="minlen:1" data-msg="Please enter at least 4 chars" />
+      <div class="validate"></div>
+    </div>
+    <div class="form-group">
+      <input type="text" name="STOPLOSS" class="form-control" id="STOPLOSS" placeholder="STOPLOSS" data-rule="minlen:1"
+        data-msg="Please enter at least 4 chars" />
+      <div class="validate"></div>
+    </div>
+    <div class="form-group">
+      <input type="text" name="SIGNAL" class="form-control" id="SIGNAL" placeholder="SIGNAL" data-rule="minlen:1"
+        data-msg="Please enter at least 4 chars" />
+      <div class="validate"></div>
+    </div>
+    <div class="form-group">
+      <input type="text" name="STATUS" class="form-control" id="STATUS" placeholder="STATUS" data-rule="minlen:1"
+        data-msg="Please enter at least 4 chars" />
+      <div class="validate"></div>
+    </div>
+    <div class="form-group">
+      <input type="datetime-local" name="DATETIME" class="form-control" id="DATETIME" placeholder="DATETIME"
+        data-rule="minlen:1" data-msg="Please enter at least 4 chars" />
+      <div class="validate"></div>
+    </div>
+    <div class="form-group">
+      <input type="text" name="NEWMESSAGE" class="form-control" id="NEWMESSAGE" placeholder="NEW MESSAGE"
+        data-rule="minlen:1" data-msg="Please enter at least 4 chars" ng-model="user.newmessage" />
+      <div class="validate"></div>
+    </div>
+    <div class="form-group">
+      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email"
+        data-msg="Please enter a valid email" />
+      <div class="validate"></div>
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:1"
+        data-msg="Please enter at least 8 chars of subject" />
+      <div class="validate"></div>
+    </div>
+
+    <div class="mb-3">
+      <div class="loading">Loading</div>
+      <div class="error-message"></div>
+      <div class="sent-message">Your message has been sent. Thank you!</div>
+    </div>
+    <div class="text-center"><button type="submit">Send Message</button></div>
+  </form>
+</div>
+
+<div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
+  <div class="container-fluid">
+    <div class="header-body">
+      <!-- Card stats -->
+
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid mt--7" style="margin-top:50px!important;">
+
+
+  <div _ngcontent-c5="" class="row mt-5">
+    <div _ngcontent-c5="" class="col-xl-12 mb-5 mb-xl-0">
+      <div _ngcontent-c5="" class="card shadow">
+        <div _ngcontent-c5="" class="card-header border-0">
+          <div _ngcontent-c5="" class="row align-items-center">
+            <div _ngcontent-c5="" class="col">
+              <h3 _ngcontent-c5="" class="mb-0">Manage Shipment</h3>
+            </div>
+            <!-- <div _ngcontent-c5="" class="col text-right"><a _ngcontent-c5="" class="btn btn-sm btn-primary" href="#!">See all</a>
+                </div> -->
+          </div>
+        </div>
+        <div _ngcontent-c5="" class="table-responsive">
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
