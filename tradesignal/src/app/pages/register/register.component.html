@@ -3,8 +3,8 @@
     <div class="header-body text-center mb-7">
       <div class="row justify-content-center">
         <div class="col-lg-5 col-md-6">
-          <h1 class="text-white">Welcome!</h1>
-          <p class="text-lead text-light"> login or create new account .</p>
+          <h1 class="text-blue">Welcome!</h1>
+          <p class="text-lead text-blue"> login or create new account .</p>
         </div>
       </div>
     </div>
@@ -21,7 +21,7 @@
   <div class="row justify-content-center">
     <div class="col-lg-6 col-md-8">
       <div class="card bg-secondary shadow border-0">
-        
+
         <div class="card-body px-lg-5 py-lg-5">
           <div class="text-center text-muted mb-4">
             <small> sign up </small>
@@ -33,16 +33,16 @@
                   <span class="input-group-text"><i class="ni ni-hat-3"></i></span>
                 </div>
                 <input class="form-control" type="text" placeholder="Enter First Name" name="fname" id="fname" required
-            formControlName="fname">
+                  formControlName="fname">
               </div>
               <div>
                 <ng-container *ngFor="let error of error_messages.fname">
-                    <div class="error-message" *ngIf="signUpForm.get('fname').hasError(error.type) &&
+                  <div class="error-message" *ngIf="signUpForm.get('fname').hasError(error.type) &&
             (signUpForm.get('fname').dirty || signUpForm.get('fname').touched)">
-                        {{ error.message }}
-                    </div>
+                    {{ error.message }}
+                  </div>
                 </ng-container>
-            </div>
+              </div>
             </div>
             <div class="form-group">
               <div class="input-group input-group-alternative mb-3">
@@ -50,67 +50,71 @@
                   <span class="input-group-text"><i class="ni ni-hat-3"></i></span>
                 </div>
                 <input class="form-control" type="text" placeholder="Enter Last Name" name="lname" id="lname" required
-            formControlName="lname">
+                  formControlName="lname">
               </div>
               <div>
                 <ng-container *ngFor="let error of error_messages.lname">
-                    <div class="error-message" *ngIf="signUpForm.get('lname').hasError(error.type) &&
+                  <div class="error-message" *ngIf="signUpForm.get('lname').hasError(error.type) &&
             (signUpForm.get('lname').dirty || signUpForm.get('lname').touched)">
-                        {{ error.message }}
-                    </div>
+                    {{ error.message }}
+                  </div>
                 </ng-container>
-            </div>
+              </div>
             </div>
             <div class="form-group">
               <div class="input-group input-group-alternative mb-3">
                 <div class="input-group-prepend">
                   <span class="input-group-text"><i class="ni ni-hat-3"></i></span>
                 </div>
-                <input class="form-control" type="text" placeholder="Enter mobile" name="mobile" id="mobile" required formControlName="mobile">
+                <input class="form-control" type="text" placeholder="Enter mobile" name="mobile" id="mobile" required
+                  formControlName="mobile">
               </div>
               <div>
                 <ng-container *ngFor="let error of error_messages.mobile">
-                    <div class="error-message" *ngIf="signUpForm.get('mobile').hasError(error.type) &&
+                  <div class="error-message" *ngIf="signUpForm.get('mobile').hasError(error.type) &&
             (signUpForm.get('mobile').dirty || signUpForm.get('mobile').touched)">
-                        {{ error.message }}
-                    </div>
+                    {{ error.message }}
+                  </div>
                 </ng-container>
-            </div>
+              </div>
             </div>
             <div class="form-group">
               <div class="input-group input-group-alternative mb-3">
                 <div class="input-group-prepend">
                   <span class="input-group-text"><i class="ni ni-email-83"></i></span>
                 </div>
-                <input class="form-control" type="text" placeholder="Enter Email" name="email" id="email" required formControlName="email">
+                <input class="form-control" type="text" placeholder="Enter Email" name="email" id="email" required
+                  formControlName="email">
               </div>
               <div>
                 <ng-container *ngFor="let error of error_messages.email">
-                    <div class="error-message" *ngIf="signUpForm.get('email').hasError(error.type) &&
+                  <div class="error-message" *ngIf="signUpForm.get('email').hasError(error.type) &&
             (signUpForm.get('email').dirty || signUpForm.get('email').touched)">
-                        {{ error.message }}
-                    </div>
+                    {{ error.message }}
+                  </div>
                 </ng-container>
-            </div>
+              </div>
             </div>
             <div class="form-group">
               <div class="input-group input-group-alternative">
                 <div class="input-group-prepend">
                   <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
                 </div>
-                <input class="form-control" type="password" placeholder="Enter Password" name="psw" id="psw" required formControlName="password">
+                <input class="form-control" type="password" placeholder="Enter Password" name="psw" id="psw" required
+                  formControlName="password">
               </div>
               <div>
                 <ng-container *ngFor="let error of error_messages.password">
-                    <div class="error-message" *ngIf="signUpForm.get('password').hasError(error.type) &&
+                  <div class="error-message" *ngIf="signUpForm.get('password').hasError(error.type) &&
             (signUpForm.get('password').dirty || signUpForm.get('password').touched)">
-                        {{ error.message }}
-                    </div>
+                    {{ error.message }}
+                  </div>
                 </ng-container>
-            </div>
+              </div>
             </div>
             <!-- <input type="hidden" placeholder="enter the project_id " name="psw" id="psw" required formControlName="project_id"> -->
-            <div class="text-muted font-italic"><small>password strength: <span class="text-success font-weight-700">strong</span></small></div>
+            <div class="text-muted font-italic"><small>password strength: <span
+                  class="text-success font-weight-700">strong</span></small></div>
             <div class="row my-4">
               <div class="col-12">
                 <div class="custom-control custom-control-alternative custom-checkbox">

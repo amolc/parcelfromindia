@@ -97,23 +97,11 @@ export class DashboardComponent implements OnInit {
     chart.legend = new am4charts.Legend();
 
     chart.data = [{
-      "country": "Lithuania",
-      "litres": 501.9
+      "country": "Win",
+      "litres": 50
     }, {
-      "country": "Germany",
-      "litres": 165.8
-    }, {
-      "country": "Australia",
-      "litres": 139.9
-    }, {
-      "country": "Austria",
-      "litres": 128.3
-    }, {
-      "country": "UK",
-      "litres": 99
-    }, {
-      "country": "Belgium",
-      "litres": 60
+      "country": "Loss",
+      "litres": 50
     }];
 
     let chart1 = am4core.create("chartdiv1", am4charts.PieChart);
@@ -162,23 +150,11 @@ export class DashboardComponent implements OnInit {
     chart1.legend = new am4charts.Legend();
 
     chart1.data = [{
-      "country": "Lithuania",
-      "litres": 501.9
+      "country": "Win",
+      "litres": 50
     }, {
-      "country": "Germany",
-      "litres": 165.8
-    }, {
-      "country": "Australia",
-      "litres": 139.9
-    }, {
-      "country": "Austria",
-      "litres": 128.3
-    }, {
-      "country": "UK",
-      "litres": 99
-    }, {
-      "country": "Belgium",
-      "litres": 60
+      "country": "Loss",
+      "litres": 50
     }];
 
   }

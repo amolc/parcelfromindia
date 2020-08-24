@@ -3,8 +3,8 @@
     <div class="header-body text-center mb-7">
       <div class="row justify-content-center">
         <div class="col-lg-5 col-md-6">
-          <h1 class="text-white">Welcome!</h1>
-          <p class="text-lead text-light"> login or create new account .</p>
+          <h1 class="text-blue">Welcome!</h1>
+          <p class="text-lead text-blue"> login or create new account .</p>
         </div>
       </div>
     </div>
@@ -20,7 +20,7 @@
   <div class="row justify-content-center">
     <div class="col-lg-5 col-md-7">
       <div class="card bg-secondary shadow border-0">
-        
+
         <div class="card-body px-lg-5 py-lg-5">
           <div class="text-center text-muted mb-4">
             <small> sign in </small>
@@ -31,32 +31,34 @@
                 <div class="input-group-prepend">
                   <span class="input-group-text"><i class="ni ni-email-83"></i></span>
                 </div>
-                <input class="form-control"  type="text" placeholder="Enter Email" name="email" id="email" required formControlName="email">
+                <input class="form-control" type="text" placeholder="Enter Email" name="email" id="email" required
+                  formControlName="email">
               </div>
               <div>
                 <ng-container *ngFor="let error of error_messages.email">
-                    <div class="error-message" *ngIf="loginForm.get('email').hasError(error.type) &&
+                  <div class="error-message" *ngIf="loginForm.get('email').hasError(error.type) &&
                     (loginForm.get('email').dirty || loginForm.get('email').touched)">
-                        {{ error.message }}
-                    </div>
+                    {{ error.message }}
+                  </div>
                 </ng-container>
-            </div>
+              </div>
             </div>
             <div class="form-group">
               <div class="input-group input-group-alternative">
                 <div class="input-group-prepend">
                   <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
                 </div>
-                <input class="form-control" type="password" placeholder="Enter Password" name="psw" id="psw" required formControlName="password">
+                <input class="form-control" type="password" placeholder="Enter Password" name="psw" id="psw" required
+                  formControlName="password">
               </div>
               <div>
                 <ng-container *ngFor="let error of error_messages.password">
-                    <div class="error-message"
-                        *ngIf="loginForm.get('password').hasError(error.type) && (loginForm.get('password').dirty || loginForm.get('password').touched)">
-                        {{ error.message }}
-                    </div>
+                  <div class="error-message"
+                    *ngIf="loginForm.get('password').hasError(error.type) && (loginForm.get('password').dirty || loginForm.get('password').touched)">
+                    {{ error.message }}
+                  </div>
                 </ng-container>
-            </div>
+              </div>
             </div>
             <div class="custom-control custom-control-alternative custom-checkbox">
               <input class="custom-control-input" id=" customCheckLogin" type="checkbox">

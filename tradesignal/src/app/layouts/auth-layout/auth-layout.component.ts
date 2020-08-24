@@ -28,13 +28,13 @@ export class AuthLayoutComponent implements OnInit, OnDestroy {
     var body = document.getElementsByTagName("body")[0];
     body.classList.remove("bg-default");
   }
-  dologout() {
+  // dologout() {
 
-    localStorage.removeItem("token");
-    this.router.navigateByUrl('/login')
-    // setTimeout(() => {
-    //   console.log("Hello");
-    // }, 3000);
+  //   localStorage.removeItem("token");
+  //   this.router.navigateByUrl('/login')
+  //   // setTimeout(() => {
+  //   //   console.log("Hello");
+  //   // }, 3000);
 
-  }
+  // }
 }
