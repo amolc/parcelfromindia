@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http'; import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
@@ -15,6 +15,7 @@ import { MySuiteComponent } from '../../pages/my-suite/my-suite.component';
 import { AssistedPurchaseComponent } from '../../pages/assisted-purchase/assisted-purchase.component';
 import { ShippingCalculatorComponent } from '../../pages/shipping-calculator/shipping-calculator.component';
 import { ProhibitedItemsComponent } from '../../pages/prohibited-items/prohibited-items.component';
+import { CreatesignalComponent } from '../../pages/createsignal/createsignal.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 // import { ToastrModule } from 'ngx-toastr';
 
@@ -26,12 +27,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HttpClientModule,
     NgbModule,
     ClipboardModule,
+
     ReactiveFormsModule
   ],
   declarations: [
     DashboardComponent,
     UserProfileComponent,
-    
+    CreatesignalComponent,
+
     MapsComponent,
     MySuiteComponent,
     AssistedPurchaseComponent,
@@ -41,4 +44,4 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   ]
 })
 
-export class AdminLayoutModule {}
+export class AdminLayoutModule { }

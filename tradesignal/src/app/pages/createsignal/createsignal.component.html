@@ -1,0 +1,166 @@
+<div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
+  <div class="container-fluid">
+    <div class="header-body">
+      <!-- Card stats -->
+
+    </div>
+  </div>
+</div>
+<!-- Page content -->
+<div class="container-fluid mt--7">
+  <div class="row">
+    <div class="col">
+      <div class="card shadow border-0">
+
+        <div class="container clearfix py-5">
+          <div class="m-portlet__head">
+            <div class="m-portlet__head-caption">
+              <div class="m-portlet__head-title">
+                <h3 class="m-portlet__head-text">
+                  Fill in the following details to signal.
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="container clearfix divcenter" style="max-width: 900px;">
+            <div class=" nobottommargin">
+              <form class="m-form m-form--fit m-form--label-align-right m-form--group-seperator-dashed"
+                autocomplete="off" [formGroup]="signalForm">
+                <div class="m-portlet__body">
+                  <div class="form-group m-form__group row">
+                    <div class="m-radio-inline" style="margin-top: 15px;">
+                      <span class="m-badge m-badge--primary m-badge--wide m-badge--rounded"
+                        style="margin-left: 10px; font-size: 1.2rem;font-family: 'Montserrat'; width: 200px;padding: 12px; background-color:burlywood; ">
+                        signals
+                      </span><br>
+                      <div style="margin-top:25px; margin-left:15px;color:#db1a20;">
+                        <p>All fields are mandatory</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group m-form__group row">
+
+                    <div class="col-lg-6 col-md-4">
+
+                      <label>
+                        PlanId:
+                      </label>
+                      <input type="text" class="form-control m-input" placeholder="Enter planid" name="planid"
+                        id="planid" formControlName="planid" required>
+                    </div>
+
+                    <div class="col-lg-6 col-md-4 topgap">
+                      <label class="">
+                        AnalystId:
+                      </label>
+                      <input type="text" class="form-control m-input" placeholder="Enter  analystid" name="analystid"
+                        id="analystid" formControlName="analystid" required>
+                    </div>
+
+                  </div>
+                  <div class="form-group m-form__group row">
+
+                    <div class="col-lg-6 col-md-4">
+
+                      <label>
+                        StockName:
+                      </label>
+                      <input type="text" class="form-control m-input" placeholder="Enter  stockname" name="stockname"
+                        id="stockname" formControlName="stockname" required>
+                    </div>
+
+                    <div class="col-lg-6 col-md-4 topgap">
+                      <label class="">
+                        StockSymbol:
+                      </label>
+                      <input type="text" class="form-control m-input" placeholder="Enter  stocksymbol"
+                        name="stocksymbol" id="stocksymbol" formControlName="stocksymbol" required>
+                    </div>
+
+                  </div>
+                  <div class="form-group m-form__group row">
+
+                    <div class="col-lg-6 col-md-4">
+
+                      <label>
+                        Position:
+                      </label>
+                      <input type="text" class="form-control m-input" placeholder="Enter  position" name="position"
+                        id="position" formControlName="position" required>
+                    </div>
+
+                    <div class="col-lg-6 col-md-4 topgap">
+                      <label class="">
+                        BuyPrice:
+                      </label>
+                      <input type="text" class="form-control m-input" placeholder="Enter  buyprice" name="buyprice"
+                        id="buyprice" formControlName="buyprice" required>
+                    </div>
+
+                  </div>
+                  <div class="form-group m-form__group row">
+
+                    <div class="col-lg-6 col-md-4">
+
+                      <label>
+
+                        BuyDateTime:
+                      </label>
+                      <input type="text" class="form-control m-input" placeholder="Enter  buydatetime"
+                        name="buydatetime" id="buydatetime" formControlName="buydatetime" required>
+                    </div>
+
+                    <div class="col-lg-6 col-md-4 topgap">
+                      <label class="">
+                        SellPrice:
+                      </label>
+                      <input type="text" class="form-control m-input" placeholder="Enter  sellprice" name="sellprice"
+                        id="sellprice" formControlName="sellprice" required>
+                    </div>
+
+                  </div>
+                  <div class="form-group m-form__group row">
+
+                    <div class="col-lg-6 col-md-4">
+
+                      <label>
+
+                        SellDateTime:
+                      </label>
+                      <input type="text" class="form-control m-input" placeholder="Enter  selldatetime"
+                        name="selldatetime" id="selldatetime" formControlName="selldatetime" required>
+                    </div>
+
+                    <div class="col-lg-6 col-md-4 topgap">
+                      <label class="">
+                        Result:
+                      </label>
+                      <input type="text" class="form-control m-input" placeholder="Enter  result" name="result"
+                        id="result" formControlName="result" required>
+                    </div>
+
+                  </div>
+
+                  <div class="m-form__actions m-form__actions" style="text-align: center;">
+                    <button class="btn btn-warning m-btn m-btn--custom m-btn--icon" id="shedule_data"
+                      data-wizard-action="next" (click)="signal()">
+                      <span>
+                        <span>
+                          Submit
+                        </span> &nbsp;&nbsp;
+                        <i class="la la-arrow-right"></i>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

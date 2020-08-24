@@ -2,7 +2,7 @@ import { Component, OnInit, NgZone, AfterViewInit } from '@angular/core';
 import * as am4core from "@amcharts/amcharts4/core";
 import * as am4charts from "@amcharts/amcharts4/charts";
 import am4themes_animated from "@amcharts/amcharts4/themes/animated";
-import { Chart } from 'chart.js';
+
 am4core.useTheme(am4themes_animated);
 @Component({
   selector: 'app-dashboard',
@@ -12,7 +12,36 @@ am4core.useTheme(am4themes_animated);
 
 export class DashboardComponent implements OnInit {
 
+  // pieChartOptions: ChartOptions = {
+  //   responsive: true,
+  //   legend: {
+  //     position: 'top',
+  //   },
+  //   tooltips: {
+  //     enabled: true,
+  //     mode: 'single',
+  //     callbacks: {
+  //       label: function (tooltipItems, data) {
+  //         return data.datasets[0].data[tooltipItems.index] + ' %';
+  //       }
+  //     }
+  //   },
+  // };
+  // pieChartLabels: Label[] = ['Win', 'Loss'];
 
+  // pieChartData: number[] = [78.09, 20.95];
+
+  // pieChartType: ChartType = 'pie';
+
+  // pieChartLegend = true;
+
+  // pieChartPlugins = [];
+
+  // pieChartColors = [
+  //   {
+  //     backgroundColor: ['rgba(255,0,0,0.3)', 'rgba(0,255,0,0.3)', 'rgba(0,0,255,0.3)'],
+  //   },
+  // ];
 
   constructor() {
 
@@ -22,23 +51,54 @@ export class DashboardComponent implements OnInit {
   }
 
   ngOnInit() {
+    let chart = am4core.create("chartdiv", am4charts.PieChart);
 
-    let data = [{
-      "country": "Dummy",
-      "disabled": true,
-      "litres": 1000,
-      "color": am4core.color("#dadada"),
-      "opacity": 0.3,
-      "strokeDasharray": "4,4"
-    }, {
+    // Add and configure Series
+    let pieSeries = chart.series.push(new am4charts.PieSeries());
+    pieSeries.dataFields.value = "litres";
+    pieSeries.dataFields.category = "country";
+
+    // Let's cut a hole in our Pie chart the size of 30% the radius
+    chart.innerRadius = am4core.percent(30);
+
+    // Put a thick white border around each Slice
+    pieSeries.slices.template.stroke = am4core.color("#fff");
+    pieSeries.slices.template.strokeWidth = 2;
+    pieSeries.slices.template.strokeOpacity = 1;
+    pieSeries.slices.template
+      // change the cursor on hover to make it apparent the object can be interacted with
+      .cursorOverStyle = [
+        {
+          "property": "cursor",
+          "value": "pointer"
+        }
+      ];
+
+    pieSeries.alignLabels = false;
+    pieSeries.labels.template.bent = true;
+    pieSeries.labels.template.radius = 3;
+    pieSeries.labels.template.padding(0, 0, 0, 0);
+
+    pieSeries.ticks.template.disabled = true;
+
+    // Create a base filter effect (as if it's not there) for the hover to return to
+    let shadow = pieSeries.slices.template.filters.push(new am4core.DropShadowFilter);
+    shadow.opacity = 0;
+
+    // Create hover state
+    let hoverState = pieSeries.slices.template.states.getKey("hover"); // normally we have to create the hover state, in this case it already exists
+
+    // Slightly shift the shadow and make it more prominent on hover
+    let hoverShadow = hoverState.filters.push(new am4core.DropShadowFilter);
+    hoverShadow.opacity = 0.7;
+    hoverShadow.blur = 5;
+
+    // Add a legend
+    chart.legend = new am4charts.Legend();
+
+    chart.data = [{
       "country": "Lithuania",
       "litres": 501.9
-    }, {
-      "country": "Estonia",
-      "litres": 301.9
-    }, {
-      "country": "Ireland",
-      "litres": 201.1
     }, {
       "country": "Germany",
       "litres": 165.8
@@ -48,233 +108,79 @@ export class DashboardComponent implements OnInit {
     }, {
       "country": "Austria",
       "litres": 128.3
+    }, {
+      "country": "UK",
+      "litres": 99
+    }, {
+      "country": "Belgium",
+      "litres": 60
     }];
 
+    let chart1 = am4core.create("chartdiv1", am4charts.PieChart);
 
-    // cointainer to hold both charts
-    let container = am4core.create("chartdiv", am4core.Container);
-    container.width = am4core.percent(100);
-    container.height = am4core.percent(100);
-    container.layout = "horizontal";
+    // Add and configure Series
+    let pieSeries1 = chart1.series.push(new am4charts.PieSeries());
+    pieSeries1.dataFields.value = "litres";
+    pieSeries1.dataFields.category = "country";
 
-    container.events.on("maxsizechanged", function () {
-      chart1.zIndex = 0;
-      separatorLine.zIndex = 1;
-      dragText.zIndex = 2;
-      chart2.zIndex = 3;
-    })
+    // Let's cut a hole in our Pie chart the size of 30% the radius
+    chart1.innerRadius = am4core.percent(30);
 
-    let chart1 = container.createChild(am4charts.PieChart);
-    chart1.fontSize = 11;
-    chart1.hiddenState.properties.opacity = 0; // this makes initial fade in effect
-    chart1.data = data;
-    chart1.radius = am4core.percent(70);
-    chart1.innerRadius = am4core.percent(40);
-    chart1.zIndex = 1;
-
-    let series1 = chart1.series.push(new am4charts.PieSeries());
-    series1.dataFields.value = "litres";
-    series1.dataFields.category = "country";
-    series1.colors.step = 2;
-    series1.alignLabels = false;
-    series1.labels.template.bent = true;
-    series1.labels.template.radius = 3;
-    series1.labels.template.padding(0, 0, 0, 0);
-
-    let sliceTemplate1 = series1.slices.template;
-    sliceTemplate1.cornerRadius = 5;
-    sliceTemplate1.draggable = true;
-    sliceTemplate1.inert = true;
-    sliceTemplate1.propertyFields.fill = "color";
-    sliceTemplate1.propertyFields.fillOpacity = "opacity";
-    sliceTemplate1.propertyFields.stroke = "color";
-    sliceTemplate1.propertyFields.strokeDasharray = "strokeDasharray";
-    sliceTemplate1.strokeWidth = 1;
-    sliceTemplate1.strokeOpacity = 1;
-
-    let zIndex = 5;
-
-    sliceTemplate1.events.on("down", function (event) {
-      event.target.toFront();
-      // also put chart to front
-      let series = event.target.dataItem.component;
-      //series.chart.zIndex = zIndex++;
-    })
-
-    series1.ticks.template.disabled = true;
-
-    sliceTemplate1.states.getKey("active").properties.shiftRadius = 0;
-
-    sliceTemplate1.events.on("dragstop", function (event) {
-      handleDragStop(event);
-    })
-
-    // separator line and text
-    let separatorLine = container.createChild(am4core.Line);
-    separatorLine.x1 = 0;
-    separatorLine.y2 = 300;
-    separatorLine.strokeWidth = 3;
-    separatorLine.stroke = am4core.color("#dadada");
-    separatorLine.valign = "middle";
-    separatorLine.strokeDasharray = "5,5";
-
-
-    let dragText = container.createChild(am4core.Label);
-    dragText.text = "Drag slices over the line";
-    dragText.rotation = 90;
-    dragText.valign = "middle";
-    dragText.align = "center";
-    dragText.paddingBottom = 5;
-
-    // second chart
-    let chart2 = container.createChild(am4charts.PieChart);
-    chart2.hiddenState.properties.opacity = 0; // this makes initial fade in effect
-    chart2.fontSize = 11;
-    chart2.radius = am4core.percent(70);
-    chart2.data = data;
-    chart2.innerRadius = am4core.percent(40);
-    chart2.zIndex = 1;
-
-    let series2 = chart2.series.push(new am4charts.PieSeries());
-    series2.dataFields.value = "litres";
-    series2.dataFields.category = "country";
-    series2.colors.step = 2;
-
-    series2.alignLabels = false;
-    series2.labels.template.bent = true;
-    series2.labels.template.radius = 3;
-    series2.labels.template.padding(0, 0, 0, 0);
-    series2.labels.template.propertyFields.disabled = "disabled";
-
-    let sliceTemplate2 = series2.slices.template;
-    sliceTemplate2.copyFrom(sliceTemplate1);
-
-    series2.ticks.template.disabled = true;
-
-    function handleDragStop(event) {
-      let targetSlice = event.target;
-      let dataItem1;
-      let dataItem2;
-      let slice1;
-      let slice2;
-
-      if (series1.slices.indexOf(targetSlice) != -1) {
-        slice1 = targetSlice;
-        slice2 = series2.dataItems.getIndex(targetSlice.dataItem.index).slice;
-      }
-      else if (series2.slices.indexOf(targetSlice) != -1) {
-        slice1 = series1.dataItems.getIndex(targetSlice.dataItem.index).slice;
-        slice2 = targetSlice;
-      }
-
-
-      dataItem1 = slice1.dataItem;
-      dataItem2 = slice2.dataItem;
-
-      let series1Center = am4core.utils.spritePointToSvg({ x: 0, y: 0 }, series1.slicesContainer);
-      let series2Center = am4core.utils.spritePointToSvg({ x: 0, y: 0 }, series2.slicesContainer);
-
-      let series1CenterConverted = am4core.utils.svgPointToSprite(series1Center, series2.slicesContainer);
-      let series2CenterConverted = am4core.utils.svgPointToSprite(series2Center, series1.slicesContainer);
-
-      // tooltipY and tooltipY are in the middle of the slice, so we use them to avoid extra calculations
-      let targetSlicePoint = am4core.utils.spritePointToSvg({ x: targetSlice.tooltipX, y: targetSlice.tooltipY }, targetSlice);
-
-      if (targetSlice == slice1) {
-        if (targetSlicePoint.x > container.pixelWidth / 2) {
-          let value = dataItem1.value;
-
-          dataItem1.hide();
-
-          let animation = slice1.animate([{ property: "x", to: series2CenterConverted.x }, { property: "y", to: series2CenterConverted.y }], 400);
-          animation.events.on("animationprogress", function (event) {
-            slice1.hideTooltip();
-          })
-
-          slice2.x = 0;
-          slice2.y = 0;
-
-          dataItem2.show();
+    // Put a thick white border around each Slice
+    pieSeries1.slices.template.stroke = am4core.color("#fff");
+    pieSeries1.slices.template.strokeWidth = 2;
+    pieSeries1.slices.template.strokeOpacity = 1;
+    pieSeries1.slices.template
+      // change the cursor on hover to make it apparent the object can be interacted with
+      .cursorOverStyle = [
+        {
+          "property": "cursor",
+          "value": "pointer"
         }
-        else {
-          slice1.animate([{ property: "x", to: 0 }, { property: "y", to: 0 }], 400);
-        }
-      }
-      if (targetSlice == slice2) {
-        if (targetSlicePoint.x < container.pixelWidth / 2) {
+      ];
 
-          let value = dataItem2.value;
+    pieSeries1.alignLabels = false;
+    pieSeries1.labels.template.bent = true;
+    pieSeries1.labels.template.radius = 3;
+    pieSeries1.labels.template.padding(0, 0, 0, 0);
 
-          dataItem2.hide();
+    pieSeries1.ticks.template.disabled = true;
 
-          let animation = slice2.animate([{ property: "x", to: series1CenterConverted.x }, { property: "y", to: series1CenterConverted.y }], 400);
-          animation.events.on("animationprogress", function (event) {
-            slice2.hideTooltip();
-          })
+    // Create a base filter effect (as if it's not there) for the hover to return to
+    let shadow1 = pieSeries1.slices.template.filters.push(new am4core.DropShadowFilter);
+    shadow1.opacity = 0;
 
-          slice1.x = 0;
-          slice1.y = 0;
-          dataItem1.show();
-        }
-        else {
-          slice2.animate([{ property: "x", to: 0 }, { property: "y", to: 0 }], 400);
-        }
-      }
+    // Create hover state
+    let hoverState1 = pieSeries1.slices.template.states.getKey("hover"); // normally we have to create the hover state, in this case it already exists
 
-      toggleDummySlice(series1);
-      toggleDummySlice(series2);
+    // Slightly shift the shadow and make it more prominent on hover
+    let hoverShadow1 = hoverState1.filters.push(new am4core.DropShadowFilter);
+    hoverShadow1.opacity = 0.7;
+    hoverShadow1.blur = 5;
 
-      series1.hideTooltip();
-      series2.hideTooltip();
-    }
+    // Add a legend
+    chart1.legend = new am4charts.Legend();
 
-    function toggleDummySlice(series) {
-      let show = true;
-      for (var i = 1; i < series.dataItems.length; i++) {
-        let dataItem = series.dataItems.getIndex(i);
-        if (dataItem.slice.visible && !dataItem.slice.isHiding) {
-          show = false;
-        }
-      }
-
-      let dummySlice = series.dataItems.getIndex(0);
-      if (show) {
-        dummySlice.show();
-      }
-      else {
-        dummySlice.hide();
-      }
-    }
-
-    series2.events.on("datavalidated", function () {
-
-      let dummyDataItem = series2.dataItems.getIndex(0);
-      dummyDataItem.show(0);
-      dummyDataItem.slice.draggable = false;
-      dummyDataItem.slice.tooltipText = undefined;
-
-      for (var i = 1; i < series2.dataItems.length; i++) {
-        series2.dataItems.getIndex(i).hide(0);
-      }
-    })
-
-    series1.events.on("datavalidated", function () {
-      let dummyDataItem = series1.dataItems.getIndex(0);
-      dummyDataItem.hide(0);
-      dummyDataItem.slice.draggable = false;
-      dummyDataItem.slice.tooltipText = undefined;
-    })
+    chart1.data = [{
+      "country": "Lithuania",
+      "litres": 501.9
+    }, {
+      "country": "Germany",
+      "litres": 165.8
+    }, {
+      "country": "Australia",
+      "litres": 139.9
+    }, {
+      "country": "Austria",
+      "litres": 128.3
+    }, {
+      "country": "UK",
+      "litres": 99
+    }, {
+      "country": "Belgium",
+      "litres": 60
+    }];
 
   }
-
-
-
-
-  // cointainer to hold both charts
-
-
-
-
-
 
 }

@@ -9,13 +9,15 @@ import { MySuiteComponent } from '../../pages/my-suite/my-suite.component';
 import { AssistedPurchaseComponent } from '../../pages/assisted-purchase/assisted-purchase.component';
 import { ShippingCalculatorComponent } from '../../pages/shipping-calculator/shipping-calculator.component';
 import { ProhibitedItemsComponent } from '../../pages/prohibited-items/prohibited-items.component';
+import { CreatesignalComponent } from '../../pages/createsignal/createsignal.component';
 export const AdminLayoutRoutes: Routes = [
-    { path: 'dashboard',      component: DashboardComponent },
-    { path: 'user-profile',   component: UserProfileComponent },
-    
-    { path: 'pickup',           component: MapsComponent },
-    { path: 'mysuite',           component: MySuiteComponent },
-    { path: 'purchase',           component: AssistedPurchaseComponent },
-    { path: 'ShippingCalculator',  component: ShippingCalculatorComponent },
-    { path: 'ProhibitedItems',           component: ProhibitedItemsComponent }
+    { path: 'dashboard', component: DashboardComponent },
+    { path: 'user-profile', component: UserProfileComponent },
+
+    { path: 'pickup', component: MapsComponent },
+    { path: 'mysuite', component: MySuiteComponent },
+    { path: 'purchase', component: AssistedPurchaseComponent },
+    { path: 'ShippingCalculator', component: ShippingCalculatorComponent },
+    { path: 'ProhibitedItems', component: ProhibitedItemsComponent },
+    { path: 'createsignal', component: CreatesignalComponent }
 ];
