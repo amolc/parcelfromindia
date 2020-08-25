@@ -33,7 +33,7 @@
                 <th _ngcontent-c5="" scope="col">LastName</th>
                 <th _ngcontent-c5="" scope="col">Mobile</th>
                 <th _ngcontent-c5="" scope="col">Email</th>
-                <th _ngcontent-c5="" scope="col">Action</th>
+
                 <th _ngcontent-c5="" scope="col">Edit</th>
                 <th _ngcontent-c5="" scope="col">delete</th>
               </tr>
@@ -41,13 +41,22 @@
             <tbody _ngcontent-c5="">
               <tr _ngcontent-c5="">
                 <th _ngcontent-c5="" scope="row"><input type="checkbox" class="form-check-input" value=""></th>
-                <td _ngcontent-c5="">1</td>
-                <td _ngcontent-c5=""><i _ngcontent-c5="" class="fas fa-box text-success mr-3"></i>Avi</td>
-                <td _ngcontent-c5=""><i _ngcontent-c5="" class="fas fa-box text-success mr-3"></i>Gupta</td>
-                <td _ngcontent-c5="">9340839378</td>
-                <td _ngcontent-c5="">avinashg4923@gmail.com</td>
-                <td _ngcontent-c5=""><button type="button" class="btn btn-secondary">Delivered<span
-                      style="font-size:10px;">2 days ago</span></button></td>
+                <td _ngcontent-c5="">
+                  <div *ngFor="let listUser of data">{{listUser.project_id}}</div>
+                </td>
+                <td _ngcontent-c5=""><i _ngcontent-c5="" class="fas fa-box text-success mr-3"></i>
+                  <div *ngFor="let listUser of data">{{listUser.fname}}</div>
+                </td>
+                <td _ngcontent-c5=""><i _ngcontent-c5="" class="fas fa-box text-success mr-3"></i>
+                  <div *ngFor="let listUser of data">{{listUser.lname}}</div>
+                </td>
+                <td _ngcontent-c5="">
+                  <div *ngFor="let listUser of data">{{listUser.mobile}}</div>
+                </td>
+                <td _ngcontent-c5="">
+                  <div *ngFor="let listUser of data">{{listUser.email}}</div>
+                </td>
+
                 <td _ngcontent-c5=""><button type="button" class="btn btn-success mr-2 mb-2"
                     [routerLink]="[ '/editprofile' ]" routerLinkActive="active">Edit</button></td>
                 <td _ngcontent-c5=""><button type="button" class="btn btn-danger mr-2 mb-2"
@@ -63,8 +72,7 @@
 
                 <td _ngcontent-c5="">9340839323</td>
                 <td _ngcontent-c5="">vishalkumar4923@gmail.com</td>
-                <td _ngcontent-c5=""><button type="button" class="btn btn-secondary">Delay<span
-                      style="font-size:10px;">2 days ago</span></button></td>
+
                 <td _ngcontent-c5=""><button type="button" class="btn btn-success mr-2 mb-2"
                     [routerLink]="[ '/editprofile' ]" routerLinkActive="active">Edit</button></td>
                 <td _ngcontent-c5=""><button type="button" class="btn btn-danger mr-2 mb-2"
@@ -78,8 +86,7 @@
                 <td _ngcontent-c5=""><i _ngcontent-c5="" class="fas fa-box text-success mr-3"></i>Kumar</td>
                 <td _ngcontent-c5="">9340848435</td>
                 <td _ngcontent-c5="">sandeepkumar12@gmail.com</td>
-                <td _ngcontent-c5=""><button type="button" class="btn btn-secondary">Over Load<span
-                      style="font-size:10px;">2 days ago</span></button></td>
+
                 <td _ngcontent-c5=""><button type="button" class="btn btn-success mr-2 mb-2"
                     [routerLink]="[ '/editprofile' ]" routerLinkActive="active">Edit</button></td>
                 <td _ngcontent-c5=""><button type="button" class="btn btn-danger mr-2 mb-2"

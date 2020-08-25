@@ -10,10 +10,11 @@ import { AssistedPurchaseComponent } from '../../pages/assisted-purchase/assiste
 import { ShippingCalculatorComponent } from '../../pages/shipping-calculator/shipping-calculator.component';
 import { ProhibitedItemsComponent } from '../../pages/prohibited-items/prohibited-items.component';
 import { CreatesignalComponent } from '../../pages/createsignal/createsignal.component';
+import { IndiastocksComponent } from '../../pages/indiastocks/indiastocks.component';
 export const AdminLayoutRoutes: Routes = [
     { path: 'dashboard', component: DashboardComponent },
     { path: 'user-profile', component: UserProfileComponent },
-
+    { path: 'india-stocks', component: IndiastocksComponent },
     { path: 'pickup', component: MapsComponent },
     { path: 'mysuite', component: MySuiteComponent },
     { path: 'purchase', component: AssistedPurchaseComponent },
