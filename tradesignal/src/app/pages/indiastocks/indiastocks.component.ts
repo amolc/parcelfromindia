@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient, HttpHeaders } from "@angular/common/http";
 import * as am4core from "@amcharts/amcharts4/core";
 import * as am4charts from "@amcharts/amcharts4/charts";
 import am4themes_animated from "@amcharts/amcharts4/themes/animated";
@@ -10,10 +11,18 @@ am4core.useTheme(am4themes_animated);
   styleUrls: ['./indiastocks.component.css']
 })
 export class IndiastocksComponent implements OnInit {
+  data: any;
+  data1 = [];
+  //result1 = [0];
 
-  constructor() { }
+
+  constructor(private http: HttpClient) {
+    this.getdata();
+    this.getdata1();
+  }
 
   ngOnInit(): void {
+
     let chart = am4core.create("chartdiv", am4charts.PieChart);
 
     // Add and configure Series
@@ -71,8 +80,8 @@ export class IndiastocksComponent implements OnInit {
 
     // Add and configure Series
     let pieSeries1 = chart1.series.push(new am4charts.PieSeries());
-    pieSeries1.dataFields.value = "litres";
-    pieSeries1.dataFields.category = "country";
+    pieSeries1.dataFields.value = "value";
+    pieSeries1.dataFields.category = "lable";
 
     // Let's cut a hole in our Pie chart the size of 30% the radius
     chart1.innerRadius = am4core.percent(30);
@@ -112,13 +121,33 @@ export class IndiastocksComponent implements OnInit {
     // Add a legend
     chart1.legend = new am4charts.Legend();
 
-    chart1.data = [{
-      "country": "Win",
-      "litres": 50
-    }, {
-      "country": "Loss",
-      "litres": 50
-    }];
+    chart1.data = this.data1;
   }
+  getdata() {
+    return new Promise((resolve, reject) => {
+      this.http.get("https://api.80startups.com/tradeSignals/getAllSignals").subscribe(result => {
+        console.log("result", result);
+        this.data = result;
+      },
+        err => {
+          reject(err);
+        }
+      );
+    });
+  }
+  getdata1() {
+    return new Promise((resolve, reject) => {
+      this.http.get("https://api.80startups.com/tradeSignals/getCountperYear/1").subscribe(result1 => {
+        console.log("result1", result1);
 
+        this.data1.push(result1)[0];
+
+
+      },
+        err => {
+          reject(err);
+        }
+      );
+    });
+  }
 }

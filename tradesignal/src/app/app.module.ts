@@ -14,6 +14,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app.routing';
 import { ComponentsModule } from './components/components.module';
 import { LogoutComponent } from './pages/logout/logout.component';
+
 //import { IndiastocksComponent } from './pages/indiastocks/indiastocks.component';
 
 //import { ChartsModule } from 'ng2-charts';
@@ -38,6 +39,7 @@ import { LogoutComponent } from './pages/logout/logout.component';
     AdminLayoutComponent,
     AuthLayoutComponent,
     LogoutComponent,
+
     //IndiastocksComponent,
 
 

@@ -17,6 +17,7 @@ import { ShippingCalculatorComponent } from '../../pages/shipping-calculator/shi
 import { ProhibitedItemsComponent } from '../../pages/prohibited-items/prohibited-items.component';
 import { CreatesignalComponent } from '../../pages/createsignal/createsignal.component';
 import { IndiastocksComponent } from '../../pages/indiastocks/indiastocks.component';
+import { AnalystpagedetailsComponent } from '../../pages/analystpagedetails/analystpagedetails.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 // import { ToastrModule } from 'ngx-toastr';
 
@@ -42,6 +43,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     ShippingCalculatorComponent,
     ProhibitedItemsComponent,
     IndiastocksComponent,
+    AnalystpagedetailsComponent
 
   ]
 })

@@ -54,7 +54,7 @@
         <div class="card-header border-0">
           <div class="row align-items-center">
             <div _ngcontent-c5="" class="table-responsive">
-              <table _ngcontent-c5="" class="table align-items-center table-flush">
+              <table _ngcontent-c5="" class="table align-items-center table-flush" style="line-height: 30px; ">
                 <thead _ngcontent-c5="" class="thead-light">
                   <tr _ngcontent-c5="">
                     <th _ngcontent-c5="" scope="col">TIME HERE</th>
@@ -69,6 +69,41 @@
                 </thead>
                 <tbody _ngcontent-c5="">
                   <tr _ngcontent-c5="">
+                    <th _ngcontent-c5="" scope="row">
+                      <div *ngFor="let listItems of data">{{listItems.dateTime}}</div>
+                    </th>
+
+                    <td _ngcontent-c5="">
+                      <div *ngFor="let listItems of data">{{listItems.stockSymbol}}</div>
+                    </td>
+
+                    <td _ngcontent-c5="">
+                      <div *ngFor="let listItems of data">{{listItems.type}}</div>
+                    </td>
+
+                    <td _ngcontent-c5="">
+                      <div *ngFor="let listItems of data">{{listItems.price}}</div>
+                    </td>
+
+                    <td _ngcontent-c5="">
+                      <div *ngFor="let listItems of data">{{listItems.targetPrice}}</div>
+                    </td>
+
+                    <td _ngcontent-c5="">
+                      <div *ngFor="let listItems of data">{{listItems.stopLoss}}</div>
+                    </td>
+
+                    <td _ngcontent-c5="">
+                      <div *ngFor="let listItems of data">{{listItems.stockSignal}}</div>
+                    </td>
+
+                    <td _ngcontent-c5="">
+                      <div *ngFor="let listItems of data">{{listItems.status}}</div>
+                    </td>
+                    <!-- <td _ngcontent-c5=""><i _ngcontent-c5="" class="fas fa-arrow-up text-success mr-3"></i> 46,53%</td> -->
+                  </tr>
+
+                  <!-- <tr _ngcontent-c5="">
                     <th _ngcontent-c5="" scope="row">9.30</th>
                     <td _ngcontent-c5="">AXIS</td>
                     <td _ngcontent-c5="">SHORT TERM</td>
@@ -78,7 +113,7 @@
                     <td _ngcontent-c5="">BUY</td>
                     <td _ngcontent-c5="">ONGOING</td>
                     <!-- <td _ngcontent-c5=""><i _ngcontent-c5="" class="fas fa-arrow-up text-success mr-3"></i> 46,53%</td> -->
-                  </tr>
+                  <!-- </tr>
                   <tr _ngcontent-c5="">
                     <th _ngcontent-c5="" scope="row">9.30</th>
                     <td _ngcontent-c5="">AXIS</td>
@@ -88,19 +123,8 @@
                     <td _ngcontent-c5="">256</td>
                     <td _ngcontent-c5="">BUY</td>
                     <td _ngcontent-c5="">ONGOING</td>
-                    <!-- <td _ngcontent-c5=""><i _ngcontent-c5="" class="fas fa-arrow-up text-success mr-3"></i> 46,53%</td> -->
-                  </tr>
-                  <tr _ngcontent-c5="">
-                    <th _ngcontent-c5="" scope="row">9.30</th>
-                    <td _ngcontent-c5="">AXIS</td>
-                    <td _ngcontent-c5="">SHORT TERM</td>
-                    <td _ngcontent-c5="">123</td>
-                    <td _ngcontent-c5="">212</td>
-                    <td _ngcontent-c5="">256</td>
-                    <td _ngcontent-c5="">BUY</td>
-                    <td _ngcontent-c5="">ONGOING</td>
-                    <!-- <td _ngcontent-c5=""><i _ngcontent-c5="" class="fas fa-arrow-up text-success mr-3"></i> 46,53%</td> -->
-                  </tr>
+                    <td _ngcontent-c5=""><i _ngcontent-c5="" class="fas fa-arrow-up text-success mr-3"></i> 46,53%</td> -->
+                  <!-- </tr>  -->
 
 
                 </tbody>
