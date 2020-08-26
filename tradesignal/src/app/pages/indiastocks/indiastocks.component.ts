@@ -11,14 +11,32 @@ am4core.useTheme(am4themes_animated);
   styleUrls: ['./indiastocks.component.css']
 })
 export class IndiastocksComponent implements OnInit {
+  config: any;
+
   data: any;
   data1 = [];
+  data2 = [];
   //result1 = [0];
 
 
   constructor(private http: HttpClient) {
     this.getdata();
     this.getdata1();
+    this.getdata2();
+
+
+    this.config = {
+      itemsPerPage: 10,
+      currentPage: 1,
+
+    };
+
+
+
+
+
+
+
   }
 
   ngOnInit(): void {
@@ -27,8 +45,8 @@ export class IndiastocksComponent implements OnInit {
 
     // Add and configure Series
     let pieSeries = chart.series.push(new am4charts.PieSeries());
-    pieSeries.dataFields.value = "litres";
-    pieSeries.dataFields.category = "country";
+    pieSeries.dataFields.value = "value";
+    pieSeries.dataFields.category = "lable";
 
     // Let's cut a hole in our Pie chart the size of 30% the radius
     chart.innerRadius = am4core.percent(30);
@@ -67,15 +85,18 @@ export class IndiastocksComponent implements OnInit {
 
     // Add a legend
     chart.legend = new am4charts.Legend();
-
-    chart.data = [{
-      "country": "Win",
-      "litres": 50
-    }, {
-      "country": "Loss",
-      "litres": 50
-    }];
-
+    // chart.data = this.data2
+    chart.dataSource.url = "https://api.80startups.com/tradeSignals/getCountLatestMonth/1";
+    chart.dataSource.parser = new am4core.JSONParser();
+    chart.data = this.data2
+    //console.log(chart.data)
+    // chart.data = [{
+    //   "country": "Win",
+    //   "litres": 50
+    // }, {
+    //   "country": "Loss",
+    //   "litres": 50
+    // }];
     let chart1 = am4core.create("chartdiv1", am4charts.PieChart);
 
     // Add and configure Series
@@ -120,14 +141,36 @@ export class IndiastocksComponent implements OnInit {
 
     // Add a legend
     chart1.legend = new am4charts.Legend();
-
+    //chart1.data = this.data1;
+    chart1.dataSource.url = "https://api.80startups.com/tradeSignals/getCountperYear/1";
+    chart1.dataSource.parser = new am4core.JSONParser();
     chart1.data = this.data1;
+    // console.log(chart1.data);
+
+    // chart1.data = [{
+    //   lable: "win",
+    //   value: 34
+    // },
+    // {
+    //   lable: "loss",
+    //   value: 56
+    // },
+    // {
+    //   lable: "ongoing",
+    //   value: 134
+    // }]
+
+
+  }
+  pageChanged(event) {
+    this.config.currentPage = event;
   }
   getdata() {
     return new Promise((resolve, reject) => {
       this.http.get("https://api.80startups.com/tradeSignals/getAllSignals").subscribe(result => {
         console.log("result", result);
         this.data = result;
+
       },
         err => {
           reject(err);
@@ -136,11 +179,34 @@ export class IndiastocksComponent implements OnInit {
     });
   }
   getdata1() {
-    return new Promise((resolve, reject) => {
-      this.http.get("https://api.80startups.com/tradeSignals/getCountperYear/1").subscribe(result1 => {
-        console.log("result1", result1);
+    const yearchart = new Promise((resolve, reject) => {
+      this.http.get("https://api.80startups.com/tradeSignals/getCountperYear/1").subscribe(result => {
+        console.log("result", result);
+        //this.data1 = this.result;
 
-        this.data1.push(result1)[0];
+
+
+
+
+
+        this.data1.push(result)[0];
+
+
+      },
+        err => {
+          reject(err);
+        }
+      );
+    })
+
+
+  }
+  getdata2() {
+    return new Promise((resolve, reject) => {
+      this.http.get("https://api.80startups.com/tradeSignals/getCountLatestMonth/1").subscribe(result => {
+        console.log("result", result);
+
+        this.data2.push(result)[0];
 
 
       },

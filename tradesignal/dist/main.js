@@ -204,6 +204,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _app_routing__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./app.routing */ "./src/app/app.routing.ts");
 /* harmony import */ var _components_components_module__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/components.module */ "./src/app/components/components.module.ts");
 /* harmony import */ var _pages_logout_logout_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./pages/logout/logout.component */ "./src/app/pages/logout/logout.component.ts");
+/* harmony import */ var ngx_pagination__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ngx-pagination */ "./node_modules/ngx-pagination/__ivy_ngcc__/dist/ngx-pagination.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -220,6 +221,7 @@ var __importDefault = (undefined && undefined.__importDefault) || function (mod)
 
 //import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 //import { AppRoutingModule } from './app-routing.module';
+
 
 
 
@@ -244,6 +246,7 @@ var AppModule = /** @class */ (function () {
                 _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_8__["NgbModule"],
                 _angular_router__WEBPACK_IMPORTED_MODULE_4__["RouterModule"],
                 _app_routing__WEBPACK_IMPORTED_MODULE_9__["AppRoutingModule"],
+                ngx_pagination__WEBPACK_IMPORTED_MODULE_12__["NgxPaginationModule"],
                 // ChartsModule,
                 _angular_forms__WEBPACK_IMPORTED_MODULE_2__["ReactiveFormsModule"]
             ],
@@ -591,7 +594,7 @@ var __importDefault = (undefined && undefined.__importDefault) || function (mod)
 
 var ROUTES = [
     { path: '/dashboard', title: 'Dashboard', icon: 'ni-tv-2 text-primary', class: '' },
-    { path: '/analyst', title: 'Analyst  ', icon: 'ni-single-02 text-yellow', class: '' },
+    { path: '/analysts', title: 'Analyst  ', icon: 'ni-single-02 text-yellow', class: '' },
     { path: '/india-stocks', title: 'AMOL C  ', icon: 'ni-single-02 text-yellow', class: '' },
 ];
 var SidebarComponent = /** @class */ (function () {

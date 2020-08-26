@@ -57,48 +57,48 @@
               <table _ngcontent-c5="" class="table align-items-center table-flush" style="line-height: 30px; ">
                 <thead _ngcontent-c5="" class="thead-light">
                   <tr _ngcontent-c5="">
-                    <th _ngcontent-c5="" scope="col">TIME HERE</th>
-                    <th _ngcontent-c5="" scope="col">STOCK SYMBOL</th>
-                    <th _ngcontent-c5="" scope="col">TYPE</th>
-                    <th _ngcontent-c5="" scope="col">PRICE</th>
-                    <th _ngcontent-c5="" scope="col">TARGET PRICE</th>
-                    <th _ngcontent-c5="" scope="col">STOP LOSS</th>
-                    <th _ngcontent-c5="" scope="col">SIGNAL</th>
-                    <th _ngcontent-c5="" scope="col">STATUS</th>
+                    <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">TIME HERE</th>
+                    <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">STOCK SYMBOL</th>
+                    <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">TYPE</th>
+                    <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">PRICE</th>
+                    <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">TARGET PRICE</th>
+                    <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">STOP LOSS</th>
+                    <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">SIGNAL</th>
+                    <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">STATUS</th>
                   </tr>
                 </thead>
                 <tbody _ngcontent-c5="">
-                  <tr _ngcontent-c5="">
-                    <th _ngcontent-c5="" scope="row">
-                      <div *ngFor="let listItems of data">{{listItems.dateTime}}</div>
-                    </th>
-
-                    <td _ngcontent-c5="">
-                      <div *ngFor="let listItems of data">{{listItems.stockSymbol}}</div>
+                  <tr _ngcontent-c5="" *ngFor="let listItems of data | paginate: config">
+                    <td _ngcontent-c5="" scope="row">
+                      {{listItems.dateTime}}
                     </td>
 
                     <td _ngcontent-c5="">
-                      <div *ngFor="let listItems of data">{{listItems.type}}</div>
+                      {{listItems.stockSymbol}}
                     </td>
 
                     <td _ngcontent-c5="">
-                      <div *ngFor="let listItems of data">{{listItems.price}}</div>
+                      {{listItems.type}}
                     </td>
 
                     <td _ngcontent-c5="">
-                      <div *ngFor="let listItems of data">{{listItems.targetPrice}}</div>
+                      {{listItems.price}}
                     </td>
 
                     <td _ngcontent-c5="">
-                      <div *ngFor="let listItems of data">{{listItems.stopLoss}}</div>
+                      {{listItems.targetPrice}}
                     </td>
 
                     <td _ngcontent-c5="">
-                      <div *ngFor="let listItems of data">{{listItems.stockSignal}}</div>
+                      {{listItems.stopLoss}}
                     </td>
 
                     <td _ngcontent-c5="">
-                      <div *ngFor="let listItems of data">{{listItems.status}}</div>
+                      {{listItems.stockSignal}}
+                    </td>
+
+                    <td _ngcontent-c5="">
+                      {{listItems.status}}
                     </td>
                     <!-- <td _ngcontent-c5=""><i _ngcontent-c5="" class="fas fa-arrow-up text-success mr-3"></i> 46,53%</td> -->
                   </tr>
@@ -112,7 +112,7 @@
                     <td _ngcontent-c5="">256</td>
                     <td _ngcontent-c5="">BUY</td>
                     <td _ngcontent-c5="">ONGOING</td>
-                    <!-- <td _ngcontent-c5=""><i _ngcontent-c5="" class="fas fa-arrow-up text-success mr-3"></i> 46,53%</td> -->
+                     <td _ngcontent-c5=""><i _ngcontent-c5="" class="fas fa-arrow-up text-success mr-3"></i> 46,53%</td> -->
                   <!-- </tr>
                   <tr _ngcontent-c5="">
                     <th _ngcontent-c5="" scope="row">9.30</th>
@@ -129,6 +129,8 @@
 
                 </tbody>
               </table>
+              <br>
+              <pagination-controls (pageChange)="pageChanged($event)"></pagination-controls>
             </div>
 
           </div>

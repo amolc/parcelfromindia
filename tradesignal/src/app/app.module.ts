@@ -14,6 +14,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app.routing';
 import { ComponentsModule } from './components/components.module';
 import { LogoutComponent } from './pages/logout/logout.component';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 //import { IndiastocksComponent } from './pages/indiastocks/indiastocks.component';
 
@@ -31,6 +32,7 @@ import { LogoutComponent } from './pages/logout/logout.component';
     NgbModule,
     RouterModule,
     AppRoutingModule,
+    NgxPaginationModule,
     // ChartsModule,
     ReactiveFormsModule
   ],

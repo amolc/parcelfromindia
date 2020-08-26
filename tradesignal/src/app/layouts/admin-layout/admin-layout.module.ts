@@ -18,6 +18,7 @@ import { ProhibitedItemsComponent } from '../../pages/prohibited-items/prohibite
 import { CreatesignalComponent } from '../../pages/createsignal/createsignal.component';
 import { IndiastocksComponent } from '../../pages/indiastocks/indiastocks.component';
 import { AnalystpagedetailsComponent } from '../../pages/analystpagedetails/analystpagedetails.component';
+import { NgxPaginationModule } from 'ngx-pagination';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 // import { ToastrModule } from 'ngx-toastr';
 
@@ -29,6 +30,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HttpClientModule,
     NgbModule,
     ClipboardModule,
+    NgxPaginationModule,
 
     ReactiveFormsModule
   ],
