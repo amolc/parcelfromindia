@@ -20,6 +20,7 @@ import { IndiastocksComponent } from '../../pages/indiastocks/indiastocks.compon
 import { AnalystpagedetailsComponent } from '../../pages/analystpagedetails/analystpagedetails.component';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SignalsComponent } from '../../pages/signals/signals.component';
 // import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
@@ -45,7 +46,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     ShippingCalculatorComponent,
     ProhibitedItemsComponent,
     IndiastocksComponent,
-    AnalystpagedetailsComponent
+    AnalystpagedetailsComponent,
+    SignalsComponent,
 
   ]
 })

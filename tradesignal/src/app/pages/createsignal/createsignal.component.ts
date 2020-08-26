@@ -24,12 +24,12 @@ export class CreatesignalComponent implements OnInit {
   }
   signalFormData() {
     this.error_messages = {
-      planid: [
+      plan_id: [
         { type: "required", message: 'planid is Required' },
 
       ],
 
-      analystid: [
+      analyst_id: [
         { type: "required", message: 'analystid is Required' }
       ],
       stockname: [
@@ -59,14 +59,14 @@ export class CreatesignalComponent implements OnInit {
     };
     this.signalForm = this.formBuilder.group(
       {
-        planid: new FormControl(
+        plan_id: new FormControl(
           "",
           Validators.compose([
             Validators.required,
 
           ])
         ),
-        analystid: new FormControl(
+        analyst_id: new FormControl(
           "",
           Validators.compose([
             Validators.required,
@@ -125,8 +125,8 @@ export class CreatesignalComponent implements OnInit {
   }
   signal() {
     this.params = {
-      "planid": this.signalForm.controls.planid.value,
-      "analystid": this.signalForm.controls.analystid.value,
+      "plan_id": this.signalForm.controls.plan_id.value,
+      "analyst_id": this.signalForm.controls.analyst_id.value,
       "stockname": this.signalForm.controls.stockname.value,
       "stocksymbol": this.signalForm.controls.stocksymbol.value,
       "position": this.signalForm.controls.position.value,
@@ -137,7 +137,7 @@ export class CreatesignalComponent implements OnInit {
       "result": this.signalForm.controls.result.value,
     }
     return new Promise((resolve, reject) => {
-      this.http.post("https://api.80startups.com/auth/loginUser/1", this.params).subscribe(result => {
+      this.http.post("https://api.80startups.com/tradesignals/createSignals", this.params).subscribe(result => {
         console.log(result, "result");
         //localStorage.setItem('token', JSON.stringify(result['users'].tokens))
         this.router.navigateByUrl('/dashboard');

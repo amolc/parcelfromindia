@@ -1,0 +1,171 @@
+<div class="header pb-8 pt-5 pt-lg-8 d-flex align-items-center">
+  <!-- Mask -->
+  <span class="mask bg-gradient-danger opacity-8"></span>
+  <!-- Header container -->
+  <div class="container-fluid d-flex align-items-center">
+    <div class="row">
+
+    </div>
+  </div>
+</div>
+<div class="container-fluid mt--7">
+  <div class="row">
+
+    <div class="col-xl-8 order-xl-1">
+      <div class="card bg-secondary shadow">
+        <div class="card-header bg-white border-0">
+          <div class="row align-items-center">
+            <div class="col-8">
+              <h3 class="mb-0">Signal information</h3>
+            </div>
+            <div class="col-4 text-right">
+
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <form [formGroup]="signalsForm" (ngSubmit)="signals()">
+            <h6 class="heading-small text-muted mb-4"></h6>
+            <div class="pl-lg-4">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="input-stockSymbol"> StockSymbol</label>
+                    <input type="text" placeholder="Enter stockSymbol" name="stockSymbol" id="stockSymbol"
+                      formControlName="stockSymbol" class="form-control form-control-alternative" required>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="input-stockName">StockName</label>
+                    <input type="text" id="input-stockName" class="form-control form-control-alternative"
+                      placeholder="Enter stockName" name="stockName" formControlName="stockName" required>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="input-stockSignal">StockSignal</label>
+                    <input id="input-stockSignal" class="form-control form-control-alternative" type="text"
+                      placeholder="Enter stockSignal" name="stockSignal" id="stockSignal" formControlName="stockSignal"
+                      required>
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="input-tradingViewSymbol">TradingViewSymbol</label>
+                    <input id="input-tradingViewSymbol" class="form-control form-control-alternative" type="text"
+                      placeholder="Enter tradingViewSymbol" name="tradingViewSymbol" formControlName="tradingViewSymbol"
+                      required>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="input-category">Category</label>
+                    <input id="input-category" class="form-control form-control-alternative"
+                      placeholder="Enter category" name="category" formControlName="category" required>
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="input-category_name_hyphen">Category_Name_Hyphen</label>
+                    <input id="input-category_name_hyphen" class="form-control form-control-alternative" type="text"
+                      placeholder="Enter category_name_hyphen" name="category_name_hyphen"
+                      formControlName="category_name_hyphen" required>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="input-stockSignal">StopLoss</label>
+                    <input id="input-stockSignal" class="form-control form-control-alternative" type="text"
+                      placeholder="Enter stopLoss" name="stopLoss" id="stopLoss" formControlName="stopLoss" required>
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="input-type">Type</label>
+                    <input id="input-type" class="form-control form-control-alternative" type="text"
+                      placeholder="Enter type" name="type" formControlName="type" required>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="input-dateTime">DateTime</label>
+                    <input id="input-dateTime" class="form-control form-control-alternative" type="text"
+                      placeholder="Enter dateTime" name="dateTime" id="dateTime" formControlName="dateTime" required>
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="input-status">Status</label>
+                    <input id="input-status" class="form-control form-control-alternative" type="text"
+                      placeholder="Enter status" name="status" formControlName="status" required>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="input-message">Message</label>
+                    <input id="input-message" class="form-control form-control-alternative" type="text"
+                      placeholder="Enter message" name="message" id="message" formControlName="message" required>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+            <hr class="my-4" />
+            <!-- Address -->
+            <h6 class="heading-small text-muted mb-4">Price</h6>
+            <div class="pl-lg-4">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="input-price">Price</label>
+                    <input type="text" class="form-control form-control-alternative" placeholder="Enter  price"
+                      name="price" id="input-price" formControlName="price" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="input-targetPrice">TargetPrice</label>
+                    <input type="text" class="form-control form-control-alternative" placeholder="Enter targetPrice"
+                      name="targetPrice" id="input-targetPrice" formControlName="targetPrice" required>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+            <br>
+            <br>
+            <div class="m-form__actions m-form__actions" style="text-align: center;">
+              <button class="btn btn-warning m-btn m-btn--custom m-btn--icon" id="shedule_data"
+                data-wizard-action="next" [disabled]=signalsForm.invalid>
+                <span>
+                  <span>
+                    Submit
+                  </span> &nbsp;&nbsp;
+                  <i class="la la-arrow-right"></i>
+                </span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

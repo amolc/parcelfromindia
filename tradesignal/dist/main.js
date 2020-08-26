@@ -229,10 +229,6 @@ var __importDefault = (undefined && undefined.__importDefault) || function (mod)
 
 
 
-//import { IndiastocksComponent } from './pages/indiastocks/indiastocks.component';
-//import { ChartsModule } from 'ng2-charts';
-//import { ResetpasswordComponent } from './pages/resetpassword/resetpassword.component';
-//import { AddAddressComponent } from './pages/add-address/add-address.component';
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }

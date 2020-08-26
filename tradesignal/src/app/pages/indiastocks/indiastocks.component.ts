@@ -46,7 +46,8 @@ export class IndiastocksComponent implements OnInit {
     // Add and configure Series
     let pieSeries = chart.series.push(new am4charts.PieSeries());
     pieSeries.dataFields.value = "value";
-    pieSeries.dataFields.category = "lable";
+    pieSeries.dataFields.category = "lebal";
+
 
     // Let's cut a hole in our Pie chart the size of 30% the radius
     chart.innerRadius = am4core.percent(30);
@@ -85,6 +86,7 @@ export class IndiastocksComponent implements OnInit {
 
     // Add a legend
     chart.legend = new am4charts.Legend();
+    console.log(chart.legend)
     // chart.data = this.data2
     chart.dataSource.url = "https://api.80startups.com/tradeSignals/getCountLatestMonth/1";
     chart.dataSource.parser = new am4core.JSONParser();
@@ -102,7 +104,8 @@ export class IndiastocksComponent implements OnInit {
     // Add and configure Series
     let pieSeries1 = chart1.series.push(new am4charts.PieSeries());
     pieSeries1.dataFields.value = "value";
-    pieSeries1.dataFields.category = "lable";
+    pieSeries1.dataFields.category = "lebal";
+
 
     // Let's cut a hole in our Pie chart the size of 30% the radius
     chart1.innerRadius = am4core.percent(30);
@@ -141,6 +144,7 @@ export class IndiastocksComponent implements OnInit {
 
     // Add a legend
     chart1.legend = new am4charts.Legend();
+    chart1.legend.data = ["win", "loss", "kk"]
     //chart1.data = this.data1;
     chart1.dataSource.url = "https://api.80startups.com/tradeSignals/getCountperYear/1";
     chart1.dataSource.parser = new am4core.JSONParser();

@@ -12,12 +12,14 @@ import { ProhibitedItemsComponent } from '../../pages/prohibited-items/prohibite
 import { CreatesignalComponent } from '../../pages/createsignal/createsignal.component';
 import { IndiastocksComponent } from '../../pages/indiastocks/indiastocks.component';
 import { AnalystpagedetailsComponent } from '../../pages/analystpagedetails/analystpagedetails.component';
+import { SignalsComponent } from '../../pages/signals/signals.component';
 export const AdminLayoutRoutes: Routes = [
     { path: 'dashboard', component: DashboardComponent },
     { path: 'user-profile', component: UserProfileComponent },
     { path: 'india-stocks', component: IndiastocksComponent },
     { path: 'analyst', component: AnalystpagedetailsComponent },
     { path: 'pickup', component: MapsComponent },
+    { path: 'signals', component: SignalsComponent },
     { path: 'mysuite', component: MySuiteComponent },
     { path: 'purchase', component: AssistedPurchaseComponent },
     { path: 'ShippingCalculator', component: ShippingCalculatorComponent },
