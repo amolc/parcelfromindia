@@ -22,6 +22,10 @@ import { NgxPaginationModule } from 'ngx-pagination';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SignalsComponent } from '../../pages/signals/signals.component';
 import { CreateplanComponent } from '../../pages/createplan/createplan.component';
+import { AnalystviewComponent } from '../../pages/analystview/analystview.component';
+import { CreatplanComponent } from '../../pages/creatplan/creatplan.component';
+import { PlanSignalComponent } from '../../pages/plan-signal/plan-signal.component';
+
 // import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
@@ -50,6 +54,9 @@ import { CreateplanComponent } from '../../pages/createplan/createplan.component
     AnalystpagedetailsComponent,
     CreateplanComponent,
     SignalsComponent,
+    AnalystviewComponent,
+    CreatplanComponent,
+    PlanSignalComponent,
 
   ]
 })

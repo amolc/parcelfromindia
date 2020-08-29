@@ -14,6 +14,9 @@ import { IndiastocksComponent } from '../../pages/indiastocks/indiastocks.compon
 import { AnalystpagedetailsComponent } from '../../pages/analystpagedetails/analystpagedetails.component';
 import { SignalsComponent } from '../../pages/signals/signals.component';
 import { CreateplanComponent } from '../../pages/createplan/createplan.component';
+import { AnalystviewComponent } from '../../pages/analystview/analystview.component';
+import { CreatplanComponent } from '../../pages/creatplan/creatplan.component';
+import { PlanSignalComponent } from '../../pages/plan-signal/plan-signal.component';
 export const AdminLayoutRoutes: Routes = [
     { path: 'dashboard', component: DashboardComponent },
     { path: 'user-profile', component: UserProfileComponent },
@@ -26,5 +29,8 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'purchase', component: AssistedPurchaseComponent },
     { path: 'ShippingCalculator', component: ShippingCalculatorComponent },
     { path: 'ProhibitedItems', component: ProhibitedItemsComponent },
-    { path: 'createsignal', component: CreatesignalComponent }
+    { path: 'createsignal', component: CreatesignalComponent },
+    { path: 'Analystview', component: AnalystviewComponent },
+    { path: 'Creatplan', component: CreatplanComponent },
+    { path: 'PlanSignal', component: PlanSignalComponent }
 ];
