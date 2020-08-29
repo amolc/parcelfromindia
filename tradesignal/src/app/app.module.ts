@@ -15,9 +15,6 @@ import { AppRoutingModule } from './app.routing';
 import { ComponentsModule } from './components/components.module';
 import { LogoutComponent } from './pages/logout/logout.component';
 import { NgxPaginationModule } from 'ngx-pagination';
-import { AnalystviewComponent } from './pages/analystview/analystview.component';
-import { CreatplanComponent } from './pages/creatplan/creatplan.component';
-import { PlanSignalComponent } from './pages/plan-signal/plan-signal.component';
 
 
 
@@ -40,9 +37,7 @@ import { PlanSignalComponent } from './pages/plan-signal/plan-signal.component';
     AdminLayoutComponent,
     AuthLayoutComponent,
     LogoutComponent,
-    AnalystviewComponent,
-    CreatplanComponent,
-    PlanSignalComponent,
+
 
 
 
