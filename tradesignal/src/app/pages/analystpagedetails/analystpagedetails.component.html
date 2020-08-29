@@ -24,22 +24,22 @@
           </div>
         </div>
         <div class="card-body">
-          <form>
+          <form [formGroup]="analystForm" (ngSubmit)="analyst()">
             <h6 class="heading-small text-muted mb-4"></h6>
             <div class="pl-lg-4">
               <div class="row">
                 <div class="col-lg-6">
                   <div class="form-group">
-                    <label class="form-control-label" for="input-first-name">First name</label>
-                    <input type="text" id="input-first-name" class="form-control form-control-alternative"
-                      placeholder="First name">
+                    <label class="form-control-label" for="input-fname">First name</label>
+                    <input type="text" id="input-fname" class="form-control form-control-alternative"
+                      placeholder="First name" formControlName="fname">
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="form-group">
-                    <label class="form-control-label" for="input-last-name">Last name</label>
-                    <input type="text" id="input-last-name" class="form-control form-control-alternative"
-                      placeholder="Last name">
+                    <label class="form-control-label" for="input-lname">Last name</label>
+                    <input type="text" id="input-lname" class="form-control form-control-alternative"
+                      placeholder="Last name" formControlName="lname">
                   </div>
                 </div>
               </div>
@@ -50,42 +50,42 @@
                   <div class="form-group">
                     <label class="form-control-label" for="input-markets">Markets</label>
                     <input type="text" id="input-markets" class="form-control form-control-alternative"
-                      placeholder="market">
+                      placeholder="markets" formControlName="markets">
                   </div>
                 </div>
               </div>
 
             </div>
-            <hr class="my-4" />
+            <!-- <hr class="my-4" /> -->
             <!-- Address -->
-            <h6 class="heading-small text-muted mb-4">Bio information</h6>
+            <!-- <h6 class="heading-small text-muted mb-4">Bio information</h6> -->
             <div class="pl-lg-4">
               <div class="row">
                 <div class="col-md-12">
                   <div class="form-group">
                     <label class="form-control-label" for="input-bio">Bio</label>
-                    <textarea rows="4" class="form-control form-control-alternative" placeholder="bio"
-                      type="text"></textarea>
+                    <textarea rows="4" id="input-bio" class="form-control form-control-alternative" placeholder="bio"
+                      type="text" name="bio" formControlName="bio"></textarea>
                   </div>
                 </div>
               </div>
 
             </div>
-            <hr class="my-4" />
+            <!-- <hr class="my-4" /> -->
             <!-- Description -->
-            <h6 class="heading-small text-muted mb-4"></h6>
+            <!-- <h6 class="heading-small text-muted mb-4"></h6> -->
             <div class="pl-lg-4">
               <div class="form-group">
                 <label>Summary</label>
-                <textarea type="text" rows="4" class="form-control form-control-alternative"
-                  placeholder="Summary"></textarea>
+                <textarea type="text" rows="4" id="input-summary" class="form-control form-control-alternative"
+                  placeholder="Summary" name="summary" formControlName="summary"></textarea>
               </div>
             </div>
             <br>
             <br>
             <div class="m-form__actions m-form__actions" style="text-align: center;">
               <button class="btn btn-warning m-btn m-btn--custom m-btn--icon" id="shedule_data"
-                data-wizard-action="next">
+                data-wizard-action="next" [disabled]=analystForm.invalid>
                 <span>
                   <span>
                     Submit
@@ -97,6 +97,70 @@
           </form>
         </div>
       </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="col-xl-8 order-xl-1">
+  <div class="card bg-secondary shadow">
+    <div class="card-header bg-white border-0">
+      <div class="row align-items-center">
+        <div class="col-8">
+          <h3 class="mb-0">plan</h3>
+        </div>
+        <div class="col-4 text-right">
+
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+
+      <h6 class="heading-small text-muted mb-4"></h6>
+      <div class="pl-lg-4">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="form-group">
+
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="form-group">
+              <button routerLinkActive="active" [routerLink]="['/plan']">plan</button>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div _ngcontent-c5="" class="table-responsive">
+        <table _ngcontent-c5="" class="table align-items-center table-flush">
+          <thead>
+            <tr>
+              <th scope="col" style="font-size: small;font-weight: bold;">PLANNAME</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr _ngcontent-c5="" *ngFor="let listItems of data | paginate: config ">
+              <td scope="row">
+                {{listItems.planname}}
+              </td>
+
+
+
+            </tr>
+
+
+
+          </tbody>
+        </table>
+        <br>
+        <pagination-controls (pageChange)="pageChanged($event)"></pagination-controls>
+      </div>
+
+
     </div>
   </div>
 </div>

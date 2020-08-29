@@ -13,6 +13,7 @@ import { CreatesignalComponent } from '../../pages/createsignal/createsignal.com
 import { IndiastocksComponent } from '../../pages/indiastocks/indiastocks.component';
 import { AnalystpagedetailsComponent } from '../../pages/analystpagedetails/analystpagedetails.component';
 import { SignalsComponent } from '../../pages/signals/signals.component';
+import { CreateplanComponent } from '../../pages/createplan/createplan.component';
 export const AdminLayoutRoutes: Routes = [
     { path: 'dashboard', component: DashboardComponent },
     { path: 'user-profile', component: UserProfileComponent },
@@ -21,6 +22,7 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'pickup', component: MapsComponent },
     { path: 'signals', component: SignalsComponent },
     { path: 'mysuite', component: MySuiteComponent },
+    { path: 'plan', component: CreateplanComponent },
     { path: 'purchase', component: AssistedPurchaseComponent },
     { path: 'ShippingCalculator', component: ShippingCalculatorComponent },
     { path: 'ProhibitedItems', component: ProhibitedItemsComponent },

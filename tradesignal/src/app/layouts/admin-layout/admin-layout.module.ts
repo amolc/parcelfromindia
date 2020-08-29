@@ -21,6 +21,7 @@ import { AnalystpagedetailsComponent } from '../../pages/analystpagedetails/anal
 import { NgxPaginationModule } from 'ngx-pagination';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SignalsComponent } from '../../pages/signals/signals.component';
+import { CreateplanComponent } from '../../pages/createplan/createplan.component';
 // import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
@@ -47,6 +48,7 @@ import { SignalsComponent } from '../../pages/signals/signals.component';
     ProhibitedItemsComponent,
     IndiastocksComponent,
     AnalystpagedetailsComponent,
+    CreateplanComponent,
     SignalsComponent,
 
   ]

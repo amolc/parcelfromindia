@@ -20,6 +20,7 @@ import { EditprofileComponent } from '../../pages/editprofile/editprofile.compon
 import { ItemComponent } from '../../pages/item/item.component';
 import { UserComponent } from '../../pages/user/user.component';
 import { SubcategoryComponent } from '../../pages/subcategory/subcategory.component';
+import { NgxPaginationModule } from 'ngx-pagination';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 // import { ToastrModule } from 'ngx-toastr';
 
@@ -31,7 +32,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HttpClientModule,
     NgbModule,
     ClipboardModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgxPaginationModule
   ],
   declarations: [
     DashboardComponent,
