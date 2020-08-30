@@ -43,14 +43,15 @@
                   </div>
                 </div>
               </div>
+
+              
+
               <div class="row">
-
-
                 <div class="col-lg-6">
                   <div class="form-group">
-                    <label class="form-control-label" for="input-markets">Markets</label>
-                    <input type="text" id="input-markets" class="form-control form-control-alternative"
-                      placeholder="markets" formControlName="markets">
+                    <label class="form-control-label" for="input-username">Username</label>
+                    <input type="text" id="input-username" class="form-control form-control-alternative"
+                      placeholder="Username" formControlName="username">
                   </div>
                 </div>
               </div>
@@ -81,8 +82,52 @@
                   placeholder="Summary" name="summary" formControlName="summary"></textarea>
               </div>
             </div>
-            <br>
-            <br>
+            
+            <div class="pl-lg-4">
+              
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="input-facebook">Facebook</label>
+                    <input type="text" id="input-facebook" class="form-control form-control-alternative"
+                      placeholder="Facebook Link" formControlName="markets">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="input-markets">Whatsapp</label>
+                    <input type="text" id="input-markets" class="form-control form-control-alternative"
+                      placeholder="Whatsapp Link" formControlName="markets">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label class="form-control-label" for="input-telegram">Telegram</label>
+                      <input type="text" id="input-telegram" class="form-control form-control-alternative"
+                        placeholder="Telegram Link" formControlName="markets">
+                    </div>
+                  </div>
+                </div>
+
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="input-markets">Markets</label>
+                    <input type="text" id="input-markets" class="form-control form-control-alternative"
+                      placeholder="markets" formControlName="markets">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
             <div class="m-form__actions m-form__actions" style="text-align: center;">
               <button class="btn btn-warning m-btn m-btn--custom m-btn--icon" id="shedule_data"
                 data-wizard-action="next" [disabled]=analystForm.invalid>
@@ -94,16 +139,45 @@
                 </span>
               </button>
             </div>
+
+            
+
           </form>
         </div>
       </div>
     </div>
 
+    <div class="col-xl-4 order-xl-1">
+        <div class="card bg-secondary shadow">
+          <div class="card-header bg-white border-0">
+            <div class="row align-items-center">
+              <div class="col-8">
+                <h3 class="mb-0">Upload Profile Image</h3>
+              </div>
+              <div class="col-4 text-right">
+  
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <form [formGroup]="analystForm" (ngSubmit)="analyst()" >
+              <h6 class="heading-small text-muted mb-4"></h6>
+              <h3><i class="fas fa-user" style="font-size:200px;"></i></h3><br>
+              <p><input type="file" id="wizard-picture" class=""></p>
+             
+                             
+            </form>
+          </div>
+        </div>
+      </div>
+
   </div>
 </div>
 
 
-<div class="col-xl-8 order-xl-1">
+
+
+<!-- <div class="col-xl-8 order-xl-1">
   <div class="card bg-secondary shadow">
     <div class="card-header bg-white border-0">
       <div class="row align-items-center">
@@ -163,4 +237,4 @@
 
     </div>
   </div>
-</div>
+</div> -->
