@@ -1,10 +1,11 @@
-<div class="header bg-gradient-danger py-7 py-lg-8">
+<div class="header py-7 py-lg-8">
+    <!-- <div class="header bg-gradient-danger py-7 py-lg-8"> old style and css gradient-->
   <div class="container">
     <div class="header-body text-center mb-7">
       <div class="row justify-content-center">
         <div class="col-lg-5 col-md-6">
-          <h1 class="text-blue">Welcome!</h1>
-          <p class="text-lead text-blue"> login or create new account .</p>
+          <h1 class="text-white">TRADESIGNAL.IO</h1>
+          <!-- <p class="text-lead text-blue"> login or create new account .</p> -->
         </div>
       </div>
     </div>
@@ -68,19 +69,20 @@
               </label>
             </div>
             <div class="text-center">
-              <button type="button" class="btn btn-primary my-4" (click)="doLogin()">Sign in</button>
+                <button type="button" class="btn btn-primary my-4" (click)="doLogin()">Sign In</button>
+              <button type="button" class="btn btn-primary my-4" (click)="doLogin()">Sign Up</button>
             </div>
           </form>
         </div>
 
-        <div class="row mt-3">
+        <!-- <div class="row mt-3">
             <div class="col-6">
               <a [routerLink]="['/reset']" class="text-light"><small>Forgot password?</small></a>
             </div>
             <div class="col-6 text-right">
               <a [routerLink]="['/register']" class="text-light"><small>Create new account</small></a>
             </div>
-          </div>
+          </div> -->
           
       </div>
       <div class="row mt-3">
