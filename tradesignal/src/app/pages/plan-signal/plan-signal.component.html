@@ -1,118 +1,113 @@
 <div class="header pb-8 pt-5 pt-lg-8 d-flex align-items-center">
-        <!-- Mask -->
-        <span class="mask bg-gradient-danger opacity-8"></span>
-        <!-- Header container -->
-        <div class="container-fluid d-flex align-items-center">
-          <div class="row">
-      
+  <!-- Mask -->
+  <span class="mask bg-gradient-danger opacity-8"></span>
+  <!-- Header container -->
+  <div class="container-fluid d-flex align-items-center">
+    <div class="row">
+
+    </div>
+  </div>
+</div>
+<div class="container-fluid mt--7">
+  <div class="row">
+
+    <div class="col-xl-8 order-xl-1">
+      <div class="card bg-secondary shadow">
+        <div class="card-header bg-white border-0">
+          <div class="row align-items-center">
+            <div class="col-8">
+              <h3 class="mb-0">INDIA</h3>
+            </div>
+            <div class="col-4 text-right">
+
+            </div>
           </div>
         </div>
-      </div>
-      <div class="container-fluid mt--7">
-        <div class="row">
-      
-                <div class="col-xl-8 order-xl-1">
-                        <div class="card bg-secondary shadow">
-                          <div class="card-header bg-white border-0">
-                            <div class="row align-items-center">
-                              <div class="col-8">
-                                <h3 class="mb-0">INDIA</h3>
-                              </div>
-                              <div class="col-4 text-right">
-                  
-                              </div>
-                            </div>
-                          </div>
-                          <div class="card-body">
-                            <form [formGroup]="analystForm" (ngSubmit)="analyst()">
-                              <h6 class="heading-small text-muted mb-4"></h6>
-                              <div class="pl-lg-4">
-                                <div class="row">
-                                  <div class="col-lg-6">
-                                    <div class="form-group">
-                                      <label class="form-control-label">Plan name</label>
-                                      <input type="text" class="form-control form-control-alternative"
-                                        placeholder="Plan name">
-                                    </div>
-                                  </div>
-                                  
-                                </div>
-                  
-                                
-                  
-                                
-                  
-                              </div>
-                              <!-- <hr class="my-4" /> -->
-                              <!-- Address -->
-                              <!-- <h6 class="heading-small text-muted mb-4">Bio information</h6> -->
-                              <div class="pl-lg-4">
-                                <div class="row">
-                                  <div class="col-md-12">
-                                    <div class="form-group">
-                                      <label class="form-control-label" for="input-bio">Plan Information</label>
-                                      <textarea rows="4" class="form-control form-control-alternative" placeholder="Plan Information"
-                                        type="text"></textarea>
-                                    </div>
-                                  </div>
-                                </div>
-                  
-                              </div>
-                              <!-- <hr class="my-4" /> -->
-                              <!-- Description -->
-                              <!-- <h6 class="heading-small text-muted mb-4"></h6> -->
-                              
-                              
-                              
-                  
-                  
-                              <div class="m-form__actions m-form__actions" style="text-align: center;">
-                                <button class="btn btn-warning m-btn m-btn--custom m-btn--icon" id="shedule_data"
-                                  data-wizard-action="next" [disabled]=analystForm.invalid>
-                                  <span>
-                                    <span>
-                                      Submit
-                                    </span> &nbsp;&nbsp;
-                                    <i class="la la-arrow-right"></i>
-                                  </span>
-                                </button>
-                              </div>
-                  
-                              
-                  
-                            </form>
-                          </div>
-                        </div>
-                      </div>
-      
-          
+        <div class="card-body">
 
-            <div class="col-xl-4 order-xl-1">
-                <div class="card bg-secondary shadow">
-                      <div class="card-header bg-white border-0">
-                        <div class="row align-items-center">
-                          <div class="col-8">
-                            <h3 class="mb-0">.</h3>
-                          </div>
-                          <div class="col-4 text-right">
-              
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-body">
-                        <form [formGroup]="analystForm" (ngSubmit)="analyst()" >
-                          <h6 class="heading-small text-muted mb-4"></h6>
-                          <button type="button" class="btn btn-primary my-4">Creat Signal</button>
-
-                            
-                                         
-                        </form>
-                      </div>
+          <h6 class="heading-small text-muted mb-4"></h6>
+          <div class="pl-lg-4">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label class="form-control-label">Plan name</label>
+                  <input type="text" class="form-control form-control-alternative" placeholder="Plan name">
                 </div>
+              </div>
+
             </div>
-      
+
+
+
+
+
+          </div>
+          <!-- <hr class="my-4" /> -->
+          <!-- Address -->
+          <!-- <h6 class="heading-small text-muted mb-4">Bio information</h6> -->
+          <div class="pl-lg-4">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-bio">Plan Information</label>
+                  <textarea rows="4" class="form-control form-control-alternative" placeholder="Plan Information"
+                    type="text"></textarea>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- <hr class="my-4" /> -->
+          <!-- Description -->
+          <!-- <h6 class="heading-small text-muted mb-4"></h6> -->
+
+
+
+
+
+          <div class="m-form__actions m-form__actions" style="text-align: center;">
+            <button class="btn btn-warning m-btn m-btn--custom m-btn--icon" id="shedule_data" data-wizard-action="next">
+              <span>
+                <span>
+                  Submit
+                </span> &nbsp;&nbsp;
+                <i class="la la-arrow-right"></i>
+              </span>
+            </button>
+          </div>
+
+
+
+
         </div>
       </div>
-      
-    
-      
+    </div>
+
+
+
+    <div class="col-xl-4 order-xl-1">
+      <div class="card bg-secondary shadow">
+        <div class="card-header bg-white border-0">
+          <div class="row align-items-center">
+            <div class="col-8">
+              <h3 class="mb-0">.</h3>
+            </div>
+            <div class="col-4 text-right">
+
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+
+          <h6 class="heading-small text-muted mb-4"></h6>
+          <button type="button" class="btn btn-primary my-4">Creat Signal</button>
+
+
+
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
