@@ -30,7 +30,7 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'ShippingCalculator', component: ShippingCalculatorComponent },
     { path: 'ProhibitedItems', component: ProhibitedItemsComponent },
     { path: 'createsignal', component: CreatesignalComponent },
-    { path: 'Analystview', component: AnalystviewComponent },
+    { path: 'Analystview/:id', component: AnalystviewComponent },
     { path: 'Creatplan', component: CreatplanComponent },
     { path: 'PlanSignal', component: PlanSignalComponent }
 ];

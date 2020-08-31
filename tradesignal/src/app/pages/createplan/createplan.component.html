@@ -124,5 +124,67 @@
         </div>
       </div>
     </div>
+    <div class="col-xl-4 order-xl-1">
+      <div class="card bg-secondary shadow">
+        <div class="card-header bg-white border-0">
+          <div class="row align-items-center">
+            <div class="col-8">
+              <h3 class="mb-0">plans</h3>
+            </div>
+            <div class="col-4 text-right">
+
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+
+          <h6 class="heading-small text-muted mb-4"></h6>
+          <button type="button" class="btn btn-primary my-4" routerLinkActive="active" [routerLink]="['/plan']">Creat
+            Plan</button>
+
+          <div class="pl-lg-4">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <!-- <textarea rows="4" class="form-control form-control-alternative" placeholder="Daily signals"
+                    type="text"></textarea><br> -->
+                  <table _ngcontent-c5="" class="table align-items-center table-flush"
+                    style="line-height: 30px;border-style: groove; ">
+                    <thead _ngcontent-c5="" class="thead-light">
+                      <tr _ngcontent-c5="">
+                        <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">Plan Name</th>
+
+                      </tr>
+                    </thead>
+                    <tbody _ngcontent-c5="">
+                      <tr _ngcontent-c5="" *ngFor="let listItems of data ">
+                        <td _ngcontent-c5="" scope="row">
+                          {{listItems.planname}}
+                        </td>
+
+
+
+
+                      </tr>
+
+
+
+
+                    </tbody>
+                  </table>
+                  <br>
+                  <button type="button" class="btn btn-primary my-4" routerLinkActive="active"
+                    [routerLink]="['/india-stocks']">Signal</button>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
   </div>
 </div>

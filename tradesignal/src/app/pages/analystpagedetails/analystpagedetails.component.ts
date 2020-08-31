@@ -14,17 +14,14 @@ export class AnalystpagedetailsComponent implements OnInit {
   config: any;
 
   data: any;
+  images: any;
   constructor(public formBuilder: FormBuilder, private http: HttpClient, public router: Router) {
     this.analystFormData();
-    this.getdata();
 
 
 
-    this.config = {
-      itemsPerPage: 10,
-      currentPage: 1,
 
-    };
+
   }
 
   ngOnInit(): void {
@@ -39,6 +36,9 @@ export class AnalystpagedetailsComponent implements OnInit {
       lname: [
         { type: "required", message: 'lname is Required' }
       ],
+      username: [
+        { type: "required", message: 'username is Required' }
+      ],
       markets: [
         { type: "required", message: 'markets is Required' }
       ],
@@ -48,7 +48,18 @@ export class AnalystpagedetailsComponent implements OnInit {
       summary: [
         { type: "required", message: 'summary is Required' }
       ],
-
+      facebook: [
+        { type: "required", message: 'facebook link is Required' }
+      ],
+      whatsapp: [
+        { type: "required", message: 'whatsapp link is Required' }
+      ],
+      telegrem: [
+        { type: "required", message: 'telegrem is Required' }
+      ],
+      file: [
+        { type: "required", message: 'file is Required' }
+      ],
     };
     this.analystForm = this.formBuilder.group(
       {
@@ -83,24 +94,69 @@ export class AnalystpagedetailsComponent implements OnInit {
             Validators.required,
           ])
         ),
-
+        facebook: new FormControl(
+          "",
+          Validators.compose([
+            Validators.required,
+          ])
+        ),
+        whatsapp: new FormControl(
+          "",
+          Validators.compose([
+            Validators.required,
+          ])
+        ),
+        telegrem: new FormControl(
+          "",
+          Validators.compose([
+            Validators.required,
+          ])
+        ),
+        username: new FormControl(
+          "",
+          Validators.compose([
+            Validators.required,
+          ])
+        ),
+        file: new FormControl(
+          "",
+          Validators.compose([
+            Validators.required,
+          ])
+        ),
       },
     );
   }
+  selectImage(event) {
+    if (event.target.files.length > 0) {
+      const file = event.target.files[0];
+      this.images = file;
+      console.log(file)
+    }
+  }
   analyst() {
+    JSON.parse(localStorage.getItem('token')).users['_id']
     this.params = {
       "fname": this.analystForm.controls.fname.value,
       "lname": this.analystForm.controls.lname.value,
       "bio": this.analystForm.controls.bio.value,
       "markets": this.analystForm.controls.markets.value,
       "summary": this.analystForm.controls.summary.value,
-
+      "facebook": this.analystForm.controls.facebook.value,
+      "whatsapp": this.analystForm.controls.whatsapp.value,
+      "telegrem": this.analystForm.controls.telegrem.value,
+      "username": this.analystForm.controls.username.value,
+      "file": this.analystForm.controls.file.value,
+      "userid": JSON.parse(localStorage.getItem('token')).users['_id']
     }
+    //console.log(this.params)
     return new Promise((resolve, reject) => {
+      console.log(JSON.parse(localStorage.getItem('token')).users['_id'])
       this.http.post("https://api.80startups.com/tradeAnalysts/createTradingAnalyst", this.params).subscribe(result => {
         console.log(result, "result");
-        //localStorage.setItem('token', JSON.stringify(result['users'].tokens))
-        this.router.navigateByUrl('/dashboard');
+        // localStorage.setItem('Analyst', JSON.stringify(result))
+        console.log('/Analystview/' + result['id'])
+        this.router.navigateByUrl('/Analystview/' + result['id']);
       },
         err => {
           console.log(err);
@@ -109,20 +165,6 @@ export class AnalystpagedetailsComponent implements OnInit {
       );
     });
   }
-  pageChanged(event) {
-    this.config.currentPage = event;
-  }
-  getdata() {
-    return new Promise((resolve, reject) => {
-      this.http.get("https://api.80startups.com/tradePlan/getAllPlans").subscribe(result => {
-        console.log("result", result);
-        this.data = result;
 
-      },
-        err => {
-          reject(err);
-        }
-      );
-    });
-  }
+
 }

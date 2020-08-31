@@ -61,7 +61,7 @@ export class LoginComponent implements OnInit {
     return new Promise((resolve, reject) => {
       this.http.post(environment.baseurl + "auth/loginUser/" + this.params.project_id, this.params).subscribe(result => {
         console.log(result, "result");
-        localStorage.setItem('token', JSON.stringify(result['users'].tokens))
+        localStorage.setItem('token', JSON.stringify(result))
         this.router.navigateByUrl('/dashboard');
       },
         err => {

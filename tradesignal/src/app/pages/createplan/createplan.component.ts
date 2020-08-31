@@ -11,8 +11,10 @@ export class CreateplanComponent implements OnInit {
   planForm: FormGroup;
   error_messages: any = {};
   params: any;
+  data: any;
   constructor(public formBuilder: FormBuilder, private http: HttpClient, public router: Router) {
-    this.planFormData()
+    this.planFormData();
+    this.getdata1();
   }
 
   ngOnInit(): void {
@@ -113,17 +115,32 @@ export class CreateplanComponent implements OnInit {
       "planend": this.planForm.controls.planend.value,
       "planpricemonthly": this.planForm.controls.planpricemonthly.value,
       "planpriceannual": this.planForm.controls.planpriceannual.value,
-
+      "userid": JSON.parse(localStorage.getItem('token')).users['_id']
     }
     return new Promise((resolve, reject) => {
       this.http.post("https://api.80startups.com/tradePlan/createTradingPlans", this.params).subscribe(result => {
         console.log(result, "result");
         //localStorage.setItem('token', JSON.stringify(result['users'].tokens))
-        this.router.navigateByUrl('/dashboard');
+        this.router.navigateByUrl('/Analystview');
       },
         err => {
           console.log(err);
           alert("please enter the deatils");
+        }
+      );
+    });
+  }
+  getdata1() {
+    return new Promise((resolve, reject) => {
+      //console.log(this.Anayst_id)
+      this.http.get("https://api.80startups.com/tradePlan/getAllPlans").subscribe(result => {
+        console.log("result", result);
+
+        this.data = result;
+
+      },
+        err => {
+          reject(err);
         }
       );
     });
