@@ -70,7 +70,7 @@
                     <thead _ngcontent-c5="" class="thead-light">
                       <tr _ngcontent-c5="">
                         <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">Plan Name</th>
-
+                        <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">view</th>
                       </tr>
                     </thead>
                     <tbody _ngcontent-c5="">
@@ -78,7 +78,10 @@
                         <td _ngcontent-c5="" scope="row">
                           {{listItems.planname}}
                         </td>
+                        <td _ngcontent-c5="">
 
+                          <button (click)="plans(listItems._id)">view</button>
+                        </td>
 
 
 

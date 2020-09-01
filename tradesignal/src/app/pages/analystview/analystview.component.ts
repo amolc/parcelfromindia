@@ -24,6 +24,9 @@ export class AnalystviewComponent implements OnInit {
     console.log(this.Anayst_id)
 
   }
+  plans(id) {
+    this.router.navigate(["/Creatplan/", id]);
+  }
   getdata() {
     return new Promise((resolve, reject) => {
       console.log(this.Anayst_id)
@@ -49,7 +52,7 @@ export class AnalystviewComponent implements OnInit {
     return new Promise((resolve, reject) => {
       //console.log(this.Anayst_id)
       //console.log(JSON.parse(localStorage.getItem('token')).users['_id'])
-      this.http.get("https://api.80startups.com/tradePlan/getAllPlans").subscribe(result => {
+      this.http.get("https://api.80startups.com/2/tradePlan/getAllPlans").subscribe(result => {
         console.log("result", result);
 
         this.data1 = result;

@@ -139,8 +139,8 @@
         <div class="card-body">
 
           <h6 class="heading-small text-muted mb-4"></h6>
-          <button type="button" class="btn btn-primary my-4" routerLinkActive="active" [routerLink]="['/plan']">Creat
-            Plan</button>
+          <!-- <button type="button" class="btn btn-primary my-4" routerLinkActive="active" [routerLink]="['/plan']">Create
+            Plan</button> -->
 
           <div class="pl-lg-4">
             <div class="row">
@@ -153,17 +153,19 @@
                     <thead _ngcontent-c5="" class="thead-light">
                       <tr _ngcontent-c5="">
                         <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">Plan Name</th>
-
+                        <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">view</th>
                       </tr>
                     </thead>
                     <tbody _ngcontent-c5="">
                       <tr _ngcontent-c5="" *ngFor="let listItems of data ">
                         <td _ngcontent-c5="" scope="row">
+
                           {{listItems.planname}}
                         </td>
+                        <td _ngcontent-c5="">
 
-
-
+                          <button (click)="plans(listItems._id)">view</button>
+                        </td>
 
                       </tr>
 
