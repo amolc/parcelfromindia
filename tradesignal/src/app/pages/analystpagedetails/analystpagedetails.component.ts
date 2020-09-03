@@ -57,9 +57,9 @@ export class AnalystpagedetailsComponent implements OnInit {
       telegrem: [
         { type: "required", message: 'telegrem is Required' }
       ],
-      file: [
-        { type: "required", message: 'file is Required' }
-      ],
+      // file: [
+      //   { type: "required", message: 'file is Required' }
+      // ],
     };
     this.analystForm = this.formBuilder.group(
       {
@@ -118,22 +118,22 @@ export class AnalystpagedetailsComponent implements OnInit {
             Validators.required,
           ])
         ),
-        file: new FormControl(
-          "",
-          Validators.compose([
-            Validators.required,
-          ])
-        ),
+        // file: new FormControl(
+        //   "",
+        //   Validators.compose([
+        //     Validators.required,
+        //   ])
+        // ),
       },
     );
   }
-  selectImage(event) {
-    if (event.target.files.length > 0) {
-      const file = event.target.files[0];
-      this.images = file;
-      console.log(file)
-    }
-  }
+  // selectImage(event) {
+  //   if (event.target.files.length > 0) {
+  //     const file = event.target.files[0];
+  //     this.images = file;
+  //     console.log(file)
+  //   }
+  // }
   analyst() {
     JSON.parse(localStorage.getItem('token')).users['_id']
     this.params = {
@@ -146,13 +146,13 @@ export class AnalystpagedetailsComponent implements OnInit {
       "whatsapp": this.analystForm.controls.whatsapp.value,
       "telegrem": this.analystForm.controls.telegrem.value,
       "username": this.analystForm.controls.username.value,
-      "file": this.analystForm.controls.file.value,
+      // "file": this.analystForm.controls.file.value,
       "userid": JSON.parse(localStorage.getItem('token')).users['_id']
     }
     //console.log(this.params)
     return new Promise((resolve, reject) => {
       console.log(JSON.parse(localStorage.getItem('token')).users['_id'])
-      this.http.post("http://localhost:5000/2/tradeAnalysts/createTradingAnalyst", this.params).subscribe(result => {
+      this.http.post("https://api.80startups.com/2/tradeAnalysts/createTradingAnalyst", this.params).subscribe(result => {
         console.log(result, "result");
         // localStorage.setItem('Analyst', JSON.stringify(result))
         console.log('/Analystview/' + result['id'])

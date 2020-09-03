@@ -30,8 +30,9 @@
               <div class="row">
                 <div class="col-lg-6">
                   <div class="form-group">
-                    <select formControlName="plan">
-                      <option *ngFor="let plan of plans[0]" [value]="plan._id">
+                    <label class="form-control-label" for="input-plan"> Select Plan</label>
+                    <select class="form-control" placeholder="Select Plan" formControlName="plan">
+                      <option class="form-control" *ngFor="let plan of plans[0]" [value]="plan._id">
                         {{ plan.planname }}
                       </option>
 

@@ -1,0 +1,76 @@
+<div class="header pb-8 pt-5 pt-lg-8 d-flex align-items-center">
+  <!-- Mask -->
+  <span class="mask bg-gradient-danger opacity-8"></span>
+  <!-- Header container -->
+  <div class="container-fluid d-flex align-items-center">
+    <div class="row">
+
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid mt--7">
+
+
+  <div class="row mt-5">
+    <div class="col-xl-12 mb-5 mb-xl-0">
+      <div class="card shadow" style="min-height:300px;">
+        <div class="card-header border-0">
+          <div class="row align-items-center">
+            <div _ngcontent-c5="" class="table-responsive">
+              <table _ngcontent-c5="" class="table align-items-center table-flush"
+                style="line-height: 30px;border-style: groove; ">
+                <thead _ngcontent-c5="" class="thead-light">
+                  <tr _ngcontent-c5="">
+                    <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">ANALYST FIRST NAME</th>
+                    <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">ANALYST LAST NAME</th>
+                    <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">ANALYST MARKET</th>
+                    <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">ANALYST SUMMARY</th>
+                    <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">VIEW</th>
+
+                  </tr>
+                </thead>
+                <tbody _ngcontent-c5="">
+                  <tr _ngcontent-c5="" *ngFor="let item of data[0]">
+                    <td _ngcontent-c5="">
+                      {{item.fname}}
+                    </td>
+
+                    <td _ngcontent-c5="">
+                      {{item.lname}}
+                    </td>
+                    <td _ngcontent-c5="">
+                      {{item.markets}}
+                    </td>
+                    <td _ngcontent-c5="">
+                      {{item.summary}}
+                    </td>
+                    <td _ngcontent-c5="">
+                      <button class="btn btn-primary my-4" (click)="analystview(item._id)"> View</button>
+
+                    </td>
+
+
+
+
+                  </tr>
+
+
+
+
+                </tbody>
+              </table>
+              <br>
+              <!-- <pagination-controls (pageChange)="pageChanged($event)"></pagination-controls> -->
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <br>
+
+  </div>
+
+</div>

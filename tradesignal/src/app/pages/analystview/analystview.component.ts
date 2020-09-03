@@ -7,8 +7,8 @@ import { Router, ActivatedRoute } from "@angular/router";
   styleUrls: ["./analystview.component.css"],
 })
 export class AnalystviewComponent implements OnInit {
-  data: any;
-  data1: any;
+  data: any = [];
+  data1: any = [];
   public Anayst_id: any;
 
   constructor(
@@ -33,13 +33,14 @@ export class AnalystviewComponent implements OnInit {
     this.router.navigateByUrl("/india-stocks/" + _id);
   }
   getdata() {
+    console.log(this.route.snapshot.params.id)
     return new Promise((resolve, reject) => {
       console.log(this.Anayst_id);
       console.log(JSON.parse(localStorage.getItem("token")).users["_id"]);
       this.http
         .get(
           "https://api.80startups.com/2/tradeAnalysts/getAnalystByOwnId/" +
-            this.route.snapshot.params.id
+          this.route.snapshot.params.id
         )
         .subscribe(
           (result) => {
@@ -49,7 +50,7 @@ export class AnalystviewComponent implements OnInit {
               return alert(result["message"]);
             }
 
-            this.data = result;
+            this.data.push(result);
           },
           (err) => {
             reject(err);

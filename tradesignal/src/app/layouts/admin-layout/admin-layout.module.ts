@@ -25,6 +25,7 @@ import { AnalystviewComponent } from '../../pages/analystview/analystview.compon
 import { CreatplanComponent } from '../../pages/creatplan/creatplan.component';
 import { PlanSignalComponent } from '../../pages/plan-signal/plan-signal.component';
 import { PlanbyidComponent } from '../../pages/planbyid/planbyid.component';
+import { AnalystlistComponent } from '../../pages/analystlist/analystlist.component';
 // import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
@@ -55,6 +56,7 @@ import { PlanbyidComponent } from '../../pages/planbyid/planbyid.component';
     CreatplanComponent,
     PlanSignalComponent,
     PlanbyidComponent,
+    AnalystlistComponent
 
   ]
 })

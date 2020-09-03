@@ -23,7 +23,7 @@ export class NavbarComponent implements OnInit {
     console.log(this.user)
   }
   Analystconsole() {
-    this.router.navigateByUrl('/Analystview/' + this.user._id);
+    this.router.navigateByUrl('/analystlist');
   }
   getTitle() {
     var titlee = this.location.prepareExternalUrl(this.location.path());
