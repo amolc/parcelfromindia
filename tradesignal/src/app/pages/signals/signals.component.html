@@ -30,6 +30,19 @@
               <div class="row">
                 <div class="col-lg-6">
                   <div class="form-group">
+                    <select formControlName="plan">
+                      <option *ngFor="let plan of plans[0]" [Value]="plan._id">
+                        {{ plan.planname }}
+                      </option>
+
+                    </select>
+                  </div>
+                </div>
+
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group">
                     <label class="form-control-label" for="input-stockSymbol"> StockSymbol</label>
                     <input type="text" placeholder="Enter stockSymbol" name="stockSymbol" id="stockSymbol"
                       formControlName="stockSymbol" class="form-control form-control-alternative" required>

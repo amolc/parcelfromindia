@@ -24,14 +24,19 @@ export class AnalystviewComponent implements OnInit {
     console.log(this.Anayst_id)
 
   }
-  plans(id) {
-    this.router.navigate(["/Creatplan/", id]);
+  plans(_id) {
+    // this.router.navigate(["/Creatplan/", id]);
+    //this.router.navigate(["/india-stocks"]);
+    console.log(_id)
+    this.router.navigateByUrl('/india-stocks/' + _id);
+
   }
   getdata() {
+
     return new Promise((resolve, reject) => {
       console.log(this.Anayst_id)
       console.log(JSON.parse(localStorage.getItem('token')).users['_id'])
-      this.http.get("https://api.80startups.com/tradeAnalysts/getAnalystrById/" + this.route.snapshot.params.id + '/' + JSON.parse(localStorage.getItem('token')).users['_id']).subscribe(result => {
+      this.http.get("http://localhost:5000/2/tradeAnalysts/getAnalystByOwnId/" + this.route.snapshot.params.id).subscribe(result => {
         console.log("result", result);
 
         if (result['message'] == "no records found") {

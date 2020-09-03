@@ -11,37 +11,7 @@ am4core.useTheme(am4themes_animated);
 })
 
 export class DashboardComponent implements OnInit {
-
-  // pieChartOptions: ChartOptions = {
-  //   responsive: true,
-  //   legend: {
-  //     position: 'top',
-  //   },
-  //   tooltips: {
-  //     enabled: true,
-  //     mode: 'single',
-  //     callbacks: {
-  //       label: function (tooltipItems, data) {
-  //         return data.datasets[0].data[tooltipItems.index] + ' %';
-  //       }
-  //     }
-  //   },
-  // };
-  // pieChartLabels: Label[] = ['Win', 'Loss'];
-
-  // pieChartData: number[] = [78.09, 20.95];
-
-  // pieChartType: ChartType = 'pie';
-
-  // pieChartLegend = true;
-
-  // pieChartPlugins = [];
-
-  // pieChartColors = [
-  //   {
-  //     backgroundColor: ['rgba(255,0,0,0.3)', 'rgba(0,255,0,0.3)', 'rgba(0,0,255,0.3)'],
-  //   },
-  // ];
+  user: any
 
   constructor() {
 
@@ -52,6 +22,8 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit() {
 
+    this.user = JSON.parse(localStorage.getItem('token')).users
+    console.log(this.user)
   }
 
 }

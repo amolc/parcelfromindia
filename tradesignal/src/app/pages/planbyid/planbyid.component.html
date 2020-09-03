@@ -7,9 +7,62 @@
           <div class="card card-stats mb-4 mb-xl-0" style="padding:10px;">
             <div class="m-widget24">
               <div class="m-widget24__item">
-                <h3>Amol C</h3>
-                <p>Singapore</p>
+                <!-- <h3>Amol C</h3>
+                <p>Singapore</p> -->
 
+                <thead _ngcontent-c5="" class="thead-light">
+                  <tr _ngcontent-c5="">
+                    <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">Plan Name</th>
+                    <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">Plan Info</th>
+                    <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">Plan Duration</th>
+                    <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">Plan Owner</th>
+                    <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">Plan Start</th>
+                    <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">Plan End</th>
+                    <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">Plan PriceMonthly
+                    </th>
+                    <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">Plan priceAnnual</th>
+                  </tr>
+                </thead>
+                <tbody _ngcontent-c5="">
+                  <tr _ngcontent-c5="" *ngFor="let listItems of data">
+                    <td _ngcontent-c5="" scope="row">
+                      {{listItems.planname}}
+                    </td>
+
+                    <td _ngcontent-c5="">
+                      {{listItems.planinfo}}
+                    </td>
+
+                    <td _ngcontent-c5="">
+                      {{listItems.planduration}}
+                    </td>
+                    <td _ngcontent-c5="">
+                      {{listItems.planowner}}
+                    </td>
+                    <td _ngcontent-c5="">
+                      {{listItems.planstart}}
+                    </td>
+
+                    <td _ngcontent-c5="">
+                      {{listItems.planend}}
+                    </td>
+
+                    <td _ngcontent-c5="">
+                      {{listItems.planpricemonthly}}
+                    </td>
+
+                    <td _ngcontent-c5="">
+                      {{listItems.planpriceannual}}
+                    </td>
+
+
+
+                  </tr>
+
+
+
+
+                </tbody>
 
               </div>
             </div>
@@ -48,7 +101,8 @@
   </div>
 </div>
 <div class="container-fluid mt--7">
-
+  <button type="button" class="btn btn-primary my-4" routerLinkActive="active" [routerLink]="['/signals']"> GoTo Create
+    Signal</button>
   <div class="row mt-5">
     <div class="col-xl-12 mb-5 mb-xl-0">
       <div class="card shadow" style="min-height:300px;">
@@ -105,28 +159,7 @@
                     <!-- <td _ngcontent-c5=""><i _ngcontent-c5="" class="fas fa-arrow-up text-success mr-3"></i> 46,53%</td> -->
                   </tr>
 
-                  <!-- <tr _ngcontent-c5="">
-                    <th _ngcontent-c5="" scope="row">9.30</th>
-                    <td _ngcontent-c5="">AXIS</td>
-                    <td _ngcontent-c5="">SHORT TERM</td>
-                    <td _ngcontent-c5="">123</td>
-                    <td _ngcontent-c5="">212</td>
-                    <td _ngcontent-c5="">256</td>
-                    <td _ngcontent-c5="">BUY</td>
-                    <td _ngcontent-c5="">ONGOING</td>
-                     <td _ngcontent-c5=""><i _ngcontent-c5="" class="fas fa-arrow-up text-success mr-3"></i> 46,53%</td> -->
-                  <!-- </tr>
-                  <tr _ngcontent-c5="">
-                    <th _ngcontent-c5="" scope="row">9.30</th>
-                    <td _ngcontent-c5="">AXIS</td>
-                    <td _ngcontent-c5="">SHORT TERM</td>
-                    <td _ngcontent-c5="">123</td>
-                    <td _ngcontent-c5="">212</td>
-                    <td _ngcontent-c5="">256</td>
-                    <td _ngcontent-c5="">BUY</td>
-                    <td _ngcontent-c5="">ONGOING</td>
-                    <td _ngcontent-c5=""><i _ngcontent-c5="" class="fas fa-arrow-up text-success mr-3"></i> 46,53%</td> -->
-                  <!-- </tr>  -->
+
 
 
                 </tbody>
@@ -143,6 +176,5 @@
     <br>
 
   </div>
-  <h2>Go to signalprofile</h2>
-  <div><button routerLinkActive="active" [routerLink]="['/signals']">signal</button></div>
+
 </div>

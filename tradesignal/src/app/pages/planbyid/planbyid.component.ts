@@ -7,24 +7,17 @@ import am4themes_animated from "@amcharts/amcharts4/themes/animated";
 
 am4core.useTheme(am4themes_animated);
 @Component({
-  selector: 'app-indiastocks',
-  templateUrl: './indiastocks.component.html',
-  styleUrls: ['./indiastocks.component.css']
+  selector: 'app-planbyid',
+  templateUrl: './planbyid.component.html',
+  styleUrls: ['./planbyid.component.css']
 })
-export class IndiastocksComponent implements OnInit {
+export class PlanbyidComponent implements OnInit {
   config: any;
 
   data: any;
   data1 = [];
   data2 = [];
-  //result1 = [0];
-
-
   constructor(private http: HttpClient, private router: Router, private route: ActivatedRoute,) {
-    this.getdata();
-    this.getdata1();
-    this.getdata2();
-
 
     this.config = {
       itemsPerPage: 10,
@@ -32,16 +25,12 @@ export class IndiastocksComponent implements OnInit {
 
     };
 
-
-
-
-
-
-
   }
 
   ngOnInit(): void {
 
+    this.getplanlist()
+    this.getsignalbyid()
     let chart = am4core.create("chartdiv", am4charts.PieChart);
 
     // Add and configure Series
@@ -170,9 +159,32 @@ export class IndiastocksComponent implements OnInit {
   pageChanged(event) {
     this.config.currentPage = event;
   }
-  getdata() {
+
+  getplanlist() {
+    this.data = []
     return new Promise((resolve, reject) => {
-      this.http.get("https://api.80startups.com/tradeSignals/getAllSignals").subscribe(result => {
+
+      console.log(JSON.parse(localStorage.getItem('token')).users['_id'])
+      this.http.get("https://api.80startups.com/2/tradePlan/getPlanById/" + this.route.snapshot.params.id + '/' + JSON.parse(localStorage.getItem('token')).users['_id']).subscribe(result => {
+        console.log("result", result);
+
+        if (result['message'] == "no records found") {
+          return alert(result['message'])
+        }
+
+        this.data = result;
+
+
+      },
+        err => {
+          reject(err);
+        }
+      );
+    });
+  }
+  getsignalbyid() {
+    return new Promise((resolve, reject) => {
+      this.http.get("https://api.80startups.com/tradeSignals/getallsignalsbyplanid/" + this.route.snapshot.params.id).subscribe(result => {
         console.log("result", result);
         this.data = result;
 
@@ -183,44 +195,7 @@ export class IndiastocksComponent implements OnInit {
       );
     });
   }
-  getdata1() {
-    const yearchart = new Promise((resolve, reject) => {
-      this.http.get("https://api.80startups.com/tradeSignals/getCountperYear/1").subscribe(result => {
-        console.log("result", result);
-        //this.data1 = this.result;
 
-
-
-
-
-
-        this.data1.push(result)[0];
-
-
-      },
-        err => {
-          reject(err);
-        }
-      );
-    })
-
-
-  }
-  getdata2() {
-    return new Promise((resolve, reject) => {
-      this.http.get("https://api.80startups.com/tradeSignals/getCountLatestMonth/1").subscribe(result => {
-        console.log("result", result);
-
-        this.data2.push(result)[0];
-
-
-      },
-        err => {
-          reject(err);
-        }
-      );
-    });
-  }
 
 
 }

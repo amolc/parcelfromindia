@@ -152,7 +152,7 @@ export class AnalystpagedetailsComponent implements OnInit {
     //console.log(this.params)
     return new Promise((resolve, reject) => {
       console.log(JSON.parse(localStorage.getItem('token')).users['_id'])
-      this.http.post("https://api.80startups.com/tradeAnalysts/createTradingAnalyst", this.params).subscribe(result => {
+      this.http.post("http://localhost:5000/2/tradeAnalysts/createTradingAnalyst", this.params).subscribe(result => {
         console.log(result, "result");
         // localStorage.setItem('Analyst', JSON.stringify(result))
         console.log('/Analystview/' + result['id'])

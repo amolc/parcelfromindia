@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators, } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-signals',
   templateUrl: './signals.component.html',
@@ -11,13 +11,31 @@ export class SignalsComponent implements OnInit {
   signalsForm: FormGroup;
   error_messages: any = {};
   params: any;
+  plans: any = [];
+
   constructor(public formBuilder: FormBuilder,
     private http: HttpClient,
-    public router: Router) {
+    public router: Router, private route: ActivatedRoute,) {
     this.signalsFormData()
   }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    return new Promise((resolve, reject) => {
+
+      console.log(JSON.parse(localStorage.getItem('token')).users['_id'])
+      this.http.get("https://api.80startups.com/2/tradePlan/getallplansbyuserid/" + this.route.snapshot.params.id).subscribe(result => {
+        console.log("result", result);
+        this.plans.push(result)
+        console.log(this.plans)
+
+
+
+      },
+        err => {
+          reject(err);
+        }
+      );
+    });
   }
   signalsFormData() {
     this.error_messages = {
@@ -61,6 +79,9 @@ export class SignalsComponent implements OnInit {
       ],
       targetPrice: [
         { type: "required", message: 'targetPrice is Required' }
+      ],
+      plan: [
+        { type: "required", message: 'plan is Required' }
       ],
     };
     this.signalsForm = this.formBuilder.group(
@@ -144,6 +165,12 @@ export class SignalsComponent implements OnInit {
             Validators.required,
           ])
         ),
+        plan: new FormControl(
+          "",
+          Validators.compose([
+            Validators.required,
+          ])
+        ),
 
       },
     );
@@ -163,18 +190,20 @@ export class SignalsComponent implements OnInit {
       "message": this.signalsForm.controls.message.value,
       "price": this.signalsForm.controls.price.value,
       "targetPrice": this.signalsForm.controls.targetPrice.value,
+      "plan": this.signalsForm.controls.plan.value,
     }
-    return new Promise((resolve, reject) => {
-      this.http.post("https://api.80startups.com/tradesignals/createTradingSignals", this.params).subscribe(result => {
-        console.log(result, "result");
-        //localStorage.setItem('token', JSON.stringify(result['users'].tokens))
-        this.router.navigateByUrl('/india-stocks');
-      },
-        err => {
-          console.log(err);
-          alert("please enter correct details");
-        }
-      );
-    });
+    console.log(this.params)
+    // return new Promise((resolve, reject) => {
+    //   this.http.post("https://api.80startups.com/tradesignals/createTradingSignals", this.params).subscribe(result => {
+    //     console.log(result, "result");
+    //     //localStorage.setItem('token', JSON.stringify(result['users'].tokens))
+    //     this.router.navigateByUrl('/india-stocks/' + result['id']);
+    //   },
+    //     err => {
+    //       console.log(err);
+    //       alert("please enter correct details");
+    //     }
+    //   );
+    // });
   }
 }
