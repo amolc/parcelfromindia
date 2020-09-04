@@ -26,6 +26,7 @@ export class AnalystlistComponent implements OnInit {
   }
   analystview(id) {
     this.router.navigateByUrl('/Analystview/' + id);
+
   }
 
   getdata() {

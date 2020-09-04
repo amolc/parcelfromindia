@@ -57,7 +57,7 @@ export class LoginComponent implements OnInit {
     this.params = {
       email: this.loginForm.value.email,
       password: this.loginForm.value.password,
-      project_id: 2,
+      projectid: 2,
     };
     return new Promise((resolve, reject) => {
       this.http

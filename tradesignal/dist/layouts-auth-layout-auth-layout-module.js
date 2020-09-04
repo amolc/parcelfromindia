@@ -209,7 +209,7 @@ var LoginComponent = /** @class */ (function () {
         this.params = {
             email: this.loginForm.value.email,
             password: this.loginForm.value.password,
-            project_id: 2,
+            projectid: 2,
         };
         return new Promise(function (resolve, reject) {
             _this.http
@@ -325,7 +325,7 @@ var RegisterComponent = /** @class */ (function () {
                 { type: "minlength", message: "minimun length should be 8 ." },
                 { type: "maxlength", message: "maximum length should be 12 ." },
             ],
-            project_id: [{ type: "required", message: "Password is Required." }],
+            projectid: [{ type: "required", message: "Password is Required." }],
         };
         this.signUpForm = this.formBuilder.group({
             fname: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required])),

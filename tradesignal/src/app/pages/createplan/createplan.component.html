@@ -153,7 +153,8 @@
                     <thead _ngcontent-c5="" class="thead-light">
                       <tr _ngcontent-c5="">
                         <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">Plan Name</th>
-                        <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">view</th>
+                        <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">View</th>
+
                       </tr>
                     </thead>
                     <tbody _ngcontent-c5="">
@@ -164,7 +165,7 @@
                         </td>
                         <td _ngcontent-c5="">
 
-                          <button (click)="plans(listItems._id)">view</button>
+                          <button (click)="plans(listItems._id)">View</button>
                         </td>
 
                       </tr>
@@ -175,8 +176,7 @@
                     </tbody>
                   </table>
                   <br>
-                  <button type="button" class="btn btn-primary my-4" routerLinkActive="active"
-                    [routerLink]="['/india-stock']">Signal</button>
+                  <button type="button" class="btn btn-primary my-4" (click)="signal()">Signal</button>
 
                 </div>
               </div>

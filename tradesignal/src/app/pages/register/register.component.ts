@@ -24,7 +24,7 @@ export class RegisterComponent implements OnInit {
     this.setupLoginFormData();
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
   setupLoginFormData() {
     this.error_messages = {
       fname: [{ type: "required", message: "First Name is Required" }],
@@ -49,7 +49,7 @@ export class RegisterComponent implements OnInit {
         { type: "minlength", message: "minimun length should be 8 ." },
         { type: "maxlength", message: "maximum length should be 12 ." },
       ],
-      project_id: [{ type: "required", message: "Password is Required." }],
+      projectid: [{ type: "required", message: "Password is Required." }],
     };
     this.signUpForm = this.formBuilder.group({
       fname: new FormControl("", Validators.compose([Validators.required])),

@@ -106,25 +106,32 @@ export class CreateplanComponent implements OnInit {
       },
     );
   }
-  plans(id) {
-    this.router.navigate(["/Creatplan/", id]);
-    //this.data = []
-    //   return new Promise((resolve, reject) => {
-    //     //console.log(this.Anayst_id)
-    //     this.http.get("https://api.80startups.com/2/tradePlan/getPlanById/" + id + '/' + JSON.parse(localStorage.getItem('token')).users['_id']).subscribe(result => {
-    //       console.log("result", result);
-
-    //       this.data = result;
-
-    //     },
-    //       err => {
-    //         reject(err);
-    //       }
-    //     );
-    //   });
-
-    //   //console.log(id)
+  plans(_id) {
+    // this.router.navigate(["/Creatplan/", id]);
+    //this.router.navigate(["/india-stocks"]);
+    console.log(_id);
+    this.router.navigateByUrl("/india-stocks/" + _id);
   }
+  signal() {
+    this.router.navigateByUrl("/signals");
+  }
+  //this.data = []
+  //   return new Promise((resolve, reject) => {
+  //     //console.log(this.Anayst_id)
+  //     this.http.get("https://api.80startups.com/2/tradePlan/getPlanById/" + id + '/' + JSON.parse(localStorage.getItem('token')).users['_id']).subscribe(result => {
+  //       console.log("result", result);
+
+  //       this.data = result;
+
+  //     },
+  //       err => {
+  //         reject(err);
+  //       }
+  //     );
+  //   });
+
+  //   //console.log(id)
+
   plan() {
     this.params = {
       "planname": this.planForm.controls.planname.value,
@@ -141,7 +148,7 @@ export class CreateplanComponent implements OnInit {
       this.http.post("https://api.80startups.com/2/tradePlan/createTradingPlans", this.params).subscribe(result => {
         console.log(result, "result");
         //localStorage.setItem('token', JSON.stringify(result['users'].tokens))
-        this.router.navigateByUrl('/Creatplan/' + result['id']);
+        this.router.navigateByUrl("/india-stocks/" + result['id']);
       },
         err => {
           console.log(err);

@@ -23,7 +23,9 @@ export class NavbarComponent implements OnInit {
     console.log(this.user)
   }
   Analystconsole() {
-    this.router.navigateByUrl('/analystlist');
+    console.log("Analystconsole")
+    console.log('/Analystview/' + localStorage.getItem('anayst_id'))
+    this.router.navigateByUrl('/Analystview/' + localStorage.getItem('anayst_id'));
   }
   getTitle() {
     var titlee = this.location.prepareExternalUrl(this.location.path());
