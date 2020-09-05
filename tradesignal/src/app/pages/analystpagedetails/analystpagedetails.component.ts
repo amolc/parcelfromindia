@@ -156,6 +156,7 @@ export class AnalystpagedetailsComponent implements OnInit {
         console.log(result, "result");
         // localStorage.setItem('Analyst', JSON.stringify(result))
         console.log('/Analystview/' + result['id'])
+        localStorage.setItem('anayst_id', result['id'])
         this.router.navigateByUrl('/Analystview/' + result['id']);
       },
         err => {

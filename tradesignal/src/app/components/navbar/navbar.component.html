@@ -24,9 +24,9 @@
 
     <ul class="navbar-nav align-items-center d-none d-md-flex">
 
-      <li><button *ngIf="user.AdminAccess" type="button" class="btn btn-primary my-4" routerLinkActive="active"
+      <li><button *ngIf="analystid==undefined" type="button" class="btn btn-primary my-4" routerLinkActive="active"
           [routerLink]="['/analyst']">Become a Analyst</button></li>
-      <li><button *ngIf="!user.AdminAccess" type="button" class="btn btn-primary my-4" routerLinkActive="active"
+      <li><button *ngIf="analystid!=undefined" type="button" class="btn btn-primary my-4" routerLinkActive="active"
           (click)="Analystconsole()"> Analyst Console</button></li>
       <li class="nav-item" ngbDropdown placement="bottom-right">
         <a class="nav-link pr-0" role="button" ngbDropdownToggle>
@@ -62,7 +62,7 @@
             <span>Support</span>
           </a>
           <div class="dropdown-divider"></div>
-          <a routerLinkActive="active" [routerLink]="['/login']" class="dropdown-item">
+          <a routerLinkActive="active" class="dropdown-item" (click)="logout()">
             <i class="ni ni-user-run"></i>
             <span>Logout</span>
           </a>

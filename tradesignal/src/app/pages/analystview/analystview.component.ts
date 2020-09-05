@@ -63,7 +63,7 @@ export class AnalystviewComponent implements OnInit {
       //console.log(this.Anayst_id)
       //console.log(JSON.parse(localStorage.getItem('token')).users['_id'])
       this.http
-        .get("https://api.80startups.com/2/tradePlan/getAllPlans")
+        .get("https://api.80startups.com/2/tradePlan/getallplansbyuserid/" + JSON.parse(localStorage.getItem('token')).users['_id'])
         .subscribe(
           (result) => {
             console.log("result", result);

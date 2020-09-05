@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
   user: any;
+  analystid: any;
   public focus;
   public listTitles: any[];
   public location: Location;
@@ -21,6 +22,9 @@ export class NavbarComponent implements OnInit {
     this.listTitles = ROUTES.filter(listTitle => listTitle);
     this.user = JSON.parse(localStorage.getItem('token')).users
     console.log(this.user)
+
+    this.analystid = localStorage.getItem('anayst_id')
+    console.log(this.analystid)
   }
   Analystconsole() {
     console.log("Analystconsole")
@@ -39,6 +43,11 @@ export class NavbarComponent implements OnInit {
       }
     }
     return 'Dashboard';
+  }
+  logout() {
+    localStorage.removeItem('token');
+    localStorage.removeItem('anayst_id')
+    this.router.navigateByUrl('/login')
   }
 
 }

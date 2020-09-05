@@ -30,18 +30,18 @@ export class CreateplanComponent implements OnInit {
       planinfo: [
         { type: "required", message: 'planinfo is Required' }
       ],
-      planduration: [
-        { type: "required", message: ' planduration is Required' }
-      ],
+      // planduration: [
+      //   { type: "required", message: ' planduration is Required' }
+      // ],
       planowner: [
         { type: "required", message: 'planowner is Required' }
       ],
-      planstart: [
-        { type: "required", message: 'planstart is Required' }
-      ],
-      planend: [
-        { type: "required", message: 'planend is Required' }
-      ],
+      // planstart: [
+      //   { type: "required", message: 'planstart is Required' }
+      // ],
+      // planend: [
+      //   { type: "required", message: 'planend is Required' }
+      // ],
       planpricemonthly: [
         { type: "required", message: 'planpricemonthly is Required' }
       ],
@@ -65,30 +65,30 @@ export class CreateplanComponent implements OnInit {
             Validators.required,
           ])
         ),
-        planduration: new FormControl(
-          "",
-          Validators.compose([
-            Validators.required,
-          ])
-        ),
+        // planduration: new FormControl(
+        //   "",
+        //   Validators.compose([
+        //     Validators.required,
+        //   ])
+        // ),
         planowner: new FormControl(
           "",
           Validators.compose([
             Validators.required,
           ])
         ),
-        planstart: new FormControl(
-          "",
-          Validators.compose([
-            Validators.required,
-          ])
-        ),
-        planend: new FormControl(
-          "",
-          Validators.compose([
-            Validators.required,
-          ])
-        ),
+        // planstart: new FormControl(
+        //   "",
+        //   Validators.compose([
+        //     Validators.required,
+        //   ])
+        // ),
+        // planend: new FormControl(
+        //   "",
+        //   Validators.compose([
+        //     Validators.required,
+        //   ])
+        //),
         planpricemonthly: new FormControl(
           "",
           Validators.compose([
@@ -136,10 +136,10 @@ export class CreateplanComponent implements OnInit {
     this.params = {
       "planname": this.planForm.controls.planname.value,
       "planinfo": this.planForm.controls.planinfo.value,
-      "planduration": this.planForm.controls.planduration.value,
+      // "planduration": this.planForm.controls.planduration.value,
       "planowner": this.planForm.controls.planowner.value,
-      "planstart": this.planForm.controls.planstart.value,
-      "planend": this.planForm.controls.planend.value,
+      // "planstart": this.planForm.controls.planstart.value,
+      // "planend": this.planForm.controls.planend.value,
       "planpricemonthly": this.planForm.controls.planpricemonthly.value,
       "planpriceannual": this.planForm.controls.planpriceannual.value,
       "userid": JSON.parse(localStorage.getItem('token')).users['_id']
@@ -161,7 +161,7 @@ export class CreateplanComponent implements OnInit {
     this.data = []
     return new Promise((resolve, reject) => {
       //console.log(this.Anayst_id)
-      this.http.get("https://api.80startups.com/2/tradePlan/getAllPlans").subscribe(result => {
+      this.http.get("https://api.80startups.com/2/tradePlan/getallplansbyuserid/" + JSON.parse(localStorage.getItem('token')).users['_id']).subscribe(result => {
         console.log("result", result);
 
         this.data = result;

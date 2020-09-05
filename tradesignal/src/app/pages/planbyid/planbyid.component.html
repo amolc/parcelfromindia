@@ -9,61 +9,58 @@
               <div class="m-widget24__item">
                 <!-- <h3>Amol C</h3>
                 <p>Singapore</p> -->
+                <div _ngcontent-c5="" class="table-responsive">
+                  <table _ngcontent-c5="" class="table align-items-center table-flush"
+                    style="line-height: 30px;border-style: groove; ">
+                    <thead _ngcontent-c5="" class="thead-light">
+                      <tr _ngcontent-c5="">
+                        <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">P_Name</th>
+                        <br>
+                        <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">P_Info</th>
+                        <br>
+                        <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">P_Owner</th>
+                        <br>
+                        <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">P_PriceMonthly
+                        </th>
+                        <br>
+                        <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">P_priceAnnual</th>
+                      </tr>
+                    </thead>
+                    <tbody _ngcontent-c5="">
+                      <tr _ngcontent-c5="" *ngFor="let listItems of data3[0]">
+                        <td _ngcontent-c5="" scope="row">
+                          {{listItems.planname}}
+                        </td>
+                        <br>
+                        <td _ngcontent-c5="">
+                          {{listItems.planinfo}}
+                        </td>
+                        <br>
 
-                <thead _ngcontent-c5="" class="thead-light">
-                  <tr _ngcontent-c5="">
-                    <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">Plan Name</th>
-                    <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">Plan Info</th>
-                    <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">Plan Duration</th>
-                    <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">Plan Owner</th>
-                    <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">Plan Start</th>
-                    <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">Plan End</th>
-                    <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">Plan PriceMonthly
-                    </th>
-                    <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">Plan priceAnnual</th>
-                  </tr>
-                </thead>
-                <tbody _ngcontent-c5="">
-                  <tr _ngcontent-c5="" *ngFor="let listItems of data3[0]">
-                    <td _ngcontent-c5="" scope="row">
-                      {{listItems.planname}}
-                    </td>
+                        <td _ngcontent-c5="">
+                          {{listItems.planowner}}
+                        </td>
 
-                    <td _ngcontent-c5="">
-                      {{listItems.planinfo}}
-                    </td>
+                        <br>
+                        <td _ngcontent-c5="">
+                          {{listItems.planpricemonthly}}
+                        </td>
+                        <br>
 
-                    <td _ngcontent-c5="">
-                      {{listItems.planduration}}
-                    </td>
-                    <td _ngcontent-c5="">
-                      {{listItems.planowner}}
-                    </td>
-                    <td _ngcontent-c5="">
-                      {{listItems.planstart}}
-                    </td>
-
-                    <td _ngcontent-c5="">
-                      {{listItems.planend}}
-                    </td>
-
-                    <td _ngcontent-c5="">
-                      {{listItems.planpricemonthly}}
-                    </td>
-
-                    <td _ngcontent-c5="">
-                      {{listItems.planpriceannual}}
-                    </td>
+                        <td _ngcontent-c5="">
+                          {{listItems.planpriceannual}}
+                        </td>
 
 
 
-                  </tr>
+                      </tr>
 
 
 
 
-                </tbody>
-
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
           </div>
@@ -156,7 +153,7 @@
                     <td _ngcontent-c5="">
                       {{listItems.status}}
                     </td>
-                    <!-- <td _ngcontent-c5=""><i _ngcontent-c5="" class="fas fa-arrow-up text-success mr-3"></i> 46,53%</td> -->
+
                   </tr>
 
 
