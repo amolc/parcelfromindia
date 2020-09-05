@@ -35,7 +35,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<nav class=\"navbar navbar-top navbar-expand-md navbar-dark\" id=\"navbar-main\">\r\n  <div class=\"container-fluid\">\r\n    <!-- Brand -->\r\n    <a class=\"h4 mb-0 text-black text-uppercase d-none d-lg-inline-block\" routerLinkActive=\"active\"\r\n      [routerLink]=\"['/dashboard']\">{{getTitle()}}</a>\r\n    <!-- Form -->\r\n    <!-- <form class=\"navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto\">\r\n      <div class=\"form-group mb-0\" [ngClass]=\"{ 'focused': focus === true }\">\r\n        <div class=\"input-group input-group-alternative\"> -->\r\n    <!-- <div class=\"input-group-prepend\">\r\n            <span class=\"input-group-text\"><i class=\"fas fa-search\"></i></span> \r\n          </div> -->\r\n    <!-- <input class=\"form-control\" placeholder=\"Search\" type=\"text\" (focus)=\"focus = true\"\r\n          (blur)=\"focus = false\"> -->\r\n\r\n    <!-- </div>\r\n      </div>\r\n    </form>  -->\r\n\r\n    <!-- User -->\r\n    <!-- <h6 class=\"navbar-heading text-muted\">Wallet</h6> -->\r\n\r\n\r\n\r\n    <ul class=\"navbar-nav align-items-center d-none d-md-flex\">\r\n\r\n      <li><button *ngIf=\"user.AdminAccess\" type=\"button\" class=\"btn btn-primary my-4\" routerLinkActive=\"active\"\r\n          [routerLink]=\"['/analyst']\">Become a Analyst</button></li>\r\n      <li><button *ngIf=\"!user.AdminAccess\" type=\"button\" class=\"btn btn-primary my-4\" routerLinkActive=\"active\"\r\n          (click)=\"Analystconsole()\"> Analyst Console</button></li>\r\n      <li class=\"nav-item\" ngbDropdown placement=\"bottom-right\">\r\n        <a class=\"nav-link pr-0\" role=\"button\" ngbDropdownToggle>\r\n          <div class=\"media align-items-center\">\r\n\r\n            <span class=\"avatar avatar-sm rounded-circle\">\r\n              <!-- <img alt=\"Image placeholder\" src=\"assets/img/theme/\">  -->\r\n              <i class=\"fas fa-user\" style=\"font-size:20px;color:black;\"></i>\r\n            </span>\r\n            <div class=\"media-body ml-2 d-none d-lg-block\">\r\n              <span class=\"mb-0 text-sm  font-weight-bold\"></span>\r\n            </div>\r\n          </div>\r\n        </a>\r\n        <div class=\"dropdown-menu-arrow dropdown-menu-right\" ngbDropdownMenu>\r\n          <div class=\" dropdown-header noti-title\">\r\n            <h6 class=\"text-overflow m-0\">Welcome!</h6>\r\n          </div>\r\n          <a routerLinkActive=\"active\" [routerLink]=\"['/user-profile']\" class=\"dropdown-item\">\r\n            <i class=\"ni ni-single-02\"></i>\r\n            <span>My profile</span>\r\n          </a>\r\n          <a routerLinkActive=\"active\" [routerLink]=\"['/user-profile']\" class=\"dropdown-item\">\r\n            <i class=\"ni ni-settings-gear-65\"></i>\r\n            <span>Settings</span>\r\n          </a>\r\n          <a routerLinkActive=\"active\" [routerLink]=\"['/user-profile']\" class=\"dropdown-item\">\r\n            <i class=\"ni ni-calendar-grid-58\"></i>\r\n            <span>Activity</span>\r\n          </a>\r\n          <a routerLinkActive=\"active\" [routerLink]=\"['/user-profile']\" class=\"dropdown-item\">\r\n            <i class=\"ni ni-support-16\"></i>\r\n            <span>Support</span>\r\n          </a>\r\n          <div class=\"dropdown-divider\"></div>\r\n          <a routerLinkActive=\"active\" [routerLink]=\"['/login']\" class=\"dropdown-item\">\r\n            <i class=\"ni ni-user-run\"></i>\r\n            <span>Logout</span>\r\n          </a>\r\n        </div>\r\n      </li>\r\n    </ul>\r\n  </div>\r\n</nav>");
+/* harmony default export */ __webpack_exports__["default"] = ("<nav class=\"navbar navbar-top navbar-expand-md navbar-dark\" id=\"navbar-main\">\r\n  <div class=\"container-fluid\">\r\n    <!-- Brand -->\r\n    <a class=\"h4 mb-0 text-black text-uppercase d-none d-lg-inline-block\" routerLinkActive=\"active\"\r\n      [routerLink]=\"['/dashboard']\">{{getTitle()}}</a>\r\n    <!-- Form -->\r\n    <!-- <form class=\"navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto\">\r\n      <div class=\"form-group mb-0\" [ngClass]=\"{ 'focused': focus === true }\">\r\n        <div class=\"input-group input-group-alternative\"> -->\r\n    <!-- <div class=\"input-group-prepend\">\r\n            <span class=\"input-group-text\"><i class=\"fas fa-search\"></i></span> \r\n          </div> -->\r\n    <!-- <input class=\"form-control\" placeholder=\"Search\" type=\"text\" (focus)=\"focus = true\"\r\n          (blur)=\"focus = false\"> -->\r\n\r\n    <!-- </div>\r\n      </div>\r\n    </form>  -->\r\n\r\n    <!-- User -->\r\n    <!-- <h6 class=\"navbar-heading text-muted\">Wallet</h6> -->\r\n\r\n\r\n\r\n    <ul class=\"navbar-nav align-items-center d-none d-md-flex\">\r\n\r\n      <li><button *ngIf=\"analystid==undefined\" type=\"button\" class=\"btn btn-primary my-4\" routerLinkActive=\"active\"\r\n          [routerLink]=\"['/analyst']\">Become a Analyst</button></li>\r\n      <li><button *ngIf=\"analystid!=undefined\" type=\"button\" class=\"btn btn-primary my-4\" routerLinkActive=\"active\"\r\n          (click)=\"Analystconsole()\"> Analyst Console</button></li>\r\n      <li class=\"nav-item\" ngbDropdown placement=\"bottom-right\">\r\n        <a class=\"nav-link pr-0\" role=\"button\" ngbDropdownToggle>\r\n          <div class=\"media align-items-center\">\r\n\r\n            <span class=\"avatar avatar-sm rounded-circle\">\r\n              <!-- <img alt=\"Image placeholder\" src=\"assets/img/theme/\">  -->\r\n              <i class=\"fas fa-user\" style=\"font-size:20px;color:black;\"></i>\r\n            </span>\r\n            <div class=\"media-body ml-2 d-none d-lg-block\">\r\n              <span class=\"mb-0 text-sm  font-weight-bold\"></span>\r\n            </div>\r\n          </div>\r\n        </a>\r\n        <div class=\"dropdown-menu-arrow dropdown-menu-right\" ngbDropdownMenu>\r\n          <div class=\" dropdown-header noti-title\">\r\n            <h6 class=\"text-overflow m-0\">Welcome!</h6>\r\n          </div>\r\n          <a routerLinkActive=\"active\" [routerLink]=\"['/user-profile']\" class=\"dropdown-item\">\r\n            <i class=\"ni ni-single-02\"></i>\r\n            <span>My profile</span>\r\n          </a>\r\n          <a routerLinkActive=\"active\" [routerLink]=\"['/user-profile']\" class=\"dropdown-item\">\r\n            <i class=\"ni ni-settings-gear-65\"></i>\r\n            <span>Settings</span>\r\n          </a>\r\n          <a routerLinkActive=\"active\" [routerLink]=\"['/user-profile']\" class=\"dropdown-item\">\r\n            <i class=\"ni ni-calendar-grid-58\"></i>\r\n            <span>Activity</span>\r\n          </a>\r\n          <a routerLinkActive=\"active\" [routerLink]=\"['/user-profile']\" class=\"dropdown-item\">\r\n            <i class=\"ni ni-support-16\"></i>\r\n            <span>Support</span>\r\n          </a>\r\n          <div class=\"dropdown-divider\"></div>\r\n          <a routerLinkActive=\"active\" class=\"dropdown-item\" (click)=\"logout()\">\r\n            <i class=\"ni ni-user-run\"></i>\r\n            <span>Logout</span>\r\n          </a>\r\n        </div>\r\n      </li>\r\n    </ul>\r\n  </div>\r\n</nav>\r\n");
 
 /***/ }),
 
@@ -181,31 +181,11 @@ var AppComponent = /** @class */ (function () {
         this.route = route;
         this.title = 'argon-dashboard-angular';
         this.data = [];
-        this.getdata();
+        //this.getdata();
     }
     AppComponent.prototype.ngOnInit = function () {
-        this.getdata();
-    };
-    AppComponent.prototype.getdata = function () {
-        var _this = this;
-        console.log(this.route.snapshot.params.id);
-        return new Promise(function (resolve, reject) {
-            console.log(JSON.parse(localStorage.getItem("token")).users["_id"]);
-            _this.http
-                .get("https://api.80startups.com/2/tradeAnalysts/getAnalystByuserId/" +
-                JSON.parse(localStorage.getItem("token")).users["_id"])
-                .subscribe(function (result) {
-                console.log("result", result);
-                if (result["message"] == "no records found") {
-                    return alert(result["message"]);
-                }
-                console.log('anayst_id', result[0]._id);
-                localStorage.setItem('anayst_id', result[0]._id);
-                _this.data.push(result);
-            }, function (err) {
-                reject(err);
-            });
-        });
+        // if (localStorage.getItem('anayst_id'))
+        // this.getdata();
     };
     AppComponent.ctorParameters = function () { return [
         { type: _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"] },
@@ -566,6 +546,8 @@ var NavbarComponent = /** @class */ (function () {
         this.listTitles = _sidebar_sidebar_component__WEBPACK_IMPORTED_MODULE_1__["ROUTES"].filter(function (listTitle) { return listTitle; });
         this.user = JSON.parse(localStorage.getItem('token')).users;
         console.log(this.user);
+        this.analystid = localStorage.getItem('anayst_id');
+        console.log(this.analystid);
     };
     NavbarComponent.prototype.Analystconsole = function () {
         console.log("Analystconsole");
@@ -583,6 +565,11 @@ var NavbarComponent = /** @class */ (function () {
             }
         }
         return 'Dashboard';
+    };
+    NavbarComponent.prototype.logout = function () {
+        localStorage.removeItem('token');
+        localStorage.removeItem('anayst_id');
+        this.router.navigateByUrl('/login');
     };
     NavbarComponent.ctorParameters = function () { return [
         { type: _angular_common__WEBPACK_IMPORTED_MODULE_2__["Location"] },
