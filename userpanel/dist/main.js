@@ -35,7 +35,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<nav class=\"navbar navbar-top navbar-expand-md navbar-dark\" id=\"navbar-main\">\n  <div class=\"container-fluid\">\n    <!-- Brand -->\n    <a class=\"h4 mb-0 text-white text-uppercase d-none d-lg-inline-block\" routerLinkActive=\"active\" [routerLink]=\"['/dashboard']\">{{getTitle()}}</a>\n    <!-- Form -->\n    <form class=\"navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto\">\n      <div class=\"form-group mb-0\" [ngClass]=\"{ 'focused': focus === true }\">\n        <div class=\"input-group input-group-alternative\">\n          <div class=\"input-group-prepend\">\n            <span class=\"input-group-text\"><i class=\"fas fa-search\"></i></span>\n          </div>\n          <input class=\"form-control\" placeholder=\"Search\" type=\"text\" (focus)=\"focus = true\"\n          (blur)=\"focus = false\">\n        </div>\n      </div>\n    </form>\n    <!-- User -->\n    <ul class=\"navbar-nav align-items-center d-none d-md-flex\">\n      <li class=\"nav-item\" ngbDropdown placement=\"bottom-right\">\n        <a class=\"nav-link pr-0\" role=\"button\" ngbDropdownToggle>\n          <div class=\"media align-items-center\">\n            <span class=\"avatar avatar-sm rounded-circle\">\n            <!--  <img alt=\"Image placeholder\" src=\"assets/img/theme/\"> --> \n            </span>\n            <div class=\"media-body ml-2 d-none d-lg-block\">\n              <span class=\"mb-0 text-sm  font-weight-bold\"></span>\n            </div>\n          </div>\n        </a>\n        <div class=\"dropdown-menu-arrow dropdown-menu-right\" ngbDropdownMenu>\n          <div class=\" dropdown-header noti-title\">\n            <h6 class=\"text-overflow m-0\">Welcome!</h6>\n          </div>\n          <a routerLinkActive=\"active\" [routerLink]=\"['/user-profile']\" class=\"dropdown-item\">\n            <i class=\"ni ni-single-02\"></i>\n            <span>My profile</span>\n          </a>\n          <a routerLinkActive=\"active\" [routerLink]=\"['/user-profile']\" class=\"dropdown-item\">\n            <i class=\"ni ni-settings-gear-65\"></i>\n            <span>Settings</span>\n          </a>\n          <a routerLinkActive=\"active\" [routerLink]=\"['/user-profile']\" class=\"dropdown-item\">\n            <i class=\"ni ni-calendar-grid-58\"></i>\n            <span>Activity</span>\n          </a>\n          <a routerLinkActive=\"active\" [routerLink]=\"['/user-profile']\" class=\"dropdown-item\">\n            <i class=\"ni ni-support-16\"></i>\n            <span>Support</span>\n          </a>\n          <div class=\"dropdown-divider\"></div>\n          <a href=\"#!\" class=\"dropdown-item\">\n            <i class=\"ni ni-user-run\"></i>\n            <span>Logout</span>\n          </a>\n        </div>\n      </li>\n    </ul>\n  </div>\n</nav>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<nav class=\"navbar navbar-top navbar-expand-md navbar-dark\" id=\"navbar-main\">\r\n  <div class=\"container-fluid\">\r\n    <!-- Brand -->\r\n    <a class=\"h4 mb-0 text-white text-uppercase d-none d-lg-inline-block\" routerLinkActive=\"active\"\r\n      [routerLink]=\"['/dashboard']\">{{getTitle()}}</a>\r\n    <!-- Form -->\r\n    <!-- <form class=\"navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto\">\r\n      <div class=\"form-group mb-0\" [ngClass]=\"{ 'focused': focus === true }\">\r\n        <div class=\"input-group input-group-alternative\"> -->\r\n    <!-- <div class=\"input-group-prepend\">\r\n            <span class=\"input-group-text\"><i class=\"fas fa-search\"></i></span> \r\n          </div> -->\r\n    <!-- <input class=\"form-control\" placeholder=\"Search\" type=\"text\" (focus)=\"focus = true\"\r\n          (blur)=\"focus = false\"> -->\r\n\r\n    <!-- </div>\r\n      </div>\r\n    </form>  -->\r\n\r\n    <!-- User -->\r\n    <!-- <h6 class=\"navbar-heading text-muted\">Wallet</h6> -->\r\n\r\n\r\n\r\n    <ul class=\"navbar-nav align-items-center d-none d-md-flex\">\r\n\r\n\r\n      <li class=\"nav-item\" ngbDropdown placement=\"bottom-right\">\r\n        <a class=\"nav-link pr-0\" role=\"button\" ngbDropdownToggle>\r\n          <div class=\"media align-items-center\">\r\n            <span class=\"avatar avatar-sm rounded-circle\">\r\n              <!--  <img alt=\"Image placeholder\" src=\"assets/img/theme/\"> -->\r\n            </span>\r\n            <div class=\"media-body ml-2 d-none d-lg-block\">\r\n              <span class=\"mb-0 text-sm  font-weight-bold\"></span>\r\n            </div>\r\n          </div>\r\n        </a>\r\n        <div class=\"dropdown-menu-arrow dropdown-menu-right\" ngbDropdownMenu>\r\n          <div class=\" dropdown-header noti-title\">\r\n            <h6 class=\"text-overflow m-0\">Welcome!</h6>\r\n          </div>\r\n          <a routerLinkActive=\"active\" [routerLink]=\"['/user-profile']\" class=\"dropdown-item\">\r\n            <i class=\"ni ni-single-02\"></i>\r\n            <span>My profile</span>\r\n          </a>\r\n          <a routerLinkActive=\"active\" [routerLink]=\"['/user-profile']\" class=\"dropdown-item\">\r\n            <i class=\"ni ni-settings-gear-65\"></i>\r\n            <span>Settings</span>\r\n          </a>\r\n          <a routerLinkActive=\"active\" [routerLink]=\"['/user-profile']\" class=\"dropdown-item\">\r\n            <i class=\"ni ni-calendar-grid-58\"></i>\r\n            <span>Activity</span>\r\n          </a>\r\n          <a routerLinkActive=\"active\" [routerLink]=\"['/user-profile']\" class=\"dropdown-item\">\r\n            <i class=\"ni ni-support-16\"></i>\r\n            <span>Support</span>\r\n          </a>\r\n          <div class=\"dropdown-divider\"></div>\r\n          <a routerLinkActive=\"active\" class=\"dropdown-item\">\r\n            <i class=\"ni ni-user-run\"></i>\r\n            <span (click)=\"dologout()\">Logout</span>\r\n          </a>\r\n        </div>\r\n      </li>\r\n    </ul>\r\n  </div>\r\n</nav>\r\n");
 
 /***/ }),
 
@@ -48,7 +48,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<nav class=\"navbar navbar-vertical navbar-expand-md navbar-light bg-white\" id=\"sidenav-main\">\n  <div class=\"container-fluid\">\n    <!-- Toggler -->\n    <button class=\"navbar-toggler\" type=\"button\" (click)=\"isCollapsed=!isCollapsed\"\n       aria-controls=\"sidenav-collapse-main\">\n      <span class=\"navbar-toggler-icon\"></span>\n    </button>\n    <!-- Brand -->\n    <a class=\"navbar-brand pt-0\" routerLinkActive=\"active\" [routerLink]=\"['/dashboard']\">\n      <img src=\"./assets/img/brand/parcelfromindia-logo.png\" class=\"navbar-brand-img\" alt=\"...\">\n    </a>\n    <!-- User -->\n    <ul class=\"nav align-items-center d-md-none\">\n      <li class=\"nav-item\" ngbDropdown placement=\"bottom-right\">\n        <a class=\"nav-link nav-link-icon\" role=\"button\" ngbDropdownToggle>\n          <i class=\"ni ni-bell-55\"></i>\n        </a>\n        <div class=\"dropdown-menu-arrow dropdown-menu-right\" ngbDropdownMenu>\n          <a class=\"dropdown-item\" href=\"javascript:void(0)\">Action</a>\n          <a class=\"dropdown-item\" href=\"javascript:void(0)\">Another action</a>\n          <div class=\"dropdown-divider\"></div>\n          <a class=\"dropdown-item\" href=\"javascript:void(0)\">Something else here</a>\n        </div>\n      </li>\n      <li class=\"nav-item\" ngbDropdown placement=\"bottom-right\">\n        <a class=\"nav-link\" role=\"button\" ngbDropdownToggle>\n          <div class=\"media align-items-center\">\n            <span class=\"avatar avatar-sm rounded-circle\">\n              <img alt=\"Image placeholder\" >\n            </span>\n          </div>\n        </a>\n        <div class=\"dropdown-menu-arrow dropdown-menu-right\" ngbDropdownMenu>\n          <div class=\" dropdown-header noti-title\">\n            <h6 class=\"text-overflow m-0\">Welcome!</h6>\n          </div>\n          <a routerLinkActive=\"active\" [routerLink]=\"['/user-profile']\" class=\"dropdown-item\">\n            <i class=\"ni ni-single-02\"></i>\n            <span>My profile</span>\n          </a>\n          <a routerLinkActive=\"active\" [routerLink]=\"['/user-profile']\" class=\"dropdown-item\">\n            <i class=\"ni ni-settings-gear-65\"></i>\n            <span>Settings</span>\n          </a>\n          <a routerLinkActive=\"active\" [routerLink]=\"['/user-profile']\" class=\"dropdown-item\">\n            <i class=\"ni ni-calendar-grid-58\"></i>\n            <span>Activity</span>\n          </a>\n          <a routerLinkActive=\"active\" [routerLink]=\"['/user-profile']\" class=\"dropdown-item\">\n            <i class=\"ni ni-support-16\"></i>\n            <span>Support</span>\n          </a>\n          <div class=\"dropdown-divider\"></div>\n          <a href=\"#!\" class=\"dropdown-item\">\n            <i class=\"ni ni-user-run\"></i>\n            <span>Logout</span>\n          </a>\n        </div>\n      </li>\n    </ul>\n    <!-- Collapse -->\n    <div class=\"collapse navbar-collapse\"  [ngbCollapse]=\"isCollapsed\" id=\"sidenav-collapse-main\">\n      <!-- Collapse header -->\n      <div class=\"navbar-collapse-header d-md-none\">\n        <div class=\"row\">\n          <div class=\"col-6 collapse-brand\">\n            <a  routerLinkActive=\"active\" [routerLink]=\"['/dashboard']\">\n              <img src=\"./assets/img/brand/parcelfromindia-logo.png\">\n            </a>\n          </div>\n          <div class=\"col-6 collapse-close\">\n            <button type=\"button\" class=\"navbar-toggler\" (click)=\"isCollapsed=!isCollapsed\">\n              <span></span>\n              <span></span>\n            </button>\n          </div>\n        </div>\n      </div>\n      <!-- Form -->\n      <form class=\"mt-4 mb-3 d-md-none\">\n        <div class=\"input-group input-group-rounded input-group-merge\">\n          <input type=\"search\" class=\"form-control form-control-rounded form-control-prepended\" placeholder=\"Search\" aria-label=\"Search\">\n          <div class=\"input-group-prepend\">\n            <div class=\"input-group-text\">\n              <span class=\"fa fa-search\"></span>\n            </div>\n          </div>\n        </div>\n      </form>\n      <!-- Navigation -->\n      <ul class=\"navbar-nav\">\n          <li *ngFor=\"let menuItem of menuItems\" class=\"{{menuItem.class}} nav-item\">\n              <a routerLinkActive=\"active\" [routerLink]=\"[menuItem.path]\" class=\"nav-link\">\n                  <i class=\"ni {{menuItem.icon}}\"></i>\n                  {{menuItem.title}}\n              </a>\n          </li>\n      </ul>\n      <!-- Divider -->\n      <hr class=\"my-3\">\n      <!-- Heading -->\n      <h6 class=\"navbar-heading text-muted\">Wallet</h6>\n      <!-- Navigation -->\n      <ul class=\"navbar-nav mb-md-3\">\n        <li class=\"nav-item\">\n          <a class=\"nav-link\" href=\"\">\n            <i class=\"ni ni-spaceship\"></i> Add to Wallet  |  Balance\n          </a>\n        </li>\n        \n        \n      </ul>\n    </div>\n  </div>\n</nav>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<nav class=\"navbar navbar-vertical navbar-expand-md navbar-light bg-white\" id=\"sidenav-main\">\r\n  <div class=\"container-fluid\">\r\n    <!-- Toggler -->\r\n    <button class=\"navbar-toggler\" type=\"button\" (click)=\"isCollapsed=!isCollapsed\"\r\n      aria-controls=\"sidenav-collapse-main\">\r\n      <span class=\"navbar-toggler-icon\"></span>\r\n    </button>\r\n    <!-- Brand -->\r\n    <a class=\"navbar-brand pt-0\" routerLinkActive=\"active\" [routerLink]=\"['/dashboard']\">\r\n      <img src=\"./assets/img/brand/parcelfromindia-logo.png\" class=\"navbar-brand-img\" alt=\"...\">\r\n    </a>\r\n    <!-- User -->\r\n    <ul class=\"nav align-items-center d-md-none\">\r\n      <li class=\"nav-item\" ngbDropdown placement=\"bottom-right\">\r\n        <a class=\"nav-link nav-link-icon\" role=\"button\" ngbDropdownToggle>\r\n          <i class=\"ni ni-bell-55\"></i>\r\n        </a>\r\n        <div class=\"dropdown-menu-arrow dropdown-menu-right\" ngbDropdownMenu>\r\n          <a class=\"dropdown-item\" href=\"javascript:void(0)\">Action</a>\r\n          <a class=\"dropdown-item\" href=\"javascript:void(0)\">Another action</a>\r\n          <div class=\"dropdown-divider\"></div>\r\n          <a class=\"dropdown-item\" href=\"javascript:void(0)\">Something else here</a>\r\n        </div>\r\n      </li>\r\n      <li class=\"nav-item\" ngbDropdown placement=\"bottom-right\">\r\n        <a class=\"nav-link\" role=\"button\" ngbDropdownToggle>\r\n          <div class=\"media align-items-center\">\r\n            <span class=\"avatar avatar-sm rounded-circle\">\r\n              <img alt=\"Image placeholder\">\r\n            </span>\r\n          </div>\r\n        </a>\r\n        <div class=\"dropdown-menu-arrow dropdown-menu-right\" ngbDropdownMenu>\r\n          <div class=\" dropdown-header noti-title\">\r\n            <h6 class=\"text-overflow m-0\">Welcome!</h6>\r\n          </div>\r\n          <a routerLinkActive=\"active\" [routerLink]=\"['/user-profile']\" class=\"dropdown-item\">\r\n            <i class=\"ni ni-single-02\"></i>\r\n            <span>My profile</span>\r\n          </a>\r\n          <a routerLinkActive=\"active\" [routerLink]=\"['/user-profile']\" class=\"dropdown-item\">\r\n            <i class=\"ni ni-settings-gear-65\"></i>\r\n            <span>Settings</span>\r\n          </a>\r\n          <a routerLinkActive=\"active\" [routerLink]=\"['/user-profile']\" class=\"dropdown-item\">\r\n            <i class=\"ni ni-calendar-grid-58\"></i>\r\n            <span>Activity</span>\r\n          </a>\r\n          <a routerLinkActive=\"active\" [routerLink]=\"['/user-profile']\" class=\"dropdown-item\">\r\n            <i class=\"ni ni-support-16\"></i>\r\n            <span>Support</span>\r\n          </a>\r\n          <div class=\"dropdown-divider\"></div>\r\n          <a href=\"#!\" class=\"dropdown-item\">\r\n            <i class=\"ni ni-user-run\"></i>\r\n            <span (click)=\"dologout()\">Logout</span>\r\n          </a>\r\n        </div>\r\n      </li>\r\n    </ul>\r\n    <!-- Collapse -->\r\n    <div class=\"collapse navbar-collapse\" [ngbCollapse]=\"isCollapsed\" id=\"sidenav-collapse-main\">\r\n      <!-- Collapse header -->\r\n      <div class=\"navbar-collapse-header d-md-none\">\r\n        <div class=\"row\">\r\n          <div class=\"col-6 collapse-brand\">\r\n            <a routerLinkActive=\"active\" [routerLink]=\"['/dashboard']\">\r\n              <img src=\"./assets/img/brand/parcelfromindia-logo.png\">\r\n            </a>\r\n          </div>\r\n          <div class=\"col-6 collapse-close\">\r\n            <button type=\"button\" class=\"navbar-toggler\" (click)=\"isCollapsed=!isCollapsed\">\r\n              <span></span>\r\n              <span></span>\r\n            </button>\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <!-- Form -->\r\n      <!--  <form class=\"mt-4 mb-3 d-md-none\">\r\n        <div class=\"input-group input-group-rounded input-group-merge\">\r\n          <input type=\"search\" class=\"form-control form-control-rounded form-control-prepended\" placeholder=\"Search\" aria-label=\"Search\">\r\n          <div class=\"input-group-prepend\">\r\n            <div class=\"input-group-text\">\r\n              <span class=\"fa fa-search\"></span>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </form>  -->\r\n      <!-- Navigation -->\r\n      <ul class=\"navbar-nav\">\r\n        <li *ngFor=\"let menuItem of menuItems\" class=\"{{menuItem.class}} nav-item\">\r\n          <a routerLinkActive=\"active\" [routerLink]=\"[menuItem.path]\" class=\"nav-link\">\r\n            <i class=\"ni {{menuItem.icon}}\"></i>\r\n            {{menuItem.title}}\r\n          </a>\r\n        </li>\r\n      </ul>\r\n      <!-- Divider -->\r\n      <hr class=\"my-3\">\r\n      <!-- Heading -->\r\n      <!--  <h6 class=\"navbar-heading text-muted\">Wallet</h6> -->\r\n      <!-- Navigation -->\r\n      <!--  <ul class=\"navbar-nav mb-md-3\">\r\n        <li class=\"nav-item\">\r\n          <a class=\"nav-link\" href=\"\">\r\n            <i class=\"ni ni-spaceship\"></i> Add to Wallet  |  Balance\r\n          </a>\r\n        </li> \r\n        \r\n        \r\n      </ul>  -->\r\n    </div>\r\n  </div>\r\n</nav>\r\n");
 
 /***/ }),
 
@@ -74,7 +74,20 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"main-content\">\n  <nav class=\"navbar navbar-top navbar-horizontal navbar-expand-md navbar-dark\">\n    <div class=\"container px-4\">\n      <a class=\"navbar-brand\" routerLinkActive=\"active\" [routerLink]=\"['/dashboard']\">\n        <img src=\"assets/img/brand/parcelfromindia-logo.png\" />\n      </a>\n      <button class=\"navbar-toggler\" type=\"button\" (click)=\"isCollapsed=!isCollapsed\"\n         aria-controls=\"sidenav-collapse-main\">\n        <span class=\"navbar-toggler-icon\"></span>\n      </button>\n      <div class=\"collapse navbar-collapse\"  [ngbCollapse]=\"isCollapsed\" id=\"sidenav-collapse-main\">\n        <!-- Collapse header -->\n        <div class=\"navbar-collapse-header d-md-none\">\n          <div class=\"row\">\n            <div class=\"col-6 collapse-brand\">\n              <a routerLinkActive=\"active\" [routerLink]=\"['/dashboard']\">\n                <img src=\"assets/img/brand/parcelfromindia-logo.png\">\n              </a>\n            </div>\n            <div class=\"col-6 collapse-close\">\n              <button type=\"button\" class=\"navbar-toggler\" (click)=\"isCollapsed=!isCollapsed\" >\n                <span></span>\n                <span></span>\n              </button>\n            </div>\n          </div>\n        </div>\n        <!-- Navbar items -->\n        <ul class=\"navbar-nav ml-auto\">\n          <li class=\"nav-item\">\n            <a class=\"nav-link nav-link-icon\" routerLinkActive=\"active\" [routerLink]=\"['/dashboard']\">\n              <i class=\"ni ni-planet\"></i>\n              <span class=\"nav-link-inner--text\">Dashboard</span>\n            </a>\n          </li>\n          <li class=\"nav-item\">\n            <a class=\"nav-link nav-link-icon\" routerLinkActive=\"active\" [routerLink]=\"['/register']\">\n              <i class=\"ni ni-circle-08\"></i>\n              <span class=\"nav-link-inner--text\">Register</span>\n            </a>\n          </li>\n          <li class=\"nav-item\">\n            <a class=\"nav-link nav-link-icon\" routerLinkActive=\"active\" [routerLink]=\"['/login']\">\n              <i class=\"ni ni-key-25\"></i>\n              <span class=\"nav-link-inner--text\">Login</span>\n            </a>\n          </li>\n          <li class=\"nav-item\">\n            <a class=\"nav-link nav-link-icon\" routerLinkActive=\"active\" [routerLink]=\"['/user-profile']\">\n              <i class=\"ni ni-single-02\"></i>\n              <span class=\"nav-link-inner--text\">Profile</span>\n            </a>\n          </li>\n        </ul>\n      </div>\n    </div>\n  </nav>\n  <router-outlet></router-outlet>\n</div>\n<footer class=\"py-5\">\n  <div class=\"container\">\n    <div class=\"row align-items-center justify-content-xl-between\">\n      <div class=\"col-xl-6\">\n        <div class=\"copyright text-center text-xl-left text-muted\">\n          &copy; {{ test | date: \"yyyy\" }} <a href=\"\" class=\"font-weight-bold ml-1\" target=\"_blank\">ParcelfromIndia</a>\n        </div>\n      </div>\n      <div class=\"col-xl-6\">\n        <ul class=\"nav nav-footer justify-content-center justify-content-xl-end\">\n          <li class=\"nav-item\">\n            <a href=\"\" class=\"nav-link\" target=\"_blank\">ParcelfromIndia</a>\n          </li>\n          <li class=\"nav-item\">\n            <a href=\"\" class=\"nav-link\" target=\"_blank\">About Us</a>\n          </li>\n          <li class=\"nav-item\">\n            <a href=\"\" class=\"nav-link\" target=\"_blank\">Blog</a>\n          </li>\n          <li class=\"nav-item\">\n            <a href=\"\" class=\"nav-link\" target=\"_blank\">MIT License</a>\n          </li>\n        </ul>\n      </div>\n    </div>\n  </div>\n</footer>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"main-content\">\n  <nav class=\"navbar navbar-top navbar-horizontal navbar-expand-md navbar-dark\">\n    <div class=\"container px-4\">\n      <a class=\"navbar-brand\" routerLinkActive=\"active\" [routerLink]=\"['/dashboard']\">\n        <img src=\"assets/img/brand/parcelfromindia-logo.png\" />\n      </a>\n      <button class=\"navbar-toggler\" type=\"button\" (click)=\"isCollapsed=!isCollapsed\"\n        aria-controls=\"sidenav-collapse-main\">\n        <span class=\"navbar-toggler-icon\"></span>\n      </button>\n      <div class=\"collapse navbar-collapse\" [ngbCollapse]=\"isCollapsed\" id=\"sidenav-collapse-main\">\n        <!-- Collapse header -->\n        <div class=\"navbar-collapse-header d-md-none\">\n          <div class=\"row\">\n            <div class=\"col-6 collapse-brand\">\n              <a routerLinkActive=\"active\" [routerLink]=\"['/dashboard']\">\n                <img src=\"assets/img/brand/parcelfromindia-logo.png\">\n              </a>\n            </div>\n            <div class=\"col-6 collapse-close\">\n              <button type=\"button\" class=\"navbar-toggler\" (click)=\"isCollapsed=!isCollapsed\">\n                <span></span>\n                <span></span>\n              </button>\n            </div>\n          </div>\n        </div>\n        <!-- Navbar items -->\n        <ul class=\"navbar-nav ml-auto\">\n          <li class=\"nav-item\">\n            <a class=\"nav-link nav-link-icon\" href=\"https://www.parcelfromindia.com/\">\n              <i class=\"ni ni-planet\"></i>\n              <span class=\"nav-link-inner--text\">Home</span>\n            </a>\n          </li>\n          <li class=\"nav-item\">\n            <a class=\"nav-link nav-link-icon\" routerLinkActive=\"active\" [routerLink]=\"['/register']\">\n              <i class=\"ni ni-circle-08\"></i>\n              <span class=\"nav-link-inner--text\">Register</span>\n            </a>\n          </li>\n          <li class=\"nav-item\">\n            <a class=\"nav-link nav-link-icon\" routerLinkActive=\"active\" [routerLink]=\"['/login']\">\n              <i class=\"ni ni-key-25\"></i>\n              <span class=\"nav-link-inner--text\">Login</span>\n            </a>\n          </li>\n          <li class=\"nav-item\">\n            <a class=\"nav-link nav-link-icon\" routerLinkActive=\"active\" [routerLink]=\"['/user-profile']\">\n              <i class=\"ni ni-single-02\"></i>\n              <span class=\"nav-link-inner--text\">Profile</span>\n            </a>\n          </li>\n          <!-- <li class=\"nav-item\">\n            \n              <button class=\"nav-link-inner--text\" (click)='dologout()'>logout</button>\n            \n          </li>  -->\n\n        </ul>\n      </div>\n    </div>\n  </nav>\n  <router-outlet></router-outlet>\n</div>\n<footer class=\"py-5\">\n  <div class=\"container\">\n    <div class=\"row align-items-center justify-content-xl-between\">\n      <div class=\"col-xl-6\">\n        <div class=\"copyright text-center text-xl-left text-muted\">\n          &copy; {{ test | date: \"yyyy\" }} <a href=\"\" class=\"font-weight-bold ml-1\" target=\"_blank\">ParcelfromIndia</a>\n        </div>\n      </div>\n      <div class=\"col-xl-6\">\n        <ul class=\"nav nav-footer justify-content-center justify-content-xl-end\">\n          <li class=\"nav-item\">\n            <a href=\"\" class=\"nav-link\" target=\"_blank\">ParcelfromIndia</a>\n          </li>\n          <li class=\"nav-item\">\n            <a href=\"\" class=\"nav-link\" target=\"_blank\">About Us</a>\n          </li>\n          <li class=\"nav-item\">\n            <a href=\"\" class=\"nav-link\" target=\"_blank\">Blog</a>\n          </li>\n          <li class=\"nav-item\">\n            <a href=\"\" class=\"nav-link\" target=\"_blank\">MIT License</a>\n          </li>\n        </ul>\n      </div>\n    </div>\n  </div>\n</footer>\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/logout/logout.component.html":
+/*!******************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/pages/logout/logout.component.html ***!
+  \******************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<p>logout works!</p>\n");
 
 /***/ }),
 
@@ -190,6 +203,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "./node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm5/ng-bootstrap.js");
 /* harmony import */ var _app_routing__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./app.routing */ "./src/app/app.routing.ts");
 /* harmony import */ var _components_components_module__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/components.module */ "./src/app/components/components.module.ts");
+/* harmony import */ var _pages_logout_logout_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./pages/logout/logout.component */ "./src/app/pages/logout/logout.component.ts");
+/* harmony import */ var _services_error_interceptor__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./services/error.interceptor */ "./src/app/services/error.interceptor.ts");
+/* harmony import */ var _services_jwt_interceptor__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./services/jwt.interceptor */ "./src/app/services/jwt.interceptor.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -206,6 +222,9 @@ var __importDefault = (undefined && undefined.__importDefault) || function (mod)
 
 //import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 //import { AppRoutingModule } from './app-routing.module';
+
+
+
 
 
 
@@ -233,8 +252,12 @@ var AppModule = /** @class */ (function () {
                 _app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"],
                 _layouts_admin_layout_admin_layout_component__WEBPACK_IMPORTED_MODULE_6__["AdminLayoutComponent"],
                 _layouts_auth_layout_auth_layout_component__WEBPACK_IMPORTED_MODULE_7__["AuthLayoutComponent"],
+                _pages_logout_logout_component__WEBPACK_IMPORTED_MODULE_11__["LogoutComponent"],
             ],
-            providers: [],
+            providers: [
+                { provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HTTP_INTERCEPTORS"], useClass: _services_jwt_interceptor__WEBPACK_IMPORTED_MODULE_13__["JwtInterceptor"], multi: true },
+                { provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HTTP_INTERCEPTORS"], useClass: _services_error_interceptor__WEBPACK_IMPORTED_MODULE_12__["ErrorInterceptor"], multi: true },
+            ],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]]
         })
     ], AppModule);
@@ -510,6 +533,13 @@ var NavbarComponent = /** @class */ (function () {
         }
         return 'Dashboard';
     };
+    NavbarComponent.prototype.dologout = function () {
+        localStorage.removeItem("token");
+        this.router.navigateByUrl('/login');
+        // setTimeout(() => {
+        //   console.log("Hello");
+        // }, 3000);
+    };
     NavbarComponent.ctorParameters = function () { return [
         { type: _angular_common__WEBPACK_IMPORTED_MODULE_2__["Location"] },
         { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"] },
@@ -556,6 +586,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SidebarComponent", function() { return SidebarComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm5/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm5/router.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/__ivy_ngcc__/fesm5/http.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -570,22 +601,18 @@ var __importDefault = (undefined && undefined.__importDefault) || function (mod)
 };
 
 
+
 var ROUTES = [
     { path: '/dashboard', title: 'Dashboard', icon: 'ni-tv-2 text-primary', class: '' },
-    { path: '/mysuite', title: 'My Suite', icon: 'ni-tv-2 text-primary', class: '' },
-    { path: '/purchase', title: 'Assisted Purchase', icon: 'ni-tv-2 text-primary', class: '' },
+    //{ path: '/mysuite', title: 'My Suite',  icon: 'ni-tv-2 text-primary', class: '' },
+    // { path: '/purchase', title: 'Assisted Purchase',  icon: 'ni-tv-2 text-primary', class: '' },
     // { path: '/icons', title: 'Icons',  icon:'ni-planet text-blue', class: '' },
-    { path: '/pickup', title: 'Schedule Pickup', icon: 'ni-pin-3 text-orange', class: '' },
-    { path: '/ProhibitedItems', title: 'Prohibit items', icon: 'ni-tv-2 text-primary', class: '' },
-    { path: '/ShippingCalculator', title: 'Shipping Calcultor', icon: 'ni-tv-2 text-primary', class: '' },
-    { path: '/user-profile', title: 'User profile', icon: 'ni-single-02 text-yellow', class: '' },
-    // { path: '/tables', title: 'Tables',  icon:'ni-bullet-list-67 text-red', class: '' },
-    { path: '/login', title: 'Login', icon: 'ni-key-25 text-info', class: '' },
-    { path: '/register', title: 'Register', icon: 'ni-circle-08 text-pink', class: '' }
+    { path: '/SchedulePickup', title: 'Schedule Pickup', icon: 'ni-pin-3 text-orange', class: '' },
 ];
 var SidebarComponent = /** @class */ (function () {
-    function SidebarComponent(router) {
+    function SidebarComponent(router, http) {
         this.router = router;
+        this.http = http;
         this.isCollapsed = true;
     }
     SidebarComponent.prototype.ngOnInit = function () {
@@ -595,8 +622,13 @@ var SidebarComponent = /** @class */ (function () {
             _this.isCollapsed = true;
         });
     };
+    SidebarComponent.prototype.dologout = function () {
+        localStorage.removeItem("token");
+        this.router.navigateByUrl('/login');
+    };
     SidebarComponent.ctorParameters = function () { return [
-        { type: _angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"] }
+        { type: _angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"] },
+        { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
     ]; };
     SidebarComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -604,7 +636,7 @@ var SidebarComponent = /** @class */ (function () {
             template: __importDefault(__webpack_require__(/*! raw-loader!./sidebar.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/sidebar/sidebar.component.html")).default,
             styles: [__importDefault(__webpack_require__(/*! ./sidebar.component.scss */ "./src/app/components/sidebar/sidebar.component.scss")).default]
         }),
-        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"]])
+        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"], _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]])
     ], SidebarComponent);
     return SidebarComponent;
 }());
@@ -731,6 +763,13 @@ var AuthLayoutComponent = /** @class */ (function () {
         var body = document.getElementsByTagName("body")[0];
         body.classList.remove("bg-default");
     };
+    AuthLayoutComponent.prototype.dologout = function () {
+        localStorage.removeItem("token");
+        this.router.navigateByUrl('/login');
+        // setTimeout(() => {
+        //   console.log("Hello");
+        // }, 3000);
+    };
     AuthLayoutComponent.ctorParameters = function () { return [
         { type: _angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"] }
     ]; };
@@ -743,6 +782,279 @@ var AuthLayoutComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"]])
     ], AuthLayoutComponent);
     return AuthLayoutComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/logout/logout.component.css":
+/*!***************************************************!*\
+  !*** ./src/app/pages/logout/logout.component.css ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL2xvZ291dC9sb2dvdXQuY29tcG9uZW50LmNzcyJ9 */");
+
+/***/ }),
+
+/***/ "./src/app/pages/logout/logout.component.ts":
+/*!**************************************************!*\
+  !*** ./src/app/pages/logout/logout.component.ts ***!
+  \**************************************************/
+/*! exports provided: LogoutComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LogoutComponent", function() { return LogoutComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/__ivy_ngcc__/fesm5/http.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm5/router.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __importDefault = (undefined && undefined.__importDefault) || function (mod) {
+  return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+
+
+
+var LogoutComponent = /** @class */ (function () {
+    function LogoutComponent(http, router) {
+        this.http = http;
+        this.router = router;
+    }
+    LogoutComponent.prototype.ngOnInit = function () {
+    };
+    LogoutComponent.prototype.dologout = function () {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            _this.http.post("https://api.80startups.com/auth/logout/", localStorage.getItem('tokens')).subscribe(function (result) {
+                console.log("result", result);
+                _this.router.navigateByUrl('/login');
+            }, function (err) {
+                console.log(err);
+                alert("please try again");
+                // reject(err);
+            });
+        });
+    };
+    LogoutComponent.ctorParameters = function () { return [
+        { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"] },
+        { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] }
+    ]; };
+    LogoutComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-logout',
+            template: __importDefault(__webpack_require__(/*! raw-loader!./logout.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/logout/logout.component.html")).default,
+            styles: [__importDefault(__webpack_require__(/*! ./logout.component.css */ "./src/app/pages/logout/logout.component.css")).default]
+        }),
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]])
+    ], LogoutComponent);
+    return LogoutComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/services/authentication.service.ts":
+/*!****************************************************!*\
+  !*** ./src/app/services/authentication.service.ts ***!
+  \****************************************************/
+/*! exports provided: AuthenticationService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AuthenticationService", function() { return AuthenticationService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/__ivy_ngcc__/fesm5/http.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __importDefault = (undefined && undefined.__importDefault) || function (mod) {
+  return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+
+
+
+
+var AuthenticationService = /** @class */ (function () {
+    function AuthenticationService(http) {
+        this.http = http;
+        this.currentUserSubject = new rxjs__WEBPACK_IMPORTED_MODULE_2__["BehaviorSubject"](JSON.parse(localStorage.getItem('currentUser')));
+        this.currentUser = this.currentUserSubject.asObservable();
+    }
+    Object.defineProperty(AuthenticationService.prototype, "currentUserValue", {
+        get: function () {
+            return this.currentUserSubject.value;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    AuthenticationService.prototype.login = function (email, password) {
+        var _this = this;
+        return this.http.post("https://api.80startups.com" + "/auth/login/1", { email: email, password: password })
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (user) {
+            // login successful if there's a jwt token in the response
+            if (user && user.token) {
+                // store employee details and jwt token in local storage to keep employee logged in between page refreshes
+                localStorage.setItem("currentUser", JSON.stringify(user));
+                _this.currentUserSubject.next(user);
+            }
+            return user;
+        }));
+    };
+    AuthenticationService.prototype.logout = function () {
+        // remove user from local storage to log user out
+        localStorage.removeItem('currentUser');
+        this.currentUserSubject.next(null);
+    };
+    AuthenticationService.ctorParameters = function () { return [
+        { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"] }
+    ]; };
+    AuthenticationService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
+            providedIn: 'root'
+        }),
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
+    ], AuthenticationService);
+    return AuthenticationService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/services/error.interceptor.ts":
+/*!***********************************************!*\
+  !*** ./src/app/services/error.interceptor.ts ***!
+  \***********************************************/
+/*! exports provided: ErrorInterceptor */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ErrorInterceptor", function() { return ErrorInterceptor; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm5/core.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+/* harmony import */ var _authentication_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./authentication.service */ "./src/app/services/authentication.service.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __importDefault = (undefined && undefined.__importDefault) || function (mod) {
+  return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+
+
+
+
+var ErrorInterceptor = /** @class */ (function () {
+    function ErrorInterceptor(authenticationService) {
+        this.authenticationService = authenticationService;
+    }
+    ErrorInterceptor.prototype.intercept = function (request, next) {
+        var _this = this;
+        return next.handle(request).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["catchError"])(function (err) {
+            if (err.status === 401) {
+                // auto logout if 401 response returned from api
+                _this.authenticationService.logout();
+                location.reload(true);
+            }
+            var error = err.error.message || err.statusText;
+            return Object(rxjs__WEBPACK_IMPORTED_MODULE_1__["throwError"])(error);
+        }));
+    };
+    ErrorInterceptor.ctorParameters = function () { return [
+        { type: _authentication_service__WEBPACK_IMPORTED_MODULE_3__["AuthenticationService"] }
+    ]; };
+    ErrorInterceptor = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])(),
+        __metadata("design:paramtypes", [_authentication_service__WEBPACK_IMPORTED_MODULE_3__["AuthenticationService"]])
+    ], ErrorInterceptor);
+    return ErrorInterceptor;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/services/jwt.interceptor.ts":
+/*!*********************************************!*\
+  !*** ./src/app/services/jwt.interceptor.ts ***!
+  \*********************************************/
+/*! exports provided: JwtInterceptor */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "JwtInterceptor", function() { return JwtInterceptor; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm5/core.js");
+/* harmony import */ var _authentication_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./authentication.service */ "./src/app/services/authentication.service.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __importDefault = (undefined && undefined.__importDefault) || function (mod) {
+  return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+
+
+var JwtInterceptor = /** @class */ (function () {
+    function JwtInterceptor(authenticationService) {
+        this.authenticationService = authenticationService;
+    }
+    JwtInterceptor.prototype.intercept = function (request, next) {
+        var currentUser = this.authenticationService.currentUserValue;
+        if (currentUser && currentUser.token) {
+            request = request.clone({
+                setHeaders: {
+                    Authorization: "Bearer " + currentUser.token
+                }
+            });
+        }
+        return next.handle(request);
+    };
+    JwtInterceptor.ctorParameters = function () { return [
+        { type: _authentication_service__WEBPACK_IMPORTED_MODULE_1__["AuthenticationService"] }
+    ]; };
+    JwtInterceptor = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])(),
+        __metadata("design:paramtypes", [_authentication_service__WEBPACK_IMPORTED_MODULE_1__["AuthenticationService"]])
+    ], JwtInterceptor);
+    return JwtInterceptor;
 }());
 
 

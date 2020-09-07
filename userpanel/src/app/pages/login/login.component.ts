@@ -51,14 +51,14 @@ export class LoginComponent implements OnInit {
     this.params = {
       "email": this.loginForm.value.email,
       "password": this.loginForm.value.password,
-      "project_id": 1
+      "projectid": 1
     }
     return new Promise((resolve, reject) => {
-      this.http.post("https://api.80startups.com/auth/loginUser/" + this.params.project_id, this.params).subscribe(result => {
+      this.http.post("https://api.80startups.com/auth/loginUser/" + this.params.projectid, this.params).subscribe(result => {
         console.log(result, "result");
         localStorage.setItem('token', JSON.stringify(result['users'].tokens))
 
-        this.router.navigateByUrl('/addaddress');
+        this.router.navigateByUrl('/dashboard');
       },
         err => {
           console.log(err);

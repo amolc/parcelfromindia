@@ -5,10 +5,10 @@
         <img src="assets/img/brand/parcelfromindia-logo.png" />
       </a>
       <button class="navbar-toggler" type="button" (click)="isCollapsed=!isCollapsed"
-         aria-controls="sidenav-collapse-main">
+        aria-controls="sidenav-collapse-main">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse"  [ngbCollapse]="isCollapsed" id="sidenav-collapse-main">
+      <div class="collapse navbar-collapse" [ngbCollapse]="isCollapsed" id="sidenav-collapse-main">
         <!-- Collapse header -->
         <div class="navbar-collapse-header d-md-none">
           <div class="row">
@@ -18,7 +18,7 @@
               </a>
             </div>
             <div class="col-6 collapse-close">
-              <button type="button" class="navbar-toggler" (click)="isCollapsed=!isCollapsed" >
+              <button type="button" class="navbar-toggler" (click)="isCollapsed=!isCollapsed">
                 <span></span>
                 <span></span>
               </button>
@@ -51,11 +51,11 @@
               <span class="nav-link-inner--text">Profile</span>
             </a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             
               <button class="nav-link-inner--text" (click)='dologout()'>logout</button>
             
-          </li> 
+          </li>  -->
 
         </ul>
       </div>

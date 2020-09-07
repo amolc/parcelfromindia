@@ -413,7 +413,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"header bg-gradient-danger pb-8 pt-5 pt-md-8\">\n  <div class=\"container-fluid\">\n    <div class=\"header-body\">\n      <!-- Card stats -->\n      <div class=\"row\">\n        <div class=\"col-xl-3 col-lg-6\">\n          <div class=\"card card-stats mb-4 mb-xl-0\">\n            <div class=\"m-widget24\">\n              <div class=\"m-widget24__item\">\n                 <h4 class=\"m-widget24__title\"><span style=\"margin-right: 5px;size: 20px;\"><i class=\"flaticon-truck m--font-brand\" style=\"font-size: 25px !important;\"></i></span>\n                  Products in Warehouse\n                 </h4>\n                 <br>\n                 <span class=\"m-widget24__desc\">\n                 No. of Orders\n                 </span>\n                 <span class=\"m-widget24__stats m--font-info\">\n                 0                                    </span>\n                 <div class=\"m--space-10\"></div>\n                 <div class=\"progress m-progress--sm\">\n                    <div class=\"progress-bar m--bg-info\" role=\"progressbar\" style=\"width: 100%;\" aria-valuenow=\"50\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\n                 </div>\n                 <span class=\"m-widget24__change\">\n                 \n                   <a  class=\"btn btn-primary\" style=\"width: 80px;\">Visit</a>    \n                 </span>\n                 <span class=\"m-widget24__number\">\n                 </span>\n              </div>\n           </div>\n          </div>\n        </div>\n        <div class=\"col-xl-3 col-lg-6\">\n          <div class=\"card card-stats mb-4 mb-xl-0\">\n            <div class=\"m-widget24\">\n              <div class=\"m-widget24__item\">\n                 <h4 class=\"m-widget24__title\"><span style=\"margin-right: 5px;size: 20px;\"><i class=\"flaticon-interface-1 m--font-brand\" style=\"font-size: 25px !important;\"></i></span>\n                    Ready to Ship\n                 </h4>\n                 <br>\n                 <span class=\"m-widget24__desc\">\n                 No. of Orders\n                 </span>\n                 <span class=\"m-widget24__stats m--font-info\">\n                 0                                    </span>\n                 <div class=\"m--space-10\"></div>\n                 <div class=\"progress m-progress--sm\">\n                    <div class=\"progress-bar m--bg-info\" role=\"progressbar\" style=\"width: 100%;\" aria-valuenow=\"50\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\n                 </div>\n                 <span class=\"m-widget24__change\">\n                 \n                   <a  class=\"btn btn-primary\" style=\"width: 80px;\">Visit</a>    \n                 </span>\n                 <span class=\"m-widget24__number\">\n                 </span>\n              </div>\n           </div>\n          </div>\n        </div>\n        <div class=\"col-xl-3 col-lg-6\">\n          <div class=\"card card-stats mb-4 mb-xl-0\">\n            <div class=\"m-widget24\">\n              <div class=\"m-widget24__item\">\n                 <h4 class=\"m-widget24__title\"><span style=\"margin-right: 5px;size: 20px;\"><i class=\"flaticon-time-3 m--font-brand\" style=\"font-size: 25px !important;\"></i></span>\n                  Orders in Progress\n                 </h4>\n                 <br>\n                 <span class=\"m-widget24__desc\">\n                 No. of Orders\n                 </span>\n                 <span class=\"m-widget24__stats m--font-info\">\n                 0                                    </span>\n                 <div class=\"m--space-10\"></div>\n                 <div class=\"progress m-progress--sm\">\n                    <div class=\"progress-bar m--bg-info\" role=\"progressbar\" style=\"width: 100%;\" aria-valuenow=\"50\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\n                 </div>\n                 <span class=\"m-widget24__change\">\n                 \n                   <a  class=\"btn btn-primary\" style=\"width: 80px;\">Visit</a>    \n                 </span>\n                 <span class=\"m-widget24__number\">\n                 </span>\n              </div>\n           </div>\n          </div>\n        </div>\n        <div class=\"col-xl-3 col-lg-6\">\n          <div class=\"card card-stats mb-4 mb-xl-0\">\n            <div class=\"m-widget24\">\n              <div class=\"m-widget24__item\">\n                 <h4 class=\"m-widget24__title\"><span style=\"margin-right: 5px;size: 20px;\"><i class=\"flaticon-paper-plane m--font-brand\" style=\"font-size: 25px !important;\"></i></span>\n                  Sent Parcels\n                 </h4>\n                 <br>\n                 <span class=\"m-widget24__desc\">\n                 No. of Orders\n                 </span>\n                 <span class=\"m-widget24__stats m--font-info\">\n                 0                                    </span>\n                 <div class=\"m--space-10\"></div>\n                 <div class=\"progress m-progress--sm\">\n                    <div class=\"progress-bar m--bg-info\" role=\"progressbar\" style=\"width: 100%;\" aria-valuenow=\"50\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\n                 </div>\n                 <span class=\"m-widget24__change\">\n                 \n                   <a  class=\"btn btn-primary\" style=\"width: 80px;\">Visit</a>    \n                 </span>\n                 <span class=\"m-widget24__number\">\n                 </span>\n              </div>\n           </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n<div class=\"container-fluid mt--7\">\n  \n  <div class=\"row mt-5\">\n    <div class=\"col-xl-8 mb-5 mb-xl-0\">\n      <div class=\"card shadow\">\n        <div class=\"card-header border-0\">\n          <div class=\"row align-items-center\">\n            <div class=\"col\">\n              <h3 class=\"mb-0\"> Wallet Balance</h3>\n            </div>\n            \n          </div>\n        </div>\n        <div class=\"m-portlet m-portlet--bordered-semi m-portlet--space m-portlet--full-height \">\n          \n          <div class=\"m-portlet__body\">\n             <div class=\"m-widget25\">\n                <span class=\"m-widget25__price m--font-brand\" style=\"text-align: center;display: block;font-size:70px;\">\n                <i class=\"fa fa-inr\" style=\"font-size:60px!important;\"></i> 0                                 </span>\n                <br>\n                <span class=\"m-widget25__desc\" style=\"text-align: center;display: block;\">\n                Total wallet balance.\n                </span>\n                <div class=\"m-widget25--progress\" style=\"text-align: center;\">\n                   <div class=\"btn-group\" role=\"group\" aria-label=\"Basic example\">\n                   <div class=\"m-widget25__progress\">\n                      <button type=\"button\" class=\"btn btn-secondary\" data-toggle=\"modal\" data-target=\"#m_modal_4\">\n                      Add to Wallet\n                      </button>\n                      <div class=\"m--space-14\"></div>\n                      \n                   </div>\n                   <br><br><br>\n                   <div class=\"m-widget25__progress\">\n                      <button  type=\"button\" class=\"btn btn-secondary\">History</button>\n                      <div class=\"m--space-10\"></div>\n                      \n                   </div>\n                   </div>\n                </div>\n             </div>\n          </div>\n       </div>\n      </div>\n    </div>\n    <div class=\"col-xl-4\">\n      <div class=\"card shadow\">\n        <div class=\"card-header border-0\">\n          <div class=\"row align-items-center\">\n            <div class=\"col\">\n              <h3 class=\"mb-0\" style=\"background-color: #00adef !important;\">Your Indian Address</h3>\n            </div>\n            \n          </div>\n        </div>\n        <div class=\"table-responsive\">\n          <!-- Projects table -->\n          <div class=\"m-portlet m-portlet--head-overlay m-portlet--full-height   m-portlet--rounded-force\">\n            \n            <div class=\"m-portlet__body\">\n               <div class=\"m-widget28\">\n                  <div class=\"m-widget28__pic m-portlet-fit--sides\" style=\"min-height: 65px;\"></div>\n                  <div class=\"m-widget28__container\">\n                     <!-- begin::Tab Content -->\n                     <div class=\"m-widget28__tab tab-content\">\n                        <div id=\"menu11\" class=\"m-widget28__tab-container tab-pane active\">\n                           <div class=\"m-widget28__tab-items\">\n                              <div class=\"m-widget28__tab-item\">\n                                 <span><span style=\"margin-right: 10px;\"><i class=\"flaticon-avatar\"></i></span>\n                                 \n                                 </span>\n                              </div>\n                              \n                              <div class=\"m-widget28__tab-item\">\n                                 <span><span style=\"margin-right: 10px;\"><i class=\"flaticon-map-location\"></i></span>\n                                Ramdas Dagale, Plot no 12 , survey no 253/2/2\n                                 </span>\n                              </div>\n                              <div class=\"m-widget28__tab-item\">\n                                 <span><span style=\"margin-right: 10px;\"><i class=\"flticon-placeholder-2\"></i></span>\n                                 Near skumar bakery Lohegaon\n                                 </span>\n                              </div>\n                              <div class=\"m-widget28__tab-item\">\n                                 <span><span style=\"margin-right: 10px;\"><i class=\"flaticon-placeholder-2\"></i></span>\n                                 Pune, 411032\n                                 </span>\n                              </div>\n                              <div class=\"m-widget28__tab-item\">\n                                 <span><span style=\"margin-right: 10px;\"><i class=\"flaticon-placeholder-2\"></i></span>\n                                  Mobile: +91 8074393145\n                                 </span>\n                              </div>\n                              \n                              <div class=\"m-widget28__tab-item\">\n                              </div>\n                           </div>\n                        </div>\n                        \n                        \n                     </div>\n                  </div>\n               </div>\n            </div>\n         </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"header bg-gradient-danger pb-8 pt-5 pt-md-8\">\r\n  <div class=\"container-fluid\">\r\n    <div class=\"header-body\">\r\n      <!-- Card stats -->\r\n      <div class=\"row\">\r\n        <div class=\"col-xl-3 col-lg-6\">\r\n          <div class=\"card card-stats mb-4 mb-xl-0\" style=\"padding:10px;\">\r\n            <div class=\"m-widget24\">\r\n              <div class=\"m-widget24__item\">\r\n                 <h4 class=\"m-widget24__title\"><span style=\"margin-right: 5px;size: 20px;\"><i class=\"flaticon-truck m--font-brand\" style=\"font-size: 25px !important;\"></i></span>\r\n                  Pick Up\r\n                 </h4>\r\n                 <br>\r\n                 <span class=\"m-widget24__desc\">\r\n                 No. of Orders\r\n                 </span>\r\n                 <span class=\"m-widget24__stats m--font-info\">\r\n                 0                                    </span>\r\n                 <div class=\"m--space-10\"></div>\r\n                 <div class=\"progress m-progress--sm\">\r\n                    <div class=\"progress-bar m--bg-info\" role=\"progressbar\" style=\"width: 100%;\" aria-valuenow=\"50\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\r\n                 </div>\r\n                 <span class=\"m-widget24__change\">\r\n                 \r\n                   <a  class=\"btn btn-primary\" style=\"width: 80px;color:#ffffff;background-color: #006fe6;border:none;\">Visit</a>    \r\n                 </span>\r\n                 <span class=\"m-widget24__number\">\r\n                 </span>\r\n              </div>\r\n           </div>\r\n          </div>\r\n        </div>\r\n        <div class=\"col-xl-3 col-lg-6\">\r\n          <div class=\"card card-stats mb-4 mb-xl-0\" style=\"padding:10px;\">\r\n            <div class=\"m-widget24\">\r\n              <div class=\"m-widget24__item\">\r\n                 <h4 class=\"m-widget24__title\"><span style=\"margin-right: 5px;size: 20px;\"><i class=\"flaticon-interface-1 m--font-brand\" style=\"font-size: 25px !important;\"></i></span>\r\n                    Warehouse\r\n                 </h4>\r\n                 <br>\r\n                 <span class=\"m-widget24__desc\">\r\n                 No. of Orders\r\n                 </span>\r\n                 <span class=\"m-widget24__stats m--font-info\">\r\n                 0                                    </span>\r\n                 <div class=\"m--space-10\"></div>\r\n                 <div class=\"progress m-progress--sm\">\r\n                    <div class=\"progress-bar m--bg-info\" role=\"progressbar\" style=\"width: 100%;\" aria-valuenow=\"50\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\r\n                 </div>\r\n                 <span class=\"m-widget24__change\">\r\n                 \r\n                   <a  class=\"btn btn-primary\" style=\"width: 80px;color:#ffffff;background-color: #006fe6;border:none;\">Visit</a>    \r\n                 </span>\r\n                 <span class=\"m-widget24__number\">\r\n                 </span>\r\n              </div>\r\n           </div>\r\n          </div>\r\n        </div>\r\n        <div class=\"col-xl-3 col-lg-6\">\r\n          <div class=\"card card-stats mb-4 mb-xl-0\" style=\"padding:10px;\">\r\n            <div class=\"m-widget24\">\r\n              <div class=\"m-widget24__item\">\r\n                 <h4 class=\"m-widget24__title\"><span style=\"margin-right: 5px;size: 20px;\"><i class=\"flaticon-time-3 m--font-brand\" style=\"font-size: 25px !important;\"></i></span>\r\n                  Ship\r\n                 </h4>\r\n                 <br>\r\n                 <span class=\"m-widget24__desc\">\r\n                 No. of Orders\r\n                 </span>\r\n                 <span class=\"m-widget24__stats m--font-info\">\r\n                 0                                    </span>\r\n                 <div class=\"m--space-10\"></div>\r\n                 <div class=\"progress m-progress--sm\">\r\n                    <div class=\"progress-bar m--bg-info\" role=\"progressbar\" style=\"width: 100%;\" aria-valuenow=\"50\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\r\n                 </div>\r\n                 <span class=\"m-widget24__change\">\r\n                 \r\n                   <a  class=\"btn btn-primary\" style=\"width: 80px;color:#ffffff;background-color: #006fe6;border:none;\">Visit</a>    \r\n                 </span>\r\n                 <span class=\"m-widget24__number\">\r\n                 </span>\r\n              </div>\r\n           </div>\r\n          </div>\r\n        </div>\r\n        <div class=\"col-xl-3 col-lg-6\">\r\n          <div class=\"card card-stats mb-4 mb-xl-0\" style=\"padding:10px;\">\r\n            <div class=\"m-widget24\">\r\n              <div class=\"m-widget24__item\">\r\n                 <h4 class=\"m-widget24__title\"><span style=\"margin-right: 5px;size: 20px;\"><i class=\"flaticon-paper-plane m--font-brand\" style=\"font-size: 25px !important;\"></i></span>\r\n                  History\r\n                 </h4>\r\n                 <br>\r\n                 <span class=\"m-widget24__desc\">\r\n                 No. of Orders\r\n                 </span>\r\n                 <span class=\"m-widget24__stats m--font-info\">\r\n                 0                                    </span>\r\n                 <div class=\"m--space-10\"></div>\r\n                 <div class=\"progress m-progress--sm\">\r\n                    <div class=\"progress-bar m--bg-info\" role=\"progressbar\" style=\"width: 100%;\" aria-valuenow=\"50\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\r\n                 </div>\r\n                 <span class=\"m-widget24__change\">\r\n                 \r\n                   <a  class=\"btn btn-primary\" style=\"width: 80px;color:#ffffff;background-color: #006fe6;border:none;\">Visit</a>    \r\n                 </span>\r\n                 <span class=\"m-widget24__number\">\r\n                 </span>\r\n              </div>\r\n           </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div class=\"container-fluid mt--7\">\r\n  \r\n  <div class=\"row mt-5\">\r\n    <div class=\"col-xl-8 mb-5 mb-xl-0\">\r\n      <div class=\"card shadow\">\r\n        <div class=\"card-header border-0\">\r\n          <div class=\"row align-items-center\">\r\n            <div class=\"col\">\r\n              <h3 class=\"mb-0\"> Wallet Balance</h3>\r\n            </div>\r\n            \r\n          </div>\r\n        </div>\r\n        <div class=\"m-portlet m-portlet--bordered-semi m-portlet--space m-portlet--full-height \">\r\n          \r\n          <div class=\"m-portlet__body\">\r\n             <div class=\"m-widget25\">\r\n                <span class=\"m-widget25__price m--font-brand\" style=\"text-align: center;display: block;font-size:70px;\">\r\n                <i class=\"fa fa-inr\" style=\"font-size:60px!important;\"></i> 0                                 </span>\r\n                <br>\r\n                <span class=\"m-widget25__desc\" style=\"text-align: center;display: block;\">\r\n                Total wallet balance.\r\n                </span>\r\n                <div class=\"m-widget25--progress\" style=\"text-align: center;\">\r\n                   <div class=\"btn-group\" role=\"group\" aria-label=\"Basic example\">\r\n                   <div class=\"m-widget25__progress\">\r\n                      <button type=\"button\" class=\"btn btn-secondary\" data-toggle=\"modal\" data-target=\"#m_modal_4\">\r\n                      Add to Wallet 12\r\n                      </button>\r\n                      <div class=\"m--space-14\"></div>\r\n                      \r\n                   </div>\r\n                   <br><br><br>\r\n                   <div class=\"m-widget25__progress\">\r\n                      <button  type=\"button\" class=\"btn btn-secondary\">History</button>\r\n                      <div class=\"m--space-10\"></div>\r\n                      \r\n                   </div>\r\n                   </div>\r\n                </div>\r\n             </div>\r\n          </div>\r\n       </div>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-xl-4\">\r\n      <div class=\"card shadow\">\r\n        <div class=\"card-header border-0\" style=\"background-color: #006fe6 !important;\">\r\n          <div class=\"row align-items-center\">\r\n            <div class=\"col\">\r\n              <h3 class=\"mb-0\" style=\"color:#ffffff;\">Your Indian Address</h3>\r\n            </div>\r\n            \r\n          </div>\r\n        </div>\r\n        <div class=\"table-responsive\">\r\n          <!-- Projects table -->\r\n          <div class=\"m-portlet m-portlet--head-overlay m-portlet--full-height   m-portlet--rounded-force\">\r\n            \r\n            <div class=\"m-portlet__body\">\r\n               <div class=\"m-widget28\">\r\n                  <div class=\"m-widget28__pic m-portlet-fit--sides\" style=\"min-height: 65px;\"></div>\r\n                  <div class=\"m-widget28__container\">\r\n                     <!-- begin::Tab Content -->\r\n                     <div class=\"m-widget28__tab tab-content\">\r\n                        <div id=\"menu11\" class=\"m-widget28__tab-container tab-pane active\">\r\n                           <div class=\"m-widget28__tab-items\">\r\n                              <div class=\"m-widget28__tab-item\">\r\n                                 <span><span style=\"margin-right: 10px;\"><i class=\"flaticon-avatar\"></i></span>\r\n                                 \r\n                                 </span>\r\n                              </div>\r\n                              \r\n                              <div class=\"m-widget28__tab-item\">\r\n                                 <span><span style=\"margin-right: 10px;\"><i class=\"flaticon-map-location\"></i></span>\r\n                               <!-- Ramdas Dagale, Plot no 12 , survey no 253/2/2  -->\r\n                                 </span>\r\n                              </div>\r\n                              <div class=\"m-widget28__tab-item\">\r\n                                 <span><span style=\"margin-right: 10px;\"><i class=\"flticon-placeholder-2\"></i></span>\r\n                                 <!--Near skumar bakery Lohegaon -->\r\n                                 </span>\r\n                              </div>\r\n                              <div class=\"m-widget28__tab-item\">\r\n                                 <span><span style=\"margin-right: 10px;\"><i class=\"flaticon-placeholder-2\"></i></span>\r\n                                <!--- Pune, 411032 -->\r\n                                 </span>\r\n                              </div>\r\n                              <div class=\"m-widget28__tab-item\">\r\n                                 <span><span style=\"margin-right: 10px;\"><i class=\"flaticon-placeholder-2\"></i></span>\r\n                                 <!-- Mobile: +91 8074393145  -->\r\n                                 </span>\r\n                              </div>\r\n                              \r\n                              <div class=\"m-widget28__tab-item\">\r\n                              </div>\r\n                           </div>\r\n                        </div>\r\n                        \r\n                        \r\n                     </div>\r\n                  </div>\r\n               </div>\r\n            </div>\r\n         </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n\r\n\r\n");
 
 /***/ }),
 
@@ -426,7 +426,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"header bg-gradient-danger pb-8 pt-5 pt-md-8\">\n  <div class=\"container-fluid\">\n    <div class=\"header-body\">\n      <!-- Card stats -->\n      \n    </div>\n  </div>\n</div>\n<!-- Page content -->\n<div class=\"container-fluid mt--7\">\n  <div class=\"row\">\n    <div class=\"col\">\n      <div class=\"card shadow border-0\">\n        \n<div class=\"container clearfix py-5\">\n  <div class=\"m-portlet__head\">\n      <div class=\"m-portlet__head-caption\">\n         <div class=\"m-portlet__head-title\">\n            <h3 class=\"m-portlet__head-text\">\n               Fill in the following details to place pickup request.\n            </h3>\n         </div>\n      </div>\n  </div>\n   \n  <div class=\"container clearfix divcenter\" style=\"max-width: 900px;\">\n     <div class=\" nobottommargin\">\n        <form class=\"m-form m-form--fit m-form--label-align-right m-form--group-seperator-dashed\" autocomplete=\"off\" [formGroup]=\"pickupForm\" >\n           <div class=\"m-portlet__body\">\n              <div class=\"form-group m-form__group row\">\n                  <div class=\"m-radio-inline\" style=\"margin-top: 15px;\">\n                     <span class=\"m-badge m-badge--primary m-badge--wide m-badge--rounded\" style=\"margin-left: 10px; font-size: 1.2rem;font-family: 'Montserrat'; width: 200px;padding: 12px; background-color:burlywood; \">\n                           Pickup Address\n                     </span><br>\n                      <div style=\"margin-top:25px; margin-left:15px;color:#db1a20;\"><p>All fields are mandatory</p></div>\n                  </div>\n               </div>\n               \n              <div class=\"form-group m-form__group row\">\n                  \n                 <div class=\"col-lg-6 col-md-4\">\n                      \n                    <label>\n                    First Name: \n                    </label>\n                    <input type=\"text\" class=\"form-control m-input\" placeholder=\"Enter first name\" name=\"fname\" id=\"fname\" formControlName=\"fname\"  required >\n                </div>\n                \n                 <div class=\"col-lg-6 col-md-4 topgap\">\n                    <label class=\"\">\n                    SurName: \n                    </label>\n                    <input type=\"text\" class=\"form-control m-input\" placeholder=\"Enter  surname\" name=\"lname\" id=\"lname\" formControlName=\"lname\"  required >\n                   </div>\n                   \n              </div>\n             <div class=\"form-group m-form__group row topgap\">\n                 <div class=\"col-lg-12 col-md-10\">\n                    <label>\n                      address \n                    </label>\n                   <textarea type=\"text\" rows=\"4\" class=\"form-control\" placeholder=\"Please enter House/Flat Number, Building Name/ Apartment Name\" name=\"address\" id=\"address\" formControlName=\"address\"  required ></textarea>\n                                                       \n                 </div>\n                 \n              </div>\n             <div class=\"form-group m-form__group row topgap\">\n                 <div class=\"col-lg-12 col-md-10\">\n                    <label>\n                   2nd address \n                    </label>\n                   <textarea type=\"text\" rows=\"4\" class=\"form-control\" placeholder=\"Please enter Street Name, Locality\" name=\"address2\" id=\"address2\" formControlName=\"address2\" required ></textarea>\n                                                       \n                 </div>\n                 \n              </div>  \n              \n                 <div class=\"form-group m-form__group row topgap\">\n                 <div class=\"col-lg-6 col-md-4\">\n                    <label>\n                    City  \n                    </label>\n                    <input type=\"text\" class=\"form-control m-input\" placeholder=\"Enter City\" name=\"city\" id=\"city\" formControlName=\"city\"  required >\n                    \n                    <div class=\"clearfix\"></div>\n                       \n\n\n                 </div>\n                 <div class=\"col-lg-6 col-md-4 topgap\">\n                    <label class=\"\">\n                    State \n                    </label>\n                    <input type=\"text\" class=\"form-control m-input\" placeholder=\"Enter state name\" name=\"state\" id=\"state\" formControlName=\"state\" required >\n                     \n                   </div>\n                   \n              </div>\n              <div class=\"form-group m-form__group row topgap\">\n                 <div class=\"col-lg-6 col-md-4\">\n                    <label>\n                     Country  \n                    </label>\n                    <input type=\"text\" name=\"country\" id=\"country\" class=\"form-control\" formControlName=\"country\" required >\n                 </div>\n                 \n                 <div class=\"col-lg-6 col-md-4 topgap\">\n                    <label class=\"\">\n                    postcode \n                    </label>\n                    <input type=\"text\" class=\"form-control m-input\" placeholder=\"Enter postcode\" name=\"postal_code\" id=\"postal_code\" formControlName=\"postal_code\"  required >\n                     <div class=\"clearfix\"></div>    \n                 </div>\n                 \n             </div>\n             <div class=\"form-group m-form__group row topgap\">\n              <div class=\"col-lg-6 col-md-4\">\n                 <label>\n                  Mobile  \n                 </label>\n                 <input type=\"text\" placeholder=\"Enter mobile number\" name=\"mobile\" id=\"mobile\" class=\"form-control\" formControlName=\"mobile\" required   >\n              </div>\n              \n              <div class=\"col-lg-6 col-md-4 topgap\">\n                 <label class=\"\">\n                 Email \n                 </label>\n                 <input type=\"text\" class=\"form-control m-input\" placeholder=\"Enter Email Adddress\" name=\"email\" id=\"email\" formControlName=\"email\"  required >\n                  <div class=\"clearfix\"></div>    \n              </div>\n              \n          </div>\n          <br>\n          <br>\n          <div class=\"form-group m-form__group row\">\n              <div class=\"m-radio-inline\" style=\"margin-top: 15px;\">\n                 <span class=\"m-badge m-badge--primary m-badge--wide m-badge--rounded\" style=\"margin-left: 10px; font-size: 1.2rem;font-family: 'Montserrat'; width: 200px;padding: 12px; background-color:burlywood; \">\n                       Parcel Information\n                 </span>\n              </div>\n           </div>    \n               <br>\n               <br>\n              <div class=\"form-group m-form__group row\">\n               <div class=\"col-lg-6 col-md-4\">\n                  <label>\n                      Weight of the parcel \n                  </label>\n                  <input type=\"text\" pattern=\"^\\d*(\\.\\d{0,2})?$\" title=\"required numeric value\" class=\"form-control m-input\" placeholder=\"Enter Weight in kg\" name=\"weight\" id=\"weight\" formControlName=\"weight\">\n                </div>\n                <div class=\"col-lg-2 col-md-2 topgap\">\n                  <label class=\"\">\n                  Dimensions \n                  </label>\n                  <input type=\"text\" pattern=\"^\\d*(\\.\\d{0,2})?$\" title=\"required numeric value\" class=\"form-control m-input\" placeholder=\"Enter Length \" name=\"length\" id=\"length\" formControlName=\"length\">\n                </div>\n               <div class=\"col-lg-2 col-md-2 topgap\">\n                  <label class=\"\">\n                   Width in cm\n                  </label>\n                  <input type=\"text\" pattern=\"^\\d*(\\.\\d{0,2})?$\" title=\"required numeric value\" class=\"form-control m-input\" placeholder=\"Enter Width \" name=\"width\" id=\"width\" formControlName=\"width\">\n                </div>\n               <div class=\"col-lg-2 col-md-2 topgap\">\n                  <label class=\"\">\n                  Height in cm\n                  </label>\n                  <input type=\"text\" class=\"form-control m-input\" placeholder=\"Enter Height \" name=\"height\" id=\"height\" formControlName=\"height\">\n               </div>   \n              </div>\n                 <div class=\"form-group m-form__group row topgap\">\n                 <div class=\"col-lg-12 col-md-10\">\n                  <label>\n                      Contents of the parcel\n                  </label>\n                  <textarea class=\"form-control m-input\" placeholder=\"Enter contents\" name=\"package_items\" id=\"package_items\" rows=\"3\" formControlName=\"package_items\"></textarea>  \n                 </div>\n                </div>\n               \n               <div class=\"form-group m-form__group row topgap\">\n                 <div class=\"col-lg-12 col-md-10\">\n                  <label>\n                      Value of contents in <i class=\"fa fa-inr\"></i>\n                  </label>\n                      <textarea class=\"form-control m-input\" placeholder=\"Enter contents value\" name=\"no_of_packages\" id=\"no_of_packages\" rows=\"3\" formControlName=\"no_of_packages\"></textarea>     \n                 </div>\n              </div>\n          \n              <div class=\"m-form__actions m-form__actions\" style=\"text-align: center;\">\n                  <button class=\"btn btn-warning m-btn m-btn--custom m-btn--icon\" id=\"shedule_data\" data-wizard-action=\"next\" (click)=\"pickup()\">\n                  <span>\n                  <span>\n                  Submit\n                  </span> &nbsp;&nbsp;\n                  <i class=\"la la-arrow-right\"></i>\n                  </span>\n                  </button>\n              </div>\n           </div>\n        </form>\n     </div>\n     <!-- .postcontent end -->\n  </div>\n</div>\n      </div>\n    </div>\n  </div>\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"header bg-gradient-danger pb-8 pt-5 pt-md-8\">\r\n  <div class=\"container-fluid\">\r\n    <div class=\"header-body\">\r\n      <!-- Card stats -->\r\n      \r\n    </div>\r\n  </div>\r\n</div>\r\n<!-- Page content -->\r\n<!-- <div class=\"container-fluid mt--7\">\r\n  <div class=\"row\">\r\n    <div class=\"col\">\r\n      <div class=\"card shadow border-0\">\r\n        \r\n<div class=\"container clearfix py-5\">\r\n  <div class=\"m-portlet__head\">\r\n      <div class=\"m-portlet__head-caption\">\r\n         <div class=\"m-portlet__head-title\">\r\n            <h3 class=\"m-portlet__head-text\">\r\n               Fill in the following details to place pickup request.\r\n            </h3>\r\n         </div>\r\n      </div>\r\n  </div>\r\n   \r\n  <div class=\"container clearfix divcenter\" style=\"max-width: 900px;\">\r\n     <div class=\" nobottommargin\">\r\n        <form class=\"m-form m-form--fit m-form--label-align-right m-form--group-seperator-dashed\" autocomplete=\"off\" [formGroup]=\"pickupForm\" >\r\n           <div class=\"m-portlet__body\">\r\n              <div class=\"form-group m-form__group row\">\r\n                  <div class=\"m-radio-inline\" style=\"margin-top: 15px;\">\r\n                     <span class=\"m-badge m-badge--primary m-badge--wide m-badge--rounded\" style=\"margin-left: 10px; font-size: 1.2rem;font-family: 'Montserrat'; width: 200px;padding: 12px; background-color:burlywood; \">\r\n                           Pickup Address\r\n                     </span><br>\r\n                      <div style=\"margin-top:25px; margin-left:15px;color:#db1a20;\"><p>All fields are mandatory</p></div>\r\n                  </div>\r\n               </div>\r\n               \r\n              <div class=\"form-group m-form__group row\">\r\n                  \r\n                 <div class=\"col-lg-6 col-md-4\">\r\n                      \r\n                    <label>\r\n                    First Name: \r\n                    </label>\r\n                    <input type=\"text\" class=\"form-control m-input\" placeholder=\"Enter first name\" name=\"pickupfname\" id=\"pickupfname\" formControlName=\"pickupfname\"  required >\r\n                </div>\r\n                \r\n                 <div class=\"col-lg-6 col-md-4 topgap\">\r\n                    <label class=\"\">\r\n                    SurName: \r\n                    </label>\r\n                    <input type=\"text\" class=\"form-control m-input\" placeholder=\"Enter  surname\" name=\"pickuplname\" id=\"pickuplname\" formControlName=\"pickuplname\"  required >\r\n                   </div>\r\n                   \r\n              </div>\r\n             <div class=\"form-group m-form__group row topgap\">\r\n                 <div class=\"col-lg-12 col-md-10\">\r\n                    <label>\r\n                      address \r\n                    </label>\r\n                   <textarea type=\"text\" rows=\"4\" class=\"form-control\" placeholder=\"Please enter House/Flat Number, Building Name/ Apartment Name\" name=\"pickupaddress\" id=\"pickupaddress\" formControlName=\"pickupaddress\"  required ></textarea>\r\n                                                       \r\n                 </div>\r\n                 \r\n              </div>\r\n             <div class=\"form-group m-form__group row topgap\">\r\n                 <div class=\"col-lg-12 col-md-10\">\r\n                    <label>\r\n                   2nd address \r\n                    </label>\r\n                   <textarea type=\"text\" rows=\"4\" class=\"form-control\" placeholder=\"Please enter Street Name, Locality\" name=\"pickupaddress2\" id=\"pickupaddress2\" formControlName=\"pickupaddress2\" required ></textarea>\r\n                                                       \r\n                 </div>\r\n                 \r\n              </div>  \r\n              \r\n                 <div class=\"form-group m-form__group row topgap\">\r\n                 <div class=\"col-lg-6 col-md-4\">\r\n                    <label>\r\n                    City  \r\n                    </label>\r\n                    <input type=\"text\" class=\"form-control m-input\" placeholder=\"Enter City\" name=\"pickupcity\" id=\"pickupcity\" formControlName=\"pickupcity\"  required >\r\n                    \r\n                    <div class=\"clearfix\"></div>\r\n                       \r\n\r\n\r\n                 </div>\r\n                 <div class=\"col-lg-6 col-md-4 topgap\">\r\n                    <label class=\"\">\r\n                    State \r\n                    </label>\r\n                    <input type=\"text\" class=\"form-control m-input\" placeholder=\"Enter state name\" name=\"pickupstate\" id=\"pickupstate\" formControlName=\"pickupstate\" required >\r\n                     \r\n                   </div>\r\n                   \r\n              </div>\r\n              <div class=\"form-group m-form__group row topgap\">\r\n                 <div class=\"col-lg-6 col-md-4\">\r\n                    <label>\r\n                     Country  \r\n                    </label>\r\n                    <input type=\"text\" name=\"pickupcountry\" id=\"pickupcountry\" class=\"form-control\" formControlName=\"pickupcountry\" required >\r\n                 </div>\r\n                 \r\n                 <div class=\"col-lg-6 col-md-4 topgap\">\r\n                    <label class=\"\">\r\n                    postcode \r\n                    </label>\r\n                    <input type=\"text\" class=\"form-control m-input\" placeholder=\"Enter postcode\" name=\"pickuppostal_code\" id=\"pickuppostal_code\" formControlName=\"pickuppostal_code\"  required >\r\n                     <div class=\"clearfix\"></div>    \r\n                 </div>\r\n                 \r\n             </div>\r\n             <div class=\"form-group m-form__group row topgap\">\r\n              <div class=\"col-lg-6 col-md-4\">\r\n                 <label>\r\n                  Mobile  \r\n                 </label>\r\n                 <input type=\"text\" placeholder=\"Enter mobile number\" name=\"pickupmobile\" id=\"pickupmobile\" class=\"form-control\" formControlName=\"pickupmobile\" required   >\r\n              </div>\r\n              \r\n              <div class=\"col-lg-6 col-md-4 topgap\">\r\n                 <label class=\"\">\r\n                 Email \r\n                 </label>\r\n                 <input type=\"text\" class=\"form-control m-input\" placeholder=\"Enter Email Adddress\" name=\"pickupemail\" id=\"pickupemail\" formControlName=\"pickupemail\"  required >\r\n                  <div class=\"clearfix\"></div>    \r\n              </div>\r\n              \r\n          </div>\r\n          <br>\r\n          <br>\r\n          <div class=\"form-group m-form__group row\">\r\n            <div class=\"m-radio-inline\" style=\"margin-top: 15px;\">\r\n               <span class=\"m-badge m-badge--primary m-badge--wide m-badge--rounded\" style=\"margin-left: 10px; font-size: 1.2rem;font-family: 'Montserrat'; width: 200px;padding: 12px; background-color:burlywood; \">\r\n                     WareHouse Information\r\n               </span>\r\n            </div>\r\n         </div> \r\n         <br>\r\n         <br>\r\n         <div class=\"form-group m-form__group row\">\r\n                  \r\n            <div class=\"col-lg-6 col-md-4\">\r\n                 \r\n               <label>\r\n               First Name: \r\n               </label>\r\n               <input type=\"text\" class=\"form-control m-input\" placeholder=\"Enter first name\" name=\"WareHousefname\" id=\"WareHousefname\" formControlName=\"WareHousefname\"  required >\r\n           </div>\r\n           \r\n            <div class=\"col-lg-6 col-md-4 topgap\">\r\n               <label class=\"\">\r\n               SurName: \r\n               </label>\r\n               <input type=\"text\" class=\"form-control m-input\" placeholder=\"Enter  surname\" name=\"WareHouselname\" id=\"WareHouselname\" formControlName=\"WareHouselname\"  required >\r\n              </div>\r\n              \r\n         </div>\r\n        <div class=\"form-group m-form__group row topgap\">\r\n            <div class=\"col-lg-12 col-md-10\">\r\n               <label>\r\n                 address \r\n               </label>\r\n              <textarea type=\"text\" rows=\"4\" class=\"form-control\" placeholder=\"Please enter House/Flat Number, Building Name/ Apartment Name\" name=\"WareHouseaddress\" id=\"WareHouseaddress\" formControlName=\"WareHouseaddress\"  required ></textarea>\r\n                                                  \r\n            </div>\r\n            \r\n         </div>\r\n        <div class=\"form-group m-form__group row topgap\">\r\n            <div class=\"col-lg-12 col-md-10\">\r\n               <label>\r\n              2nd address \r\n               </label>\r\n              <textarea type=\"text\" rows=\"4\" class=\"form-control\" placeholder=\"Please enter Street Name, Locality\" name=\"WareHouseaddress2\" id=\"WareHouseaddress2\" formControlName=\"WareHouseaddress2\" required ></textarea>\r\n                                                  \r\n            </div>\r\n            \r\n         </div>  \r\n         \r\n            <div class=\"form-group m-form__group row topgap\">\r\n            <div class=\"col-lg-6 col-md-4\">\r\n               <label>\r\n               City  \r\n               </label>\r\n               <input type=\"text\" class=\"form-control m-input\" placeholder=\"Enter City\" name=\"WareHousecity\" id=\"WareHousecity\" formControlName=\"WareHousecity\"  required >\r\n               \r\n               <div class=\"clearfix\"></div>\r\n                  \r\n\r\n\r\n            </div>\r\n            <div class=\"col-lg-6 col-md-4 topgap\">\r\n               <label class=\"\">\r\n               State \r\n               </label>\r\n               <input type=\"text\" class=\"form-control m-input\" placeholder=\"Enter state name\" name=\"WareHousestate\" id=\"WareHousestate\" formControlName=\"WareHousestate\" required >\r\n                \r\n              </div>\r\n              \r\n         </div>\r\n         <div class=\"form-group m-form__group row topgap\">\r\n            <div class=\"col-lg-6 col-md-4\">\r\n               <label>\r\n                Country  \r\n               </label>\r\n               <input type=\"text\" name=\"WareHousecountry\" id=\"WareHousecountry\" class=\"form-control\" formControlName=\"WareHousecountry\" required >\r\n            </div>\r\n            \r\n            <div class=\"col-lg-6 col-md-4 topgap\">\r\n               <label class=\"\">\r\n               postcode \r\n               </label>\r\n               <input type=\"text\" class=\"form-control m-input\" placeholder=\"Enter postcode\" name=\"WareHousepostal_code\" id=\"WareHousepostal_code\" formControlName=\"WareHousepostal_code\"  required >\r\n                <div class=\"clearfix\"></div>    \r\n            </div>\r\n            \r\n        </div>\r\n        <div class=\"form-group m-form__group row topgap\">\r\n         <div class=\"col-lg-6 col-md-4\">\r\n            <label>\r\n             Mobile  \r\n            </label>\r\n            <input type=\"text\" placeholder=\"Enter mobile number\" name=\"WareHousemobile\" id=\"WareHousemobile\" class=\"form-control\" formControlName=\"WareHousemobile\" required   >\r\n         </div>\r\n         \r\n         <div class=\"col-lg-6 col-md-4 topgap\">\r\n            <label class=\"\">\r\n            Email \r\n            </label>\r\n            <input type=\"text\" class=\"form-control m-input\" placeholder=\"Enter Email Adddress\" name=\"WareHouseemail\" id=\"WareHouseemail\" formControlName=\"WareHouseemail\"  required >\r\n             <div class=\"clearfix\"></div>    \r\n         </div>\r\n         \r\n     </div>\r\n          <br>\r\n          <br>\r\n          <div class=\"form-group m-form__group row\">\r\n              <div class=\"m-radio-inline\" style=\"margin-top: 15px;\">\r\n                 <span class=\"m-badge m-badge--primary m-badge--wide m-badge--rounded\" style=\"margin-left: 10px; font-size: 1.2rem;font-family: 'Montserrat'; width: 200px;padding: 12px; background-color:burlywood; \">\r\n                       Parcel Information\r\n                 </span>\r\n              </div>\r\n           </div>    \r\n               <br>\r\n               <br>\r\n              <div class=\"form-group m-form__group row\">\r\n               <div class=\"col-lg-6 col-md-4\">\r\n                  <label>\r\n                      Weight of the parcel \r\n                  </label>\r\n                  <input type=\"text\" pattern=\"^\\d*(\\.\\d{0,2})?$\" title=\"required numeric value\" class=\"form-control m-input\" placeholder=\"Enter Weight in kg\" name=\"weight\" id=\"weight\" formControlName=\"weight\">\r\n                </div>\r\n                <div class=\"col-lg-2 col-md-2 topgap\">\r\n                  <label class=\"\">\r\n                  Dimensions \r\n                  </label>\r\n                  <input type=\"text\" pattern=\"^\\d*(\\.\\d{0,2})?$\" title=\"required numeric value\" class=\"form-control m-input\" placeholder=\"Enter Length \" name=\"length\" id=\"length\" formControlName=\"length\">\r\n                </div>\r\n               <div class=\"col-lg-2 col-md-2 topgap\">\r\n                  <label class=\"\">\r\n                   Width in cm\r\n                  </label>\r\n                  <input type=\"text\" pattern=\"^\\d*(\\.\\d{0,2})?$\" title=\"required numeric value\" class=\"form-control m-input\" placeholder=\"Enter Width \" name=\"width\" id=\"width\" formControlName=\"width\">\r\n                </div>\r\n               <div class=\"col-lg-2 col-md-2 topgap\">\r\n                  <label class=\"\">\r\n                  Height in cm\r\n                  </label>\r\n                  <input type=\"text\" class=\"form-control m-input\" placeholder=\"Enter Height \" name=\"height\" id=\"height\" formControlName=\"height\">\r\n               </div>   \r\n              </div>\r\n                 <div class=\"form-group m-form__group row topgap\">\r\n                 <div class=\"col-lg-12 col-md-10\">\r\n                  <label>\r\n                      Contents of the parcel\r\n                  </label>\r\n                  <textarea class=\"form-control m-input\" placeholder=\"Enter contents\" name=\"package_items\" id=\"package_items\" rows=\"3\" formControlName=\"package_items\"></textarea>  \r\n                 </div>\r\n                </div>\r\n               \r\n               <div class=\"form-group m-form__group row topgap\">\r\n                 <div class=\"col-lg-12 col-md-10\">\r\n                  <label>\r\n                      Value of contents in <i class=\"fa fa-inr\"></i>\r\n                  </label>\r\n                      <textarea class=\"form-control m-input\" placeholder=\"Enter contents value\" name=\"no_of_packages\" id=\"no_of_packages\" rows=\"3\" formControlName=\"no_of_packages\"></textarea>     \r\n                 </div>\r\n              </div>\r\n          \r\n              <div class=\"m-form__actions m-form__actions\" style=\"text-align: center;\">\r\n                  <button class=\"btn btn-warning m-btn m-btn--custom m-btn--icon\" id=\"shedule_data\" data-wizard-action=\"next\" (click)=\"pickup()\">\r\n                  <span>\r\n                  <span>\r\n                  Submit\r\n                  </span> &nbsp;&nbsp;\r\n                  <i class=\"la la-arrow-right\"></i>\r\n                  </span>\r\n                  </button>\r\n              </div>\r\n           </div>\r\n        </form>\r\n     </div>\r\n      .postcontent end \r\n  </div>\r\n</div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div> -->\r\n\r\n<div class=\"container-fluid mt--7\" style=\"margin-top:50px!important;\">\r\n   <button routerLinkActive=\"active\" [routerLink]=\"['/pickup']\" >AddPickup</button>  \r\n\r\n      <div _ngcontent-c5=\"\" class=\"row mt-5\">\r\n        <div _ngcontent-c5=\"\" class=\"col-xl-12 mb-5 mb-xl-0\">\r\n          <div _ngcontent-c5=\"\" class=\"card shadow\">\r\n            <div _ngcontent-c5=\"\" class=\"card-header border-0\">\r\n              <div _ngcontent-c5=\"\" class=\"row align-items-center\">\r\n                <div _ngcontent-c5=\"\" class=\"col\">\r\n                  <h3 _ngcontent-c5=\"\" class=\"mb-0\">Manage Shipment</h3>\r\n                </div>\r\n                <!-- <div _ngcontent-c5=\"\" class=\"col text-right\"><a _ngcontent-c5=\"\" class=\"btn btn-sm btn-primary\" href=\"#!\">See all</a>\r\n                </div> -->\r\n              </div>\r\n            </div>\r\n            <div _ngcontent-c5=\"\" class=\"table-responsive\">\r\n              <table _ngcontent-c5=\"\" class=\"table align-items-center table-flush\">\r\n                <thead _ngcontent-c5=\"\" class=\"thead-light\">\r\n                  <tr _ngcontent-c5=\"\">\r\n                    <th _ngcontent-c5=\"\" scope=\"col\"><input type=\"checkbox\" class=\"form-check-input\" value=\"\"></th>\r\n                    <th _ngcontent-c5=\"\" scope=\"col\">TRACKING NO.</th>\r\n                    <th _ngcontent-c5=\"\" scope=\"col\">RECEIVER</th>\r\n                    <th _ngcontent-c5=\"\" scope=\"col\">DESTINATION</th>\r\n                    <th _ngcontent-c5=\"\" scope=\"col\">BOOKING DATE</th>\r\n                    <th _ngcontent-c5=\"\" scope=\"col\">CHARGES</th>\r\n                    <th _ngcontent-c5=\"\" scope=\"col\">STATUS</th>\r\n                  </tr>\r\n                </thead>\r\n                <tbody _ngcontent-c5=\"\">\r\n                  <tr _ngcontent-c5=\"\">\r\n                    <th _ngcontent-c5=\"\" scope=\"row\"><input type=\"checkbox\" class=\"form-check-input\" value=\"\"></th>\r\n                    <td _ngcontent-c5=\"\">111111</td>\r\n                    <td _ngcontent-c5=\"\"><i _ngcontent-c5=\"\" class=\"fas fa-box text-success mr-3\"></i>Amol C</td>\r\n                    <td _ngcontent-c5=\"\">Pune</td>\r\n                    <td _ngcontent-c5=\"\">15-08-2020</td>\r\n                    <td _ngcontent-c5=\"\"><button  type=\"button\" class=\"btn btn-secondary\" style=\"padding:5px;border-radius:5px;border:green 1px solid;\">Paid</button> 200SG</td>\r\n                    <td _ngcontent-c5=\"\"><button  type=\"button\" class=\"btn btn-secondary\">Delivered<span style=\"font-size:10px;\">2 days ago</span></button></td>\r\n                    <!-- <td _ngcontent-c5=\"\"><i _ngcontent-c5=\"\" class=\"fas fa-arrow-up text-success mr-3\"></i> 46,53%</td> -->\r\n                  </tr>\r\n                  <tr _ngcontent-c5=\"\">\r\n                    <th _ngcontent-c5=\"\" scope=\"row\"><input type=\"checkbox\" class=\"form-check-input\" value=\"\"></th>\r\n                    <td _ngcontent-c5=\"\">222222</td>\r\n                    <td _ngcontent-c5=\"\"><i _ngcontent-c5=\"\" class=\"fas fa-box text-success mr-3\"></i>Amol C</td>\r\n                    <td _ngcontent-c5=\"\">Pune</td>\r\n                    <td _ngcontent-c5=\"\">15-08-2020</td>\r\n                    <td _ngcontent-c5=\"\"><button  type=\"button\" class=\"btn btn-secondary\" style=\"padding:5px;border-radius:5px;border:green 1px solid;\">Paid</button> 200SG</td>\r\n                    <td _ngcontent-c5=\"\"><button  type=\"button\" class=\"btn btn-secondary\">Delay<span style=\"font-size:10px;\">2 days ago</span></button></td>\r\n                  </tr>\r\n                  <tr _ngcontent-c5=\"\">\r\n                    <th _ngcontent-c5=\"\" scope=\"row\"><input type=\"checkbox\" class=\"form-check-input\" value=\"\"></th>\r\n                    <td _ngcontent-c5=\"\">333333</td>\r\n                    <td _ngcontent-c5=\"\"><i _ngcontent-c5=\"\" class=\"fas fa-box text-success mr-3\"></i>Amol C</td>\r\n                    <td _ngcontent-c5=\"\">Pune</td>\r\n                    <td _ngcontent-c5=\"\">15-08-2020</td>\r\n                    <td _ngcontent-c5=\"\"><button  type=\"button\" class=\"btn btn-secondary\" style=\"padding:5px;border-radius:5px;border:red 1px solid;\">Unpaid</button> 200SG</td>\r\n                    <td _ngcontent-c5=\"\"><button  type=\"button\" class=\"btn btn-secondary\">Over Load<span style=\"font-size:10px;\">2 days ago</span></button></td>\r\n                  </tr>\r\n                  \r\n                </tbody>\r\n              </table>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        \r\n      </div>\r\n    \r\n    </div>\r\n");
 
 /***/ }),
 
@@ -440,6 +440,19 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ("<p>my-suite works!</p>\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/pickup/pickup.component.html":
+/*!******************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/pages/pickup/pickup.component.html ***!
+  \******************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n<div class=\"header bg-gradient-danger pb-8 pt-5 pt-md-8\">\n    <div class=\"container-fluid\">\n      <div class=\"header-body\">\n        <!-- Card stats -->\n        \n      </div>\n    </div>\n  </div>\n  <!-- Page content -->\n   <div class=\"container-fluid mt--7\">\n    <div class=\"row\">\n      <div class=\"col\">\n        <div class=\"card shadow border-0\">\n          \n  <div class=\"container clearfix py-5\">\n    <div class=\"m-portlet__head\">\n        <div class=\"m-portlet__head-caption\">\n           <div class=\"m-portlet__head-title\">\n              <h3 class=\"m-portlet__head-text\">\n                 Fill in the following details to place pickup request.\n              </h3>\n           </div>\n        </div>\n    </div>\n     \n    <div class=\"container clearfix divcenter\" style=\"max-width: 900px;\">\n       <div class=\" nobottommargin\">\n          <form class=\"m-form m-form--fit m-form--label-align-right m-form--group-seperator-dashed\" autocomplete=\"off\" [formGroup]=\"pickupForm\" >\n             <div class=\"m-portlet__body\">\n                <div class=\"form-group m-form__group row\">\n                    <div class=\"m-radio-inline\" style=\"margin-top: 15px;\">\n                       <span class=\"m-badge m-badge--primary m-badge--wide m-badge--rounded\" style=\"margin-left: 10px; font-size: 1.2rem;font-family: 'Montserrat'; width: 200px;padding: 12px; background-color:burlywood; \">\n                             Pickup Address\n                       </span><br>\n                        <div style=\"margin-top:25px; margin-left:15px;color:#db1a20;\"><p>All fields are mandatory</p></div>\n                    </div>\n                 </div>\n                 \n                <div class=\"form-group m-form__group row\">\n                    \n                   <div class=\"col-lg-6 col-md-4\">\n                        \n                      <label>\n                      First Name: \n                      </label>\n                      <input type=\"text\" class=\"form-control m-input\" placeholder=\"Enter first name\" name=\"pickupfname\" id=\"pickupfname\" formControlName=\"pickupfname\"  required >\n                  </div>\n                  \n                   <div class=\"col-lg-6 col-md-4 topgap\">\n                      <label class=\"\">\n                      SurName: \n                      </label>\n                      <input type=\"text\" class=\"form-control m-input\" placeholder=\"Enter  surname\" name=\"pickuplname\" id=\"pickuplname\" formControlName=\"pickuplname\"  required >\n                     </div>\n                     \n                </div>\n               <div class=\"form-group m-form__group row topgap\">\n                   <div class=\"col-lg-12 col-md-10\">\n                      <label>\n                        address \n                      </label>\n                     <textarea type=\"text\" rows=\"4\" class=\"form-control\" placeholder=\"Please enter House/Flat Number, Building Name/ Apartment Name\" name=\"pickupaddress\" id=\"pickupaddress\" formControlName=\"pickupaddress\"  required ></textarea>\n                                                         \n                   </div>\n                   \n                </div>\n               <div class=\"form-group m-form__group row topgap\">\n                   <div class=\"col-lg-12 col-md-10\">\n                      <label>\n                     2nd address \n                      </label>\n                     <textarea type=\"text\" rows=\"4\" class=\"form-control\" placeholder=\"Please enter Street Name, Locality\" name=\"pickupaddress2\" id=\"pickupaddress2\" formControlName=\"pickupaddress2\" required ></textarea>\n                                                         \n                   </div>\n                   \n                </div>  \n                \n                   <div class=\"form-group m-form__group row topgap\">\n                   <div class=\"col-lg-6 col-md-4\">\n                      <label>\n                      City  \n                      </label>\n                      <input type=\"text\" class=\"form-control m-input\" placeholder=\"Enter City\" name=\"pickupcity\" id=\"pickupcity\" formControlName=\"pickupcity\"  required >\n                      \n                      <div class=\"clearfix\"></div>\n                         \n  \n  \n                   </div>\n                   <div class=\"col-lg-6 col-md-4 topgap\">\n                      <label class=\"\">\n                      State \n                      </label>\n                      <input type=\"text\" class=\"form-control m-input\" placeholder=\"Enter state name\" name=\"pickupstate\" id=\"pickupstate\" formControlName=\"pickupstate\" required >\n                       \n                     </div>\n                     \n                </div>\n                <div class=\"form-group m-form__group row topgap\">\n                   <div class=\"col-lg-6 col-md-4\">\n                      <label>\n                       Country  \n                      </label>\n                      <input type=\"text\" name=\"pickupcountry\" id=\"pickupcountry\" class=\"form-control\" formControlName=\"pickupcountry\" required >\n                   </div>\n                   \n                   <div class=\"col-lg-6 col-md-4 topgap\">\n                      <label class=\"\">\n                      postcode \n                      </label>\n                      <input type=\"text\" class=\"form-control m-input\" placeholder=\"Enter postcode\" name=\"pickuppostal_code\" id=\"pickuppostal_code\" formControlName=\"pickuppostal_code\"  required >\n                       <div class=\"clearfix\"></div>    \n                   </div>\n                   \n               </div>\n               <div class=\"form-group m-form__group row topgap\">\n                <div class=\"col-lg-6 col-md-4\">\n                   <label>\n                    Mobile  \n                   </label>\n                   <input type=\"text\" placeholder=\"Enter mobile number\" name=\"pickupmobile\" id=\"pickupmobile\" class=\"form-control\" formControlName=\"pickupmobile\" required   >\n                </div>\n                \n                <div class=\"col-lg-6 col-md-4 topgap\">\n                   <label class=\"\">\n                   Email \n                   </label>\n                   <input type=\"text\" class=\"form-control m-input\" placeholder=\"Enter Email Adddress\" name=\"pickupemail\" id=\"pickupemail\" formControlName=\"pickupemail\"  required >\n                    <div class=\"clearfix\"></div>    \n                </div>\n                \n            </div>\n            <br>\n            <br>\n            <div class=\"form-group m-form__group row\">\n              <div class=\"m-radio-inline\" style=\"margin-top: 15px;\">\n                 <span class=\"m-badge m-badge--primary m-badge--wide m-badge--rounded\" style=\"margin-left: 10px; font-size: 1.2rem;font-family: 'Montserrat'; width: 200px;padding: 12px; background-color:burlywood; \">\n                       WareHouse Information\n                 </span>\n              </div>\n           </div> \n           <br>\n           <br>\n           <div class=\"form-group m-form__group row\">\n                    \n              <div class=\"col-lg-6 col-md-4\">\n                   \n                 <label>\n                 First Name: \n                 </label>\n                 <input type=\"text\" class=\"form-control m-input\" placeholder=\"Enter first name\" name=\"WareHousefname\" id=\"WareHousefname\" formControlName=\"WareHousefname\"  required >\n             </div>\n             \n              <div class=\"col-lg-6 col-md-4 topgap\">\n                 <label class=\"\">\n                 SurName: \n                 </label>\n                 <input type=\"text\" class=\"form-control m-input\" placeholder=\"Enter  surname\" name=\"WareHouselname\" id=\"WareHouselname\" formControlName=\"WareHouselname\"  required >\n                </div>\n                \n           </div>\n          <div class=\"form-group m-form__group row topgap\">\n              <div class=\"col-lg-12 col-md-10\">\n                 <label>\n                   address \n                 </label>\n                <textarea type=\"text\" rows=\"4\" class=\"form-control\" placeholder=\"Please enter House/Flat Number, Building Name/ Apartment Name\" name=\"WareHouseaddress\" id=\"WareHouseaddress\" formControlName=\"WareHouseaddress\"  required ></textarea>\n                                                    \n              </div>\n              \n           </div>\n          <div class=\"form-group m-form__group row topgap\">\n              <div class=\"col-lg-12 col-md-10\">\n                 <label>\n                2nd address \n                 </label>\n                <textarea type=\"text\" rows=\"4\" class=\"form-control\" placeholder=\"Please enter Street Name, Locality\" name=\"WareHouseaddress2\" id=\"WareHouseaddress2\" formControlName=\"WareHouseaddress2\" required ></textarea>\n                                                    \n              </div>\n              \n           </div>  \n           \n              <div class=\"form-group m-form__group row topgap\">\n              <div class=\"col-lg-6 col-md-4\">\n                 <label>\n                 City  \n                 </label>\n                 <input type=\"text\" class=\"form-control m-input\" placeholder=\"Enter City\" name=\"WareHousecity\" id=\"WareHousecity\" formControlName=\"WareHousecity\"  required >\n                 \n                 <div class=\"clearfix\"></div>\n                    \n  \n  \n              </div>\n              <div class=\"col-lg-6 col-md-4 topgap\">\n                 <label class=\"\">\n                 State \n                 </label>\n                 <input type=\"text\" class=\"form-control m-input\" placeholder=\"Enter state name\" name=\"WareHousestate\" id=\"WareHousestate\" formControlName=\"WareHousestate\" required >\n                  \n                </div>\n                \n           </div>\n           <div class=\"form-group m-form__group row topgap\">\n              <div class=\"col-lg-6 col-md-4\">\n                 <label>\n                  Country  \n                 </label>\n                 <input type=\"text\" name=\"WareHousecountry\" id=\"WareHousecountry\" class=\"form-control\" formControlName=\"WareHousecountry\" required >\n              </div>\n              \n              <div class=\"col-lg-6 col-md-4 topgap\">\n                 <label class=\"\">\n                 postcode \n                 </label>\n                 <input type=\"text\" class=\"form-control m-input\" placeholder=\"Enter postcode\" name=\"WareHousepostal_code\" id=\"WareHousepostal_code\" formControlName=\"WareHousepostal_code\"  required >\n                  <div class=\"clearfix\"></div>    \n              </div>\n              \n          </div>\n          <div class=\"form-group m-form__group row topgap\">\n           <div class=\"col-lg-6 col-md-4\">\n              <label>\n               Mobile  \n              </label>\n              <input type=\"text\" placeholder=\"Enter mobile number\" name=\"WareHousemobile\" id=\"WareHousemobile\" class=\"form-control\" formControlName=\"WareHousemobile\" required   >\n           </div>\n           \n           <div class=\"col-lg-6 col-md-4 topgap\">\n              <label class=\"\">\n              Email \n              </label>\n              <input type=\"text\" class=\"form-control m-input\" placeholder=\"Enter Email Adddress\" name=\"WareHouseemail\" id=\"WareHouseemail\" formControlName=\"WareHouseemail\"  required >\n               <div class=\"clearfix\"></div>    \n           </div>\n           \n       </div>\n            <br>\n            <br>\n            <div class=\"form-group m-form__group row\">\n                <div class=\"m-radio-inline\" style=\"margin-top: 15px;\">\n                   <span class=\"m-badge m-badge--primary m-badge--wide m-badge--rounded\" style=\"margin-left: 10px; font-size: 1.2rem;font-family: 'Montserrat'; width: 200px;padding: 12px; background-color:burlywood; \">\n                         Parcel Information\n                   </span>\n                </div>\n             </div>    \n                 <br>\n                 <br>\n                <div class=\"form-group m-form__group row\">\n                 <div class=\"col-lg-6 col-md-4\">\n                    <label>\n                        Weight of the parcel \n                    </label>\n                    <input type=\"text\" pattern=\"^\\d*(\\.\\d{0,2})?$\" title=\"required numeric value\" class=\"form-control m-input\" placeholder=\"Enter Weight in kg\" name=\"weight\" id=\"weight\" formControlName=\"weight\">\n                  </div>\n                  <div class=\"col-lg-2 col-md-2 topgap\">\n                    <label class=\"\">\n                    Dimensions \n                    </label>\n                    <input type=\"text\" pattern=\"^\\d*(\\.\\d{0,2})?$\" title=\"required numeric value\" class=\"form-control m-input\" placeholder=\"Enter Length \" name=\"length\" id=\"length\" formControlName=\"length\">\n                  </div>\n                 <div class=\"col-lg-2 col-md-2 topgap\">\n                    <label class=\"\">\n                     Width in cm\n                    </label>\n                    <input type=\"text\" pattern=\"^\\d*(\\.\\d{0,2})?$\" title=\"required numeric value\" class=\"form-control m-input\" placeholder=\"Enter Width \" name=\"width\" id=\"width\" formControlName=\"width\">\n                  </div>\n                 <div class=\"col-lg-2 col-md-2 topgap\">\n                    <label class=\"\">\n                    Height in cm\n                    </label>\n                    <input type=\"text\" class=\"form-control m-input\" placeholder=\"Enter Height \" name=\"height\" id=\"height\" formControlName=\"height\">\n                 </div>   \n                </div>\n                   <div class=\"form-group m-form__group row topgap\">\n                   <div class=\"col-lg-12 col-md-10\">\n                    <label>\n                        Contents of the parcel\n                    </label>\n                    <textarea class=\"form-control m-input\" placeholder=\"Enter contents\" name=\"package_items\" id=\"package_items\" rows=\"3\" formControlName=\"package_items\"></textarea>  \n                   </div>\n                  </div>\n                 \n                 <div class=\"form-group m-form__group row topgap\">\n                   <div class=\"col-lg-12 col-md-10\">\n                    <label>\n                        Value of contents in <i class=\"fa fa-inr\"></i>\n                    </label>\n                        <textarea class=\"form-control m-input\" placeholder=\"Enter contents value\" name=\"no_of_packages\" id=\"no_of_packages\" rows=\"3\" formControlName=\"no_of_packages\"></textarea>     \n                   </div>\n                </div>\n            \n                <div class=\"m-form__actions m-form__actions\" style=\"text-align: center;\">\n                    <button class=\"btn btn-warning m-btn m-btn--custom m-btn--icon\" id=\"shedule_data\" data-wizard-action=\"next\" (click)=\"pickup()\">\n                    <span>\n                    <span>\n                    Submit\n                    </span> &nbsp;&nbsp;\n                    <i class=\"la la-arrow-right\"></i>\n                    </span>\n                    </button>\n                </div>\n             </div>\n          </form>\n       </div>\n        \n    </div>\n  </div>\n        </div>\n      </div>\n    </div>\n  </div> \n");
 
 /***/ }),
 
@@ -506,7 +519,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pages_assisted_purchase_assisted_purchase_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../pages/assisted-purchase/assisted-purchase.component */ "./src/app/pages/assisted-purchase/assisted-purchase.component.ts");
 /* harmony import */ var _pages_shipping_calculator_shipping_calculator_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../pages/shipping-calculator/shipping-calculator.component */ "./src/app/pages/shipping-calculator/shipping-calculator.component.ts");
 /* harmony import */ var _pages_prohibited_items_prohibited_items_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../pages/prohibited-items/prohibited-items.component */ "./src/app/pages/prohibited-items/prohibited-items.component.ts");
-/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "./node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm5/ng-bootstrap.js");
+/* harmony import */ var _pages_pickup_pickup_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../pages/pickup/pickup.component */ "./src/app/pages/pickup/pickup.component.ts");
+/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "./node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm5/ng-bootstrap.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -533,6 +547,7 @@ var __importDefault = (undefined && undefined.__importDefault) || function (mod)
 
 
 
+
 // import { ToastrModule } from 'ngx-toastr';
 var AdminLayoutModule = /** @class */ (function () {
     function AdminLayoutModule() {
@@ -544,7 +559,7 @@ var AdminLayoutModule = /** @class */ (function () {
                 _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forChild(_admin_layout_routing__WEBPACK_IMPORTED_MODULE_6__["AdminLayoutRoutes"]),
                 _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"],
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClientModule"],
-                _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_14__["NgbModule"],
+                _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_15__["NgbModule"],
                 ngx_clipboard__WEBPACK_IMPORTED_MODULE_5__["ClipboardModule"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_4__["ReactiveFormsModule"]
             ],
@@ -556,6 +571,7 @@ var AdminLayoutModule = /** @class */ (function () {
                 _pages_assisted_purchase_assisted_purchase_component__WEBPACK_IMPORTED_MODULE_11__["AssistedPurchaseComponent"],
                 _pages_shipping_calculator_shipping_calculator_component__WEBPACK_IMPORTED_MODULE_12__["ShippingCalculatorComponent"],
                 _pages_prohibited_items_prohibited_items_component__WEBPACK_IMPORTED_MODULE_13__["ProhibitedItemsComponent"],
+                _pages_pickup_pickup_component__WEBPACK_IMPORTED_MODULE_14__["PickupComponent"]
             ]
         })
     ], AdminLayoutModule);
@@ -583,6 +599,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pages_assisted_purchase_assisted_purchase_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../pages/assisted-purchase/assisted-purchase.component */ "./src/app/pages/assisted-purchase/assisted-purchase.component.ts");
 /* harmony import */ var _pages_shipping_calculator_shipping_calculator_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../pages/shipping-calculator/shipping-calculator.component */ "./src/app/pages/shipping-calculator/shipping-calculator.component.ts");
 /* harmony import */ var _pages_prohibited_items_prohibited_items_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../pages/prohibited-items/prohibited-items.component */ "./src/app/pages/prohibited-items/prohibited-items.component.ts");
+/* harmony import */ var _pages_pickup_pickup_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../pages/pickup/pickup.component */ "./src/app/pages/pickup/pickup.component.ts");
 var __importDefault = (undefined && undefined.__importDefault) || function (mod) {
   return (mod && mod.__esModule) ? mod : { "default": mod };
 };
@@ -595,10 +612,12 @@ var __importDefault = (undefined && undefined.__importDefault) || function (mod)
 
 
 
+
 var AdminLayoutRoutes = [
     { path: 'dashboard', component: _pages_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_0__["DashboardComponent"] },
     { path: 'user-profile', component: _pages_user_profile_user_profile_component__WEBPACK_IMPORTED_MODULE_2__["UserProfileComponent"] },
-    { path: 'pickup', component: _pages_maps_maps_component__WEBPACK_IMPORTED_MODULE_1__["MapsComponent"] },
+    { path: 'pickup', component: _pages_pickup_pickup_component__WEBPACK_IMPORTED_MODULE_7__["PickupComponent"] },
+    { path: 'SchedulePickup', component: _pages_maps_maps_component__WEBPACK_IMPORTED_MODULE_1__["MapsComponent"] },
     { path: 'mysuite', component: _pages_my_suite_my_suite_component__WEBPACK_IMPORTED_MODULE_3__["MySuiteComponent"] },
     { path: 'purchase', component: _pages_assisted_purchase_assisted_purchase_component__WEBPACK_IMPORTED_MODULE_4__["AssistedPurchaseComponent"] },
     { path: 'ShippingCalculator', component: _pages_shipping_calculator_shipping_calculator_component__WEBPACK_IMPORTED_MODULE_5__["ShippingCalculatorComponent"] },
@@ -771,148 +790,9 @@ var MapsComponent = /** @class */ (function () {
         this.http = http;
         this.router = router;
         this.error_messages = {};
-        this.pickupFormData();
+        //this.pickupFormData();
     }
     MapsComponent.prototype.ngOnInit = function () {
-    };
-    MapsComponent.prototype.pickupFormData = function () {
-        this.error_messages = {
-            fname: [
-                { type: "required", message: 'First Name is Required' }
-            ],
-            lname: [
-                { type: "required", message: 'lname is Required' }
-            ],
-            mobile: [
-                { type: "required", message: "mobile Number  is required." },
-                { type: "minlength", message: "minimun length should be 10 ." },
-                { type: "maxlength", message: "maximum length should be 12 ." }
-            ],
-            email: [
-                { type: "required", message: 'Email is Required' },
-                { type: "pattern", message: 'Please Enter valid Email' }
-            ],
-            city: [
-                { type: "required", message: "city is Required." },
-            ],
-            state: [
-                { type: "required", message: "state is Required." },
-            ],
-            country: [
-                { type: "required", message: "country is Required." },
-            ],
-            postal_code: [
-                { type: "required", message: "country is Required." },
-            ],
-            address: [
-                { type: "required", message: "address is Required." },
-            ],
-            address2: [
-                { type: "required", message: "address is Required." },
-            ],
-            weight: [
-                { type: "required", message: "weight is Required." },
-            ],
-            height: [
-                { type: "required", message: "height is Required." },
-            ],
-            width: [
-                { type: "required", message: "width is Required." },
-            ],
-            length: [
-                { type: "required", message: "length is Required." },
-            ],
-            package_items: [
-                { type: "required", message: "package_items is Required." },
-            ],
-            no_of_packages: [
-                { type: "required", message: "no_of_packages is Required." },
-            ],
-        };
-        this.pickupForm = this.formBuilder.group({
-            fname: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([
-                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required,
-            ])),
-            lname: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([
-                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required,
-            ])),
-            mobile: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([
-                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required,
-                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].minLength(10),
-                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].maxLength(12)
-            ])),
-            email: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([
-                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required,
-                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].pattern('^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$'),
-            ])),
-            city: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([
-                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required,
-            ])),
-            state: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([
-                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required,
-            ])),
-            country: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([
-                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required,
-            ])),
-            postal_code: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([
-                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required,
-            ])),
-            address: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([
-                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required,
-            ])),
-            address2: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([
-                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required,
-            ])),
-            weight: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([
-                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required,
-            ])),
-            height: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([
-                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required,
-            ])),
-            length: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([
-                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required,
-            ])),
-            width: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([
-                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required,
-            ])),
-            package_items: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([
-                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required,
-            ])),
-            no_of_packages: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([
-                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required,
-            ])),
-        });
-    };
-    MapsComponent.prototype.pickup = function () {
-        var _this = this;
-        this.params = {
-            "fname": this.pickupForm.value.fname,
-            "lname": this.pickupForm.value.lname,
-            "mobile": this.pickupForm.value.mobile,
-            "email": this.pickupForm.value.email,
-            "city": this.pickupForm.value.city,
-            "state": this.pickupForm.value.state,
-            "country": this.pickupForm.value.country,
-            "postal_code": this.pickupForm.value.postal_code,
-            "address": this.pickupForm.value.address,
-            "address2": this.pickupForm.value.address2,
-            "weight": this.pickupForm.value.weight,
-            "length": this.pickupForm.value.length,
-            "width": this.pickupForm.value.width,
-            "height": this.pickupForm.value.height,
-            "package_items": this.pickupForm.value.package_items,
-            "no_of_packages": this.pickupForm.value.no_of_packages,
-        };
-        return new Promise(function (resolve, reject) {
-            _this.http.post("https://api.80startups.com/parcel/createParcel", _this.params).subscribe(function (result) {
-                console.log("result", result);
-                _this.router.navigateByUrl('/DashBorad');
-            }, function (err) {
-                console.log(err);
-                alert("please enter email ");
-                // reject(err);
-            });
-        });
     };
     MapsComponent.ctorParameters = function () { return [
         { type: _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"] },
@@ -987,6 +867,300 @@ var MySuiteComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], MySuiteComponent);
     return MySuiteComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/pickup/pickup.component.css":
+/*!***************************************************!*\
+  !*** ./src/app/pages/pickup/pickup.component.css ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL3BpY2t1cC9waWNrdXAuY29tcG9uZW50LmNzcyJ9 */");
+
+/***/ }),
+
+/***/ "./src/app/pages/pickup/pickup.component.ts":
+/*!**************************************************!*\
+  !*** ./src/app/pages/pickup/pickup.component.ts ***!
+  \**************************************************/
+/*! exports provided: PickupComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PickupComponent", function() { return PickupComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm5/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm5/forms.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/__ivy_ngcc__/fesm5/http.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm5/router.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __importDefault = (undefined && undefined.__importDefault) || function (mod) {
+  return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+
+
+
+
+var PickupComponent = /** @class */ (function () {
+    function PickupComponent(formBuilder, http, router) {
+        this.formBuilder = formBuilder;
+        this.http = http;
+        this.router = router;
+        this.error_messages = {};
+        this.pickupFormData();
+    }
+    PickupComponent.prototype.ngOnInit = function () {
+    };
+    PickupComponent.prototype.pickupFormData = function () {
+        this.error_messages = {
+            pickupfname: [
+                { type: "required", message: 'First Name is Required' }
+            ],
+            pickuplname: [
+                { type: "required", message: 'lname is Required' }
+            ],
+            pickupmobile: [
+                { type: "required", message: "mobile Number  is required." },
+                { type: "minlength", message: "minimun length should be 10 ." },
+                { type: "maxlength", message: "maximum length should be 12 ." }
+            ],
+            pickupemail: [
+                { type: "required", message: 'Email is Required' },
+                { type: "pattern", message: 'Please Enter valid Email' }
+            ],
+            pickupcity: [
+                { type: "required", message: "city is Required." },
+            ],
+            pickupstate: [
+                { type: "required", message: "state is Required." },
+            ],
+            pickupcountry: [
+                { type: "required", message: "country is Required." },
+            ],
+            pickuppostal_code: [
+                { type: "required", message: "country is Required." },
+            ],
+            pickupaddress: [
+                { type: "required", message: "address is Required." },
+            ],
+            pickupaddress2: [
+                { type: "required", message: "address is Required." },
+            ],
+            WareHousefname: [
+                { type: "required", message: 'First Name is Required' }
+            ],
+            WareHouselname: [
+                { type: "required", message: 'lname is Required' }
+            ],
+            WareHousemobile: [
+                { type: "required", message: "mobile Number  is required." },
+                { type: "minlength", message: "minimun length should be 10 ." },
+                { type: "maxlength", message: "maximum length should be 12 ." }
+            ],
+            WareHouseemail: [
+                { type: "required", message: 'Email is Required' },
+                { type: "pattern", message: 'Please Enter valid Email' }
+            ],
+            WareHousecity: [
+                { type: "required", message: "city is Required." },
+            ],
+            WareHousestate: [
+                { type: "required", message: "state is Required." },
+            ],
+            WareHousecountry: [
+                { type: "required", message: "country is Required." },
+            ],
+            WareHousepostal_code: [
+                { type: "required", message: "country is Required." },
+            ],
+            WareHouseaddress: [
+                { type: "required", message: "address is Required." },
+            ],
+            WareHouseaddress2: [
+                { type: "required", message: "address is Required." },
+            ],
+            weight: [
+                { type: "required", message: "weight is Required." },
+            ],
+            height: [
+                { type: "required", message: "height is Required." },
+            ],
+            width: [
+                { type: "required", message: "width is Required." },
+            ],
+            length: [
+                { type: "required", message: "length is Required." },
+            ],
+            package_items: [
+                { type: "required", message: "package_items is Required." },
+            ],
+            no_of_packages: [
+                { type: "required", message: "no_of_packages is Required." },
+            ],
+        };
+        this.pickupForm = this.formBuilder.group({
+            pickupfname: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([
+                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required,
+            ])),
+            pickuplname: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([
+                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required,
+            ])),
+            pickupmobile: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([
+                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required,
+                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].minLength(10),
+                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].maxLength(12)
+            ])),
+            pickupemail: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([
+                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required,
+                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].pattern('^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$'),
+            ])),
+            pickupcity: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([
+                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required,
+            ])),
+            pickupstate: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([
+                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required,
+            ])),
+            pickupcountry: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([
+                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required,
+            ])),
+            pickuppostal_code: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([
+                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required,
+            ])),
+            pickupaddress: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([
+                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required,
+            ])),
+            pickupaddress2: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([
+                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required,
+            ])),
+            WareHousefname: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([
+                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required,
+            ])),
+            WareHouselname: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([
+                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required,
+            ])),
+            WareHousemobile: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([
+                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required,
+                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].minLength(10),
+                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].maxLength(12)
+            ])),
+            WareHouseemail: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([
+                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required,
+                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].pattern('^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$'),
+            ])),
+            WareHousecity: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([
+                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required,
+            ])),
+            WareHousestate: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([
+                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required,
+            ])),
+            WareHousecountry: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([
+                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required,
+            ])),
+            WareHousepostal_code: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([
+                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required,
+            ])),
+            WareHouseaddress: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([
+                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required,
+            ])),
+            WareHouseaddress2: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([
+                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required,
+            ])),
+            weight: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([
+                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required,
+            ])),
+            height: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([
+                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required,
+            ])),
+            length: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([
+                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required,
+            ])),
+            width: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([
+                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required,
+            ])),
+            package_items: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([
+                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required,
+            ])),
+            no_of_packages: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]("", _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([
+                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required,
+            ])),
+        });
+    };
+    PickupComponent.prototype.pickup = function () {
+        var _this = this;
+        var tracking_no = new Date().getTime();
+        console.log(tracking_no);
+        this.params = {
+            "pickupfname": this.pickupForm.controls.pickupfname.value,
+            "pickuplname": this.pickupForm.controls.pickuplname.value,
+            "pickupmobile": this.pickupForm.controls.pickupmobile.value,
+            "pickupemail": this.pickupForm.controls.pickupemail.value,
+            "pickupcity": this.pickupForm.controls.pickupcity.value,
+            "pickupstate": this.pickupForm.controls.pickupstate.value,
+            "pickupcountry": this.pickupForm.controls.pickupcountry.value,
+            "pickuppostal_code": this.pickupForm.controls.pickuppostal_code.value,
+            "pickupaddress": this.pickupForm.controls.pickupaddress.value,
+            "pickupaddress2": this.pickupForm.controls.pickupaddress2.value,
+            "WareHousefname": this.pickupForm.controls.WareHousefname.value,
+            "WareHouselname": this.pickupForm.controls.WareHouselname.value,
+            "WareHousemobile": this.pickupForm.controls.WareHousemobile.value,
+            "WareHouseemail": this.pickupForm.controls.WareHouseemail.value,
+            "WareHousecity": this.pickupForm.controls.WareHousecity.value,
+            "WareHousestate": this.pickupForm.controls.WareHousestate.value,
+            "WareHousecountry": this.pickupForm.controls.WareHousecountry.value,
+            "WareHousepostal_code": this.pickupForm.controls.WareHousepostal_code.value,
+            "WareHouseaddress": this.pickupForm.controls.WareHouseaddress.value,
+            "WareHouseaddress2": this.pickupForm.controls.WareHouseaddress2.value,
+            "weight": this.pickupForm.controls.weight.value,
+            "length": this.pickupForm.controls.length.value,
+            "width": this.pickupForm.controls.width.value,
+            "height": this.pickupForm.controls.height.value,
+            "package_items": this.pickupForm.controls.package_items.value,
+            "no_of_packages": this.pickupForm.controls.no_of_packages.value,
+            "tracking_no": tracking_no
+        };
+        //console.log(this.params)
+        return new Promise(function (resolve, reject) {
+            _this.http.post("https://api.80startups.com/parcel/createPickup", _this.params).subscribe(function (result) {
+                console.log("result", result);
+                _this.router.navigateByUrl('/DashBorad');
+            }, function (err) {
+                console.log(err);
+                alert("please enter email ");
+                // reject(err);
+            });
+        });
+    };
+    PickupComponent.ctorParameters = function () { return [
+        { type: _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"] },
+        { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] },
+        { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"] }
+    ]; };
+    PickupComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-pickup',
+            template: __importDefault(__webpack_require__(/*! raw-loader!./pickup.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/pickup/pickup.component.html")).default,
+            styles: [__importDefault(__webpack_require__(/*! ./pickup.component.css */ "./src/app/pages/pickup/pickup.component.css")).default]
+        }),
+        __metadata("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"],
+            _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]])
+    ], PickupComponent);
+    return PickupComponent;
 }());
 
 
