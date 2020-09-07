@@ -44,124 +44,85 @@
               <div class="row">
                 <div class="col-lg-6">
                   <div class="form-group">
-                    <label class="form-control-label" for="input-stockSymbol"> StockSymbol</label>
-                    <input type="text" placeholder="Enter stockSymbol" name="stockSymbol" id="stockSymbol"
-                      formControlName="stockSymbol" class="form-control form-control-alternative" required>
+                    <label class="form-control-label" for="input-Symbol">SYMBOL</label>
+                    <input type="text" placeholder="Enter Symbol" name="Symbol" id="Symbol" formControlName="Symbol"
+                      class="form-control form-control-alternative" required>
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="form-group">
-                    <label class="form-control-label" for="input-stockName">StockName</label>
-                    <input type="text" id="input-stockName" class="form-control form-control-alternative"
-                      placeholder="Enter stockName" name="stockName" formControlName="stockName" required>
+                    <label class="form-control-label" for="input-Signal">Signal</label>
+                    <input id="input-Signal" class="form-control form-control-alternative" type="text"
+                      placeholder="Enter Signal" name="Signal" id="Signal" formControlName="Signal" required>
                   </div>
                 </div>
               </div>
               <div class="row">
                 <div class="col-lg-6">
                   <div class="form-group">
-                    <label class="form-control-label" for="input-stockSignal">StockSignal</label>
+                    <label class="form-control-label" for="input-EntryDate&Time">Entry Date & Time </label>
+                    <input id="input-EntryDateTime" class="form-control form-control-alternative" type="text"
+                      placeholder="Enter Entry Date&Time" name="EntryDateTime" id="EntryDateTime"
+                      formControlName="EntryDateTime" required>
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="input-ExitDate&Time">Exit Date & Time </label>
+                    <input id="input-ExitDateTime" class="form-control form-control-alternative" type="text"
+                      placeholder="Enter Exit Date&Time" name="ExitDateTime" formControlName="ExitDateTime" required>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="input-EntryPrice">Entry Price</label>
+                    <input id="input-EntryPrice" class="form-control form-control-alternative"
+                      placeholder="Enter Entry Price" name="EntryPrice" formControlName="EntryPrice" required>
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="input-ExitPrice">Exit Price</label>
+                    <input id="input-ExitPrice" class="form-control form-control-alternative" type="text"
+                      placeholder="Enter Exit Price" name="ExitPrice" formControlName="ExitPrice" required>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="input-stockSignal">Stop Loss</label>
                     <input id="input-stockSignal" class="form-control form-control-alternative" type="text"
-                      placeholder="Enter stockSignal" name="stockSignal" id="stockSignal" formControlName="stockSignal"
-                      required>
+                      placeholder="Enter Stop Loss" name="stopLoss" id="stopLoss" formControlName="stopLoss" required>
                   </div>
                 </div>
 
                 <div class="col-lg-6">
                   <div class="form-group">
-                    <label class="form-control-label" for="input-tradingViewSymbol">TradingViewSymbol</label>
-                    <input id="input-tradingViewSymbol" class="form-control form-control-alternative" type="text"
-                      placeholder="Enter tradingViewSymbol" name="tradingViewSymbol" formControlName="tradingViewSymbol"
-                      required>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <label class="form-control-label" for="input-category">Category</label>
-                    <input id="input-category" class="form-control form-control-alternative"
-                      placeholder="Enter category" name="category" formControlName="category" required>
-                  </div>
-                </div>
-
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <label class="form-control-label" for="input-category_name_hyphen">Category_Name_Hyphen</label>
-                    <input id="input-category_name_hyphen" class="form-control form-control-alternative" type="text"
-                      placeholder="Enter category_name_hyphen" name="category_name_hyphen"
-                      formControlName="category_name_hyphen" required>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <label class="form-control-label" for="input-stockSignal">StopLoss</label>
-                    <input id="input-stockSignal" class="form-control form-control-alternative" type="text"
-                      placeholder="Enter stopLoss" name="stopLoss" id="stopLoss" formControlName="stopLoss" required>
-                  </div>
-                </div>
-
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <label class="form-control-label" for="input-type">Type</label>
-                    <input id="input-type" class="form-control form-control-alternative" type="text"
-                      placeholder="Enter type" name="type" formControlName="type" required>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <label class="form-control-label" for="input-dateTime">DateTime</label>
-                    <input id="input-dateTime" class="form-control form-control-alternative" type="text"
-                      placeholder="Enter dateTime" name="dateTime" id="dateTime" formControlName="dateTime" required>
-                  </div>
-                </div>
-
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <label class="form-control-label" for="input-status">Status</label>
-                    <input id="input-status" class="form-control form-control-alternative" type="text"
-                      placeholder="Enter status" name="status" formControlName="status" required>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <label class="form-control-label" for="input-message">Message</label>
-                    <input id="input-message" class="form-control form-control-alternative" type="text"
-                      placeholder="Enter message" name="message" id="message" formControlName="message" required>
-                  </div>
-                </div>
-
-
-              </div>
-            </div>
-            <hr class="my-4" />
-            <!-- Address -->
-            <h6 class="heading-small text-muted mb-4">Price</h6>
-            <div class="pl-lg-4">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label class="form-control-label" for="input-price">Price</label>
-                    <input type="text" class="form-control form-control-alternative" placeholder="Enter  price"
-                      name="price" id="input-price" formControlName="price" required>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label class="form-control-label" for="input-targetPrice">TargetPrice</label>
-                    <input type="text" class="form-control form-control-alternative" placeholder="Enter targetPrice"
+                    <label class="form-control-label" for="input-targetPrice">Target Price</label>
+                    <input type="text" class="form-control form-control-alternative" placeholder="Enter Target Price"
                       name="targetPrice" id="input-targetPrice" formControlName="targetPrice" required>
                   </div>
                 </div>
               </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="input- status"> Status</label>
+                    <input id="input-status" class="form-control form-control-alternative" type="text"
+                      placeholder="Enter status" name="status" id="status" formControlName="status" required>
+                  </div>
+                </div>
+
+
+              </div>
 
             </div>
+
 
 
             <br>

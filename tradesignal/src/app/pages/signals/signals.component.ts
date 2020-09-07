@@ -33,7 +33,7 @@ export class SignalsComponent implements OnInit {
       this.http
         .get(
           "https://api.80startups.com/2/tradePlan/getallplansbyuserid/" +
-            JSON.parse(localStorage.getItem("token")).users["_id"]
+          JSON.parse(localStorage.getItem("token")).users["_id"]
         )
         .subscribe(
           (result) => {
@@ -49,73 +49,70 @@ export class SignalsComponent implements OnInit {
   }
   signalsFormData() {
     this.error_messages = {
-      stockSymbol: [{ type: "required", message: "stockSymbol is Required" }],
+      Symbol: [{ type: "required", message: "stockSymbol is Required" }],
 
-      stockName: [{ type: "required", message: "stockname is Required" }],
-      stockSignal: [{ type: "required", message: "stocksignal is Required" }],
-      tradingViewSymbol: [
-        { type: "required", message: "tradingviewsymbol is Required" },
+      EntryDateTime: [{ type: "required", message: "EntryDateTime is Required" }],
+      Signal: [{ type: "required", message: "signal is Required" }],
+      ExitDateTime: [
+        { type: "required", message: "ExitDateTime is Required" },
       ],
-      category: [{ type: "required", message: "category is Required" }],
-      category_name_hyphen: [
-        { type: "required", message: "category_name_hyphen is Required" },
+      EntryPrice: [{ type: "required", message: "EntryPrice is Required" }],
+      ExitPrice: [
+        { type: "required", message: "ExitPrice is Required" },
       ],
       stopLoss: [{ type: "required", message: "stopLoss is Required" }],
-      type: [{ type: "required", message: "type is Required" }],
-      dateTime: [{ type: "required", message: "dateTime is Required" }],
-      status: [{ type: "required", message: "status is Required" }],
-      message: [{ type: "required", message: "message is Required" }],
-      price: [{ type: "required", message: "price is Required" }],
       targetPrice: [{ type: "required", message: "targetPrice is Required" }],
       plan: [{ type: "required", message: "plan is Required" }],
+      status: [{ type: "required", message: "status is Required" }],
     };
     this.signalsForm = this.formBuilder.group({
-      stockSymbol: new FormControl(
+      Symbol: new FormControl(
         "",
         Validators.compose([Validators.required])
       ),
-      stockName: new FormControl("", Validators.compose([Validators.required])),
-      stockSignal: new FormControl(
+      Signal: new FormControl("", Validators.compose([Validators.required])),
+      EntryDateTime: new FormControl(
         "",
         Validators.compose([Validators.required])
       ),
-      tradingViewSymbol: new FormControl(
+      ExitDateTime: new FormControl(
         "",
         Validators.compose([Validators.required])
       ),
-      category: new FormControl("", Validators.compose([Validators.required])),
-      category_name_hyphen: new FormControl(
+      EntryPrice: new FormControl("", Validators.compose([Validators.required])),
+      ExitPrice: new FormControl(
         "",
         Validators.compose([Validators.required])
       ),
       stopLoss: new FormControl("", Validators.compose([Validators.required])),
-      type: new FormControl("", Validators.compose([Validators.required])),
-      dateTime: new FormControl("", Validators.compose([Validators.required])),
-      status: new FormControl("", Validators.compose([Validators.required])),
-      message: new FormControl("", Validators.compose([Validators.required])),
-      price: new FormControl("", Validators.compose([Validators.required])),
+
       targetPrice: new FormControl(
         "",
         Validators.compose([Validators.required])
       ),
-      plan: new FormControl("", Validators.compose([Validators.required])),
+
+      plan: new FormControl(
+        "",
+        Validators.compose([Validators.required])
+      ),
+      status: new FormControl(
+        "",
+        Validators.compose([Validators.required])
+      ),
     });
   }
   signals() {
     this.params = {
-      stockSymbol: this.signalsForm.controls.stockSymbol.value,
-      stockName: this.signalsForm.controls.stockName.value,
-      stockSignal: this.signalsForm.controls.stockSignal.value,
-      tradingViewSymbol: this.signalsForm.controls.tradingViewSymbol.value,
-      category: this.signalsForm.controls.category.value,
-      category_name_hyphen: this.signalsForm.controls.category_name_hyphen
-        .value,
+      Symbol: this.signalsForm.controls.Symbol.value,
+      Signal: this.signalsForm.controls.Signal.value,
+      EntryDateTime: this.signalsForm.controls.EntryDateTime.value,
+      ExitDateTime: this.signalsForm.controls.ExitDateTime.value,
+      EntryPrice: this.signalsForm.controls.EntryPrice.value,
+      ExitPrice: this.signalsForm.controls.ExitPrice.value,
       stopLoss: this.signalsForm.controls.stopLoss.value,
-      type: this.signalsForm.controls.type.value,
-      dateTime: this.signalsForm.controls.dateTime.value,
+
       status: this.signalsForm.controls.status.value,
-      message: this.signalsForm.controls.message.value,
-      price: this.signalsForm.controls.price.value,
+
       targetPrice: this.signalsForm.controls.targetPrice.value,
       plan_id: this.signalsForm.controls.plan.value,
     };

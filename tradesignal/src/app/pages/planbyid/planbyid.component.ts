@@ -172,9 +172,9 @@ export class PlanbyidComponent implements OnInit {
       this.http
         .get(
           "https://api.80startups.com/2/tradePlan/getPlanById/" +
-            this.route.snapshot.params.id +
-            "/" +
-            JSON.parse(localStorage.getItem("token")).users["_id"]
+          this.route.snapshot.params.id +
+          "/" +
+          JSON.parse(localStorage.getItem("token")).users["_id"]
         )
         .subscribe(
           (result) => {
@@ -198,7 +198,7 @@ export class PlanbyidComponent implements OnInit {
       this.http
         .get(
           "https://api.80startups.com/tradeSignals/getallsignalsbyplanid/" +
-            this.route.snapshot.params.id
+          this.route.snapshot.params.id
         )
         .subscribe(
           (result) => {

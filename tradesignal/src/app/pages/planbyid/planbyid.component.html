@@ -15,14 +15,14 @@
                     <thead _ngcontent-c5="" class="thead-light">
                       <tr _ngcontent-c5="">
                         <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">P_Name</th>
-                        <br>
+
                         <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">P_Info</th>
-                        <br>
-                        <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">P_Owner</th>
-                        <br>
+
+
+
                         <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">P_PriceMonthly
                         </th>
-                        <br>
+
                         <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">P_priceAnnual</th>
                       </tr>
                     </thead>
@@ -31,21 +31,21 @@
                         <td _ngcontent-c5="" scope="row">
                           {{listItems.planname}}
                         </td>
-                        <br>
+
                         <td _ngcontent-c5="">
                           {{listItems.planinfo}}
                         </td>
-                        <br>
 
-                        <td _ngcontent-c5="">
+
+                        <!-- <td _ngcontent-c5="">
                           {{listItems.planowner}}
-                        </td>
+                        </td> -->
 
-                        <br>
+
                         <td _ngcontent-c5="">
                           {{listItems.planpricemonthly}}
                         </td>
-                        <br>
+
 
                         <td _ngcontent-c5="">
                           {{listItems.planpriceannual}}
@@ -110,10 +110,13 @@
                 style="line-height: 30px;border-style: groove; ">
                 <thead _ngcontent-c5="" class="thead-light">
                   <tr _ngcontent-c5="">
-                    <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">TIME HERE</th>
-                    <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">STOCK SYMBOL</th>
-                    <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">TYPE</th>
-                    <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">PRICE</th>
+                    <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">Entry DateTime HERE
+                    </th>
+                    <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">Exit DateTime HERE</th>
+                    <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;"> SYMBOL</th>
+
+                    <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;"> Entry Price</th>
+                    <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;"> Exit Price</th>
                     <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">TARGET PRICE</th>
                     <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">STOP LOSS</th>
                     <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">SIGNAL</th>
@@ -123,19 +126,21 @@
                 <tbody _ngcontent-c5="">
                   <tr _ngcontent-c5="" *ngFor="let listItems of data | paginate: config ">
                     <td _ngcontent-c5="" scope="row">
-                      {{listItems.dateTime}}
+                      {{listItems. EntryDateTime}}
+                    </td>
+                    <td _ngcontent-c5="">
+                      {{listItems. ExitDateTime}}
+                    </td>
+                    <td _ngcontent-c5="">
+                      {{listItems.Symbol}}
                     </td>
 
                     <td _ngcontent-c5="">
-                      {{listItems.stockSymbol}}
+                      {{listItems.EntryPrice}}
                     </td>
 
                     <td _ngcontent-c5="">
-                      {{listItems.type}}
-                    </td>
-
-                    <td _ngcontent-c5="">
-                      {{listItems.price}}
+                      {{listItems. ExitPrice}}
                     </td>
 
                     <td _ngcontent-c5="">
@@ -147,7 +152,7 @@
                     </td>
 
                     <td _ngcontent-c5="">
-                      {{listItems.stockSignal}}
+                      {{listItems.Signal}}
                     </td>
 
                     <td _ngcontent-c5="">

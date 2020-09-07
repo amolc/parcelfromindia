@@ -33,9 +33,9 @@ export class CreateplanComponent implements OnInit {
       // planduration: [
       //   { type: "required", message: ' planduration is Required' }
       // ],
-      planowner: [
-        { type: "required", message: 'planowner is Required' }
-      ],
+      // planowner: [
+      //   { type: "required", message: 'planowner is Required' }
+      // ],
       // planstart: [
       //   { type: "required", message: 'planstart is Required' }
       // ],
@@ -71,12 +71,12 @@ export class CreateplanComponent implements OnInit {
         //     Validators.required,
         //   ])
         // ),
-        planowner: new FormControl(
-          "",
-          Validators.compose([
-            Validators.required,
-          ])
-        ),
+        // planowner: new FormControl(
+        //   "",
+        //   Validators.compose([
+        //     Validators.required,
+        //   ])
+        // ),
         // planstart: new FormControl(
         //   "",
         //   Validators.compose([
@@ -137,7 +137,7 @@ export class CreateplanComponent implements OnInit {
       "planname": this.planForm.controls.planname.value,
       "planinfo": this.planForm.controls.planinfo.value,
       // "planduration": this.planForm.controls.planduration.value,
-      "planowner": this.planForm.controls.planowner.value,
+      // "planowner": this.planForm.controls.planowner.value,
       // "planstart": this.planForm.controls.planstart.value,
       // "planend": this.planForm.controls.planend.value,
       "planpricemonthly": this.planForm.controls.planpricemonthly.value,
