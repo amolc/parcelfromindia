@@ -10,23 +10,37 @@
                 <!-- <h3>Amol C</h3>
                 <p>Singapore</p> -->
                 <div _ngcontent-c5="" class="table-responsive">
-                  <table _ngcontent-c5="" class="table align-items-center table-flush"
+                  <table _ngcontent-c5="" class="table1" class="table align-items-center table-flush"
                     style="line-height: 30px;border-style: groove; ">
-                    <thead _ngcontent-c5="" class="thead-light">
-                      <tr _ngcontent-c5="">
-                        <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">P_Name</th>
 
-                        <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">P_Info</th>
+                    <tr _ngcontent-c5="" *ngFor="let listItems of data3[0]">
+                      <th _ngcontent-c5="" scope="col">Name</th>
+                      <td _ngcontent-c5="" scope="row">
+                        {{listItems.planname}}
+                      </td>
+                    </tr>
+                    <tr _ngcontent-c5="" *ngFor="let listItems of data3[0]">
+                      <th _ngcontent-c5="" scope="col">Info</th>
+                      <td _ngcontent-c5="">
+                        {{listItems.planinfo}}
+                      </td>
+                    </tr>
 
+                    <tr _ngcontent-c5="" *ngFor="let listItems of data3[0]">
+                      <th _ngcontent-c5="" scope="col">Monthly
+                      </th>
+                      <td _ngcontent-c5="">
+                        {{listItems.planpricemonthly}}
+                      </td>
+                    </tr>
+                    <tr _ngcontent-c5="" *ngFor="let listItems of data3[0]">
+                      <th _ngcontent-c5="" scope="col">Annual</th>
+                      <td _ngcontent-c5="">
+                        {{listItems.planpriceannual}}
+                      </td>
+                    </tr>
 
-
-                        <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">P_PriceMonthly
-                        </th>
-
-                        <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">P_priceAnnual</th>
-                      </tr>
-                    </thead>
-                    <tbody _ngcontent-c5="">
+                    <!-- <tbody _ngcontent-c5="">
                       <tr _ngcontent-c5="" *ngFor="let listItems of data3[0]">
                         <td _ngcontent-c5="" scope="row">
                           {{listItems.planname}}
@@ -37,12 +51,12 @@
                         </td>
 
 
-                        <!-- <td _ngcontent-c5="">
+                         <td _ngcontent-c5="">
                           {{listItems.planowner}}
                         </td> -->
 
 
-                        <td _ngcontent-c5="">
+                    <!-- <td _ngcontent-c5="">
                           {{listItems.planpricemonthly}}
                         </td>
 
@@ -58,7 +72,7 @@
 
 
 
-                    </tbody>
+                    </tbody> -->
                   </table>
                 </div>
               </div>

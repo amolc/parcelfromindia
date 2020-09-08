@@ -17,7 +17,7 @@
       <div class="card shadow" style="min-height:300px;">
         <div class="card-header border-0">
           <div class="row align-items-center">
-            <div _ngcontent-c5="" class="table-responsive">
+            <!-- <div _ngcontent-c5="" class="table-responsive">
               <table _ngcontent-c5="" class="table align-items-center table-flush"
                 style="line-height: 30px;border-style: groove; ">
                 <thead _ngcontent-c5="" class="thead-light">
@@ -61,9 +61,22 @@
                 </tbody>
               </table>
               <br>
-              <!-- <pagination-controls (pageChange)="pageChanged($event)"></pagination-controls> -->
-            </div>
+               <pagination-controls (pageChange)="pageChanged($event)"></pagination-controls> 
+            </div> -->
+            <div class="card-columns">
+              <div class="bs-example">
 
+                <div class="card" style="width: 300px;" *ngFor="let item of data[0]">
+                  <img src="./assets/img/brand/image.png" class="card-img-top" alt="...">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">{{item.fname}} {{item.lname}} </h5>
+                    <p class="card-text">{{item.summary}}</p>
+                    <button class="btn btn-primary my-4" (click)="analystview(item._id)"> View</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
           </div>
         </div>
 
