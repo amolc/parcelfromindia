@@ -135,6 +135,7 @@
                     <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">STOP LOSS</th>
                     <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">SIGNAL</th>
                     <th _ngcontent-c5="" scope="col" style="font-size: small;font-weight: bold;">STATUS</th>
+
                   </tr>
                 </thead>
                 <tbody _ngcontent-c5="">
@@ -169,10 +170,24 @@
                       {{listItems.Signal}}
                     </td>
 
-                    <td _ngcontent-c5="">
+                    <!-- <td _ngcontent-c5="">
                       {{listItems.status}}
-                    </td>
+                    </td> -->
+                    <td _ngcontent-c5="">
+                      <div class="dropdown">
 
+
+                        <select class="dropdown-select">
+                          <option class="dropdown-item">win</option>
+                          <option class="dropdown-item">Loss</option>
+                          <option class="dropdown-item">ongoing</option>
+                          <option class="dropdown-item">open</option>
+                          <option class="dropdown-item" default>close</option>
+
+                        </select>
+
+                      </div>
+                    </td>
                   </tr>
 
 

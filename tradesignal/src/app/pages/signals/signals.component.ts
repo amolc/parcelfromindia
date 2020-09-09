@@ -63,7 +63,7 @@ export class SignalsComponent implements OnInit {
       stopLoss: [{ type: "required", message: "stopLoss is Required" }],
       targetPrice: [{ type: "required", message: "targetPrice is Required" }],
       plan: [{ type: "required", message: "plan is Required" }],
-      status: [{ type: "required", message: "status is Required" }],
+      userid: [{ type: "required", message: "userid is Required" }],
     };
     this.signalsForm = this.formBuilder.group({
       Symbol: new FormControl(
@@ -95,10 +95,7 @@ export class SignalsComponent implements OnInit {
         "",
         Validators.compose([Validators.required])
       ),
-      status: new FormControl(
-        "",
-        Validators.compose([Validators.required])
-      ),
+
     });
   }
   signals() {
@@ -111,8 +108,8 @@ export class SignalsComponent implements OnInit {
       ExitPrice: this.signalsForm.controls.ExitPrice.value,
       stopLoss: this.signalsForm.controls.stopLoss.value,
 
-      status: this.signalsForm.controls.status.value,
 
+      userid: JSON.parse(localStorage.getItem("token")).users["_id"],
       targetPrice: this.signalsForm.controls.targetPrice.value,
       plan_id: this.signalsForm.controls.plan.value,
     };
