@@ -49,7 +49,7 @@ export class RegisterComponent implements OnInit {
         { type: "minlength", message: "minimun length should be 8 ." },
         { type: "maxlength", message: "maximum length should be 12 ." }
       ],
-      project_id: [
+      projectid: [
         { type: "required", message: "Password is Required." },
       ]
 
@@ -126,13 +126,13 @@ export class RegisterComponent implements OnInit {
 
       "email": this.signUpForm.controls.email.value,
       "password": this.signUpForm.controls.password.value,
-      "projectid": 1,
+      "projectid": "1",
 
 
 
     }
     return new Promise((resolve, reject) => {
-      this.http.post("https://api.80startups.com/1/user/createUser", this.params).subscribe(result => {
+      this.http.post("https://labs.80startups.com/api/v1/1/user/createUser", this.params).subscribe(result => {
         console.log("result", result);
         this.router.navigateByUrl('/login')
       },

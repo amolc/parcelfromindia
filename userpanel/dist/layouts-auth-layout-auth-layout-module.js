@@ -450,12 +450,11 @@ var LoginComponent = /** @class */ (function () {
         this.params = {
             "email": this.loginForm.value.email,
             "password": this.loginForm.value.password,
-            "projectid": 1
         };
         return new Promise(function (resolve, reject) {
-            _this.http.post("https://api.80startups.com/auth/loginUser/" + _this.params.projectid, _this.params).subscribe(function (result) {
+            _this.http.post("https://labs.80startups.com/api/v1/1/user/loginUser", _this.params).subscribe(function (result) {
                 console.log(result, "result");
-                localStorage.setItem('token', JSON.stringify(result['users'].tokens));
+                // localStorage.setItem('token', JSON.stringify(result['users'].tokens))
                 _this.router.navigateByUrl('/dashboard');
             }, function (err) {
                 console.log(err);
@@ -567,7 +566,7 @@ var RegisterComponent = /** @class */ (function () {
                 { type: "minlength", message: "minimun length should be 8 ." },
                 { type: "maxlength", message: "maximum length should be 12 ." }
             ],
-            project_id: [
+            projectid: [
                 { type: "required", message: "Password is Required." },
             ]
         };
@@ -602,10 +601,10 @@ var RegisterComponent = /** @class */ (function () {
             "mobile": this.signUpForm.controls.mobile.value,
             "email": this.signUpForm.controls.email.value,
             "password": this.signUpForm.controls.password.value,
-            "projectid": 1,
+            "projectid": "1",
         };
         return new Promise(function (resolve, reject) {
-            _this.http.post("https://api.80startups.com/1/user/createUser", _this.params).subscribe(function (result) {
+            _this.http.post("https://labs.80startups.com/api/v1/1/user/createUser", _this.params).subscribe(function (result) {
                 console.log("result", result);
                 _this.router.navigateByUrl('/login');
             }, function (err) {
