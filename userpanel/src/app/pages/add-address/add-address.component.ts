@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {FormBuilder,FormControl,FormGroup,Validators,} from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators, } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 @Component({
@@ -12,7 +12,7 @@ export class AddAddressComponent implements OnInit {
   addresForm: FormGroup;
   error_messages: any = {};
   params: any;
-  
+
   constructor(
     public formBuilder: FormBuilder,
     private http: HttpClient,
@@ -89,6 +89,10 @@ export class AddAddressComponent implements OnInit {
         { type: 'minlength', message: 'minimun length should be 10 .' },
         { type: 'maxlength', message: 'maximum length should be 12 .' },
       ],
+      // owner: [
+      //   { type: 'required', message: 'mobile Number  is required.' },
+
+      // ],
     };
     this.addresForm = this.formBuilder.group({
       fname: new FormControl('', Validators.compose([Validators.required])),
@@ -131,9 +135,10 @@ export class AddAddressComponent implements OnInit {
           Validators.maxLength(12),
         ])
       ),
+
     });
   }
-  ngOnInit(): void {}
+  ngOnInit(): void { }
   addres() {
     this.params = {
       fname: this.addresForm.controls.fname.value,
@@ -146,7 +151,7 @@ export class AddAddressComponent implements OnInit {
       state: this.addresForm.controls.state.value,
       country: this.addresForm.controls.country.value,
       postal_code: this.addresForm.controls.postal_code.value,
-    
+
       shipping_fname:
         this.addresForm.controls.shipping_fname.value == ''
           ? this.fname
@@ -182,7 +187,7 @@ export class AddAddressComponent implements OnInit {
           ? this.state
           : this.addresForm.controls.shipping_state.value,
 
-     shipping_country :
+      shipping_country:
         this.addresForm.controls.shipping_country.value == ''
           ? this.country
           : this.addresForm.controls.shipping_country.value,
@@ -191,6 +196,7 @@ export class AddAddressComponent implements OnInit {
         this.addresForm.controls.shipping_postal_code.value == ''
           ? this.postal_code
           : this.addresForm.controls.shipping_postal_code.value,
+      // owner: "5f32ca5c8f33c3b541702c12"
     };
     //console.log(this.params);
     return new Promise((resolve, reject) => {
@@ -203,9 +209,9 @@ export class AddAddressComponent implements OnInit {
           alert("please enter fill ");
           // reject(err);
         }
-      ); 
-    }); 
+      );
+    });
 
-    
+
   }
 }

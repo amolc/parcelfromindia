@@ -10,13 +10,15 @@ import { AssistedPurchaseComponent } from '../../pages/assisted-purchase/assiste
 import { ShippingCalculatorComponent } from '../../pages/shipping-calculator/shipping-calculator.component';
 import { ProhibitedItemsComponent } from '../../pages/prohibited-items/prohibited-items.component';
 import { PickupComponent } from '../../pages/pickup/pickup.component';
+import { PickuplistComponent } from '../../pages/pickuplist/pickuplist.component';
 export const AdminLayoutRoutes: Routes = [
-    { path: 'dashboard',      component: DashboardComponent },
-    { path: 'user-profile',   component: UserProfileComponent },
-    { path: 'pickup',           component: PickupComponent },
-    { path: 'SchedulePickup',           component: MapsComponent },
-    { path: 'mysuite',           component: MySuiteComponent },
-    { path: 'purchase',           component: AssistedPurchaseComponent },
-    { path: 'ShippingCalculator',  component: ShippingCalculatorComponent },
-    { path: 'ProhibitedItems',           component: ProhibitedItemsComponent }
+    { path: 'dashboard', component: DashboardComponent },
+    { path: 'user-profile', component: UserProfileComponent },
+    { path: 'pickup', component: PickupComponent },
+    { path: 'pickuplist', component: PickuplistComponent },
+    { path: 'SchedulePickup', component: MapsComponent },
+    { path: 'mysuite', component: MySuiteComponent },
+    { path: 'purchase', component: AssistedPurchaseComponent },
+    { path: 'ShippingCalculator', component: ShippingCalculatorComponent },
+    { path: 'ProhibitedItems', component: ProhibitedItemsComponent }
 ];

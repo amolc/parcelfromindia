@@ -35,6 +35,7 @@ import { LogoutComponent } from './pages/logout/logout.component';
     LogoutComponent,
 
 
+
     //ResetpasswordComponent,
     //AddAddressComponent
   ],

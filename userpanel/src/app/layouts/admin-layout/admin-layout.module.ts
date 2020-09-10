@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http'; import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
@@ -16,6 +16,8 @@ import { AssistedPurchaseComponent } from '../../pages/assisted-purchase/assiste
 import { ShippingCalculatorComponent } from '../../pages/shipping-calculator/shipping-calculator.component';
 import { ProhibitedItemsComponent } from '../../pages/prohibited-items/prohibited-items.component';
 import { PickupComponent } from '../../pages/pickup/pickup.component';
+import { PickuplistComponent } from '../../pages/pickuplist/pickuplist.component';
+import { NgxPaginationModule } from 'ngx-pagination';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 // import { ToastrModule } from 'ngx-toastr';
 
@@ -27,20 +29,22 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HttpClientModule,
     NgbModule,
     ClipboardModule,
+    NgxPaginationModule,
     ReactiveFormsModule
   ],
   declarations: [
     DashboardComponent,
     UserProfileComponent,
-    
+
     MapsComponent,
     MySuiteComponent,
     AssistedPurchaseComponent,
     ShippingCalculatorComponent,
     ProhibitedItemsComponent,
-    PickupComponent 
+    PickupComponent,
+    PickuplistComponent
 
   ]
 })
 
-export class AdminLayoutModule {}
+export class AdminLayoutModule { }
