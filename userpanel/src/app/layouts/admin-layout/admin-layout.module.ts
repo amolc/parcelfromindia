@@ -17,6 +17,7 @@ import { ShippingCalculatorComponent } from '../../pages/shipping-calculator/shi
 import { ProhibitedItemsComponent } from '../../pages/prohibited-items/prohibited-items.component';
 import { PickupComponent } from '../../pages/pickup/pickup.component';
 import { PickuplistComponent } from '../../pages/pickuplist/pickuplist.component';
+import { ShipmentlistComponent } from '../../pages/shipmentlist/shipmentlist.component';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 // import { ToastrModule } from 'ngx-toastr';
@@ -42,7 +43,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     ShippingCalculatorComponent,
     ProhibitedItemsComponent,
     PickupComponent,
-    PickuplistComponent
+    PickuplistComponent,
+    ShipmentlistComponent
 
   ]
 })

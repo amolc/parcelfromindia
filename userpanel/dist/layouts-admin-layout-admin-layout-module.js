@@ -1348,6 +1348,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/shipmentlist/shipmentlist.component.html":
+/*!******************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/pages/shipmentlist/shipmentlist.component.html ***!
+  \******************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"header bg-gradient-danger pb-8 pt-5 pt-md-8\">\n  <div class=\"container-fluid\">\n    <div class=\"header-body\">\n      <!-- Card stats -->\n\n    </div>\n  </div>\n</div>\n<!-- Page content -->\n\n\n<div class=\"container-fluid mt--7\" style=\"margin-top:50px!important;\">\n  <button class=\"btn btn-primary my-4\" routerLinkActive=\"active\" [routerLink]=\"['/shipment']\">Addshipment</button>\n\n  <div _ngcontent-c5=\"\" class=\"row mt-5\">\n    <div _ngcontent-c5=\"\" class=\"col-xl-12 mb-5 mb-xl-0\">\n      <div _ngcontent-c5=\"\" class=\"card shadow\">\n        <div _ngcontent-c5=\"\" class=\"card-header border-0\">\n          <div _ngcontent-c5=\"\" class=\"row align-items-center\">\n            <div _ngcontent-c5=\"\" class=\"col\">\n              <h3 _ngcontent-c5=\"\" class=\"mb-0\">Manage Shipment</h3>\n            </div>\n            <!-- <div _ngcontent-c5=\"\" class=\"col text-right\"><a _ngcontent-c5=\"\" class=\"btn btn-sm btn-primary\" href=\"#!\">See all</a>\n                </div> -->\n          </div>\n        </div>\n        <div _ngcontent-c5=\"\" class=\"table-responsive\">\n          <table _ngcontent-c5=\"\" class=\"table align-items-center table-flush\"\n            style=\"line-height: 30px;border-style: groove; \">\n            <thead _ngcontent-c5=\"\" class=\"thead-light\">\n              <tr _ngcontent-c5=\"\">\n\n                <th _ngcontent-c5=\"\" scope=\"col\">Name</th>\n                <th _ngcontent-c5=\"\" scope=\"col\">Mobile</th>\n                <th _ngcontent-c5=\"\" scope=\"col\">City</th>\n                <th _ngcontent-c5=\"\" scope=\"col\">Country</th>\n                <th _ngcontent-c5=\"\" scope=\"col\">Name</th>\n                <th _ngcontent-c5=\"\" scope=\"col\">mobile</th>\n                <th _ngcontent-c5=\"\" scope=\"col\">city</th>\n                <th _ngcontent-c5=\"\" scope=\"col\">Country</th>\n              </tr>\n            </thead>\n            <tbody _ngcontent-c5=\"\">\n              <tr _ngcontent-c5=\"\" *ngFor=\"let item of data | paginate: config \">\n\n                <td _ngcontent-c5=\"\"><i _ngcontent-c5=\"\" class=\"fas fa-box text-success mr-3\"></i>{{item.fname}}\n                  {{item.lname}}</td>\n                <td _ngcontent-c5=\"\">{{item.mobile}}</td>\n                <td _ngcontent-c5=\"\">{{item.city}}</td>\n                <td _ngcontent-c5=\"\">{{item.country}}</td>\n                <td _ngcontent-c5=\"\"><i _ngcontent-c5=\"\"\n                    class=\"fas fa-box text-success mr-3\"></i>{{item.shipping_fname}}\n                  {{item.shipping_lname}}</td>\n                <td _ngcontent-c5=\"\">{{item.shipping_mobile}}</td>\n                <td _ngcontent-c5=\"\">{{item.shipping_city}}</td>\n                <td _ngcontent-c5=\"\">{{item.shipping_country}}</td>\n\n              </tr>\n\n\n            </tbody>\n          </table>\n          <br>\n          <pagination-controls (pageChange)=\"pageChanged($event)\"></pagination-controls>\n\n        </div>\n      </div>\n    </div>\n\n  </div>\n\n</div>\n");
+
+/***/ }),
+
 /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/shipping-calculator/shipping-calculator.component.html":
 /*!********************************************************************************************************************!*\
   !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/pages/shipping-calculator/shipping-calculator.component.html ***!
@@ -1400,8 +1413,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pages_prohibited_items_prohibited_items_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../pages/prohibited-items/prohibited-items.component */ "./src/app/pages/prohibited-items/prohibited-items.component.ts");
 /* harmony import */ var _pages_pickup_pickup_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../pages/pickup/pickup.component */ "./src/app/pages/pickup/pickup.component.ts");
 /* harmony import */ var _pages_pickuplist_pickuplist_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../pages/pickuplist/pickuplist.component */ "./src/app/pages/pickuplist/pickuplist.component.ts");
-/* harmony import */ var ngx_pagination__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ngx-pagination */ "./node_modules/ngx-pagination/__ivy_ngcc__/dist/ngx-pagination.js");
-/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "./node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm5/ng-bootstrap.js");
+/* harmony import */ var _pages_shipmentlist_shipmentlist_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../../pages/shipmentlist/shipmentlist.component */ "./src/app/pages/shipmentlist/shipmentlist.component.ts");
+/* harmony import */ var ngx_pagination__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ngx-pagination */ "./node_modules/ngx-pagination/__ivy_ngcc__/dist/ngx-pagination.js");
+/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "./node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm5/ng-bootstrap.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1431,6 +1445,7 @@ var __importDefault = (undefined && undefined.__importDefault) || function (mod)
 
 
 
+
 // import { ToastrModule } from 'ngx-toastr';
 var AdminLayoutModule = /** @class */ (function () {
     function AdminLayoutModule() {
@@ -1442,9 +1457,9 @@ var AdminLayoutModule = /** @class */ (function () {
                 _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forChild(_admin_layout_routing__WEBPACK_IMPORTED_MODULE_6__["AdminLayoutRoutes"]),
                 _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"],
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClientModule"],
-                _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_17__["NgbModule"],
+                _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_18__["NgbModule"],
                 ngx_clipboard__WEBPACK_IMPORTED_MODULE_5__["ClipboardModule"],
-                ngx_pagination__WEBPACK_IMPORTED_MODULE_16__["NgxPaginationModule"],
+                ngx_pagination__WEBPACK_IMPORTED_MODULE_17__["NgxPaginationModule"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_4__["ReactiveFormsModule"]
             ],
             declarations: [
@@ -1456,7 +1471,8 @@ var AdminLayoutModule = /** @class */ (function () {
                 _pages_shipping_calculator_shipping_calculator_component__WEBPACK_IMPORTED_MODULE_12__["ShippingCalculatorComponent"],
                 _pages_prohibited_items_prohibited_items_component__WEBPACK_IMPORTED_MODULE_13__["ProhibitedItemsComponent"],
                 _pages_pickup_pickup_component__WEBPACK_IMPORTED_MODULE_14__["PickupComponent"],
-                _pages_pickuplist_pickuplist_component__WEBPACK_IMPORTED_MODULE_15__["PickuplistComponent"]
+                _pages_pickuplist_pickuplist_component__WEBPACK_IMPORTED_MODULE_15__["PickuplistComponent"],
+                _pages_shipmentlist_shipmentlist_component__WEBPACK_IMPORTED_MODULE_16__["ShipmentlistComponent"]
             ]
         })
     ], AdminLayoutModule);
@@ -1486,6 +1502,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pages_prohibited_items_prohibited_items_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../pages/prohibited-items/prohibited-items.component */ "./src/app/pages/prohibited-items/prohibited-items.component.ts");
 /* harmony import */ var _pages_pickup_pickup_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../pages/pickup/pickup.component */ "./src/app/pages/pickup/pickup.component.ts");
 /* harmony import */ var _pages_pickuplist_pickuplist_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../pages/pickuplist/pickuplist.component */ "./src/app/pages/pickuplist/pickuplist.component.ts");
+/* harmony import */ var _pages_shipmentlist_shipmentlist_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../pages/shipmentlist/shipmentlist.component */ "./src/app/pages/shipmentlist/shipmentlist.component.ts");
 var __importDefault = (undefined && undefined.__importDefault) || function (mod) {
   return (mod && mod.__esModule) ? mod : { "default": mod };
 };
@@ -1500,11 +1517,13 @@ var __importDefault = (undefined && undefined.__importDefault) || function (mod)
 
 
 
+
 var AdminLayoutRoutes = [
     { path: 'dashboard', component: _pages_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_0__["DashboardComponent"] },
     { path: 'user-profile', component: _pages_user_profile_user_profile_component__WEBPACK_IMPORTED_MODULE_2__["UserProfileComponent"] },
     { path: 'pickup', component: _pages_pickup_pickup_component__WEBPACK_IMPORTED_MODULE_7__["PickupComponent"] },
     { path: 'pickuplist', component: _pages_pickuplist_pickuplist_component__WEBPACK_IMPORTED_MODULE_8__["PickuplistComponent"] },
+    { path: 'shipmentlist', component: _pages_shipmentlist_shipmentlist_component__WEBPACK_IMPORTED_MODULE_9__["ShipmentlistComponent"] },
     { path: 'SchedulePickup', component: _pages_maps_maps_component__WEBPACK_IMPORTED_MODULE_1__["MapsComponent"] },
     { path: 'mysuite', component: _pages_my_suite_my_suite_component__WEBPACK_IMPORTED_MODULE_3__["MySuiteComponent"] },
     { path: 'purchase', component: _pages_assisted_purchase_assisted_purchase_component__WEBPACK_IMPORTED_MODULE_4__["AssistedPurchaseComponent"] },
@@ -2202,6 +2221,94 @@ var ProhibitedItemsComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], ProhibitedItemsComponent);
     return ProhibitedItemsComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/shipmentlist/shipmentlist.component.css":
+/*!***************************************************************!*\
+  !*** ./src/app/pages/shipmentlist/shipmentlist.component.css ***!
+  \***************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL3NoaXBtZW50bGlzdC9zaGlwbWVudGxpc3QuY29tcG9uZW50LmNzcyJ9 */");
+
+/***/ }),
+
+/***/ "./src/app/pages/shipmentlist/shipmentlist.component.ts":
+/*!**************************************************************!*\
+  !*** ./src/app/pages/shipmentlist/shipmentlist.component.ts ***!
+  \**************************************************************/
+/*! exports provided: ShipmentlistComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ShipmentlistComponent", function() { return ShipmentlistComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/__ivy_ngcc__/fesm5/http.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm5/router.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __importDefault = (undefined && undefined.__importDefault) || function (mod) {
+  return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+
+
+
+var ShipmentlistComponent = /** @class */ (function () {
+    function ShipmentlistComponent(http, router, route) {
+        this.http = http;
+        this.router = router;
+        this.route = route;
+    }
+    ShipmentlistComponent.prototype.ngOnInit = function () {
+        this.getdata(),
+            this.config = {
+                itemsPerPage: 10,
+                currentPage: 1,
+            };
+    };
+    ShipmentlistComponent.prototype.pageChanged = function (event) {
+        this.config.currentPage = event;
+    };
+    ShipmentlistComponent.prototype.getdata = function () {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            _this.http.get("https://labs.80startups.com/api/v1/1/shipment/getallshipment").subscribe(function (result) {
+                console.log("result", result);
+                _this.data = result;
+            }, function (err) {
+                reject(err);
+            });
+        });
+    };
+    ShipmentlistComponent.ctorParameters = function () { return [
+        { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"] },
+        { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] },
+        { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"] }
+    ]; };
+    ShipmentlistComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-shipmentlist',
+            template: __importDefault(__webpack_require__(/*! raw-loader!./shipmentlist.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/shipmentlist/shipmentlist.component.html")).default,
+            styles: [__importDefault(__webpack_require__(/*! ./shipmentlist.component.css */ "./src/app/pages/shipmentlist/shipmentlist.component.css")).default]
+        }),
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"]])
+    ], ShipmentlistComponent);
+    return ShipmentlistComponent;
 }());
 
 

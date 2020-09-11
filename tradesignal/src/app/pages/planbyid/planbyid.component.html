@@ -177,12 +177,12 @@
                       <div class="dropdown">
 
 
-                        <select class="dropdown-select">
-                          <option class="dropdown-item">win</option>
-                          <option class="dropdown-item">Loss</option>
-                          <option class="dropdown-item">ongoing</option>
-                          <option class="dropdown-item">open</option>
-                          <option class="dropdown-item" default>close</option>
+                        <select class="dropdown-select" (change)="selectbyvalue($event)">
+                          <option class="dropdown-item" value="WIN">win</option>
+                          <option class="dropdown-item" value="LOSS">Loss</option>
+                          <option class="dropdown-item" value="ONGOING">ongoing</option>
+
+                          <option class="dropdown-item" value="CLOSE">close</option>
 
                         </select>
 

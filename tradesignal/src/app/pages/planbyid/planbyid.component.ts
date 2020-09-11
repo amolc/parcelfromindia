@@ -28,7 +28,24 @@ export class PlanbyidComponent implements OnInit {
     };
   }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    new Promise((resolve, reject) => {
+      this.http
+        .get(
+          "https://api.80startups.com/2/tradeSignals/storeWinLossdataToDatabase/" +
+          this.route.snapshot.params.id
+        )
+        .subscribe(
+          (result) => {
+            console.log("result", result);
+            this.data = result;
+          },
+          (err) => {
+            reject(err);
+          }
+        );
+    });
+
     this.getplanlist();
     this.getsignalbyid();
     let chart = am4core.create("chartdiv", am4charts.PieChart);
@@ -138,7 +155,7 @@ export class PlanbyidComponent implements OnInit {
     chart1.legend.data = ["win", "loss", "kk"];
     //chart1.data = this.data1;
     chart1.dataSource.url =
-      "https://api.80startups.com/tradeSignals/getCountperYear/1";
+      "https://api.80startups.com/2/tradeSignals/getCountperYear/" + this.route.snapshot.params.id;
     chart1.dataSource.parser = new am4core.JSONParser();
     chart1.data = this.data1;
     // console.log(chart1.data);
@@ -210,5 +227,8 @@ export class PlanbyidComponent implements OnInit {
           }
         );
     });
+  }
+  selectbyvalue(event) {
+    console.log(event.target.value)
   }
 }

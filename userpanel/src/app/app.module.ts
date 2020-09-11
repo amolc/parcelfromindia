@@ -17,6 +17,7 @@ import { LogoutComponent } from './pages/logout/logout.component';
 
 
 
+
 @NgModule({
   imports: [
     BrowserAnimationsModule,
@@ -33,6 +34,7 @@ import { LogoutComponent } from './pages/logout/logout.component';
     AdminLayoutComponent,
     AuthLayoutComponent,
     LogoutComponent,
+
 
 
 

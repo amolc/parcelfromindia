@@ -11,11 +11,13 @@ import { ShippingCalculatorComponent } from '../../pages/shipping-calculator/shi
 import { ProhibitedItemsComponent } from '../../pages/prohibited-items/prohibited-items.component';
 import { PickupComponent } from '../../pages/pickup/pickup.component';
 import { PickuplistComponent } from '../../pages/pickuplist/pickuplist.component';
+import { ShipmentlistComponent } from '../../pages/shipmentlist/shipmentlist.component';
 export const AdminLayoutRoutes: Routes = [
     { path: 'dashboard', component: DashboardComponent },
     { path: 'user-profile', component: UserProfileComponent },
     { path: 'pickup', component: PickupComponent },
     { path: 'pickuplist', component: PickuplistComponent },
+    { path: 'shipmentlist', component: ShipmentlistComponent },
     { path: 'SchedulePickup', component: MapsComponent },
     { path: 'mysuite', component: MySuiteComponent },
     { path: 'purchase', component: AssistedPurchaseComponent },

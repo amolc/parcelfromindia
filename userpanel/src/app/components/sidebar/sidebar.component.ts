@@ -11,9 +11,9 @@ export const ROUTES: RouteInfo[] = [
   { path: '/dashboard', title: 'Dashboard', icon: 'ni-tv-2 text-primary', class: '' },
   //{ path: '/mysuite', title: 'My Suite',  icon: 'ni-tv-2 text-primary', class: '' },
   // { path: '/purchase', title: 'Assisted Purchase',  icon: 'ni-tv-2 text-primary', class: '' },
-
+  { path: '/shipmentlist', title: 'Shipment', icon: 'ni-single-02 text-yellow', class: '' },
   // { path: '/icons', title: 'Icons',  icon:'ni-planet text-blue', class: '' },
-  { path: '/SchedulePickup', title: 'Schedule Pickup', icon: 'ni-pin-3 text-orange', class: '' },
+  { path: '/pickuplist', title: 'Schedule Pickup', icon: 'ni-pin-3 text-orange', class: '' },
   // { path: '/ProhibitedItems', title: 'Prohibit items',  icon: 'ni-tv-2 text-primary', class: '' },
   // { path: '/ShippingCalculator', title: 'Shipping Calcultor',  icon: 'ni-tv-2 text-primary', class: '' },
   // { path: '/user-profile', title: 'User profile',  icon:'ni-single-02 text-yellow', class: '' },

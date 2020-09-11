@@ -89,10 +89,10 @@ export class AddAddressComponent implements OnInit {
         { type: 'minlength', message: 'minimun length should be 10 .' },
         { type: 'maxlength', message: 'maximum length should be 12 .' },
       ],
-      // owner: [
-      //   { type: 'required', message: 'mobile Number  is required.' },
+      owner: [
+        { type: 'required', message: 'mobile Number  is required.' },
 
-      // ],
+      ],
     };
     this.addresForm = this.formBuilder.group({
       fname: new FormControl('', Validators.compose([Validators.required])),
@@ -196,11 +196,11 @@ export class AddAddressComponent implements OnInit {
         this.addresForm.controls.shipping_postal_code.value == ''
           ? this.postal_code
           : this.addresForm.controls.shipping_postal_code.value,
-      // owner: "5f32ca5c8f33c3b541702c12"
+      owner: "5f32ca5c8f33c3b541702c12"
     };
-    //console.log(this.params);
+    console.log(this.params);
     return new Promise((resolve, reject) => {
-      this.http.post("https://api.80startups.com/shipping/createShipping", this.params).subscribe(result => {
+      this.http.post("https://labs.80startups.com/api/v1/1/shipment/createshipment", this.params).subscribe(result => {
         console.log("result", result);
         this.router.navigateByUrl('/dashboard')
       },
