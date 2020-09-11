@@ -228,7 +228,27 @@ export class PlanbyidComponent implements OnInit {
         );
     });
   }
-  selectbyvalue(event) {
+  selectbyvalue(event, id) {
     console.log(event.target.value)
+    console.log(id)
+    let obj: any = {
+      status: event.target.value
+    }
+    return new Promise((resolve, reject) => {
+      this.http
+        .put(
+          "https://api.80startups.com/tradeSignals/updateSignals/" +
+          id, obj
+        )
+        .subscribe(
+          (result) => {
+            console.log("result", result);
+            this.data = result;
+          },
+          (err) => {
+            reject(err);
+          }
+        );
+    });
   }
 }
