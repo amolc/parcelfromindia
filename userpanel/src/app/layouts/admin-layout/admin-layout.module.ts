@@ -18,6 +18,8 @@ import { ProhibitedItemsComponent } from '../../pages/prohibited-items/prohibite
 import { PickupComponent } from '../../pages/pickup/pickup.component';
 import { PickuplistComponent } from '../../pages/pickuplist/pickuplist.component';
 import { ShipmentlistComponent } from '../../pages/shipmentlist/shipmentlist.component';
+import { WallectComponent } from '../../pages/wallect/wallect.component';
+import { HistoryComponent } from '../../pages/history/history.component';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 // import { ToastrModule } from 'ngx-toastr';
@@ -44,7 +46,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     ProhibitedItemsComponent,
     PickupComponent,
     PickuplistComponent,
-    ShipmentlistComponent
+    ShipmentlistComponent,
+    WallectComponent,
+    HistoryComponent
 
   ]
 })

@@ -161,19 +161,50 @@
               <span class="m-widget25__desc" style="text-align: center;display: block;">
                 Total wallet balance.
               </span>
+              <br>
+              <br>
               <div class="m-widget25--progress" style="text-align: center;">
                 <div class="btn-group" role="group" aria-label="Basic example">
                   <div class="m-widget25__progress">
-                    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#m_modal_4">
-                      Add to Wallet 12
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                      Add to Wallet
                     </button>
-                    <div class="m--space-14"></div>
+                    <div class="modal" id="myModal">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+
+                          <!-- Modal Header -->
+                          <div class="modal-header">
+                            <h4 class="modal-title">Add to Wallet</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          </div>
+
+                          <!-- Modal body -->
+                          <div class="modal-body">
+
+
+                            <input type="number" name="amount" min="1" title="required numeric value"
+                              class="form-control text-left floating-point" style="width: 50%" value=""
+                              placeholder=" Enter Payment Amount " required="required">
+
+                          </div>
+
+                          <!-- Modal footer -->
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-primary " data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary " data-dismiss="modal">Add Wallet</button>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
 
                   </div>
                   <br><br><br>
                   <div class="m-widget25__progress">
-                    <button type="button" class="btn btn-secondary">History</button>
-                    <div class="m--space-10"></div>
+                    <button type="button" class="btn btn-primary" routerLinkActive="active"
+                      [routerLink]="['/history']">History</button>
+
 
                   </div>
                 </div>

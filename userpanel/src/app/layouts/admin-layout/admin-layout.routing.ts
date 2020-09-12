@@ -12,6 +12,8 @@ import { ProhibitedItemsComponent } from '../../pages/prohibited-items/prohibite
 import { PickupComponent } from '../../pages/pickup/pickup.component';
 import { PickuplistComponent } from '../../pages/pickuplist/pickuplist.component';
 import { ShipmentlistComponent } from '../../pages/shipmentlist/shipmentlist.component';
+import { WallectComponent } from '../../pages/wallect/wallect.component';
+import { HistoryComponent } from '../../pages/history/history.component';
 export const AdminLayoutRoutes: Routes = [
     { path: 'dashboard', component: DashboardComponent },
     { path: 'user-profile', component: UserProfileComponent },
@@ -22,5 +24,7 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'mysuite', component: MySuiteComponent },
     { path: 'purchase', component: AssistedPurchaseComponent },
     { path: 'ShippingCalculator', component: ShippingCalculatorComponent },
-    { path: 'ProhibitedItems', component: ProhibitedItemsComponent }
+    { path: 'ProhibitedItems', component: ProhibitedItemsComponent },
+    { path: 'wallect', component: WallectComponent },
+    { path: 'history', component: HistoryComponent }
 ];

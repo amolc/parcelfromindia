@@ -1,1 +1,237 @@
-<p>assisted-purchase works!</p>
+<div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
+  <div class="container-fluid">
+    <div class="header-body">
+      <!-- Card stats -->
+
+    </div>
+  </div>
+</div>
+<!-- Page content -->
+<div class="container-fluid mt--7">
+  <div class="row">
+    <div class="col">
+      <div class="card shadow border-0">
+
+        <div class="container clearfix py-5">
+          <div class="m-portlet__head">
+            <div class="m-portlet__head-caption">
+              <div class="m-portlet__head-title">
+                <h3 class="m-portlet__head-text">
+
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="container clearfix divcenter" style="max-width: 900px;">
+            <div class=" nobottommargin">
+              <form class="m-form m-form--fit m-form--label-align-right m-form--group-seperator-dashed"
+                autocomplete="off" [formGroup]="purchaseForm" (ngSubmit)="purchase()">
+                <div class="m-portlet__body">
+                  <div class="form-group m-form__group row">
+                    <div class="m-radio-inline" style="margin-top: 15px;">
+                      <span class="m-badge m-badge--primary m-badge--wide m-badge--rounded"
+                        style="margin-left: 10px; font-size: 1.2rem;font-family: 'Montserrat'; width: 200px;padding: 12px; background-color:burlywood; ">
+                        Where would you like us to purchase from?
+                      </span><br>
+                      <div style="margin-top:25px; margin-left:15px;color:#db1a20;">
+                        <p>All fields are mandatory</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group m-form__group row">
+
+                    <div class="col-lg-6 col-md-4">
+
+                      <label>
+                        Item Name
+                      </label>
+                      <input type="text" class="form-control m-input" maxlength="150" placeholder="Enter item name"
+                        name="itemname" id="itemname" formControlName="itemname">
+                      <ng-container *ngFor="let error of error_messages.itemname">
+                        <div class="error-message" *ngIf="purchaseForm.get('itemname').hasError(error.type) &&
+                    (purchaseForm.get('itemname').dirty || purchaseForm.get('itemname').touched)">
+                          {{ error.message }}
+                        </div>
+                      </ng-container>
+                    </div>
+
+                    <div class="col-lg-6 col-md-4 topgap">
+                      <label class="">
+                        Options
+                      </label>
+                      <input type="text" class="form-control m-input" placeholder="color | size etc." name="options"
+                        id="options" formControlName="options">
+                      <ng-container *ngFor="let error of error_messages.options">
+                        <div class="error-message" *ngIf="purchaseForm.get('options').hasError(error.type) &&
+                       (purchaseForm.get('options').dirty || purchaseForm.get('options').touched)">
+                          {{ error.message }}
+                        </div>
+                      </ng-container>
+                    </div>
+
+                  </div>
+
+
+                  <div class="form-group m-form__group row topgap">
+                    <div class="col-lg-6 col-md-4">
+                      <label>
+                        Item URL
+                      </label>
+                      <input type="text" class="form-control m-input" placeholder="Enter item URL" name="item_url"
+                        id="item_url" formControlName="item_url">
+                      <ng-container *ngFor="let error of error_messages.item_url">
+                        <div class="error-message" *ngIf="purchaseForm.get('item_url').hasError(error.type) &&
+                       (purchaseForm.get('item_url').dirty || purchaseForm.get('item_url').touched)">
+                          {{ error.message }}
+                        </div>
+                      </ng-container>
+                      <div class="clearfix"></div>
+
+
+
+                    </div>
+                    <div class="col-lg-6 col-md-4 topgap">
+                      <label class="">
+                        Quantity
+                      </label>
+                      <input type="text" class="form-control m-input" placeholder="Enter required quantity"
+                        name="quantity" id="quantity" formControlName="quantity">
+                      <ng-container *ngFor="let error of error_messages.quantity">
+                        <div class="error-message" *ngIf="purchaseForm.get('quantity').hasError(error.type) &&
+                       (purchaseForm.get('quantity').dirty || purchaseForm.get('quantity').touched)">
+                          {{ error.message }}
+                        </div>
+                      </ng-container>
+                    </div>
+
+                  </div>
+
+                  <div class="form-group m-form__group row topgap">
+                    <div class="col-lg-6 col-md-4">
+                      <label>
+                        Price (per item)
+                      </label>
+
+
+                      <input type="text" name="price" id="price" class="form-control" placeholder="Enter the Price"
+                        formControlName="price">
+                      <ng-container *ngFor="let error of error_messages.price">
+                        <div class="error-message" *ngIf="purchaseForm.get('price').hasError(error.type) &&
+                    (purchaseForm.get('price').dirty || purchaseForm.get('price').touched)">
+                          {{ error.message }}
+                        </div>
+                      </ng-container>
+                    </div>
+
+                    <div class="col-lg-6 col-md-4 topgap">
+                      <label class="">
+                        Shipping charges
+                      </label>
+
+                      <input type="text" class="form-control m-input" placeholder="Enter shipping_charges"
+                        name="shipping_charges" id="shipping_charges" formControlName="shipping_charges">
+                      <ng-container *ngFor="let error of error_messages.shipping_charges">
+                        <div class="error-message" *ngIf="purchaseForm.get('shipping_charges').hasError(error.type) &&
+                    (purchaseForm.get('shipping_charges').dirty || purchaseForm.get('shipping_charges').touched)">
+                          {{ error.message }}
+                        </div>
+                      </ng-container>
+                      <div class="clearfix"></div>
+                    </div>
+
+                  </div>
+                  <!-- <div class="m-form__group form-group row">
+                  <label class="col-lg-2 col-form-label"></label>
+                  <div class="col-lg-4">
+
+                    <button type="BUTTON" class="btn btn-primary" id="addItem" title="Add Item">Add</button>
+
+
+                  </div>
+                </div> -->
+                </div>
+                <br>
+                <br>
+                <div class="form-group m-form__group row topgap">
+                  <div class="col-lg-3 col-md-4">
+                    <label>
+                      Total goods purchase cost
+                    </label>
+
+                    <input type="text" class="form-control m-input" placeholder="" name="total_pur_charges"
+                      id="total_pur_charges" formControlName="total_pur_charges">
+                    <ng-container *ngFor="let error of error_messages.total_pur_charges">
+                      <div class="error-message" *ngIf="purchaseForm.get('total_pur_charges').hasError(error.type) &&
+                       (purchaseForm.get('total_pur_charges').dirty || purchaseForm.get('total_pur_charges').touched)">
+                        {{ error.message }}
+                      </div>
+                    </ng-container>
+                    <div class="clearfix"></div>
+
+
+
+                  </div>
+                  <div class="col-lg-3 col-md-4 topgap">
+                    <label class="">
+                      Assisted purchase charges
+                    </label>
+
+                    <input type="text" class="form-control m-input" placeholder="" name="total_shipping_charges"
+                      id="total_shipping_charges" formControlName="total_shipping_charges">
+
+                  </div>
+                  <div class="col-lg-3 col-md-4 topgap">
+                    <label class="">
+                      IGST (18%)
+                    </label>
+
+                    <input type="text" class="form-control m-input" placeholder="" name="tax" id="tax"
+                      formControlName="tax">
+
+                  </div>
+                  <div class="col-lg-3 col-md-4 topgap">
+                    <label class="">
+                      Total
+                    </label>
+
+                    <input type="text" class="form-control m-input" placeholder="" name="total" id="total"
+                      formControlName="total">
+
+                  </div>
+                </div>
+                <br>
+                <br>
+                <div class="form-group m-form__group row topgap">
+                  <div class="col-lg-12 col-md-10">
+                    <label>
+                      Any other instructions for us?
+                    </label>
+                    <textarea type="text" rows="4" class="form-control" placeholder="Please provide any additional instructions for us. We'll do our best to accomodate any
+                    reasonable requests." name="instructions" id="instructions"
+                      formControlName="instructions"></textarea>
+                    <ng-container *ngFor="let error of error_messages.instructions">
+                      <div class="error-message" *ngIf="purchaseForm.get('instructions').hasError(error.type) &&
+                    (purchaseForm.get('instructions').dirty || purchaseForm.get('instructions').touched)">
+                        {{ error.message }}
+                      </div>
+                    </ng-container>
+                  </div>
+
+                </div>
+                <br>
+                <br>
+                <div class="m-form__actions m-form__actions" style="text-align: center;">
+                  <button type="submit" class="btn btn-primary" [disabled]=purchaseForm.invalid>
+                    Save
+                  </button>
+                </div>
+
+              </form>
+            </div>
+            <!-- .postcontent end -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

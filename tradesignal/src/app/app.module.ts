@@ -21,6 +21,7 @@ import { NgxPaginationModule } from 'ngx-pagination';
 
 
 
+
 @NgModule({
   imports: [
     BrowserAnimationsModule,
@@ -39,6 +40,7 @@ import { NgxPaginationModule } from 'ngx-pagination';
     AdminLayoutComponent,
     AuthLayoutComponent,
     LogoutComponent,
+
 
 
 

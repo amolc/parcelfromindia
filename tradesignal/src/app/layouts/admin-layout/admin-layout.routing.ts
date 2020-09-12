@@ -19,12 +19,14 @@ import { CreatplanComponent } from '../../pages/creatplan/creatplan.component';
 import { PlanSignalComponent } from '../../pages/plan-signal/plan-signal.component';
 import { PlanbyidComponent } from '../../pages/planbyid/planbyid.component';
 import { AnalystlistComponent } from '../../pages/analystlist/analystlist.component';
+import { SignaleditComponent } from '../../pages/signaledit/signaledit.component';
 export const AdminLayoutRoutes: Routes = [
     { path: 'dashboard', component: DashboardComponent },
     { path: 'user-profile', component: UserProfileComponent },
     { path: 'india-stock', component: IndiastocksComponent },
     { path: 'india-stocks/:id', component: PlanbyidComponent },
     { path: 'analyst', component: AnalystpagedetailsComponent },
+    { path: 'signalediting', component: SignaleditComponent },
     { path: 'analystlist', component: AnalystlistComponent },
     { path: 'signals', component: SignalsComponent },
 

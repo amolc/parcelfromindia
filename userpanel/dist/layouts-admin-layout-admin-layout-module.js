@@ -1266,7 +1266,7 @@ var WINDOW = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["InjectionToken"]('W
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<p>assisted-purchase works!</p>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"header bg-gradient-danger pb-8 pt-5 pt-md-8\">\n  <div class=\"container-fluid\">\n    <div class=\"header-body\">\n      <!-- Card stats -->\n\n    </div>\n  </div>\n</div>\n<!-- Page content -->\n<div class=\"container-fluid mt--7\">\n  <div class=\"row\">\n    <div class=\"col\">\n      <div class=\"card shadow border-0\">\n\n        <div class=\"container clearfix py-5\">\n          <div class=\"m-portlet__head\">\n            <div class=\"m-portlet__head-caption\">\n              <div class=\"m-portlet__head-title\">\n                <h3 class=\"m-portlet__head-text\">\n\n                </h3>\n              </div>\n            </div>\n          </div>\n\n          <div class=\"container clearfix divcenter\" style=\"max-width: 900px;\">\n            <div class=\" nobottommargin\">\n              <form class=\"m-form m-form--fit m-form--label-align-right m-form--group-seperator-dashed\"\n                autocomplete=\"off\" [formGroup]=\"purchaseForm\" (ngSubmit)=\"purchase()\">\n                <div class=\"m-portlet__body\">\n                  <div class=\"form-group m-form__group row\">\n                    <div class=\"m-radio-inline\" style=\"margin-top: 15px;\">\n                      <span class=\"m-badge m-badge--primary m-badge--wide m-badge--rounded\"\n                        style=\"margin-left: 10px; font-size: 1.2rem;font-family: 'Montserrat'; width: 200px;padding: 12px; background-color:burlywood; \">\n                        Where would you like us to purchase from?\n                      </span><br>\n                      <div style=\"margin-top:25px; margin-left:15px;color:#db1a20;\">\n                        <p>All fields are mandatory</p>\n                      </div>\n                    </div>\n                  </div>\n                  <div class=\"form-group m-form__group row\">\n\n                    <div class=\"col-lg-6 col-md-4\">\n\n                      <label>\n                        Item Name\n                      </label>\n                      <input type=\"text\" class=\"form-control m-input\" maxlength=\"150\" placeholder=\"Enter item name\"\n                        name=\"itemname\" id=\"itemname\" formControlName=\"itemname\">\n                      <ng-container *ngFor=\"let error of error_messages.itemname\">\n                        <div class=\"error-message\" *ngIf=\"purchaseForm.get('itemname').hasError(error.type) &&\n                    (purchaseForm.get('itemname').dirty || purchaseForm.get('itemname').touched)\">\n                          {{ error.message }}\n                        </div>\n                      </ng-container>\n                    </div>\n\n                    <div class=\"col-lg-6 col-md-4 topgap\">\n                      <label class=\"\">\n                        Options\n                      </label>\n                      <input type=\"text\" class=\"form-control m-input\" placeholder=\"color | size etc.\" name=\"options\"\n                        id=\"options\" formControlName=\"options\">\n                      <ng-container *ngFor=\"let error of error_messages.options\">\n                        <div class=\"error-message\" *ngIf=\"purchaseForm.get('options').hasError(error.type) &&\n                       (purchaseForm.get('options').dirty || purchaseForm.get('options').touched)\">\n                          {{ error.message }}\n                        </div>\n                      </ng-container>\n                    </div>\n\n                  </div>\n\n\n                  <div class=\"form-group m-form__group row topgap\">\n                    <div class=\"col-lg-6 col-md-4\">\n                      <label>\n                        Item URL\n                      </label>\n                      <input type=\"text\" class=\"form-control m-input\" placeholder=\"Enter item URL\" name=\"item_url\"\n                        id=\"item_url\" formControlName=\"item_url\">\n                      <ng-container *ngFor=\"let error of error_messages.item_url\">\n                        <div class=\"error-message\" *ngIf=\"purchaseForm.get('item_url').hasError(error.type) &&\n                       (purchaseForm.get('item_url').dirty || purchaseForm.get('item_url').touched)\">\n                          {{ error.message }}\n                        </div>\n                      </ng-container>\n                      <div class=\"clearfix\"></div>\n\n\n\n                    </div>\n                    <div class=\"col-lg-6 col-md-4 topgap\">\n                      <label class=\"\">\n                        Quantity\n                      </label>\n                      <input type=\"text\" class=\"form-control m-input\" placeholder=\"Enter required quantity\"\n                        name=\"quantity\" id=\"quantity\" formControlName=\"quantity\">\n                      <ng-container *ngFor=\"let error of error_messages.quantity\">\n                        <div class=\"error-message\" *ngIf=\"purchaseForm.get('quantity').hasError(error.type) &&\n                       (purchaseForm.get('quantity').dirty || purchaseForm.get('quantity').touched)\">\n                          {{ error.message }}\n                        </div>\n                      </ng-container>\n                    </div>\n\n                  </div>\n\n                  <div class=\"form-group m-form__group row topgap\">\n                    <div class=\"col-lg-6 col-md-4\">\n                      <label>\n                        Price (per item)\n                      </label>\n\n\n                      <input type=\"text\" name=\"price\" id=\"price\" class=\"form-control\" placeholder=\"Enter the Price\"\n                        formControlName=\"price\">\n                      <ng-container *ngFor=\"let error of error_messages.price\">\n                        <div class=\"error-message\" *ngIf=\"purchaseForm.get('price').hasError(error.type) &&\n                    (purchaseForm.get('price').dirty || purchaseForm.get('price').touched)\">\n                          {{ error.message }}\n                        </div>\n                      </ng-container>\n                    </div>\n\n                    <div class=\"col-lg-6 col-md-4 topgap\">\n                      <label class=\"\">\n                        Shipping charges\n                      </label>\n\n                      <input type=\"text\" class=\"form-control m-input\" placeholder=\"Enter shipping_charges\"\n                        name=\"shipping_charges\" id=\"shipping_charges\" formControlName=\"shipping_charges\">\n                      <ng-container *ngFor=\"let error of error_messages.shipping_charges\">\n                        <div class=\"error-message\" *ngIf=\"purchaseForm.get('shipping_charges').hasError(error.type) &&\n                    (purchaseForm.get('shipping_charges').dirty || purchaseForm.get('shipping_charges').touched)\">\n                          {{ error.message }}\n                        </div>\n                      </ng-container>\n                      <div class=\"clearfix\"></div>\n                    </div>\n\n                  </div>\n                  <!-- <div class=\"m-form__group form-group row\">\n                  <label class=\"col-lg-2 col-form-label\"></label>\n                  <div class=\"col-lg-4\">\n\n                    <button type=\"BUTTON\" class=\"btn btn-primary\" id=\"addItem\" title=\"Add Item\">Add</button>\n\n\n                  </div>\n                </div> -->\n                </div>\n                <br>\n                <br>\n                <div class=\"form-group m-form__group row topgap\">\n                  <div class=\"col-lg-3 col-md-4\">\n                    <label>\n                      Total goods purchase cost\n                    </label>\n\n                    <input type=\"text\" class=\"form-control m-input\" placeholder=\"\" name=\"total_pur_charges\"\n                      id=\"total_pur_charges\" formControlName=\"total_pur_charges\">\n                    <ng-container *ngFor=\"let error of error_messages.total_pur_charges\">\n                      <div class=\"error-message\" *ngIf=\"purchaseForm.get('total_pur_charges').hasError(error.type) &&\n                       (purchaseForm.get('total_pur_charges').dirty || purchaseForm.get('total_pur_charges').touched)\">\n                        {{ error.message }}\n                      </div>\n                    </ng-container>\n                    <div class=\"clearfix\"></div>\n\n\n\n                  </div>\n                  <div class=\"col-lg-3 col-md-4 topgap\">\n                    <label class=\"\">\n                      Assisted purchase charges\n                    </label>\n\n                    <input type=\"text\" class=\"form-control m-input\" placeholder=\"\" name=\"total_shipping_charges\"\n                      id=\"total_shipping_charges\" formControlName=\"total_shipping_charges\">\n\n                  </div>\n                  <div class=\"col-lg-3 col-md-4 topgap\">\n                    <label class=\"\">\n                      IGST (18%)\n                    </label>\n\n                    <input type=\"text\" class=\"form-control m-input\" placeholder=\"\" name=\"tax\" id=\"tax\"\n                      formControlName=\"tax\">\n\n                  </div>\n                  <div class=\"col-lg-3 col-md-4 topgap\">\n                    <label class=\"\">\n                      Total\n                    </label>\n\n                    <input type=\"text\" class=\"form-control m-input\" placeholder=\"\" name=\"total\" id=\"total\"\n                      formControlName=\"total\">\n\n                  </div>\n                </div>\n                <br>\n                <br>\n                <div class=\"form-group m-form__group row topgap\">\n                  <div class=\"col-lg-12 col-md-10\">\n                    <label>\n                      Any other instructions for us?\n                    </label>\n                    <textarea type=\"text\" rows=\"4\" class=\"form-control\" placeholder=\"Please provide any additional instructions for us. We'll do our best to accomodate any\n                    reasonable requests.\" name=\"instructions\" id=\"instructions\"\n                      formControlName=\"instructions\"></textarea>\n                    <ng-container *ngFor=\"let error of error_messages.instructions\">\n                      <div class=\"error-message\" *ngIf=\"purchaseForm.get('instructions').hasError(error.type) &&\n                    (purchaseForm.get('instructions').dirty || purchaseForm.get('instructions').touched)\">\n                        {{ error.message }}\n                      </div>\n                    </ng-container>\n                  </div>\n\n                </div>\n                <br>\n                <br>\n                <div class=\"m-form__actions m-form__actions\" style=\"text-align: center;\">\n                  <button type=\"submit\" class=\"btn btn-primary\" [disabled]=purchaseForm.invalid>\n                    Save\n                  </button>\n                </div>\n\n              </form>\n            </div>\n            <!-- .postcontent end -->\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n");
 
 /***/ }),
 
@@ -1279,7 +1279,20 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"header bg-gradient-danger pb-8 pt-5 pt-md-8\">\r\n  <div class=\"container-fluid\">\r\n    <div class=\"header-body\">\r\n      <!-- Card stats -->\r\n      <div class=\"row\">\r\n        <div class=\"col-xl-3 col-lg-6\">\r\n          <div class=\"card card-stats mb-4 mb-xl-0\" style=\"padding:10px;\">\r\n            <div class=\"m-widget24\">\r\n              <div class=\"m-widget24__item\">\r\n                <h4 class=\"m-widget24__title\"><span style=\"margin-right: 5px;size: 20px;\"><i\r\n                      class=\"flaticon-truck m--font-brand\" style=\"font-size: 25px !important;\"></i></span>\r\n                  Pick Up\r\n                </h4>\r\n                <br>\r\n                <span class=\"m-widget24__desc\">\r\n                  No. of Orders\r\n                </span>\r\n                <span class=\"m-widget24__stats m--font-info\">\r\n                  0 </span>\r\n                <div class=\"m--space-10\"></div>\r\n                <div class=\"progress m-progress--sm\">\r\n                  <div class=\"progress-bar m--bg-info\" role=\"progressbar\" style=\"width: 100%;\" aria-valuenow=\"50\"\r\n                    aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\r\n                </div>\r\n\r\n\r\n                <button type=\"button\" class=\"btn btn-primary my-4\" routerLinkActive=\"active\" [routerLink]=\"['/pickup']\"\r\n                  style=\"color:#ffffff;background-color: #006fe6;border:none;\">New\r\n                  Pickup</button>\r\n\r\n\r\n                <span class=\"m-widget24__number\">\r\n                </span>\r\n\r\n\r\n                <button type=\"button\" class=\"btn btn-primary my-4\" routerLinkActive=\"active\"\r\n                  [routerLink]=\"['/pickuplist']\"\r\n                  style=\"width: 80px;color:#ffffff;background-color: #006fe6;border:none;\">list</button>\r\n\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div class=\"col-xl-3 col-lg-6\">\r\n          <div class=\"card card-stats mb-4 mb-xl-0\" style=\"padding:10px;\">\r\n            <div class=\"m-widget24\">\r\n              <div class=\"m-widget24__item\">\r\n                <h4 class=\"m-widget24__title\"><span style=\"margin-right: 5px;size: 20px;\"><i\r\n                      class=\"flaticon-interface-1 m--font-brand\" style=\"font-size: 25px !important;\"></i></span>\r\n                  Warehouse\r\n                </h4>\r\n                <br>\r\n                <span class=\"m-widget24__desc\">\r\n                  No. of Orders\r\n                </span>\r\n                <span class=\"m-widget24__stats m--font-info\">\r\n                  0 </span>\r\n                <div class=\"m--space-10\"></div>\r\n                <div class=\"progress m-progress--sm\">\r\n                  <div class=\"progress-bar m--bg-info\" role=\"progressbar\" style=\"width: 100%;\" aria-valuenow=\"50\"\r\n                    aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\r\n                </div>\r\n                <button type=\"button\" class=\"btn btn-primary my-4\" routerLinkActive=\"active\" [routerLink]=\"['/pickup']\"\r\n                  style=\"color:#ffffff;background-color: #006fe6;border:none;\">New\r\n                  Pickup</button>\r\n                <span class=\"m-widget24__number\">\r\n                  <button type=\"button\" class=\"btn btn-primary my-4\" routerLinkActive=\"active\"\r\n                    [routerLink]=\"['/pickuplist']\"\r\n                    style=\"width: 80px;color:#ffffff;background-color: #006fe6;border:none;\">list</button>\r\n                </span>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div class=\"col-xl-3 col-lg-6\">\r\n          <div class=\"card card-stats mb-4 mb-xl-0\" style=\"padding:10px;\">\r\n            <div class=\"m-widget24\">\r\n              <div class=\"m-widget24__item\">\r\n                <h4 class=\"m-widget24__title\"><span style=\"margin-right: 5px;size: 20px;\"><i\r\n                      class=\"flaticon-time-3 m--font-brand\" style=\"font-size: 25px !important;\"></i></span>\r\n                  Ship\r\n                </h4>\r\n                <br>\r\n                <span class=\"m-widget24__desc\">\r\n                  No. of Orders\r\n                </span>\r\n                <span class=\"m-widget24__stats m--font-info\">\r\n                  0 </span>\r\n                <div class=\"m--space-10\"></div>\r\n                <div class=\"progress m-progress--sm\">\r\n                  <div class=\"progress-bar m--bg-info\" role=\"progressbar\" style=\"width: 100%;\" aria-valuenow=\"50\"\r\n                    aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\r\n                </div>\r\n                <button type=\"button\" class=\"btn btn-primary my-4\" routerLinkActive=\"active\" [routerLink]=\"['/pickup']\"\r\n                  style=\"color:#ffffff;background-color: #006fe6;border:none;\">New\r\n                  Pickup</button>\r\n                <span class=\"m-widget24__number\">\r\n                  <button type=\"button\" class=\"btn btn-primary my-4\" routerLinkActive=\"active\"\r\n                    [routerLink]=\"['/pickuplist']\"\r\n                    style=\"width: 80px;color:#ffffff;background-color: #006fe6;border:none;\">list</button>\r\n                </span>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div class=\"col-xl-3 col-lg-6\">\r\n          <div class=\"card card-stats mb-4 mb-xl-0\" style=\"padding:10px;\">\r\n            <div class=\"m-widget24\">\r\n              <div class=\"m-widget24__item\">\r\n                <h4 class=\"m-widget24__title\"><span style=\"margin-right: 5px;size: 20px;\"><i\r\n                      class=\"flaticon-paper-plane m--font-brand\" style=\"font-size: 25px !important;\"></i></span>\r\n                  History\r\n                </h4>\r\n                <br>\r\n                <span class=\"m-widget24__desc\">\r\n                  No. of Orders\r\n                </span>\r\n                <span class=\"m-widget24__stats m--font-info\">\r\n                  0 </span>\r\n                <div class=\"m--space-10\"></div>\r\n                <div class=\"progress m-progress--sm\">\r\n                  <div class=\"progress-bar m--bg-info\" role=\"progressbar\" style=\"width: 100%;\" aria-valuenow=\"50\"\r\n                    aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\r\n                </div>\r\n                <button type=\"button\" class=\"btn btn-primary my-4\" routerLinkActive=\"active\" [routerLink]=\"['/pickup']\"\r\n                  style=\"color:#ffffff;background-color: #006fe6;border:none;\">New\r\n                  Pickup</button>\r\n                <span class=\"m-widget24__number\">\r\n                  <button type=\"button\" class=\"btn btn-primary my-4\" routerLinkActive=\"active\"\r\n                    [routerLink]=\"['/pickuplist']\"\r\n                    style=\"width: 80px;color:#ffffff;background-color: #006fe6;border:none;\">list</button>\r\n                </span>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div class=\"container-fluid mt--7\">\r\n\r\n  <div class=\"row mt-5\">\r\n    <div class=\"col-xl-8 mb-5 mb-xl-0\">\r\n      <div class=\"card shadow\">\r\n        <div class=\"card-header border-0\">\r\n          <div class=\"row align-items-center\">\r\n            <div class=\"col\">\r\n              <h3 class=\"mb-0\"> Wallet Balance</h3>\r\n            </div>\r\n\r\n          </div>\r\n        </div>\r\n        <div class=\"m-portlet m-portlet--bordered-semi m-portlet--space m-portlet--full-height \">\r\n\r\n          <div class=\"m-portlet__body\">\r\n            <div class=\"m-widget25\">\r\n              <span class=\"m-widget25__price m--font-brand\" style=\"text-align: center;display: block;font-size:70px;\">\r\n                <i class=\"fa fa-inr\" style=\"font-size:60px!important;\"></i> 0 </span>\r\n              <br>\r\n              <span class=\"m-widget25__desc\" style=\"text-align: center;display: block;\">\r\n                Total wallet balance.\r\n              </span>\r\n              <div class=\"m-widget25--progress\" style=\"text-align: center;\">\r\n                <div class=\"btn-group\" role=\"group\" aria-label=\"Basic example\">\r\n                  <div class=\"m-widget25__progress\">\r\n                    <button type=\"button\" class=\"btn btn-secondary\" data-toggle=\"modal\" data-target=\"#m_modal_4\">\r\n                      Add to Wallet 12\r\n                    </button>\r\n                    <div class=\"m--space-14\"></div>\r\n\r\n                  </div>\r\n                  <br><br><br>\r\n                  <div class=\"m-widget25__progress\">\r\n                    <button type=\"button\" class=\"btn btn-secondary\">History</button>\r\n                    <div class=\"m--space-10\"></div>\r\n\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-xl-4\">\r\n      <div class=\"card shadow\">\r\n        <div class=\"card-header border-0\" style=\"background-color: #006fe6 !important;\">\r\n          <div class=\"row align-items-center\">\r\n            <div class=\"col\">\r\n              <h3 class=\"mb-0\" style=\"color:#ffffff;\">Your Indian Address</h3>\r\n            </div>\r\n\r\n          </div>\r\n        </div>\r\n        <div class=\"table-responsive\">\r\n          <!-- Projects table -->\r\n          <div class=\"m-portlet m-portlet--head-overlay m-portlet--full-height   m-portlet--rounded-force\">\r\n\r\n            <div class=\"m-portlet__body\">\r\n              <div class=\"m-widget28\">\r\n                <div class=\"m-widget28__pic m-portlet-fit--sides\" style=\"min-height: 65px;\"></div>\r\n                <div class=\"m-widget28__container\">\r\n                  <!-- begin::Tab Content -->\r\n                  <div class=\"m-widget28__tab tab-content\">\r\n                    <div id=\"menu11\" class=\"m-widget28__tab-container tab-pane active\">\r\n                      <div class=\"m-widget28__tab-items\">\r\n                        <div class=\"m-widget28__tab-item\">\r\n                          <span><span style=\"margin-right: 10px;\"><i class=\"flaticon-avatar\"></i></span>\r\n\r\n                          </span>\r\n                        </div>\r\n\r\n                        <div class=\"m-widget28__tab-item\">\r\n                          <span><span style=\"margin-right: 10px;\"><i class=\"flaticon-map-location\"></i></span>\r\n                            <!-- Ramdas Dagale, Plot no 12 , survey no 253/2/2  -->\r\n                          </span>\r\n                        </div>\r\n                        <div class=\"m-widget28__tab-item\">\r\n                          <span><span style=\"margin-right: 10px;\"><i class=\"flticon-placeholder-2\"></i></span>\r\n                            <!--Near skumar bakery Lohegaon -->\r\n                          </span>\r\n                        </div>\r\n                        <div class=\"m-widget28__tab-item\">\r\n                          <span><span style=\"margin-right: 10px;\"><i class=\"flaticon-placeholder-2\"></i></span>\r\n                            <!--- Pune, 411032 -->\r\n                          </span>\r\n                        </div>\r\n                        <div class=\"m-widget28__tab-item\">\r\n                          <span><span style=\"margin-right: 10px;\"><i class=\"flaticon-placeholder-2\"></i></span>\r\n                            <!-- Mobile: +91 8074393145  -->\r\n                          </span>\r\n                        </div>\r\n\r\n                        <div class=\"m-widget28__tab-item\">\r\n                        </div>\r\n                      </div>\r\n                    </div>\r\n\r\n\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"header bg-gradient-danger pb-8 pt-5 pt-md-8\">\r\n  <div class=\"container-fluid\">\r\n    <div class=\"header-body\">\r\n      <!-- Card stats -->\r\n      <div class=\"row\">\r\n        <div class=\"col-xl-3 col-lg-6\">\r\n          <div class=\"card card-stats mb-4 mb-xl-0\" style=\"padding:10px;\">\r\n            <div class=\"m-widget24\">\r\n              <div class=\"m-widget24__item\">\r\n                <h4 class=\"m-widget24__title\"><span style=\"margin-right: 5px;size: 20px;\"><i\r\n                      class=\"flaticon-truck m--font-brand\" style=\"font-size: 25px !important;\"></i></span>\r\n                  Pick Up\r\n                </h4>\r\n                <br>\r\n                <span class=\"m-widget24__desc\">\r\n                  No. of Orders\r\n                </span>\r\n                <span class=\"m-widget24__stats m--font-info\">\r\n                  0 </span>\r\n                <div class=\"m--space-10\"></div>\r\n                <div class=\"progress m-progress--sm\">\r\n                  <div class=\"progress-bar m--bg-info\" role=\"progressbar\" style=\"width: 100%;\" aria-valuenow=\"50\"\r\n                    aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\r\n                </div>\r\n\r\n\r\n                <button type=\"button\" class=\"btn btn-primary my-4\" routerLinkActive=\"active\" [routerLink]=\"['/pickup']\"\r\n                  style=\"color:#ffffff;background-color: #006fe6;border:none;\">New\r\n                  Pickup</button>\r\n\r\n\r\n                <span class=\"m-widget24__number\">\r\n                </span>\r\n\r\n\r\n                <button type=\"button\" class=\"btn btn-primary my-4\" routerLinkActive=\"active\"\r\n                  [routerLink]=\"['/pickuplist']\"\r\n                  style=\"width: 80px;color:#ffffff;background-color: #006fe6;border:none;\">list</button>\r\n\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div class=\"col-xl-3 col-lg-6\">\r\n          <div class=\"card card-stats mb-4 mb-xl-0\" style=\"padding:10px;\">\r\n            <div class=\"m-widget24\">\r\n              <div class=\"m-widget24__item\">\r\n                <h4 class=\"m-widget24__title\"><span style=\"margin-right: 5px;size: 20px;\"><i\r\n                      class=\"flaticon-interface-1 m--font-brand\" style=\"font-size: 25px !important;\"></i></span>\r\n                  Warehouse\r\n                </h4>\r\n                <br>\r\n                <span class=\"m-widget24__desc\">\r\n                  No. of Orders\r\n                </span>\r\n                <span class=\"m-widget24__stats m--font-info\">\r\n                  0 </span>\r\n                <div class=\"m--space-10\"></div>\r\n                <div class=\"progress m-progress--sm\">\r\n                  <div class=\"progress-bar m--bg-info\" role=\"progressbar\" style=\"width: 100%;\" aria-valuenow=\"50\"\r\n                    aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\r\n                </div>\r\n                <button type=\"button\" class=\"btn btn-primary my-4\" routerLinkActive=\"active\" [routerLink]=\"['/pickup']\"\r\n                  style=\"color:#ffffff;background-color: #006fe6;border:none;\">New\r\n                  Pickup</button>\r\n                <span class=\"m-widget24__number\">\r\n                  <button type=\"button\" class=\"btn btn-primary my-4\" routerLinkActive=\"active\"\r\n                    [routerLink]=\"['/pickuplist']\"\r\n                    style=\"width: 80px;color:#ffffff;background-color: #006fe6;border:none;\">list</button>\r\n                </span>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div class=\"col-xl-3 col-lg-6\">\r\n          <div class=\"card card-stats mb-4 mb-xl-0\" style=\"padding:10px;\">\r\n            <div class=\"m-widget24\">\r\n              <div class=\"m-widget24__item\">\r\n                <h4 class=\"m-widget24__title\"><span style=\"margin-right: 5px;size: 20px;\"><i\r\n                      class=\"flaticon-time-3 m--font-brand\" style=\"font-size: 25px !important;\"></i></span>\r\n                  Ship\r\n                </h4>\r\n                <br>\r\n                <span class=\"m-widget24__desc\">\r\n                  No. of Orders\r\n                </span>\r\n                <span class=\"m-widget24__stats m--font-info\">\r\n                  0 </span>\r\n                <div class=\"m--space-10\"></div>\r\n                <div class=\"progress m-progress--sm\">\r\n                  <div class=\"progress-bar m--bg-info\" role=\"progressbar\" style=\"width: 100%;\" aria-valuenow=\"50\"\r\n                    aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\r\n                </div>\r\n                <button type=\"button\" class=\"btn btn-primary my-4\" routerLinkActive=\"active\" [routerLink]=\"['/pickup']\"\r\n                  style=\"color:#ffffff;background-color: #006fe6;border:none;\">New\r\n                  Pickup</button>\r\n                <span class=\"m-widget24__number\">\r\n                  <button type=\"button\" class=\"btn btn-primary my-4\" routerLinkActive=\"active\"\r\n                    [routerLink]=\"['/pickuplist']\"\r\n                    style=\"width: 80px;color:#ffffff;background-color: #006fe6;border:none;\">list</button>\r\n                </span>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div class=\"col-xl-3 col-lg-6\">\r\n          <div class=\"card card-stats mb-4 mb-xl-0\" style=\"padding:10px;\">\r\n            <div class=\"m-widget24\">\r\n              <div class=\"m-widget24__item\">\r\n                <h4 class=\"m-widget24__title\"><span style=\"margin-right: 5px;size: 20px;\"><i\r\n                      class=\"flaticon-paper-plane m--font-brand\" style=\"font-size: 25px !important;\"></i></span>\r\n                  History\r\n                </h4>\r\n                <br>\r\n                <span class=\"m-widget24__desc\">\r\n                  No. of Orders\r\n                </span>\r\n                <span class=\"m-widget24__stats m--font-info\">\r\n                  0 </span>\r\n                <div class=\"m--space-10\"></div>\r\n                <div class=\"progress m-progress--sm\">\r\n                  <div class=\"progress-bar m--bg-info\" role=\"progressbar\" style=\"width: 100%;\" aria-valuenow=\"50\"\r\n                    aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\r\n                </div>\r\n                <button type=\"button\" class=\"btn btn-primary my-4\" routerLinkActive=\"active\" [routerLink]=\"['/pickup']\"\r\n                  style=\"color:#ffffff;background-color: #006fe6;border:none;\">New\r\n                  Pickup</button>\r\n                <span class=\"m-widget24__number\">\r\n                  <button type=\"button\" class=\"btn btn-primary my-4\" routerLinkActive=\"active\"\r\n                    [routerLink]=\"['/pickuplist']\"\r\n                    style=\"width: 80px;color:#ffffff;background-color: #006fe6;border:none;\">list</button>\r\n                </span>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div class=\"container-fluid mt--7\">\r\n\r\n  <div class=\"row mt-5\">\r\n    <div class=\"col-xl-8 mb-5 mb-xl-0\">\r\n      <div class=\"card shadow\">\r\n        <div class=\"card-header border-0\">\r\n          <div class=\"row align-items-center\">\r\n            <div class=\"col\">\r\n              <h3 class=\"mb-0\"> Wallet Balance</h3>\r\n            </div>\r\n\r\n          </div>\r\n        </div>\r\n        <div class=\"m-portlet m-portlet--bordered-semi m-portlet--space m-portlet--full-height \">\r\n\r\n          <div class=\"m-portlet__body\">\r\n            <div class=\"m-widget25\">\r\n              <span class=\"m-widget25__price m--font-brand\" style=\"text-align: center;display: block;font-size:70px;\">\r\n                <i class=\"fa fa-inr\" style=\"font-size:60px!important;\"></i> 0 </span>\r\n              <br>\r\n              <span class=\"m-widget25__desc\" style=\"text-align: center;display: block;\">\r\n                Total wallet balance.\r\n              </span>\r\n              <br>\r\n              <br>\r\n              <div class=\"m-widget25--progress\" style=\"text-align: center;\">\r\n                <div class=\"btn-group\" role=\"group\" aria-label=\"Basic example\">\r\n                  <div class=\"m-widget25__progress\">\r\n                    <button type=\"button\" class=\"btn btn-primary\" data-toggle=\"modal\" data-target=\"#myModal\">\r\n                      Add to Wallet\r\n                    </button>\r\n                    <div class=\"modal\" id=\"myModal\">\r\n                      <div class=\"modal-dialog\">\r\n                        <div class=\"modal-content\">\r\n\r\n                          <!-- Modal Header -->\r\n                          <div class=\"modal-header\">\r\n                            <h4 class=\"modal-title\">Add to Wallet</h4>\r\n                            <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\r\n                          </div>\r\n\r\n                          <!-- Modal body -->\r\n                          <div class=\"modal-body\">\r\n\r\n\r\n                            <input type=\"number\" name=\"amount\" min=\"1\" title=\"required numeric value\"\r\n                              class=\"form-control text-left floating-point\" style=\"width: 50%\" value=\"\"\r\n                              placeholder=\" Enter Payment Amount \" required=\"required\">\r\n\r\n                          </div>\r\n\r\n                          <!-- Modal footer -->\r\n                          <div class=\"modal-footer\">\r\n                            <button type=\"button\" class=\"btn btn-primary \" data-dismiss=\"modal\">Close</button>\r\n                            <button type=\"button\" class=\"btn btn-primary \" data-dismiss=\"modal\">Add Wallet</button>\r\n                          </div>\r\n\r\n                        </div>\r\n                      </div>\r\n                    </div>\r\n\r\n                  </div>\r\n                  <br><br><br>\r\n                  <div class=\"m-widget25__progress\">\r\n                    <button type=\"button\" class=\"btn btn-primary\" routerLinkActive=\"active\"\r\n                      [routerLink]=\"['/history']\">History</button>\r\n\r\n\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-xl-4\">\r\n      <div class=\"card shadow\">\r\n        <div class=\"card-header border-0\" style=\"background-color: #006fe6 !important;\">\r\n          <div class=\"row align-items-center\">\r\n            <div class=\"col\">\r\n              <h3 class=\"mb-0\" style=\"color:#ffffff;\">Your Indian Address</h3>\r\n            </div>\r\n\r\n          </div>\r\n        </div>\r\n        <div class=\"table-responsive\">\r\n          <!-- Projects table -->\r\n          <div class=\"m-portlet m-portlet--head-overlay m-portlet--full-height   m-portlet--rounded-force\">\r\n\r\n            <div class=\"m-portlet__body\">\r\n              <div class=\"m-widget28\">\r\n                <div class=\"m-widget28__pic m-portlet-fit--sides\" style=\"min-height: 65px;\"></div>\r\n                <div class=\"m-widget28__container\">\r\n                  <!-- begin::Tab Content -->\r\n                  <div class=\"m-widget28__tab tab-content\">\r\n                    <div id=\"menu11\" class=\"m-widget28__tab-container tab-pane active\">\r\n                      <div class=\"m-widget28__tab-items\">\r\n                        <div class=\"m-widget28__tab-item\">\r\n                          <span><span style=\"margin-right: 10px;\"><i class=\"flaticon-avatar\"></i></span>\r\n\r\n                          </span>\r\n                        </div>\r\n\r\n                        <div class=\"m-widget28__tab-item\">\r\n                          <span><span style=\"margin-right: 10px;\"><i class=\"flaticon-map-location\"></i></span>\r\n                            <!-- Ramdas Dagale, Plot no 12 , survey no 253/2/2  -->\r\n                          </span>\r\n                        </div>\r\n                        <div class=\"m-widget28__tab-item\">\r\n                          <span><span style=\"margin-right: 10px;\"><i class=\"flticon-placeholder-2\"></i></span>\r\n                            <!--Near skumar bakery Lohegaon -->\r\n                          </span>\r\n                        </div>\r\n                        <div class=\"m-widget28__tab-item\">\r\n                          <span><span style=\"margin-right: 10px;\"><i class=\"flaticon-placeholder-2\"></i></span>\r\n                            <!--- Pune, 411032 -->\r\n                          </span>\r\n                        </div>\r\n                        <div class=\"m-widget28__tab-item\">\r\n                          <span><span style=\"margin-right: 10px;\"><i class=\"flaticon-placeholder-2\"></i></span>\r\n                            <!-- Mobile: +91 8074393145  -->\r\n                          </span>\r\n                        </div>\r\n\r\n                        <div class=\"m-widget28__tab-item\">\r\n                        </div>\r\n                      </div>\r\n                    </div>\r\n\r\n\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/history/history.component.html":
+/*!********************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/pages/history/history.component.html ***!
+  \********************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"header bg-gradient-danger pb-8 pt-5 pt-md-8\">\n  <div class=\"container-fluid\">\n    <div class=\"header-body\">\n      <!-- Card stats -->\n\n    </div>\n  </div>\n</div>\n<!-- Page content -->\n\n\n<div class=\"container-fluid mt--7\" style=\"margin-top:50px!important;\">\n\n\n  <div _ngcontent-c5=\"\" class=\"row mt-5\">\n    <div _ngcontent-c5=\"\" class=\"col-xl-12 mb-5 mb-xl-0\">\n      <div _ngcontent-c5=\"\" class=\"card shadow\">\n        <div _ngcontent-c5=\"\" class=\"card-header border-0\">\n          <div _ngcontent-c5=\"\" class=\"row align-items-center\">\n            <div _ngcontent-c5=\"\" class=\"col\">\n              <h3 _ngcontent-c5=\"\" class=\"mb-0\">Wallect Transactions List</h3>\n            </div>\n            <!-- <div _ngcontent-c5=\"\" class=\"col text-right\"><a _ngcontent-c5=\"\" class=\"btn btn-sm btn-primary\" href=\"#!\">See all</a>\n                </div> -->\n          </div>\n        </div>\n        <div _ngcontent-c5=\"\" class=\"table-responsive\">\n          <table _ngcontent-c5=\"\" class=\"table align-items-center table-flush\"\n            style=\"line-height: 30px;border-style: groove; \">\n            <thead _ngcontent-c5=\"\" class=\"thead-light\">\n              <tr _ngcontent-c5=\"\">\n\n                <th _ngcontent-c5=\"\" scope=\"col\" style=\"font-size: small;font-weight: bold;\">S.nO</th>\n                <th _ngcontent-c5=\"\" scope=\"col\" style=\"font-size: small;font-weight: bold;\">Amount</th>\n                <th _ngcontent-c5=\"\" scope=\"col\" style=\"font-size: small;font-weight: bold;\">Message</th>\n                <th _ngcontent-c5=\"\" scope=\"col\" style=\"font-size: small;font-weight: bold;\">Date</th>\n\n              </tr>\n            </thead>\n            <tbody _ngcontent-c5=\"\">\n              <tr _ngcontent-c5=\"\">\n\n                <td _ngcontent-c5=\"\">1</td>\n                <td _ngcontent-c5=\"\">220</td>\n                <td _ngcontent-c5=\"\">parcel</td>\n                <td _ngcontent-c5=\"\">11-08-2020</td>\n\n\n              </tr>\n\n              <tr _ngcontent-c5=\"\">\n\n                <td _ngcontent-c5=\"\">2</td>\n                <td _ngcontent-c5=\"\">120</td>\n                <td _ngcontent-c5=\"\">parcel</td>\n                <td _ngcontent-c5=\"\">02-08-2020</td>\n\n\n              </tr>\n              <tr _ngcontent-c5=\"\">\n\n                <td _ngcontent-c5=\"\">3</td>\n                <td _ngcontent-c5=\"\">220</td>\n                <td _ngcontent-c5=\"\">shipment</td>\n                <td _ngcontent-c5=\"\">01-08-2020</td>\n\n\n              </tr>\n              <tr _ngcontent-c5=\"\">\n\n                <td _ngcontent-c5=\"\">4</td>\n                <td _ngcontent-c5=\"\">120</td>\n                <td _ngcontent-c5=\"\">pickup</td>\n                <td _ngcontent-c5=\"\">20-07-2020</td>\n\n\n              </tr>\n            </tbody>\n          </table>\n\n\n\n        </div>\n      </div>\n    </div>\n\n  </div>\n\n</div>\n");
 
 /***/ }),
 
@@ -1387,6 +1400,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/wallect/wallect.component.html":
+/*!********************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/pages/wallect/wallect.component.html ***!
+  \********************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"modal-content\">\n  <div class=\"modal-header\">\n    <h5 class=\"modal-title\" id=\"exampleModalLabel\">\n      Add to Wallet\n    </h5>\n    <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\n      <span aria-hidden=\"true\">\n        ×\n      </span>\n    </button>\n  </div>\n  <form method=\"POST\" action=\"https://www.forwardparcel.com/user-account-balance\" name=\"paymentform\" autocomplete=\"off\">\n    <div class=\"modal-body\">\n\n      <div class=\"form-group\">\n        <label for=\"recipient-name\" class=\"form-control-label\">\n          Enter Payment Amount\n        </label>\n        <i class=\"fa fa-inr\"></i><input type=\"number\" name=\"amount\" min=\"1\" title=\"required numeric value\"\n          class=\"form-control text-left floating-point\" style=\"width: 50%\" value=\"\" required=\"required\">\n      </div>\n\n\n    </div>\n    <div class=\"modal-footer\">\n      <button type=\"button\" class=\"btn btn-secondary\" data-dismiss=\"modal\">\n        Close\n      </button>\n      <button type=\"submit\" class=\"btn btn-primary\">\n        Add to Wallet\n      </button>\n    </div>\n  </form>\n</div>\n");
+
+/***/ }),
+
 /***/ "./src/app/layouts/admin-layout/admin-layout.module.ts":
 /*!*************************************************************!*\
   !*** ./src/app/layouts/admin-layout/admin-layout.module.ts ***!
@@ -1414,8 +1440,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pages_pickup_pickup_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../pages/pickup/pickup.component */ "./src/app/pages/pickup/pickup.component.ts");
 /* harmony import */ var _pages_pickuplist_pickuplist_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../pages/pickuplist/pickuplist.component */ "./src/app/pages/pickuplist/pickuplist.component.ts");
 /* harmony import */ var _pages_shipmentlist_shipmentlist_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../../pages/shipmentlist/shipmentlist.component */ "./src/app/pages/shipmentlist/shipmentlist.component.ts");
-/* harmony import */ var ngx_pagination__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ngx-pagination */ "./node_modules/ngx-pagination/__ivy_ngcc__/dist/ngx-pagination.js");
-/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "./node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm5/ng-bootstrap.js");
+/* harmony import */ var _pages_wallect_wallect_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../../pages/wallect/wallect.component */ "./src/app/pages/wallect/wallect.component.ts");
+/* harmony import */ var _pages_history_history_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../../pages/history/history.component */ "./src/app/pages/history/history.component.ts");
+/* harmony import */ var ngx_pagination__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ngx-pagination */ "./node_modules/ngx-pagination/__ivy_ngcc__/dist/ngx-pagination.js");
+/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "./node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm5/ng-bootstrap.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1446,6 +1474,8 @@ var __importDefault = (undefined && undefined.__importDefault) || function (mod)
 
 
 
+
+
 // import { ToastrModule } from 'ngx-toastr';
 var AdminLayoutModule = /** @class */ (function () {
     function AdminLayoutModule() {
@@ -1457,9 +1487,9 @@ var AdminLayoutModule = /** @class */ (function () {
                 _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forChild(_admin_layout_routing__WEBPACK_IMPORTED_MODULE_6__["AdminLayoutRoutes"]),
                 _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"],
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClientModule"],
-                _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_18__["NgbModule"],
+                _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_20__["NgbModule"],
                 ngx_clipboard__WEBPACK_IMPORTED_MODULE_5__["ClipboardModule"],
-                ngx_pagination__WEBPACK_IMPORTED_MODULE_17__["NgxPaginationModule"],
+                ngx_pagination__WEBPACK_IMPORTED_MODULE_19__["NgxPaginationModule"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_4__["ReactiveFormsModule"]
             ],
             declarations: [
@@ -1472,7 +1502,9 @@ var AdminLayoutModule = /** @class */ (function () {
                 _pages_prohibited_items_prohibited_items_component__WEBPACK_IMPORTED_MODULE_13__["ProhibitedItemsComponent"],
                 _pages_pickup_pickup_component__WEBPACK_IMPORTED_MODULE_14__["PickupComponent"],
                 _pages_pickuplist_pickuplist_component__WEBPACK_IMPORTED_MODULE_15__["PickuplistComponent"],
-                _pages_shipmentlist_shipmentlist_component__WEBPACK_IMPORTED_MODULE_16__["ShipmentlistComponent"]
+                _pages_shipmentlist_shipmentlist_component__WEBPACK_IMPORTED_MODULE_16__["ShipmentlistComponent"],
+                _pages_wallect_wallect_component__WEBPACK_IMPORTED_MODULE_17__["WallectComponent"],
+                _pages_history_history_component__WEBPACK_IMPORTED_MODULE_18__["HistoryComponent"]
             ]
         })
     ], AdminLayoutModule);
@@ -1503,6 +1535,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pages_pickup_pickup_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../pages/pickup/pickup.component */ "./src/app/pages/pickup/pickup.component.ts");
 /* harmony import */ var _pages_pickuplist_pickuplist_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../pages/pickuplist/pickuplist.component */ "./src/app/pages/pickuplist/pickuplist.component.ts");
 /* harmony import */ var _pages_shipmentlist_shipmentlist_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../pages/shipmentlist/shipmentlist.component */ "./src/app/pages/shipmentlist/shipmentlist.component.ts");
+/* harmony import */ var _pages_wallect_wallect_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../pages/wallect/wallect.component */ "./src/app/pages/wallect/wallect.component.ts");
+/* harmony import */ var _pages_history_history_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../pages/history/history.component */ "./src/app/pages/history/history.component.ts");
 var __importDefault = (undefined && undefined.__importDefault) || function (mod) {
   return (mod && mod.__esModule) ? mod : { "default": mod };
 };
@@ -1511,6 +1545,8 @@ var __importDefault = (undefined && undefined.__importDefault) || function (mod)
 
 
 //import { TablesComponent } from '../../pages/tables/tables.component';
+
+
 
 
 
@@ -1528,7 +1564,9 @@ var AdminLayoutRoutes = [
     { path: 'mysuite', component: _pages_my_suite_my_suite_component__WEBPACK_IMPORTED_MODULE_3__["MySuiteComponent"] },
     { path: 'purchase', component: _pages_assisted_purchase_assisted_purchase_component__WEBPACK_IMPORTED_MODULE_4__["AssistedPurchaseComponent"] },
     { path: 'ShippingCalculator', component: _pages_shipping_calculator_shipping_calculator_component__WEBPACK_IMPORTED_MODULE_5__["ShippingCalculatorComponent"] },
-    { path: 'ProhibitedItems', component: _pages_prohibited_items_prohibited_items_component__WEBPACK_IMPORTED_MODULE_6__["ProhibitedItemsComponent"] }
+    { path: 'ProhibitedItems', component: _pages_prohibited_items_prohibited_items_component__WEBPACK_IMPORTED_MODULE_6__["ProhibitedItemsComponent"] },
+    { path: 'wallect', component: _pages_wallect_wallect_component__WEBPACK_IMPORTED_MODULE_10__["WallectComponent"] },
+    { path: 'history', component: _pages_history_history_component__WEBPACK_IMPORTED_MODULE_11__["HistoryComponent"] }
 ];
 
 
@@ -1558,6 +1596,9 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AssistedPurchaseComponent", function() { return AssistedPurchaseComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm5/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm5/forms.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/__ivy_ngcc__/fesm5/http.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm5/router.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1571,18 +1612,93 @@ var __importDefault = (undefined && undefined.__importDefault) || function (mod)
   return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 
+
+
+
 var AssistedPurchaseComponent = /** @class */ (function () {
-    function AssistedPurchaseComponent() {
+    function AssistedPurchaseComponent(formBuilder, http, router) {
+        this.formBuilder = formBuilder;
+        this.http = http;
+        this.router = router;
+        this.error_messages = {};
+        this.PurchaseFormData();
     }
-    AssistedPurchaseComponent.prototype.ngOnInit = function () {
+    AssistedPurchaseComponent.prototype.PurchaseFormData = function () {
+        this.error_messages = {
+            itemname: [{ type: 'required', message: 'Item Name is Required' }],
+            options: [{ type: 'required', message: 'options is Required' }],
+            item_url: [{ type: 'required', message: ' item_url  is required.' }],
+            quantity: [{ type: 'required', message: 'Quantity  is required.' }],
+            price: [{ type: 'required', message: 'Price  is required.' }],
+            shipping_charges: [{ type: 'required', message: ' shipping_charges is required.' }],
+            total_pur_charges: [{ type: 'required', message: 'total_pur_charges  is required.' }],
+            total_shipping_charges: [{ type: 'required', message: ' total_shipping_charges  is required.' }],
+            tax: [
+                { type: 'required', message: 'tax  is required.' },
+            ],
+            total: [{ type: 'required', message: 'total is Required' }],
+            instructions: [{ type: 'required', message: 'instructions is Required' }],
+        };
+        this.purchaseForm = this.formBuilder.group({
+            itemname: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]('', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required])),
+            options: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]('', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required])),
+            item_url: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]('', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required])),
+            quantity: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]('', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required])),
+            price: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]('', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required])),
+            total_shipping_charges: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]('', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required])),
+            shipping_charges: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]('', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required])),
+            total_pur_charges: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]('', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required])),
+            tax: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]('', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([
+                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required,
+                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].minLength(10),
+                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].maxLength(12),
+            ])),
+            total: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]('', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required])),
+            instructions: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]('', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required])),
+        });
     };
+    AssistedPurchaseComponent.prototype.ngOnInit = function () { };
+    AssistedPurchaseComponent.prototype.purchase = function () {
+        var _this = this;
+        this.params = {
+            itemname: this.purchaseForm.controls.itemname.value,
+            options: this.purchaseForm.controls.options.value,
+            item_url: this.purchaseForm.controls.item_url.value,
+            quantity: this.purchaseForm.controls.quantity.value,
+            price: this.purchaseForm.controls.price.value,
+            shipping_charges: this.purchaseForm.controls.shipping_charges.value,
+            total_pur_charges: this.purchaseForm.controls.total_pur_charges.value,
+            total_shipping_charges: this.purchaseForm.controls.total_shipping_charges.value,
+            tax: this.purchaseForm.controls.tax.value,
+            total: this.purchaseForm.controls.total.value,
+            instructions: this.purchaseForm.controls.instructions.value,
+        };
+        console.log(this.params);
+        return new Promise(function (resolve, reject) {
+            _this.http.post("https://labs.80startups.com/api/v1/1/shipment/createshipment", _this.params).subscribe(function (result) {
+                console.log("result", result);
+                _this.router.navigateByUrl('/dashboard');
+            }, function (err) {
+                console.log(err);
+                alert("please enter fill ");
+                // reject(err);
+            });
+        });
+    };
+    AssistedPurchaseComponent.ctorParameters = function () { return [
+        { type: _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"] },
+        { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] },
+        { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"] }
+    ]; };
     AssistedPurchaseComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-assisted-purchase',
             template: __importDefault(__webpack_require__(/*! raw-loader!./assisted-purchase.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/assisted-purchase/assisted-purchase.component.html")).default,
             styles: [__importDefault(__webpack_require__(/*! ./assisted-purchase.component.css */ "./src/app/pages/assisted-purchase/assisted-purchase.component.css")).default]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"],
+            _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]])
     ], AssistedPurchaseComponent);
     return AssistedPurchaseComponent;
 }());
@@ -1642,6 +1758,63 @@ var DashboardComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], DashboardComponent);
     return DashboardComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/history/history.component.css":
+/*!*****************************************************!*\
+  !*** ./src/app/pages/history/history.component.css ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL2hpc3RvcnkvaGlzdG9yeS5jb21wb25lbnQuY3NzIn0= */");
+
+/***/ }),
+
+/***/ "./src/app/pages/history/history.component.ts":
+/*!****************************************************!*\
+  !*** ./src/app/pages/history/history.component.ts ***!
+  \****************************************************/
+/*! exports provided: HistoryComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HistoryComponent", function() { return HistoryComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __importDefault = (undefined && undefined.__importDefault) || function (mod) {
+  return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+
+var HistoryComponent = /** @class */ (function () {
+    function HistoryComponent() {
+    }
+    HistoryComponent.prototype.ngOnInit = function () {
+    };
+    HistoryComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-history',
+            template: __importDefault(__webpack_require__(/*! raw-loader!./history.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/history/history.component.html")).default,
+            styles: [__importDefault(__webpack_require__(/*! ./history.component.css */ "./src/app/pages/history/history.component.css")).default]
+        }),
+        __metadata("design:paramtypes", [])
+    ], HistoryComponent);
+    return HistoryComponent;
 }());
 
 
@@ -2423,6 +2596,63 @@ var UserProfileComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], UserProfileComponent);
     return UserProfileComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/wallect/wallect.component.css":
+/*!*****************************************************!*\
+  !*** ./src/app/pages/wallect/wallect.component.css ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL3dhbGxlY3Qvd2FsbGVjdC5jb21wb25lbnQuY3NzIn0= */");
+
+/***/ }),
+
+/***/ "./src/app/pages/wallect/wallect.component.ts":
+/*!****************************************************!*\
+  !*** ./src/app/pages/wallect/wallect.component.ts ***!
+  \****************************************************/
+/*! exports provided: WallectComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WallectComponent", function() { return WallectComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __importDefault = (undefined && undefined.__importDefault) || function (mod) {
+  return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+
+var WallectComponent = /** @class */ (function () {
+    function WallectComponent() {
+    }
+    WallectComponent.prototype.ngOnInit = function () {
+    };
+    WallectComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-wallect',
+            template: __importDefault(__webpack_require__(/*! raw-loader!./wallect.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/wallect/wallect.component.html")).default,
+            styles: [__importDefault(__webpack_require__(/*! ./wallect.component.css */ "./src/app/pages/wallect/wallect.component.css")).default]
+        }),
+        __metadata("design:paramtypes", [])
+    ], WallectComponent);
+    return WallectComponent;
 }());
 
 
