@@ -14,13 +14,17 @@ import { EditprofileComponent } from '../../pages/editprofile/editprofile.compon
 import { ItemComponent } from '../../pages/item/item.component';
 import { UserComponent } from '../../pages/user/user.component';
 import { SubcategoryComponent } from '../../pages/subcategory/subcategory.component';
+import { ShipmentuserComponent } from '../../pages/shipmentuser/shipmentuser.component';
+import { PickupuserComponent } from '../../pages/pickupuser/pickupuser.component';
 export const AdminLayoutRoutes: Routes = [
     { path: 'dashboard', component: DashboardComponent },
     { path: 'user-profile', component: UserProfileComponent },
     { path: 'subcategory', component: SubcategoryComponent },
     { path: 'user', component: UserComponent },
+    { path: 'pickuplist', component: PickupuserComponent },
     { path: 'pickup', component: MapsComponent },
     { path: 'mysuite', component: MySuiteComponent },
+    { path: 'shipmentuser', component: ShipmentuserComponent },
     { path: 'purchase', component: AssistedPurchaseComponent },
     { path: 'ShippingCalculator', component: ShippingCalculatorComponent },
     { path: 'ProhibitedItems', component: ProhibitedItemsComponent },

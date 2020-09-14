@@ -10,7 +10,7 @@
 
 
 <div class="container-fluid mt--7" style="margin-top:50px!important;">
-
+  <!-- <button class="btn btn-primary my-4" routerLinkActive="active" [routerLink]="['/pickup']">AddPickup</button> -->
 
   <div _ngcontent-c5="" class="row mt-5">
     <div _ngcontent-c5="" class="col-xl-12 mb-5 mb-xl-0">
@@ -18,7 +18,7 @@
         <div _ngcontent-c5="" class="card-header border-0">
           <div _ngcontent-c5="" class="row align-items-center">
             <div _ngcontent-c5="" class="col">
-              <h3 _ngcontent-c5="" class="mb-0">ParcelFromIndiaUser Details</h3>
+              <h3 _ngcontent-c5="" class="mb-0"> Pickup Details</h3>
             </div>
             <!-- <div _ngcontent-c5="" class="col text-right"><a _ngcontent-c5="" class="btn btn-sm btn-primary" href="#!">See all</a>
                 </div> -->
@@ -31,21 +31,29 @@
               <tr _ngcontent-c5="">
 
                 <th _ngcontent-c5="" scope="col">Name</th>
-                <th _ngcontent-c5="" scope="col">Mobile</th>
-
-                <th _ngcontent-c5="" scope="col">Email</th>
-
+                <th _ngcontent-c5="" scope="col">mobile</th>
+                <th _ngcontent-c5="" scope="col">city</th>
+                <th _ngcontent-c5="" scope="col">email</th>
+                <th _ngcontent-c5="" scope="col">Name</th>
+                <th _ngcontent-c5="" scope="col">mobile</th>
+                <th _ngcontent-c5="" scope="col">city</th>
+                <th _ngcontent-c5="" scope="col">email</th>
               </tr>
             </thead>
             <tbody _ngcontent-c5="">
               <tr _ngcontent-c5="" *ngFor="let item of data | paginate: config ">
 
-                <td _ngcontent-c5=""><i _ngcontent-c5="" class="fas fa-box text-success mr-3"></i>{{item.fname}}
-                  {{item.lname}}</td>
-                <td _ngcontent-c5="">{{item.mobile}}</td>
-
-                <td _ngcontent-c5="">{{item.email}}</td>
-
+                <td _ngcontent-c5=""><i _ngcontent-c5="" class="fas fa-box text-success mr-3"></i>{{item.pickupfname}}
+                  {{item.pickuplname}}</td>
+                <td _ngcontent-c5="">{{item.pickupmobile}}</td>
+                <td _ngcontent-c5="">{{item.pickupcity}}</td>
+                <td _ngcontent-c5="">{{item.pickupemail}}</td>
+                <td _ngcontent-c5=""><i _ngcontent-c5=""
+                    class="fas fa-box text-success mr-3"></i>{{item.WareHousefname}}
+                  {{item.WareHouselname}}</td>
+                <td _ngcontent-c5="">{{item.WareHousemobile}}</td>
+                <td _ngcontent-c5="">{{item.WareHousecity}}</td>
+                <td _ngcontent-c5="">{{item.WareHouseemail}}</td>
 
               </tr>
 

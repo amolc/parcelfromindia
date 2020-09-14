@@ -10,7 +10,7 @@
 
 
 <div class="container-fluid mt--7" style="margin-top:50px!important;">
-
+  <!-- <button class="btn btn-primary my-4" routerLinkActive="active" [routerLink]="['/shipment']">Addshipment</button> -->
 
   <div _ngcontent-c5="" class="row mt-5">
     <div _ngcontent-c5="" class="col-xl-12 mb-5 mb-xl-0">
@@ -18,7 +18,7 @@
         <div _ngcontent-c5="" class="card-header border-0">
           <div _ngcontent-c5="" class="row align-items-center">
             <div _ngcontent-c5="" class="col">
-              <h3 _ngcontent-c5="" class="mb-0">ParcelFromIndiaUser Details</h3>
+              <h3 _ngcontent-c5="" class="mb-0"> ShipmentUser Detail</h3>
             </div>
             <!-- <div _ngcontent-c5="" class="col text-right"><a _ngcontent-c5="" class="btn btn-sm btn-primary" href="#!">See all</a>
                 </div> -->
@@ -32,9 +32,12 @@
 
                 <th _ngcontent-c5="" scope="col">Name</th>
                 <th _ngcontent-c5="" scope="col">Mobile</th>
-
+                <th _ngcontent-c5="" scope="col">City</th>
                 <th _ngcontent-c5="" scope="col">Email</th>
-
+                <th _ngcontent-c5="" scope="col">Name</th>
+                <th _ngcontent-c5="" scope="col">mobile</th>
+                <th _ngcontent-c5="" scope="col">city</th>
+                <th _ngcontent-c5="" scope="col">Email</th>
               </tr>
             </thead>
             <tbody _ngcontent-c5="">
@@ -43,9 +46,14 @@
                 <td _ngcontent-c5=""><i _ngcontent-c5="" class="fas fa-box text-success mr-3"></i>{{item.fname}}
                   {{item.lname}}</td>
                 <td _ngcontent-c5="">{{item.mobile}}</td>
-
+                <td _ngcontent-c5="">{{item.city}}</td>
                 <td _ngcontent-c5="">{{item.email}}</td>
-
+                <td _ngcontent-c5=""><i _ngcontent-c5=""
+                    class="fas fa-box text-success mr-3"></i>{{item.shipping_fname}}
+                  {{item.shipping_lname}}</td>
+                <td _ngcontent-c5="">{{item.shipping_mobile}}</td>
+                <td _ngcontent-c5="">{{item.shipping_city}}</td>
+                <td _ngcontent-c5="">{{item.shipping_email}}</td>
 
               </tr>
 

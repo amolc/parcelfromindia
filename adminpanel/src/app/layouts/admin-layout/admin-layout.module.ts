@@ -20,6 +20,8 @@ import { EditprofileComponent } from '../../pages/editprofile/editprofile.compon
 import { ItemComponent } from '../../pages/item/item.component';
 import { UserComponent } from '../../pages/user/user.component';
 import { SubcategoryComponent } from '../../pages/subcategory/subcategory.component';
+import { ShipmentuserComponent } from '../../pages/shipmentuser/shipmentuser.component';
+import { PickupuserComponent } from '../../pages/pickupuser/pickupuser.component';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 // import { ToastrModule } from 'ngx-toastr';
@@ -48,6 +50,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     ProhibitedItemsComponent,
     UserComponent,
     SubcategoryComponent,
+    ShipmentuserComponent,
+    PickupuserComponent
 
   ]
 })

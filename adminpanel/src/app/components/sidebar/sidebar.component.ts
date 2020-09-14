@@ -10,14 +10,15 @@ declare interface RouteInfo {
 export const ROUTES: RouteInfo[] = [
   { path: '/dashboard', title: 'Dashboard', icon: 'ni-tv-2 text-primary', class: '' },
   //{ path: '/mysuite', title: 'My Suite',  icon: 'ni-tv-2 text-primary', class: '' },
-  { path: '/category', title: 'Category', icon: 'ni-tv-2 text-primary', class: '' },
-  { path: '/user', title: 'User', icon: 'ni-circle-08 text-pink', class: '' },
-  { path: '/editprofile', title: 'EditProfile', icon: 'ni-planet text-blue', class: '' },
-  { path: '/pickup', title: 'Schedule Pickup', icon: 'ni-pin-3 text-orange', class: '' },
-  { path: '/item', title: ' Item', icon: 'ni-tv-2 text-primary', class: '' },
+  // { path: '/category', title: 'Category', icon: 'ni-tv-2 text-primary', class: '' },
+  { path: '/user', title: 'ParcelFromIndiaUser', icon: 'ni-circle-08 text-pink', class: '' },
+  { path: '/shipmentuser', title: 'ShipmentUser', icon: 'ni-circle-08 text-pink', class: '' },
+  // { path: '/editprofile', title: 'EditProfile', icon: 'ni-planet text-blue', class: '' },
+  { path: '/pickuplist', title: ' PickupUser', icon: 'ni-pin-3 text-orange', class: '' },
+  // { path: '/item', title: ' Item', icon: 'ni-tv-2 text-primary', class: '' },
   // { path: '/ShippingCalculator', title: 'Shipping Calcultor',  icon: 'ni-tv-2 text-primary', class: '' },
   // { path: '/user-profile', title: 'User profile',  icon:'ni-single-02 text-yellow', class: '' },
-  { path: '/subcategory', title: 'Subcategory', icon: 'ni-bullet-list-67 text-red', class: '' },
+  // { path: '/subcategory', title: 'Subcategory', icon: 'ni-bullet-list-67 text-red', class: '' },
   // { path: '/login', title: 'Login',  icon:'ni-key-25 text-info', class: '' },
   // { path: '/register', title: 'Register',  icon:'ni-circle-08 text-pink', class: '' }
 ];

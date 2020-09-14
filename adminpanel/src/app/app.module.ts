@@ -14,6 +14,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app.routing';
 import { ComponentsModule } from './components/components.module';
 import { LogoutComponent } from './pages/logout/logout.component';
+// import { PickupuserComponent } from './pages/pickupuser/pickupuser.component';
+//import { ShipmentuserComponent } from './pages/shipmentuser/shipmentuser.component';
 
 
 
@@ -38,6 +40,8 @@ import { LogoutComponent } from './pages/logout/logout.component';
     AdminLayoutComponent,
     AuthLayoutComponent,
     LogoutComponent,
+    // PickupuserComponent,
+    //ShipmentuserComponent,
 
 
 
