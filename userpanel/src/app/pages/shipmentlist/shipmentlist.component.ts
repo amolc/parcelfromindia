@@ -9,15 +9,17 @@ import { Router, ActivatedRoute } from "@angular/router";
 export class ShipmentlistComponent implements OnInit {
   config: any;
   data: any;
+  limit: any;
   constructor(private http: HttpClient, private router: Router, private route: ActivatedRoute,) { }
 
   ngOnInit(): void {
-    this.getdata(),
-      this.config = {
-        itemsPerPage: 10,
-        currentPage: 1,
+    this.getdata()
+    this.config = {
+      itemsPerPage: 10,
 
-      };
+      currentPage: 1,
+
+    };
 
   }
   pageChanged(event) {
@@ -25,7 +27,7 @@ export class ShipmentlistComponent implements OnInit {
   }
   getdata() {
     return new Promise((resolve, reject) => {
-      this.http.get("https://labs.80startups.com/api/v1/1/shipment/getallshipment").subscribe(result => {
+      this.http.get("https://labs.80startups.com/api/v1/1/shipment/getallshipment?limit=100").subscribe(result => {
         console.log("result", result);
         this.data = result;
 

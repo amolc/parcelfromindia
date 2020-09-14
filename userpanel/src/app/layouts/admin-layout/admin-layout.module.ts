@@ -20,6 +20,7 @@ import { PickuplistComponent } from '../../pages/pickuplist/pickuplist.component
 import { ShipmentlistComponent } from '../../pages/shipmentlist/shipmentlist.component';
 import { WallectComponent } from '../../pages/wallect/wallect.component';
 import { HistoryComponent } from '../../pages/history/history.component';
+import { AddAddressComponent } from '../../pages/add-address/add-address.component';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 // import { ToastrModule } from 'ngx-toastr';
@@ -48,7 +49,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     PickuplistComponent,
     ShipmentlistComponent,
     WallectComponent,
-    HistoryComponent
+    HistoryComponent,
+    AddAddressComponent
 
   ]
 })

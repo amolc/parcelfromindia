@@ -363,7 +363,7 @@ export class PickupComponent implements OnInit {
     return new Promise((resolve, reject) => {
       this.http.post("https://labs.80startups.com/api/v1/1/pickup/createpickup", this.params).subscribe(result => {
         console.log("result", result);
-        this.router.navigateByUrl('/DashBorad')
+        this.router.navigateByUrl('/dashBorad')
       },
         err => {
           console.log(err);

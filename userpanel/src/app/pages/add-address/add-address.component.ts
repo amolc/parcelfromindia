@@ -20,41 +20,41 @@ export class AddAddressComponent implements OnInit {
   ) {
     this.setupAddressFormData();
   }
-  fname = '';
-  lname = '';
-  address = '';
-  address2 = '';
-  city = '';
-  state = '';
-  country = '';
-  mobile = '';
-  postal_code = '';
+  // fname = '';
+  // lname = '';
+  // address = '';
+  // address2 = '';
+  // city = '';
+  // state = '';
+  // country = '';
+  // mobile = '';
+  // postal_code = '';
 
-  checkvalue(event) {
-    if (event.target.value == 'yes') {
-      //this.addressForm.value.fname=this.addressForm.value.fname
-      //this.addressForm.value.fname=this.addressForm.value.fname
-      (this.fname = this.addresForm.controls.fname.value),
-        (this.lname = this.addresForm.controls.lname.value),
-        (this.address = this.addresForm.controls.address.value),
-        (this.address2 = this.addresForm.controls.address2.value),
-        (this.city = this.addresForm.controls.city.value),
-        (this.state = this.addresForm.controls.state.value),
-        (this.country = this.addresForm.controls.country.value),
-        (this.mobile = this.addresForm.controls.mobile.value),
-        (this.postal_code = this.addresForm.controls.postal_code.value);
-    } else {
-      (this.fname = null),
-        (this.lname = null),
-        (this.address = null),
-        (this.address2 = null),
-        (this.city = null),
-        (this.state = null),
-        (this.country = null),
-        (this.mobile = null),
-        (this.postal_code = null);
-    }
-  }
+  // checkvalue(event) {
+  //   if (event.target.value == 'yes') {
+  //     //this.addressForm.value.fname=this.addressForm.value.fname
+  //     //this.addressForm.value.fname=this.addressForm.value.fname
+  //     (this.fname = this.addresForm.controls.fname.value),
+  //       (this.lname = this.addresForm.controls.lname.value),
+  //       (this.address = this.addresForm.controls.address.value),
+  //       (this.address2 = this.addresForm.controls.address2.value),
+  //       (this.city = this.addresForm.controls.city.value),
+  //       (this.state = this.addresForm.controls.state.value),
+  //       (this.country = this.addresForm.controls.country.value),
+  //       (this.mobile = this.addresForm.controls.mobile.value),
+  //       (this.postal_code = this.addresForm.controls.postal_code.value);
+  //   } else {
+  //     (this.fname = null),
+  //       (this.lname = null),
+  //       (this.address = null),
+  //       (this.address2 = null),
+  //       (this.city = null),
+  //       (this.state = null),
+  //       (this.country = null),
+  //       (this.mobile = null),
+  //       (this.postal_code = null);
+  //   }
+  // }
 
   setupAddressFormData() {
     this.error_messages = {
@@ -89,7 +89,38 @@ export class AddAddressComponent implements OnInit {
         { type: 'minlength', message: 'minimun length should be 10 .' },
         { type: 'maxlength', message: 'maximum length should be 12 .' },
       ],
-
+      weight: [
+        { type: "required", message: "weight is Required." },
+      ],
+      height: [
+        { type: "required", message: "height is Required." },
+      ],
+      width: [
+        { type: "required", message: "width is Required." },
+      ],
+      length: [
+        { type: "required", message: "length is Required." },
+      ],
+      package_items: [
+        { type: "required", message: "package_items is Required." },
+      ],
+      no_of_packages: [
+        { type: "required", message: "no_of_packages is Required." },
+      ],
+      tracking_no: [
+        { type: "required", message: "tracking is Required." },
+      ],
+      owner: [
+        { type: "required", message: "tracking is Required." },
+      ],
+      email: [
+        { type: "required", message: 'Email is Required' },
+        { type: "pattern", message: 'Please Enter valid Email' }
+      ],
+      shipping_email: [
+        { type: "required", message: 'Email is Required' },
+        { type: "pattern", message: 'Please Enter valid Email' }
+      ],
     };
     this.addresForm = this.formBuilder.group({
       fname: new FormControl('', Validators.compose([Validators.required])),
@@ -100,6 +131,13 @@ export class AddAddressComponent implements OnInit {
       city: new FormControl('', Validators.compose([Validators.required])),
       state: new FormControl('', Validators.compose([Validators.required])),
       country: new FormControl('', Validators.compose([Validators.required])),
+      email: new FormControl(
+        "",
+        Validators.compose([
+          Validators.required,
+          Validators.pattern('^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$'),
+        ])
+      ),
       postal_code: new FormControl(
         '',
         Validators.compose([Validators.required])
@@ -132,68 +170,133 @@ export class AddAddressComponent implements OnInit {
           Validators.maxLength(12),
         ])
       ),
+      shipping_email: new FormControl(
+        "",
+        Validators.compose([
+          Validators.required,
+          Validators.pattern('^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$'),
+        ])
+      ),
+      weight: new FormControl(
+        "", Validators.compose([
+          Validators.required,
+
+        ])
+      ),
+      height: new FormControl(
+        "", Validators.compose([
+          Validators.required,
+
+        ])
+      ),
+
+      length: new FormControl(
+        "", Validators.compose([
+          Validators.required,
+
+        ])
+      ),
+      width: new FormControl(
+        "", Validators.compose([
+          Validators.required,
+
+        ])
+      ),
+      package_items: new FormControl(
+        "", Validators.compose([
+          Validators.required,
+
+        ])
+      ),
+      no_of_packages: new FormControl(
+        "", Validators.compose([
+          Validators.required,
+
+        ])
+      ),
+
+
+
 
     });
   }
   ngOnInit(): void { }
   addres() {
     this.params = {
-      fname: this.addresForm.controls.fname.value,
-      lname: this.addresForm.controls.lname.value,
-      address: this.addresForm.controls.address.value,
-      address2: this.addresForm.controls.address2.value,
-      mobile: this.addresForm.controls.mobile.value,
+      "fname": this.addresForm.controls.fname.value,
+      "lname": this.addresForm.controls.lname.value,
+      "address": this.addresForm.controls.address.value,
+      "address2": this.addresForm.controls.address2.value,
+      "mobile": this.addresForm.controls.mobile.value,
+      "email": this.addresForm.controls.email.value,
 
-      city: this.addresForm.controls.city.value,
-      state: this.addresForm.controls.state.value,
-      country: this.addresForm.controls.country.value,
-      postal_code: this.addresForm.controls.postal_code.value,
+      "city": this.addresForm.controls.city.value,
+      "state": this.addresForm.controls.state.value,
+      "country": this.addresForm.controls.country.value,
+      "postal_code": this.addresForm.controls.postal_code.value,
+      "shipping_fname": this.addresForm.controls.shipping_fname.value,
+      "shipping_lname": this.addresForm.controls.shipping_lname.value,
+      "shipping_address": this.addresForm.controls.shipping_address.value,
+      "shipping_address2": this.addresForm.controls.shipping_address2.value,
+      "shipping_mobile": this.addresForm.controls.shipping_mobile.value,
+      "shipping_city": this.addresForm.controls.shipping_city.value,
+      "shipping_state": this.addresForm.controls.shipping_state.value,
+      "shipping_country": this.addresForm.controls.shipping_country.value,
+      "shipping_postal_code": this.addresForm.controls.shipping_postal_code.value,
+      "shipping_email": this.addresForm.controls.shipping_email.value,
+      "weight": this.addresForm.controls.weight.value,
+      "length": this.addresForm.controls.length.value,
+      "width": this.addresForm.controls.width.value,
+      "height": this.addresForm.controls.height.value,
+      "package_items": this.addresForm.controls.package_items.value,
+      "no_of_packages": this.addresForm.controls.no_of_packages.value,
+      //"tracking_no": tracking_no,
+      "tracking_no": "12334",
+      // shipping_fname:
+      //   this.addresForm.controls.shipping_fname.value == ''
+      //     ? this.fname
+      //     : this.addresForm.controls.shipping_fname.value,
 
-      shipping_fname:
-        this.addresForm.controls.shipping_fname.value == ''
-          ? this.fname
-          : this.addresForm.controls.shipping_fname.value,
+      // shipping_lname:
+      //   this.addresForm.controls.shipping_lname.value == ''
+      //     ? this.lname
+      //     : this.addresForm.controls.shipping_lname.value,
 
-      shipping_lname:
-        this.addresForm.controls.shipping_lname.value == ''
-          ? this.lname
-          : this.addresForm.controls.shipping_lname.value,
+      // shipping_address:
+      //   this.addresForm.controls.shipping_address.value == ''
+      //     ? this.address
+      //     : this.addresForm.controls.shipping_address.value,
 
-      shipping_address:
-        this.addresForm.controls.shipping_address.value == ''
-          ? this.address
-          : this.addresForm.controls.shipping_address.value,
+      // shipping_address2:
+      //   this.addresForm.controls.shipping_address2.value == ''
+      //     ? this.address2
+      //     : this.addresForm.controls.shipping_address2.value,
 
-      shipping_address2:
-        this.addresForm.controls.shipping_address2.value == ''
-          ? this.address2
-          : this.addresForm.controls.shipping_address2.value,
+      // shipping_mobile:
+      //   this.addresForm.controls.shipping_mobile.value == ''
+      //     ? this.mobile
+      //     : this.addresForm.controls.shipping_mobile.value,
 
-      shipping_mobile:
-        this.addresForm.controls.shipping_mobile.value == ''
-          ? this.mobile
-          : this.addresForm.controls.shipping_mobile.value,
+      // shipping_city:
+      //   this.addresForm.controls.shipping_city.value == ''
+      //     ? this.city
+      //     : this.addresForm.controls.shipping_city.value,
 
-      shipping_city:
-        this.addresForm.controls.shipping_city.value == ''
-          ? this.city
-          : this.addresForm.controls.shipping_city.value,
+      // shipping_state:
+      //   this.addresForm.controls.shipping_state.value == ''
+      //     ? this.state
+      //     : this.addresForm.controls.shipping_state.value,
 
-      shipping_state:
-        this.addresForm.controls.shipping_state.value == ''
-          ? this.state
-          : this.addresForm.controls.shipping_state.value,
+      // shipping_country:
+      //   this.addresForm.controls.shipping_country.value == ''
+      //     ? this.country
+      //     : this.addresForm.controls.shipping_country.value,
 
-      shipping_country:
-        this.addresForm.controls.shipping_country.value == ''
-          ? this.country
-          : this.addresForm.controls.shipping_country.value,
-
-      shipping_postal_code:
-        this.addresForm.controls.shipping_postal_code.value == ''
-          ? this.postal_code
-          : this.addresForm.controls.shipping_postal_code.value,
-      owner: "5f32ca5c8f33c3b541702c12"
+      // shipping_postal_code:
+      //   this.addresForm.controls.shipping_postal_code.value == ''
+      //     ? this.postal_code
+      //     : this.addresForm.controls.shipping_postal_code.value,
+      "owner": "5f32ca5c8f33c3b541702c12"
     };
     console.log(this.params);
     return new Promise((resolve, reject) => {

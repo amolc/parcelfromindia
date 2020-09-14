@@ -14,12 +14,14 @@ import { PickuplistComponent } from '../../pages/pickuplist/pickuplist.component
 import { ShipmentlistComponent } from '../../pages/shipmentlist/shipmentlist.component';
 import { WallectComponent } from '../../pages/wallect/wallect.component';
 import { HistoryComponent } from '../../pages/history/history.component';
+import { AddAddressComponent } from '../../pages/add-address/add-address.component';
 export const AdminLayoutRoutes: Routes = [
     { path: 'dashboard', component: DashboardComponent },
     { path: 'user-profile', component: UserProfileComponent },
     { path: 'pickup', component: PickupComponent },
     { path: 'pickuplist', component: PickuplistComponent },
     { path: 'shipmentlist', component: ShipmentlistComponent },
+    { path: 'shipment', component: AddAddressComponent },
     { path: 'SchedulePickup', component: MapsComponent },
     { path: 'mysuite', component: MySuiteComponent },
     { path: 'purchase', component: AssistedPurchaseComponent },

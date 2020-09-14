@@ -17,7 +17,7 @@
             <div class="m-portlet__head-caption">
               <div class="m-portlet__head-title">
                 <h3 class="m-portlet__head-text">
-                  One Step Away From Getting Your Loved Stuff!
+                  Fill in the following details to place shipment request.
                 </h3>
               </div>
             </div>
@@ -31,8 +31,8 @@
                   <div class="form-group m-form__group row">
                     <div class="m-radio-inline" style="margin-top: 15px;">
                       <span class="m-badge m-badge--primary m-badge--wide m-badge--rounded"
-                        style="margin-left: 10px; font-size: 1.2rem;font-family: 'Montserrat'; width: 200px;padding: 12px; background-color:burlywood; ">
-                        BILLING ADDRESS
+                        style="margin-left: 10px; font-size: 1.2rem;font-family: 'Montserrat'; width: 200px;padding: 12px; background-color:burlywood;  font-weight: bold;">
+                        Pickup Information
                       </span><br>
                       <div style="margin-top:25px; margin-left:15px;color:#db1a20;">
                         <p>All fields are mandatory</p>
@@ -44,7 +44,7 @@
                     <div class="col-lg-6 col-md-4">
 
                       <label>
-                        First Name:
+                        First Name
                       </label>
                       <input type="text" class="form-control m-input" placeholder="Enter first name" name="fname"
                         id="fname" formControlName="fname">
@@ -58,7 +58,7 @@
 
                     <div class="col-lg-6 col-md-4 topgap">
                       <label class="">
-                        Last Name:
+                        Last Name
                       </label>
                       <input type="text" class="form-control m-input" placeholder="Enter last name" name="lname"
                         id="lname" formControlName="lname">
@@ -74,7 +74,7 @@
                   <div class="form-group m-form__group row topgap">
                     <div class="col-lg-12 col-md-10">
                       <label>
-                        address
+                        Address
                       </label>
                       <textarea type="text" rows="4" class="form-control"
                         placeholder="Please enter House/Flat Number, Building Name/ Apartment Name" name="address"
@@ -91,7 +91,7 @@
                   <div class="form-group m-form__group row topgap">
                     <div class="col-lg-12 col-md-10">
                       <label>
-                        2nd address
+                        Address2
                       </label>
                       <textarea type="text" rows="4" class="form-control"
                         placeholder="Please enter Street Name, Locality" name="address2" id="address2"
@@ -144,7 +144,8 @@
                       <label>
                         Country
                       </label>
-                      <input type="text" name="country" id="country" class="form-control" formControlName="country">
+                      <input type="text" name="country" id="country" class="form-control" placeholder="country"
+                        formControlName="country">
                       <ng-container *ngFor="let error of error_messages.country">
                         <div class="error-message" *ngIf="addresForm.get('country').hasError(error.type) &&
                     (addresForm.get('country').dirty || addresForm.get('country').touched)">
@@ -155,7 +156,7 @@
 
                     <div class="col-lg-6 col-md-4 topgap">
                       <label class="">
-                        postcode
+                        PostCode
                       </label>
                       <input type="text" class="form-control m-input" placeholder="Enter postcode" name="postal_code"
                         id="postal_code" formControlName="postal_code">
@@ -184,10 +185,24 @@
                         </div>
                       </ng-container>
                     </div>
+                    <div class="col-lg-6 col-md-4 topgap">
+                      <label class="">
+                        Email
+                      </label>
+                      <input type="text" class="form-control m-input" placeholder="Enter Email Adddress" name="email"
+                        id="email" formControlName="email">
+                      <ng-container *ngFor="let error of error_messages.email">
+                        <div class="error-message" *ngIf="addresForm.get('email').hasError(error.type) &&
+                 (addresForm.get('email').dirty || addresForm.get('email').touched)">
+                          {{ error.message }}
+                        </div>
+                      </ng-container>
+                      <div class="clearfix"></div>
+                    </div>
                   </div>
 
 
-                  <div class="form-group m-form__group row">
+                  <!-- <div class="form-group m-form__group row">
                     <div class="m-radio-inline" style="margin-top: 20px;">
 
                       <label>
@@ -206,23 +221,26 @@
                         <span></span>
                       </label>
                     </div>
-                  </div>
+                  </div> -->
+                  <br>
 
                   <div class="form-group m-form__group row">
                     <div class="m-radio-inline" style="margin-top: 15px;">
                       <span class="m-badge m-badge--primary m-badge--wide m-badge--rounded"
-                        style="margin-left: 10px; font-size: 1.2rem;font-family: 'Montserrat'; width: 200px;padding: 12px; background-color:burlywood; ">
-                        SHIPPING ADDRESS
+                        style="margin-left: 10px; font-size: 1.2rem;font-family: 'Montserrat'; width: 200px;padding: 12px; background-color:burlywood; font-weight: bold;">
+                        Destination Information
                       </span>
                     </div>
                   </div>
+
+                  <br>
                   <div class="form-group m-form__group row">
                     <div class="col-lg-6 col-md-4">
                       <label>
                         First Name
                       </label>
                       <input type="text" class="form-control m-input" placeholder="Enter first name"
-                        name="shipping_fname" id="shipping_fname" value="{{fname==null?null:fname}}"
+                        name="shipping_fname" id="shipping_fname" value="shipping_fname"
                         formControlName="shipping_fname">
                       <ng-container *ngFor="let error of error_messages.shipping_fname">
                         <div class="error-message" *ngIf="addresForm.get('shipping_fname').hasError(error.type) &&
@@ -237,7 +255,7 @@
                         Last Name
                       </label>
                       <input type="text" class="form-control m-input" placeholder="Enter last name"
-                        name="shipping_lname" id="shipping_lname" value="{{lname==null?null:lname}}"
+                        name="shipping_lname" id="shipping_lname" value="shipping_lname"
                         formControlName="shipping_lname">
                       <ng-container *ngFor="let error of error_messages.shipping_lname">
                         <div class="error-message" *ngIf="addresForm.get('shipping_lname').hasError(error.type) &&
@@ -251,11 +269,11 @@
                   <div class="form-group m-form__group row topgap">
                     <div class="col-lg-12 col-md-10">
                       <label>
-                        Shipping Address1
+                        Address
                       </label>
                       <textarea type="text" rows="4" class="form-control"
                         placeholder="Please enter House/Flat Number, Building Name/ Apartment Name"
-                        name="shipping_address" id="shipping_address" value="{{address==null?null:address}}"
+                        name="shipping_address" id="shipping_address" value="shipping_address"
                         formControlName="shipping_address" required></textarea>
                     </div>
                   </div>
@@ -268,12 +286,11 @@
                   <div class="form-group m-form__group row topgap">
                     <div class="col-lg-12 col-md-10">
                       <label>
-                        Shipping Address2
+                        Address2
                       </label>
                       <textarea type="text" rows="4" class="form-control"
                         placeholder="Please enter Street Name, Locality" name="shipping_address2" id="shipping_address2"
-                        value="{{address2==null?null:address2}}" formControlName="shipping_address2"
-                        required></textarea>
+                        value="shipping_address2" formControlName="shipping_address2" required></textarea>
                     </div>
                   </div>
                   <ng-container *ngFor="let error of error_messages.shipping_address2">
@@ -289,7 +306,7 @@
                         City
                       </label>
                       <input type="text" class="form-control m-input" placeholder="Enter City" name="shipping_city"
-                        id="shipping_city" value="{{city==null?null:city}}" formControlName="shipping_city">
+                        id="shipping_city" value="shipping_city" formControlName="shipping_city">
                       <ng-container *ngFor="let error of error_messages.shipping_city">
                         <div class="error-message" *ngIf="addresForm.get('shipping_city').hasError(error.type) &&
                     (addresForm.get('shipping_city').dirty || addresForm.get('shipping_city').touched)">
@@ -304,7 +321,7 @@
                         State
                       </label>
                       <input type="text" class="form-control m-input" placeholder="Enter state name"
-                        name="shipping_state" id="shipping_state" value="{{state==null?null:state}}"
+                        name="shipping_state" id="shipping_state" value="shipping_state"
                         formControlName="shipping_state">
                       <ng-container *ngFor="let error of error_messages.shipping_state">
                         <div class="error-message" *ngIf="addresForm.get('shipping_state').hasError(error.type) &&
@@ -320,8 +337,8 @@
                       <label>
                         Country
                       </label>
-                      <input type="text" name="shipping_country" id="shipping_country" class="form-control"
-                        value="{{country==null?null:country}}" formControlName="shipping_country">
+                      <input type="text" name="shipping_country" id="shipping_country" placeholder="country"
+                        class="form-control" value="shipping_country" formControlName="shipping_country">
                       <ng-container *ngFor="let error of error_messages.shipping_country">
                         <div class="error-message" *ngIf="addresForm.get('shipping_country').hasError(error.type) &&
                     (addresForm.get('shipping_country').dirty || addresForm.get('shipping_country').touched)">
@@ -332,11 +349,11 @@
 
                     <div class="col-lg-6 col-md-4 topgap">
                       <label class="">
-                        postcode
+                        PostCode
                       </label>
                       <input type="text" class="form-control m-input" placeholder="Enter postcode "
-                        name="shipping_postal_code" id="shipping_postal_code"
-                        value="{{postal_code==null?null:postal_code}}" formControlName="shipping_postal_code">
+                        name="shipping_postal_code" id="shipping_postal_code" value="shipping_postal_code"
+                        formControlName="shipping_postal_code">
                       <ng-container *ngFor="let error of error_messages.shipping_postal_code">
                         <div class="error-message" *ngIf="addresForm.get('shipping_postal_code').hasError(error.type) &&
                     (addresForm.get('shipping_postal_code').dirty || addresForm.get('shipping_postal_code').touched)">
@@ -354,7 +371,7 @@
                         Mobile Number
                       </label>
                       <input type="text" class="form-control m-input" placeholder="Enter your mobile number"
-                        name="shipping_mobile" id="shipping_mobile" value="{{mobile==null?null:mobile}}"
+                        name="shipping_mobile" id="shipping_mobile" value="shipping_mobile"
                         formControlName="shipping_mobile">
                       <ng-container *ngFor="let error of error_messages.shipping_mobile">
                         <div class="error-message" *ngIf="addresForm.get('shipping_mobile').hasError(error.type) &&
@@ -363,14 +380,99 @@
                         </div>
                       </ng-container>
                     </div>
+                    <div class="col-lg-6 col-md-4 topgap">
+                      <label class="">
+                        Email
+                      </label>
+                      <input type="text" class="form-control m-input" placeholder="Enter Email Adddress"
+                        name="shipping_email" id="shipping_email" formControlName="shipping_email" required>
+                      <ng-container *ngFor="let error of error_messages.shipping_email">
+                        <div class="error-message" *ngIf="addresForm.get('shipping_email').hasError(error.type) &&
+                 (addresForm.get('shipping_email').dirty || addresForm.get('shipping_email').touched)">
+                          {{ error.message }}
+                        </div>
+                      </ng-container>
+                      <div class="clearfix"></div>
+                    </div>
                   </div>
 
+                  <br>
+                  <div class="form-group m-form__group row">
+                    <div class="m-radio-inline" style="margin-top: 15px;">
+                      <span class="m-badge m-badge--primary m-badge--wide m-badge--rounded"
+                        style="margin-left: 10px; font-size: 1.2rem;font-family: 'Montserrat'; width: 200px;padding: 12px; background-color:burlywood; font-weight: bold; ">
+                        Parcel Information
+                      </span>
+                    </div>
+                  </div>
+
+                  <br>
+                  <div class="form-group m-form__group row">
+                    <div class="col-lg-6 col-md-4">
+                      <label>
+                        Weight of the parcel
+                      </label>
+                      <input type="text" pattern="^\d*(\.\d{0,2})?$" title="required numeric value"
+                        class="form-control m-input" placeholder="Enter Weight in kg" name="weight" id="weight"
+                        formControlName="weight">
+                    </div>
+                    <div class="col-lg-2 col-md-2 topgap">
+                      <label class="">
+                        Dimensions
+                      </label>
+                      <input type="text" pattern="^\d*(\.\d{0,2})?$" title="required numeric value"
+                        class="form-control m-input" placeholder="Enter Length " name="length" id="length"
+                        formControlName="length">
+                    </div>
+                    <div class="col-lg-2 col-md-2 topgap">
+                      <label class="">
+                        Width in cm
+                      </label>
+                      <input type="text" pattern="^\d*(\.\d{0,2})?$" title="required numeric value"
+                        class="form-control m-input" placeholder="Enter Width " name="width" id="width"
+                        formControlName="width">
+                    </div>
+                    <div class="col-lg-2 col-md-2 topgap">
+                      <label class="">
+                        Height in cm
+                      </label>
+                      <input type="text" class="form-control m-input" placeholder="Enter Height " name="height"
+                        id="height" formControlName="height">
+                    </div>
+                  </div>
+                  <div class="form-group m-form__group row topgap">
+                    <div class="col-lg-12 col-md-10">
+                      <label>
+                        Contents of the parcel
+                      </label>
+                      <textarea class="form-control m-input" placeholder="Enter contents" name="package_items"
+                        id="package_items" rows="3" formControlName="package_items"></textarea>
+                    </div>
+                  </div>
+
+                  <div class="form-group m-form__group row topgap">
+                    <div class="col-lg-12 col-md-10">
+                      <label>
+                        Value of contents in <i class="fa fa-inr"></i>
+                      </label>
+                      <textarea class="form-control m-input" placeholder="Enter contents value" name="no_of_packages"
+                        id="no_of_packages" rows="3" formControlName="no_of_packages"></textarea>
+                    </div>
+                  </div>
 
                   <div class="m-form__actions m-form__actions" style="text-align: center;">
-                    <button type="submit" class="btn btn-primary">
-                      Save
+                    <button class="btn btn-warning m-btn m-btn--custom m-btn--icon" id="shedule_data"
+                      data-wizard-action="next">
+                      <span>
+                        <span>
+                          Submit
+                        </span> &nbsp;&nbsp;
+                        <i class="la la-arrow-right"></i>
+                      </span>
                     </button>
                   </div>
+
+
                 </div>
               </form>
             </div>
