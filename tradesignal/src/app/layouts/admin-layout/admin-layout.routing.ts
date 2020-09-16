@@ -26,7 +26,7 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'india-stock', component: IndiastocksComponent },
     { path: 'india-stocks/:id', component: PlanbyidComponent },
     { path: 'analyst', component: AnalystpagedetailsComponent },
-    { path: 'signalediting', component: SignaleditComponent },
+    { path: 'signalediting/:id', component: SignaleditComponent },
     { path: 'analystlist', component: AnalystlistComponent },
     { path: 'signals', component: SignalsComponent },
 

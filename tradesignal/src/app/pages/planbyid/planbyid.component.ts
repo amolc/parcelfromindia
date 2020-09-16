@@ -96,7 +96,7 @@ export class PlanbyidComponent implements OnInit {
     console.log(chart.legend);
     // chart.data = this.data2
     chart.dataSource.url =
-      "https://api.80startups.com/tradeSignals/getCountLatestMonth/1";
+      "https://api.80startups.com/2/tradeSignals/getCountLatestMonth/1";
     chart.dataSource.parser = new am4core.JSONParser();
     chart.data = this.data2;
     //console.log(chart.data)
@@ -214,7 +214,7 @@ export class PlanbyidComponent implements OnInit {
     return new Promise((resolve, reject) => {
       this.http
         .get(
-          "https://api.80startups.com/tradeSignals/getallsignalsbyplanid/" +
+          "https://api.80startups.com/2/tradeSignals/getallsignalsbyplanid/" +
           this.route.snapshot.params.id
         )
         .subscribe(
@@ -227,6 +227,10 @@ export class PlanbyidComponent implements OnInit {
           }
         );
     });
+  }
+  signaledit(id) {
+    console.log(id)
+    this.router.navigateByUrl('/signalediting/' + id)
   }
   selectbyvalue(event, id) {
     console.log(event.target.value)

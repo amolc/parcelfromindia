@@ -105,7 +105,7 @@ export class IndiastocksComponent implements OnInit {
     chart.legend = new am4charts.Legend();
     console.log(chart.legend)
     // chart.data = this.data2
-    chart.dataSource.url = "https://api.80startups.com/tradeSignals/getCountLatestMonth/1";
+    chart.dataSource.url = "https://api.80startups.com/2/tradeSignals/getCountLatestMonth/1";
     chart.dataSource.parser = new am4core.JSONParser();
     chart.data = this.data2
     //console.log(chart.data)
@@ -188,7 +188,7 @@ export class IndiastocksComponent implements OnInit {
   }
   getdata() {
     return new Promise((resolve, reject) => {
-      this.http.get("https://api.80startups.com/tradeSignals/getAllSignals").subscribe(result => {
+      this.http.get("https://api.80startups.com/2/tradeSignals/getAllSignals").subscribe(result => {
         console.log("result", result);
         this.data = result;
 
@@ -201,7 +201,7 @@ export class IndiastocksComponent implements OnInit {
   }
   getdata1() {
     const yearchart = new Promise((resolve, reject) => {
-      this.http.get("https://api.80startups.com/tradeSignals/getCountperYear/1").subscribe(result => {
+      this.http.get("https://api.80startups.com/2/tradeSignals/getCountperYear/1").subscribe(result => {
         console.log("result", result);
         //this.data1 = this.result;
 
@@ -224,7 +224,7 @@ export class IndiastocksComponent implements OnInit {
   }
   getdata2() {
     return new Promise((resolve, reject) => {
-      this.http.get("https://api.80startups.com/tradeSignals/getCountLatestMonth/1").subscribe(result => {
+      this.http.get("https://api.80startups.com/2/tradeSignals/getCountLatestMonth/1").subscribe(result => {
         console.log("result", result);
 
         this.data2.push(result)[0];

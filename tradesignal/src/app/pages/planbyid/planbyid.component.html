@@ -171,27 +171,27 @@
                       {{listItems.Signal}}
                     </td>
 
-                    <!-- <td _ngcontent-c5="">
-                      {{listItems.status}}
-                    </td> -->
                     <td _ngcontent-c5="">
+                      {{listItems.status}}
+                    </td>
+                    <!-- <td _ngcontent-c5="">
                       <div class="dropdown">
 
 
-                        <select class="dropdown-select" (change)="selectbyvalue($event,listItems._id)">
-                          <option class="dropdown-item" value="WIN">win</option>
+                         <select class="dropdown-select" (change)="selectbyvalue($event,listItems._id)"> -->
+                    <!-- <option class="dropdown-item" value="WIN">win</option>
                           <option class="dropdown-item" value="LOSS">Loss</option>
-                          <option class="dropdown-item" value="ONGOING">ongoing</option>
+                          <option class="dropdown-item" value="ONGOING" >ongoing</option>
 
-                          <option class="dropdown-item" value="CLOSE">close</option>
+                          <option class="dropdown-item" value="CLOSE">close</option> -->
 
-                        </select>
-
+                    <!-- </select> -->
+                    <!-- 
                       </div>
-                    </td>
+                    </td>  -->
                     <td _ngcontent-c5="">
                       <button type="button" class="btn btn-primary " routerLinkActive="active"
-                        [routerLink]="['/signalediting']">Edit</button>
+                        (click)="signaledit(listItems._id)">Edit</button>
                     </td>
                   </tr>
 

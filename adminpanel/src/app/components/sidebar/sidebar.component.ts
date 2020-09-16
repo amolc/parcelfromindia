@@ -11,7 +11,7 @@ export const ROUTES: RouteInfo[] = [
   { path: '/dashboard', title: 'Dashboard', icon: 'ni-tv-2 text-primary', class: '' },
   //{ path: '/mysuite', title: 'My Suite',  icon: 'ni-tv-2 text-primary', class: '' },
   // { path: '/category', title: 'Category', icon: 'ni-tv-2 text-primary', class: '' },
-  { path: '/user', title: 'ParcelFromIndiaUser', icon: 'ni-circle-08 text-pink', class: '' },
+  { path: '/user', title: 'User', icon: 'ni-circle-08 text-pink', class: '' },
   { path: '/shipmentuser', title: 'ShipmentUser', icon: 'ni-circle-08 text-pink', class: '' },
   // { path: '/editprofile', title: 'EditProfile', icon: 'ni-planet text-blue', class: '' },
   { path: '/pickuplist', title: ' PickupUser', icon: 'ni-pin-3 text-orange', class: '' },

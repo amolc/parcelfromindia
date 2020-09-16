@@ -62,7 +62,7 @@ export class LoginComponent implements OnInit {
     return new Promise((resolve, reject) => {
       this.http
         .post(
-          environment.baseurl + "auth/loginUser/" + this.params.projectid,
+          environment.baseurl + "auth/loginUser/",
           this.params
         )
         .subscribe(

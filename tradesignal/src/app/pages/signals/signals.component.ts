@@ -117,7 +117,7 @@ export class SignalsComponent implements OnInit {
     return new Promise((resolve, reject) => {
       this.http
         .post(
-          "https://api.80startups.com/tradesignals/createTradingSignals",
+          "https://api.80startups.com/2/tradesignals/createTradingSignals",
           this.params
         )
         .subscribe(

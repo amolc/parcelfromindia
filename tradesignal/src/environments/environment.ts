@@ -6,7 +6,7 @@ import { Host } from "@angular/core";
 
 export const environment = {
   production: false,
-  baseurl: 'https://api.80startups.com/',
+  baseurl: 'https://api.80startups.com/2/',
 };
 
 /*

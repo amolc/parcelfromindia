@@ -63,17 +63,17 @@
               <br>
                <pagination-controls (pageChange)="pageChanged($event)"></pagination-controls> 
             </div> -->
-            <div class="card-columns">
-              <div class="bs-example">
+            <div class="card-deck">
 
-                <div class="card" style="width: 300px;" *ngFor="let item of data[0]">
-                  <img src="./assets/img/brand/image.png" class="card-img-top" alt="...">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">{{item.fname}} {{item.lname}} </h5>
-                    <p class="card-text">{{item.summary}}</p>
-                    <button class="btn btn-primary my-4" (click)="analystview(item._id)"> View</button>
-                  </div>
+
+              <div class="card" style="width: 250px; " *ngFor="let item of data[0]">
+                <img src="./assets/img/brand/image.png" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                  <h2 class="card-title" style="font-weight:bolder;">{{item.fname}} {{item.lname}} </h2>
+                  <p class="card-text">{{item.summary}}</p>
+                  <button class="btn btn-primary my-4" (click)="analystview(item._id)"> View</button>
                 </div>
+
 
               </div>
             </div>

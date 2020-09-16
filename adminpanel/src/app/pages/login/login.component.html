@@ -65,13 +65,13 @@
                 <div class="input-group-prepend">
                   <span class="input-group-text"><i class="ni ni-hat-3"></i></span>
                 </div>
-                <input class="form-control" type="text" placeholder="Enter Project_id" name="project_id" id="project_id"
-                  required formControlName="project_id">
+                <input class="form-control" type="text" placeholder="Enter Projectid" name="projectid" id="projectid"
+                  required formControlName="projectid">
               </div>
               <div>
-                <ng-container *ngFor="let error of error_messages.project_id">
+                <ng-container *ngFor="let error of error_messages.projectid">
                   <div class="error-message"
-                    *ngIf="loginForm.get('project_id').hasError(error.type) && (loginForm.get('project_id').dirty || loginForm.get('project_id').touched)">
+                    *ngIf="loginForm.get('projectid').hasError(error.type) && (loginForm.get('projectid').dirty || loginForm.get('projectid').touched)">
                     {{ error.message }}
                   </div>
                 </ng-container>

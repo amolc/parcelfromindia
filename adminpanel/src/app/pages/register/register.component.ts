@@ -49,7 +49,7 @@ export class RegisterComponent implements OnInit {
         { type: "minlength", message: "minimun length should be 8 ." },
         { type: "maxlength", message: "maximum length should be 12 ." }
       ],
-      project_id: [
+      projectid: [
         { type: "required", message: "Project_id is Required." },
       ]
 
@@ -127,7 +127,7 @@ export class RegisterComponent implements OnInit {
       "email": this.signUpForm.controls.email.value,
       "password": this.signUpForm.controls.password.value,
       //"project_id": 1,
-      "project_id": this.signUpForm.controls.project_id.value,
+      //"projectid": this.signUpForm.controls.projectid.value,
 
 
 

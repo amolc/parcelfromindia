@@ -2,6 +2,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from "@angular/forms";
 import { HttpClient } from "@angular/common/http";
 import { Router } from '@angular/router';
+import { environment } from "../../../environments/environment";
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -9,6 +10,10 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
   loginForm: FormGroup;
+  // baseurl: 'https://api.80startups.com/';
+  // projectid: '1';
+  // Apiurl= 'baseurl' + 'projectid';
+  baseurl = environment.url + environment.projectid
   error_messages: any = {};
   params: any;
   constructor(public router: Router, public formBuilder: FormBuilder, private http: HttpClient) {
@@ -27,8 +32,8 @@ export class LoginComponent implements OnInit {
       password: [
         { type: "required", message: 'Password is Required' }
       ],
-      project_id: [
-        { type: "required", message: 'Project_id is Required' }
+      projectid: [
+        { type: "required", message: 'Projectid is Required' }
       ],
     };
     this.loginForm = this.formBuilder.group(
@@ -46,7 +51,7 @@ export class LoginComponent implements OnInit {
             Validators.required,
           ])
         ),
-        project_id: new FormControl(
+        projectid: new FormControl(
           "",
           Validators.compose([
             Validators.required,
@@ -60,12 +65,14 @@ export class LoginComponent implements OnInit {
     this.params = {
       "email": this.loginForm.value.email,
       "password": this.loginForm.value.password,
-      "project_id": this.loginForm.value.project_id,
+      "projectid": this.loginForm.value.projectid,
     }
     return new Promise((resolve, reject) => {
-      this.http.post("https://api.80startups.com/auth/loginUser/" + this.params.project_id, this.params).subscribe(result => {
+      this.http.post(this.baseurl + "/auth/loginUser/", this.params).subscribe(result => {
         console.log(result, "result");
-        localStorage.setItem('token', JSON.stringify(result['users'].tokens))
+        localStorage.setItem('token', JSON.stringify(result['users'].tokens));
+        localStorage.setItem('projectid', JSON.stringify(result['users'].projectid));
+
         this.router.navigateByUrl('/dashboard');
       },
         err => {

@@ -24,30 +24,43 @@
           </div>
         </div>
         <div class="card-body">
-          <!-- <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)" novalidate>
+          <form #myForm="ngForm" (ngSubmit)="onSubmit()" novalidate>
             <h6 class="heading-small text-muted mb-4"></h6>
             <div class="pl-lg-4">
               <div class="row">
                 <div class="col-lg-6">
                   <div class="form-group">
                     <label class="form-control-label" for="input-plan"> Select Plan</label>
-                    <!-- <select class="form-control" placeholder="Select Plan" name="plan" [(ngModel)]="data.plan" ngModel
-                      required #plan="ngModel">
+                    <select disabled class="form-control" placeholder="Select Plan" name="plan"
+                      [(ngModel)]="signaldata[0].plan_id" ngModel required #plan="ngModel">
                       <option class="form-control" *ngFor="let plan of plans[0]" [value]="plan._id">
                         {{ plan.planname }}
                       </option>
 
-                    </select> -->
-          <!-- </div>
+                    </select>
+                  </div>
                 </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="input-plan"> Select Status</label>
+                    <select class="form-control" name="status" [(ngModel)]="signaldata[0].status" ngModel required
+                      #status="ngModel">
+                      <option class="dropdown-item" value="WIN">win</option>
+                      <option class="dropdown-item" value="LOSS">Loss</option>
+                      <option class="dropdown-item" value="ONGOING">ongoing</option>
 
+                      <option class="dropdown-item" value="CLOSE">close</option>
+
+                    </select>
+                  </div>
+                </div>
               </div>
               <div class="row">
                 <div class="col-lg-6">
                   <div class="form-group">
                     <label class="form-control-label" for="input-Symbol">SYMBOL</label>
                     <input type="text" class="form-control form-control-alternative" placeholder="Enter Symbol"
-                      name="Symbol" id="Symbol" ngModel required #Symbol="ngModel" [(ngModel)]="data.Symbol">
+                      name="Symbol" id="Symbol" ngModel required #Symbol="ngModel" [(ngModel)]="signaldata[0].Symbol">
                   </div>
                 </div>
                 <div class="col-lg-6">
@@ -55,7 +68,7 @@
                     <label class="form-control-label" for="input-Signal">Signal</label>
                     <input id="input-Signal" class="form-control form-control-alternative" type="text"
                       placeholder="Enter Signal" name="Signal" id="Signal" ngModel required #Signal="ngModel"
-                      [(ngModel)]="data.Signal">
+                      [(ngModel)]="signaldata[0].Signal">
                   </div>
                 </div>
               </div>
@@ -65,7 +78,7 @@
                     <label class="form-control-label" for="input-EntryDate&Time">Entry Date & Time </label>
                     <input id="input-EntryDateTime" class="form-control form-control-alternative" type="text"
                       placeholder="Enter Entry Date&Time" name="EntryDateTime" id="EntryDateTime" ngModel required
-                      #EntryDateTime="ngModel" [(ngModel)]="data.EntryDateTime">
+                      #EntryDateTime="ngModel" [(ngModel)]="signaldata[0].EntryDateTime">
                   </div>
                 </div>
 
@@ -74,7 +87,7 @@
                     <label class="form-control-label" for="input-ExitDate&Time">Exit Date & Time </label>
                     <input id="input-ExitDateTime" class="form-control form-control-alternative" type="text"
                       placeholder="Enter Exit Date&Time" name="ExitDateTime" ngModel required #ExitDateTime="ngModel"
-                      [(ngModel)]="data.ExitDateTime">
+                      [(ngModel)]="signaldata[0].ExitDateTime">
                   </div>
                 </div>
               </div>
@@ -84,7 +97,7 @@
                     <label class="form-control-label" for="input-EntryPrice">Entry Price</label>
                     <input id="input-EntryPrice" class="form-control form-control-alternative"
                       placeholder="Enter Entry Price" name="EntryPrice" ngModel required #EntryPrice="ngModel"
-                      [(ngModel)]="data.EntryPrice">
+                      [(ngModel)]="signaldata[0].EntryPrice">
                   </div>
                 </div>
 
@@ -93,7 +106,7 @@
                     <label class="form-control-label" for="input-ExitPrice">Exit Price</label>
                     <input id="input-ExitPrice" class="form-control form-control-alternative" type="text"
                       placeholder="Enter Exit Price" name="ExitPrice" ngModel required #ExitPrice="ngModel"
-                      [(ngModel)]="data.ExitPrice">
+                      [(ngModel)]="signaldata[0].ExitPrice">
                   </div>
                 </div>
               </div>
@@ -103,7 +116,7 @@
                     <label class="form-control-label" for="input-stockSignal">Stop Loss</label>
                     <input id="input-stockSignal" class="form-control form-control-alternative" type="text"
                       placeholder="Enter Stop Loss" name="stopLoss" id="stopLoss" ngModel required #stopLoss="ngModel"
-                      [(ngModel)]="data.stopLoss">
+                      [(ngModel)]="signaldata[0].stopLoss">
                   </div>
                 </div>
 
@@ -112,7 +125,7 @@
                     <label class="form-control-label" for="input-targetPrice">Target Price</label>
                     <input type="text" class="form-control form-control-alternative" placeholder="Enter Target Price"
                       name="targetPrice" id="input-targetPrice" ngModel required #targetPrice="ngModel"
-                      [(ngModel)]="data.targetPrice">
+                      [(ngModel)]="signaldata[0].targetPrice">
                   </div>
                 </div>
               </div>
@@ -135,7 +148,113 @@
                 </span>
               </button>
             </div>
-          </form>  -->
+          </form>
+
+          <!-- <form [formGroup]="signalsForm" (ngSubmit)="signals($event,_id)">
+            <h6 class="heading-small text-muted mb-4"></h6>
+            <div class="pl-lg-4">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="input-plan"> Select Plan</label>
+                    <select class="form-control" placeholder="Select Plan" formControlName="plan">
+                      <option class="form-control" *ngFor="let plan of plans[0]" [value]="plan._id">
+                        {{ plan.planname }}
+                      </option>
+
+                    </select>
+                  </div>
+                </div>
+
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="input-Symbol">SYMBOL</label>
+                    <input type="text" placeholder="Enter Symbol" name="Symbol" id="Symbol" formControlName="Symbol"
+                      class="form-control form-control-alternative" required>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="input-Signal">Signal</label>
+                    <input id="input-Signal" class="form-control form-control-alternative" type="text"
+                      placeholder="Enter Signal" name="Signal" id="Signal" formControlName="Signal" required>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="input-EntryDate&Time">Entry Date & Time </label>
+                    <input id="input-EntryDateTime" class="form-control form-control-alternative" type="text"
+                      placeholder="Enter Entry Date&Time" name="EntryDateTime" id="EntryDateTime"
+                      formControlName="EntryDateTime">
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="input-ExitDate&Time">Exit Date & Time </label>
+                    <input id="input-ExitDateTime" class="form-control form-control-alternative" type="text"
+                      placeholder="Enter Exit Date&Time" name="ExitDateTime" formControlName="ExitDateTime">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="input-EntryPrice">Entry Price</label>
+                    <input id="input-EntryPrice" class="form-control form-control-alternative"
+                      placeholder="Enter Entry Price" name="EntryPrice" formControlName="EntryPrice">
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="input-ExitPrice">Exit Price</label>
+                    <input id="input-ExitPrice" class="form-control form-control-alternative" type="text"
+                      placeholder="Enter Exit Price" name="ExitPrice" formControlName="ExitPrice">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="input-stockSignal">Stop Loss</label>
+                    <input id="input-stockSignal" class="form-control form-control-alternative" type="text"
+                      placeholder="Enter Stop Loss" name="stopLoss" id="stopLoss" formControlName="stopLoss">
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="input-targetPrice">Target Price</label>
+                    <input type="text" class="form-control form-control-alternative" placeholder="Enter Target Price"
+                      name="targetPrice" id="input-targetPrice" formControlName="targetPrice">
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+
+
+
+            <br>
+            <br>
+            <div class="m-form__actions m-form__actions" style="text-align: center;">
+              <button class="btn btn-warning m-btn m-btn--custom m-btn--icon" id="shedule_data"
+                data-wizard-action="next">
+                <span>
+                  <span>
+                    Submit
+                  </span> &nbsp;&nbsp;
+                  <i class="la la-arrow-right"></i>
+                </span>
+              </button>
+            </div>
+          </form> -->
         </div>
       </div>
     </div>
